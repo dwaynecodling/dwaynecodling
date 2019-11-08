@@ -1,0 +1,65 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*
+html {
+    font-size: 1.2vw;
+}
+
+@media only screen and (min-width: 800px) {
+    html {
+        font-size: 0.75vw;
+    }
+}
+
+*/
+
+html {
+  font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
+
+
+  @include respond(tab-land) {// width < 1200px
+    font-size: 56.25%; // 1rem = 9px , 9/16
+  }
+
+  @include respond(tab-port) { // width < 900px
+    font-size: 50%; // 1rem
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+
+//@media only screen and (min-width: 800px) {
+//  html {
+//    font-size: 62.5%;
+//  }
+//}
+//@media only screen and (min-width: 1440px) {
+//  html {
+//    font-size: 100%;
+//  }
+//}
+//@media only screen and (min-width: 3000px) {
+//  html {
+//    font-size: 200%;
+//  }
+//}
+
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
