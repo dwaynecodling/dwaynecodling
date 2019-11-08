@@ -1,8 +1,56 @@
+/* These sizes are all desktop first
+
+   It may be worth working out some
+   media queries to build mobile-first instead?
+*/
+
 //COLORS
+$color-primary-gold: #c99550;
+$color-black: #000;
+$color-white: #fff;
 
+$color-grey-container: #1d1f21;
 
-//GRIDS
+$color-faded-number-1: #181a1b;
+$color-faded-number-2: #26292b;
 
+$color-quotation-mark: #404040;
 
+$color-card-body-text: #333;
+$color-card-meta-text: #4d4d4d;
 
-//FONTS
+//GRID
+$grid-container-width: 120rem; //1200px = desktop
+
+//SPACING
+$padding-small: 2rem; //20px
+$padding-medium-1: $padding-small + 1rem; //30px
+$padding-medium-2: $padding-small * 2; //40px
+$padding-large: $padding-small * 3; //60px
+
+$margin-default: 24rem; //240px
+$margin-medium: $margin-default / 2; //120px
+$margin-small: $margin-default / 3; //80px
+
+//FONT SIZES
+$heading-1: 4.6rem; //46px
+$heading-2: 3.6rem; //36px
+$heading-3: 3rem; //30px
+$heading-4: 2.6rem; //26px
+
+$body-text-main: 1.8rem; //18px
+$meta-text: 1.6rem; //16px = sub-heading too
+$logo-copyright-text: 2rem; //20px
+
+$card-date: 1.2rem; //12px
+
+$nav-text-default: 1.6rem; //16px
+$nav-text-uppercase: 1.4rem;
+
+$quotation-text: 2.6rem; //26px
+
+$form-input-label: 1.4rem; //14px = placeholder, text
+$form-input-text: 1.8rem; //18px = placeholder, text
+
+$faded-number-small: 12rem; //120px
+$faded-number-large: 20rem; //200px = quotation mark too
