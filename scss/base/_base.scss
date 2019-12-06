@@ -7,6 +7,7 @@
 }
 
 html {
+  font-family: Roboto, sans-serif;
   font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
 
   @include respond(tab-land) {
@@ -26,7 +27,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  background-color: $color-black;
 
   @include respond(tab-port) {
     padding: 0;

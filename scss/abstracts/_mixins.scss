@@ -31,7 +31,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
 */
 
 
-@mixin  respond($breakpoint) {
+@mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {@content}; // 600px
     }

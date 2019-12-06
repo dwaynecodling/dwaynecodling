@@ -19,6 +19,62 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
    It may be worth working out some
    media queries to build mobile-first instead?
 */
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../.././assets/fonts/roboto-v20-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Light"), local("Roboto-Light"), url("../.././assets/fonts/roboto-v20-latin-300.eot?#iefix") format("embedded-opentype"), url("../.././assets/fonts/roboto-v20-latin-300.woff2") format("woff2"), url("../.././assets/fonts/roboto-v20-latin-300.woff") format("woff"), url("../.././assets/fonts/roboto-v20-latin-300.ttf") format("truetype"), url("../.././assets/fonts/roboto-v20-latin-300.svg#Roboto") format("svg");
+  /* Legacy iOS */ }
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../.././assets/fonts/roboto-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"), url("../.././assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../.././assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../.././assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../.././assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../.././assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */ }
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../.././assets/fonts/roboto-v20-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../.././assets/fonts/roboto-v20-latin-500.eot?#iefix") format("embedded-opentype"), url("../.././assets/fonts/roboto-v20-latin-500.woff2") format("woff2"), url("../.././assets/fonts/roboto-v20-latin-500.woff") format("woff"), url("../.././assets/fonts/roboto-v20-latin-500.ttf") format("truetype"), url("../.././assets/fonts/roboto-v20-latin-500.svg#Roboto") format("svg");
+  /* Legacy iOS */ }
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../.././assets/fonts/roboto-v20-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("../.././assets/fonts/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../.././assets/fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../.././assets/fonts/roboto-v20-latin-700.woff") format("woff"), url("../.././assets/fonts/roboto-v20-latin-700.ttf") format("truetype"), url("../.././assets/fonts/roboto-v20-latin-700.svg#Roboto") format("svg");
+  /* Legacy iOS */ }
+
+/* roboto-900 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../.././assets/fonts/roboto-v20-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Black"), local("Roboto-Black"), url("../.././assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../.././assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../.././assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../.././assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../.././assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
+  /* Legacy iOS */ }
+
+.container {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 4rem 8rem 0 8rem; }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -55,6 +111,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   box-sizing: inherit; }
 
 html {
+  font-family: Roboto, sans-serif;
   font-size: 62.5%; }
   @media (max-width: 75em) {
     html {
@@ -68,10 +125,14 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  background-color: #000; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+.link--alt a {
+  color: #000;
+  background-color: #fff; }
 
 .card-wrapper {
   display: flex;
@@ -147,3 +208,51 @@ body {
       background-color: #dce4ff; }
       .card__btn:hover span, .card__btn:active span {
         margin-left: 1.5rem; }
+
+.navigation {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0; }
+
+.navigation__logo {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 2rem; }
+
+.navigation__links {
+  list-style: none;
+  display: flex; }
+
+.navigation__link a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  position: relative; }
+  .navigation__link a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #c99550;
+    bottom: -4px;
+    left: 0;
+    transition: 0.3s ease all; }
+  .navigation__link a:hover {
+    position: relative; }
+  .navigation__link a:hover:after {
+    width: 100%;
+    transition: 0.3s ease all; }
+
+.navigation__link:not(:first-child) {
+  padding-left: 3rem; }
+
+.navigation__link.link--alt a {
+  border: none;
+  color: #000;
+  background-color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 21.5px; }
+  .navigation__link.link--alt a:after {
+    width: 0; }
