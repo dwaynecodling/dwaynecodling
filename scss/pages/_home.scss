@@ -1,0 +1,41 @@
+.page {
+  font-size: 1.2rem;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.page__container {
+  display: flex;
+  flex-wrap: wrap;
+
+  &:not(:first-of-type) {
+
+  }
+}
+
+.page__section:not(:last-of-type) {
+  margin-right: $base-spacing * 2;;
+
+}
+
+.page__links {
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.page__link {
+  font-size: 1rem;
+
+  a {
+    text-decoration: none;
+    padding: $base-spacing/4;
+    line-height: 1.8;
+
+    &:hover {
+      background-color: $color-primary-gold;
+      color: $color-white;
+    }
+  }
+}
