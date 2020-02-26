@@ -19,6 +19,15 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
    It may be worth working out some
    media queries to build mobile-first instead?
 */
+:root {
+  --container: 120rem;
+  --container-padding: 2rem;
+  --heading-1: 3.2rem; }
+  @media screen and (min-width: 40em) {
+    :root {
+      --container-padding: 0;
+      --heading-1: 4.6rem; } }
+
 /* roboto-300 - latin */
 @font-face {
   font-family: 'Roboto';
@@ -70,8 +79,9 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   /* Legacy iOS */ }
 
 .container {
+  padding: 0 var(--container-padding);
   width: 100%;
-  max-width: 1680px;
+  max-width: var(--container);
   margin: 0 auto; }
 
 @keyframes moveInLeft {
@@ -112,15 +122,6 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
 html {
   font-family: Roboto, sans-serif;
   font-size: 62.5%; }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media (max-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -215,7 +216,9 @@ ul {
   font-size: 1.8rem;
   display: flex;
   justify-content: space-between;
-  padding: 4rem 8rem; }
+  padding: 4rem 8rem;
+  position: absolute;
+  width: 100%; }
 
 .navigation__logo {
   text-decoration: none;
@@ -231,7 +234,8 @@ ul {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .navigation__link a:after {
     content: '';
     position: absolute;
@@ -258,6 +262,77 @@ ul {
   border-radius: 21.5px; }
   .navigation__link.link--alt a:after {
     width: 0; }
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  position: relative; }
+  .hero__content {
+    max-width: 64rem;
+    padding: 0; }
+    @media screen and (min-width: 34em) {
+      .hero__content {
+        padding: 0 4rem; } }
+    @media screen and (min-width: 48em) {
+      .hero__content {
+        padding: 0; } }
+  .hero__subheading {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: .4rem; }
+  .hero__heading {
+    font-size: var(--heading-1);
+    font-weight: lighter;
+    margin-bottom: 6rem; }
+    @media screen and (min-width: 40em) {
+      .hero__heading {
+        margin-bottom: 3.5rem; } }
+  .hero__button {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: #c99550;
+    padding: 2rem;
+    border-radius: 3rem;
+    transition: .2s background-color; }
+    @media screen and (min-width: 40em) {
+      .hero__button {
+        font-size: 1.6rem;
+        padding: 2rem 3rem; } }
+    .hero__button:hover {
+      background-color: #c79048; }
+  .hero__button-content {
+    display: flex;
+    align-items: center; }
+  .hero__button-text {
+    font-weight: 500; }
+  .hero__button-arrow {
+    display: block;
+    margin-left: 1.2rem;
+    transform: scale(1); }
+    @media screen and (min-width: 40em) {
+      .hero__button-arrow {
+        margin-left: 1.5rem;
+        transform: scale(1.2); } }
+  .hero__down-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .2rem solid #666;
+    border-radius: 50%;
+    bottom: 4rem;
+    position: absolute;
+    height: 6rem;
+    width: 6rem; }
+    @media screen and (min-width: 40em) {
+      .hero__down-arrow {
+        bottom: 6rem; } }
 
 .page {
   font-size: 1.2rem; }

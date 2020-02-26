@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   padding: 4rem 8rem;
+  position: absolute;
+  width: 100%;
 
 }
 
@@ -25,6 +27,7 @@
     color: $color-white;
     font-weight: 700;
     position: relative;
+    z-index: 1;
 
     &:after {
       content: '';

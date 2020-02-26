@@ -1,0 +1,95 @@
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+
+  &__content {
+    max-width: 64rem;
+    padding: 0;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-1')) {
+      padding: 0 4rem;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+      padding: 0;
+    }
+  }
+
+  &__subheading {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: .4rem;
+  }
+
+  &__heading {
+    font-size: var(--heading-1);
+    font-weight: lighter;
+    margin-bottom: $padding-large;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color: $color-primary-gold;
+    padding: $padding-small;
+    border-radius: 3rem;
+    transition: .2s background-color;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+      font-size: 1.6rem;
+      padding: $padding-small $padding-medium-1;
+    }
+
+    &:hover {
+      background-color: darken($color-primary-gold, 2%);
+    }
+  }
+
+  &__button-content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__button-text {
+    font-weight: 500;
+  }
+
+  &__button-arrow {
+    display: block;
+    margin-left: 1.2rem;
+    transform: scale(1);
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+      margin-left: 1.5rem;
+      transform: scale(1.2);
+    }
+  }
+
+  &__down-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .2rem solid #666;
+    border-radius: 50%;
+    bottom: 4rem;
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+      bottom: 6rem;
+    }
+  }
+}
