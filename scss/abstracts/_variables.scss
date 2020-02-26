@@ -63,5 +63,33 @@ $color-btn-background: #e6ecff;
 
 $transition: all .2s;
 
-$page-width: 1680px;
 $base-spacing: 1rem;
+
+// Breakpoints
+$breakpoints: (
+  breakpoint-0: 0,
+  breakpoint-1: 34em,
+  breakpoint-2: 40em,
+  breakpoint-3: 48em,
+  breakpoint-4: 62em,
+  breakpoint-5: 68em,
+  breakpoint-6: 75em,
+  breakpoint-7: 80em,
+  breakpoint-8: 82em,
+  breakpoint-9: 84em,
+  breakpoint-10: 90em,
+  breakpoint-11: 96em,
+  breakpoint-12: 120em
+) !default;
+
+// CSS Properties
+:root {
+  --container: 120rem;
+  --container-padding: #{$padding-small};
+  --heading-1: 3.2rem;
+
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    --container-padding: 0;
+    --heading-1: 4.6rem;
+  }
+}

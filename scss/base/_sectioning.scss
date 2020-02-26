@@ -1,5 +1,6 @@
 .container {
+  padding: 0 var(--container-padding);
   width: 100%;
-  max-width: $page-width;
+  max-width: var(--container);
   margin: 0 auto;
 }
