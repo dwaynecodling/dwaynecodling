@@ -4,3 +4,11 @@
   max-width: var(--container);
   margin: 0 auto;
 }
+
+section {
+  margin-bottom: 8rem;
+
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    margin-bottom: 12rem;
+  }
+}
