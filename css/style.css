@@ -21,12 +21,26 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
 */
 :root {
   --container: 120rem;
-  --container-padding: 2rem;
-  --heading-1: 3.2rem; }
+  --container-padding: 3rem;
+  --noOfColumns: 1;
+  --heading-1: 3.2rem;
+  --heading-2: 2.8rem;
+  --heading-3: 2.2rem;
+  --body-text-main: 1.4rem; }
   @media screen and (min-width: 40em) {
     :root {
+      --container-padding: 6rem;
+      --heading-1: 4.6rem;
+      --heading-2: 3.6rem;
+      --heading-3: 2.6rem;
+      --body-text-main: 1.8rem; } }
+  @media screen and (min-width: 62em) {
+    :root {
+      --noOfColumns: 2; } }
+  @media screen and (min-width: 80em) {
+    :root {
       --container-padding: 0;
-      --heading-1: 4.6rem; } }
+      --noOfColumns: 3; } }
 
 /* roboto-300 - latin */
 @font-face {
@@ -84,6 +98,12 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   max-width: var(--container);
   margin: 0 auto; }
 
+section {
+  margin-bottom: 8rem; }
+  @media screen and (min-width: 62em) {
+    section {
+      margin-bottom: 12rem; } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -121,7 +141,8 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
 
 html {
   font-family: Roboto, sans-serif;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box;
@@ -130,6 +151,10 @@ body {
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
+
+main {
+  display: block;
+  overflow: hidden; }
 
 h3 {
   margin-bottom: 1rem; }
@@ -141,6 +166,28 @@ ul {
   color: #000;
   background-color: #fff; }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--noOfColumns), 1fr); }
+  .grid--list-of-3 {
+    border-bottom: .1rem solid #666666;
+    grid-gap: 4rem; }
+    @media screen and (min-width: 82em) {
+      .grid--list-of-3 {
+        grid-gap: 9rem; } }
+  .grid__info {
+    margin: 0; }
+    .grid__info:last-child {
+      margin-bottom: 6rem; }
+      @media screen and (min-width: 75em) {
+        .grid__info:last-child {
+          margin-bottom: 12rem; } }
+  .grid--card-list {
+    grid-gap: 3rem; }
+    @media screen and (min-width: 62em) {
+      .grid--card-list {
+        grid-gap: 6rem; } }
+
 .card-wrapper {
   display: flex;
   justify-content: center;
@@ -150,26 +197,16 @@ ul {
     .card-wrapper {
       padding: 3rem; } }
 
-.grid {
-  display: grid;
-  width: 114rem;
-  grid-gap: 6rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-auto-rows: auto;
-  align-items: start; }
-  @media (max-width: 60em) {
-    .grid {
-      grid-gap: 3rem; } }
-  .grid__item {
-    height: 100%;
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s; }
-    .grid__item:hover {
-      transform: translateY(-0.5%);
-      box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2); }
+.grid__card-item {
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s; }
+  .grid__card-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2); }
 
 .card {
   display: flex;
@@ -359,3 +396,35 @@ ul {
     .page__link a:hover {
       background-color: #c99550;
       color: #fff; }
+
+.info-snippet {
+  position: relative; }
+  .info-snippet__bg-text {
+    color: #181a1b;
+    position: relative;
+    font-size: 6rem;
+    font-weight: 700;
+    z-index: -1; }
+    @media screen and (min-width: 62em) {
+      .info-snippet__bg-text {
+        font-size: 12rem;
+        position: absolute;
+        top: -6rem;
+        left: -4rem; } }
+  .info-snippet__heading {
+    font-size: var(--heading-3);
+    margin-bottom: .7rem; }
+  .info-snippet__text {
+    font-size: var(--body-text-main);
+    font-weight: 400;
+    line-height: 1.55; }
+
+.post-heading {
+  font-size: var(--heading-2);
+  font-weight: 200;
+  margin-bottom: 3rem; }
+  .post-heading strong {
+    margin-right: 1rem; }
+  @media screen and (min-width: 62em) {
+    .post-heading {
+      margin-bottom: 4rem; } }

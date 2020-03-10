@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--noOfColumns), 1fr);
+
+  &--list-of-3 {
+    border-bottom: .1rem solid #666666;
+    grid-gap: 4rem;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-8')) {
+      grid-gap: 9rem;
+    }
+  }
+
+  &__info {
+    margin: 0;
+
+    &:last-child {
+      margin-bottom: 6rem;
+
+      @media screen and (min-width: map-get($breakpoints, 'breakpoint-6')) {
+        margin-bottom: 12rem;
+      }
+    }
+  }
+
+  &--card-list {
+    grid-gap: 3rem;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+      grid-gap: 6rem;
+    }
+  }
+}

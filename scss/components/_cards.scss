@@ -22,21 +22,8 @@
 }
 
 .grid {
-  display: grid;
-  width: 114rem;
-  grid-gap: 6rem;
-  grid-template-columns: repeat(
-                  auto-fit,
-                  minmax(30rem, 1fr)
-  );
-  grid-auto-rows: auto;
-  align-items: start;
 
-  @include media(small) {
-    grid-gap: 3rem;
-  }
-
-  &__item {
+  &__card-item {
     height:100%;
     background-color: #fff;
     overflow: hidden;
