@@ -37,6 +37,16 @@
     }
   }
 
+  &__link {
+    font-size: var(--heading-1);
+    font-weight: 900;
+    text-decoration: none;
+    color: $color-white;
+    &:hover {
+      text-decoration: none
+    }
+  }
+
   &__button {
     display: inline-block;
     color: #fff;
@@ -91,5 +101,64 @@
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
       bottom: 6rem;
     }
+  }
+}
+
+.hero__social-link {
+  display:block;
+  width: 24px;
+
+  &:not(:last-of-type) {
+    margin-right: 3rem;
+  }
+}
+
+.hero__contact {
+
+}
+
+.hero__contact--container {
+  max-width: calc(var(--container) + 30rem);
+}
+
+.hero__contact-wrapper {
+padding: 0 .2rem;
+
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    padding: 0 3rem;
+  }
+
+}
+
+.hero__contact--position {
+  position: fixed;
+  width: 100%;
+  top: 50%
+
+
+}
+
+.hero__social-links {
+display: inline-block;
+
+}
+
+.hero__social-link {
+  &:not(last-of-type) {
+    margin-bottom: 2rem;
+  }
+}
+
+.hero__social-link--text {
+  font-size: $nav-text-default;
+  text-decoration: none;
+  color: $color-white;
+  transform: rotate(-90deg);
+  display: inline-block;
+  position: absolute;
+  right: -100px;
+
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    right: -80px;
   }
 }
