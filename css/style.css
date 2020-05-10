@@ -479,6 +479,99 @@ footer {
     .hero__social-link--text {
       right: -80px; } }
 
+@media screen and (min-width: 62em) {
+  .about-me__info-wrapper {
+    display: flex;
+    height: 100%;
+    margin-bottom: 12rem; } }
+
+.about-me__info-content {
+  background-color: #1d1f21;
+  padding: 2rem;
+  position: relative; }
+  @media screen and (min-width: 62em) {
+    .about-me__info-content {
+      padding: 12rem;
+      width: 64.5%; } }
+
+.about-me__info-content--wrapper {
+  border-bottom: 1px solid #404040;
+  margin-bottom: 3rem; }
+
+.about-me__bg-text {
+  color: #26292b;
+  position: relative;
+  font-size: 6rem;
+  font-weight: 500; }
+  @media screen and (min-width: 62em) {
+    .about-me__bg-text {
+      font-size: 20rem;
+      position: absolute;
+      z-index: 0;
+      top: 3rem;
+      left: 6rem; } }
+
+.about-me__heading {
+  font-size: 2.6rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 40em) {
+    .about-me__heading {
+      font-size: 3rem; } }
+
+.about-me__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1; }
+  @media screen and (min-width: 40em) {
+    .about-me__text {
+      font-size: 1.8rem; } }
+
+.about-me__quick-links {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  list-style-type: none; }
+  @media screen and (min-width: 62em) {
+    .about-me__quick-links {
+      display: flex; } }
+
+.about-me__quick-link:not(last-of-type) {
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 62em) {
+    .about-me__quick-link:not(last-of-type) {
+      margin-bottom: 0;
+      margin-right: 4rem; } }
+
+.about-me__quick-link a {
+  color: #fff;
+  text-decoration: none; }
+  .about-me__quick-link a:hover {
+    color: #c99550; }
+  .about-me__quick-link a:active {
+    color: #c99550; }
+  .about-me__quick-link a:visited {
+    color: #c99550; }
+
+.about-me__img {
+  width: 100%;
+  margin-bottom: 3rem;
+  object-fit: cover; }
+  @media screen and (min-width: 62em) {
+    .about-me__img {
+      width: 36.5%;
+      margin-bottom: 0; } }
+
+@media screen and (min-width: 62em) {
+  .about-me__details {
+    width: 64.5%;
+    padding-left: 12rem; } }
+
 .page {
   font-size: 1.2rem; }
   .page h3 {
