@@ -14,11 +14,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 6rem;
 
-  @include media(small) {
-    padding: 3rem;
-  }
 }
 
 .grid {
@@ -36,6 +32,10 @@
       box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
     }
   }
+}
+
+.grid--card-list {
+  margin-bottom: 12rem;
 }
 
 .card {

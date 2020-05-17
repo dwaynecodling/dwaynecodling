@@ -162,12 +162,38 @@ h3 {
 ul {
   margin-bottom: 1rem; }
 
+.button {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  padding: 2rem;
+  border-radius: 3rem;
+  transition: .2s background-color; }
+  @media screen and (min-width: 40em) {
+    .button {
+      font-size: 1.6rem;
+      padding: 2rem 3rem; } }
+
+.button__align--center {
+  width: 100%;
+  text-align: center; }
+
+.button--load-more {
+  border-radius: 0;
+  border: 0.5px solid #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 6rem; }
+  .button--load-more:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
+
 .link--alt a {
   color: #000;
   background-color: #fff; }
 
 footer {
-  border-top: .1rem solid #666666; }
+  border-top: 0.1rem solid #666666; }
 
 .footer__top {
   align-items: center;
@@ -215,7 +241,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(var(--noOfColumns), 1fr); }
   .grid--list-of-3 {
-    border-bottom: .1rem solid #666666;
+    border-bottom: 0.1rem solid #666666;
     grid-gap: 4rem; }
     @media screen and (min-width: 82em) {
       .grid--list-of-3 {
@@ -236,11 +262,7 @@ footer {
 .card-wrapper {
   display: flex;
   justify-content: center;
-  align-content: center;
-  padding: 6rem; }
-  @media (max-width: 60em) {
-    .card-wrapper {
-      padding: 3rem; } }
+  align-content: center; }
 
 .grid__card-item {
   height: 100%;
@@ -252,6 +274,9 @@ footer {
   .grid__card-item:hover {
     transform: translateY(-0.5%);
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2); }
+
+.grid--card-list {
+  margin-bottom: 12rem; }
 
 .card {
   display: flex;
@@ -372,14 +397,8 @@ footer {
   text-align: center;
   position: relative; }
   .hero__content {
-    max-width: 64rem;
+    text-align: center;
     padding: 0; }
-    @media screen and (min-width: 34em) {
-      .hero__content {
-        padding: 0 4rem; } }
-    @media screen and (min-width: 48em) {
-      .hero__content {
-        padding: 0; } }
   .hero__subheading {
     font-size: 1.4rem;
     font-weight: lighter;
@@ -571,6 +590,79 @@ footer {
   .about-me__details {
     width: 64.5%;
     padding-left: 12rem; } }
+
+@media screen and (min-width: 48em) {
+  .my-posts__filter--mobile {
+    display: none; } }
+
+.my-posts__filter--label {
+  display: block;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem; }
+
+.my-posts__filter {
+  position: relative;
+  margin-bottom: 3rem; }
+  .my-posts__filter:before {
+    content: "";
+    width: 1px;
+    height: 4.5rem;
+    background-color: #1d1f21;
+    position: absolute;
+    bottom: 0;
+    right: 5rem; }
+
+.my-posts__select {
+  width: 100%;
+  border-radius: 0;
+  background: url(../assets/svg/dropdown.svg) no-repeat right 12px center #fff;
+  background-size: 2.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  border: 1px solid #1d1f21;
+  padding: 1rem 2rem;
+  appearance: none;
+  text-transform: uppercase; }
+
+.my-posts__filter--desktop {
+  display: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; }
+  @media screen and (min-width: 48em) {
+    .my-posts__filter--desktop {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin-bottom: 12rem;
+      border-bottom: 1px solid #666666; } }
+
+.my-posts__item {
+  position: relative;
+  padding-bottom: 2rem; }
+  .my-posts__item:not(last-of-type) {
+    margin-right: 4rem; }
+  .my-posts__item:hover {
+    position: relative;
+    cursor: pointer;
+    color: #c99550;
+    color: #c99550; }
+  .my-posts__item:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: -30%;
+    transition: 0.3s ease all; }
+  .my-posts__item:hover:after {
+    width: 160%;
+    transition: 0.3s ease all; }
 
 .page {
   font-size: 1.2rem; }

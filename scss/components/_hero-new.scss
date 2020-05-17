@@ -8,16 +8,10 @@
   position: relative;
 
   &__content {
-    max-width: 64rem;
+    text-align: center;
     padding: 0;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-1')) {
-      padding: 0 4rem;
-    }
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
-      padding: 0;
-    }
   }
 
   &__subheading {
