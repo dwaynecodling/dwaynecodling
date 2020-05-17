@@ -319,6 +319,12 @@ footer {
     width: calc(100% - 4rem);
     margin: 0 auto; }
 
+.navigation {
+  margin-bottom: 8rem; }
+  @media screen and (min-width: 62em) {
+    .navigation {
+      margin-bottom: 12rem; } }
+
 .navigation__container {
   font-size: 1.8rem;
   padding: 4rem;
