@@ -1,0 +1,93 @@
+.my-posts__filter--mobile {
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+        display: none;
+    }
+}
+
+.my-posts__filter--label {
+    display: block;
+    font-weight: 500;
+    font-size: $nav-text-uppercase;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+
+}
+
+.my-posts__filter {
+    position: relative;
+    margin-bottom: 3rem;
+
+    &:before {
+        content: "";
+        width: 1px;
+        height: 4.5rem;
+        background-color: $color-grey-container;
+        position: absolute;
+        bottom: 0;
+        right: 5rem;
+    }
+}
+
+.my-posts__select {
+    width: 100%;
+    border-radius: 0;
+    background: url(../assets/svg/dropdown.svg) no-repeat right 12px center #fff;
+    background-size: 2.5rem;
+    font-weight: 500;
+    font-size: $nav-text-uppercase;
+    border: 1px solid $color-grey-container;
+    padding: 1rem 2rem;
+    appearance: none;
+    text-transform: uppercase;
+}
+
+.my-posts__filter--desktop {
+    display: none;
+    font-weight: 500;
+    font-size: $nav-text-uppercase;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-bottom: 12rem;
+        border-bottom: 1px solid $color-grey;
+    }
+}
+
+.my-posts__item {
+    position: relative;
+
+    &:not(last-of-type) {
+        margin-right: 4rem;
+    }
+    padding-bottom: 2rem;
+
+
+    &:hover{
+        position: relative;
+        cursor: pointer;
+        color: $color-primary-gold;
+        color: $color-primary-gold;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background-color: $color-white;
+        bottom: 0;
+        left: -30%;
+        transition: 0.3s ease all;
+    }
+
+    &:hover:after {
+        width: 160%;
+        transition: 0.3s ease all;
+
+    }
+}

@@ -3,7 +3,7 @@
   grid-template-columns: repeat(var(--noOfColumns), 1fr);
 
   &--list-of-3 {
-    border-bottom: .1rem solid #666666;
+    border-bottom: .1rem solid $color-grey;
     grid-gap: 4rem;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-8')) {
