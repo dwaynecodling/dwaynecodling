@@ -3,14 +3,18 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   text-align: center;
   position: relative;
 
   &__content {
     text-align: center;
     padding: 0;
+    max-width: 540px;
 
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+
+    }
 
   }
 
@@ -87,8 +91,7 @@
     justify-content: center;
     border: .2rem solid #666;
     border-radius: 50%;
-    bottom: 4rem;
-    position: absolute;
+    margin-top: 18rem;
     height: 6rem;
     width: 6rem;
 
@@ -112,28 +115,33 @@
 }
 
 .hero__contact--container {
-  max-width: calc(var(--container) + 30rem);
+  max-width: calc(var(--container) + 40rem);
+  margin: 0 auto;
 }
 
 .hero__contact-wrapper {
-padding: 0 .2rem;
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
-    padding: 0 3rem;
+  display: none;
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+    display: flex;
+    padding: 0 4rem;
+    justify-content: space-between;
+    width: calc(100% + 108px);
+    align-items: center;
+  }
+}
+
+.hero__contact--position {
+
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+    position: relative;
+    top: 289px;
   }
 
 }
 
-.hero__contact--position {
-  position: fixed;
-  width: 100%;
-  top: 50%
-
-
-}
-
 .hero__social-links {
-display: inline-block;
+
 
 }
 
@@ -148,11 +156,10 @@ display: inline-block;
   text-decoration: none;
   color: $color-white;
   transform: rotate(-90deg);
-  display: inline-block;
-  position: absolute;
-  right: -100px;
+
+
 
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
-    right: -80px;
+
   }
 }

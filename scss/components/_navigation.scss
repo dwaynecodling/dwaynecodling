@@ -9,7 +9,7 @@
 .navigation__container {
     font-size: 1.8rem;
     padding: 4rem;
-    max-width: calc(var(--container) + 30rem);
+    max-width: calc(var(--container) + 40rem);
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
         display: flex;
