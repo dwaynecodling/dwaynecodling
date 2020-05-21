@@ -9,8 +9,6 @@
   &__content {
     text-align: center;
     padding: 0;
-    max-width: 540px;
-
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
 
@@ -28,8 +26,9 @@
   &__heading {
     font-size: var(--heading-1);
     font-weight: lighter;
-    margin-bottom: $padding-large;
 
+    max-width: 54rem;
+    margin: 0 auto  $padding-large;
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
       margin-bottom: 3.5rem;
     }
