@@ -1,0 +1,108 @@
+.contact-form {
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+        display: flex;
+        border-bottom: 1px solid $color-grey;
+        padding-bottom: 12rem;
+    }
+}
+
+.contact-form__img-wrapper {
+    display: block;
+
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+        width: 36.8% ;
+        min-height: 550px;
+    }
+}
+
+.contact-form__img {
+
+}
+
+.contact-form__content-wrapper {
+    background-color: #1D1F21;
+    padding: 2rem;
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+        width: 63.2%;
+        padding: 12rem;
+    }
+}
+
+.contact-form__content {
+    position: relative;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-grey;
+    margin-bottom: 6.5rem;
+
+
+    .info-snippet__bg-text {
+        z-index: 1;
+        color: $color-faded-number-2;
+        font-weight: 500;
+
+        @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+            font-size: 20rem;
+            top: -10rem;
+            left: -7rem;
+        }
+
+    }
+
+}
+
+.contact-form__title {
+    font-size: $heading-3;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form__text {
+    font-size: $body-text-main;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form__form {
+    fieldset {
+        border: none;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.contact-form__name-field {
+    margin-bottom: 1rem;
+}
+
+.contact-form__label {
+    font-size: $form-input-label;
+}
+
+.contact-form__input {
+    font-size: $form-input-text;
+    color: #999999;
+    padding: 2rem;
+    width: 100%;
+}
+
+.contact-form__textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.contact-form__control {
+margin-bottom: 4rem;
+}
+
+.contact-form__textarea-input {
+    width: 100%;
+    font-size: $form-input-text;
+    padding: 2rem;
+    color: #999999;
+    min-height: 200px;
+}
