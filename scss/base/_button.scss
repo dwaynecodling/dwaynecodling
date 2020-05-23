@@ -32,3 +32,23 @@
 
     }
 }
+
+button {
+        display: inline-block;
+        color: #fff;
+        font-size: 1.4rem;
+        text-decoration: none;
+        background-color: $color-primary-gold;
+        padding: $padding-small;
+        border-radius: 3rem;
+        transition: .2s background-color;
+
+        @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+            font-size: 1.6rem;
+            padding: $padding-small $padding-medium-1;
+        }
+
+        &:hover {
+            background-color: darken($color-primary-gold, 2%);
+        }
+}

@@ -173,6 +173,12 @@ h3 {
 ul {
   margin-bottom: 1rem; }
 
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 3rem; }
+
 img {
   max-width: 100%; }
 
@@ -201,6 +207,22 @@ img {
   .button--load-more:hover {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer; }
+
+button {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  background-color: #c99550;
+  padding: 2rem;
+  border-radius: 3rem;
+  transition: .2s background-color; }
+  @media screen and (min-width: 40em) {
+    button {
+      font-size: 1.6rem;
+      padding: 2rem 3rem; } }
+  button:hover {
+    background-color: #c79048; }
 
 .link--alt a {
   color: #000;
@@ -689,6 +711,87 @@ footer {
   .my-posts__item:hover:after {
     width: 160%;
     transition: 0.3s ease all; }
+
+@media screen and (min-width: 62em) {
+  .contact-form {
+    display: flex;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 12rem; } }
+
+.contact-form__img-wrapper {
+  display: block; }
+  @media screen and (min-width: 62em) {
+    .contact-form__img-wrapper {
+      width: 36.8%;
+      min-height: 550px; } }
+
+.contact-form__content-wrapper {
+  background-color: #1D1F21;
+  padding: 2rem; }
+  @media screen and (min-width: 62em) {
+    .contact-form__content-wrapper {
+      width: 63.2%;
+      padding: 12rem; } }
+
+.contact-form__content {
+  position: relative;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #666666;
+  margin-bottom: 6.5rem; }
+  .contact-form__content .info-snippet__bg-text {
+    z-index: 1;
+    color: #26292b;
+    font-weight: 500; }
+    @media screen and (min-width: 62em) {
+      .contact-form__content .info-snippet__bg-text {
+        font-size: 20rem;
+        top: -10rem;
+        left: -7rem; } }
+
+.contact-form__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2; }
+
+.contact-form__text {
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 2; }
+
+.contact-form__form fieldset {
+  border: none; }
+
+.contact-form__form button {
+  display: block;
+  margin: 0 auto; }
+
+.contact-form__name-field {
+  margin-bottom: 1rem; }
+
+.contact-form__label {
+  font-size: 1.4rem; }
+
+.contact-form__input {
+  font-size: 1.8rem;
+  color: #999999;
+  padding: 2rem;
+  width: 100%; }
+
+.contact-form__textarea {
+  width: 100%;
+  margin-bottom: 1rem; }
+
+.contact-form__control {
+  margin-bottom: 4rem; }
+
+.contact-form__textarea-input {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: #999999;
+  min-height: 200px; }
 
 .page {
   font-size: 1.2rem; }
