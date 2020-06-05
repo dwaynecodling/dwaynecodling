@@ -105,4 +105,11 @@ margin-bottom: 4rem;
     padding: 2rem;
     color: #999999;
     min-height: 140px;
+    font-family: Roboto, sans-serif;
+
+    ::placeholder {
+        font-size: 1.8rem;
+        font-family: Roboto, sans-serif;
+
+    }
 }
