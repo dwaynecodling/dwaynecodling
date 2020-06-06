@@ -80,15 +80,11 @@
 </section>
 
 <script>
-    function sendMessage(formData){
-        $.ajax( this.getAttribute("action") , {
-            type: "post",
+    function sendFormData(action, method, formData, callback){
+        $.ajax( action , {
+            type: method,
             data: formData,
-            success: function(data)
-            {
-                // handle response in UI
-                alert(data);
-            }
+            success: callback
         });
     }
 
@@ -100,7 +96,12 @@
             grecaptcha.execute('6Lf5DgEVAAAAAAFVzjdmsdIe1yRIiBrsx9ZzBspa', {action: 'send_message'}).then(function(token) {
                 fData.append("token", token);
                 fData.append("action", "send_message");
-                sendMessage(fData);
+                sendFormData(this.getAttribute("action"), this.getAttribute("method"), fData, data => {
+
+                    // handle the response in UI (response data would be { Success: boolean, Message: string })
+                    alert(data);
+
+                });
             });
         });
     });
