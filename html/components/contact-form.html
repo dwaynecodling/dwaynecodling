@@ -8,6 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Form</title>
     <link rel="stylesheet" href="/dwaynesite/public_html/assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf5DgEVAAAAAAFVzjdmsdIe1yRIiBrsx9ZzBspa"></script>
 </head>
 
 <body>
@@ -26,25 +31,27 @@
                     <p class="contact-form__text">I aim to respond as quickly as possible, and if you need any help, why not arrange a day during the week for you to pop in and meet the rest of the JH team?</p>
                 </div>
 
-                <form action="" method="get" class="contact-form__form">
+                <form id="contactForm" action="/dwaynesite/public_html/contact.php" method="post" class="contact-form__form">
                     <fieldset>
                         <div id="field-name-field" class="contact-form__name-field">
                             <label for="name-field" class="contact-form__label">What is your name?</label>
                         </div>
                         <div class="contact-form__control">
-                            <input type="text" class="contact-form__input" id="name-field" placeholder="Your name">
+                            <input name="name" type="text" class="contact-form__input" id="name-field" placeholder="Your name">
                         </div>
                         <div id="field-email-field" class="contact-form__name-field">
                             <label for="email-field" class="contact-form__label">What is your email?</label>
                         </div>
                         <div class="contact-form__control">
-                            <input type="text" class="contact-form__input" id="email-field" placeholder="Your email">
+                            <input name="email" type="email" class="contact-form__input" id="email-field" placeholder="Your email">
                         </div>
                         <div id="field-textarea" class="contact-form__textarea">
                             <label for="textarea" class="contact-form__label">How can I help?</label>
                         </div>
                         <div class="contact-form__control">
-                    <textarea class="contact-form__textarea-input"
+                    <textarea
+                            name="message"
+                            class="contact-form__textarea-input"
                               id="textarea"
                               placeholder="Your message"
                     ></textarea>
@@ -71,6 +78,33 @@
 
     </div>
 </section>
+
+<script>
+    function sendMessage(formData){
+        $.ajax( this.getAttribute("action") , {
+            type: "post",
+            data: formData,
+            success: function(data)
+            {
+                // handle response in UI
+                alert(data);
+            }
+        });
+    }
+
+    $('#contactForm').submit(function(ev) {
+        ev.preventDefault();
+        let fData = new FormData(this);
+
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lf5DgEVAAAAAAFVzjdmsdIe1yRIiBrsx9ZzBspa', {action: 'send_message'}).then(function(token) {
+                fData.append("token", token);
+                fData.append("action", "send_message");
+                sendMessage(fData);
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
