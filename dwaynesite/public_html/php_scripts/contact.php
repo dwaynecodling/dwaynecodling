@@ -45,8 +45,8 @@ $response = json_decode($result, true);
 // Check reCaptcha response
 if($response["success"] == '1' && $response["action"] == $action && $response["score"] >= 0.5) {
 
-//    $h = "From: $email";
-//    mail("dwayne@wearejh.com", "Message from $name", $message, $h);
+    $h = "From: $email";
+    mail("hello@dwaynecodling.com", "Message from $name", $message, $h);
 
     outputResult(true, "Message sent");
 } else {
