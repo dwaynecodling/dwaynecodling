@@ -29,4 +29,4 @@ jobs:
         ftp-username: ftpaccess@dwaynecodling.com
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dwaynesite/public_html/
-        git-ftp-args: --remote-root "/from_git" --insecure
+        git-ftp-args: --remote-root="/from_git" --insecure
