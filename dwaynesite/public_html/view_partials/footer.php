@@ -1,6 +1,6 @@
 <footer>
     <?= \Nano\ViewHelper::getPartialContent("cta") ?>
-    <div class="container footer__container">
+    <div class="footer__container">
         <div class="footer__bottom">
             <a class="footer__link" href="/home">&copy;2020 Dwayne Codling</a>
             <a class="footer__link" href="/home">DwayneCodling.</a>

@@ -6,7 +6,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Form</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -17,47 +17,52 @@
 
 <body>
 <?= \Nano\ViewHelper::getPartialContent("nav") ?>
-<section>
-    <div class="container">
-        <div class="contact-form">
-            <picture class="contact-form__img-wrapper">
-                <source srcset=""
-                        media="(min-width: 768px)">
-                <img class="contact-form__img" src="/assets/img/map.jpg" alt="Office Map">
-            </picture>
-            <div class="contact-form__content-wrapper">
-                <div class="contact-form__content">
-                    <span class="info-snippet__bg-text">05</span>
-                    <h3 class="contact-form__title">You can also find me in the office</h3>
-                    <p class="contact-form__text">I aim to respond as quickly as possible, and if you need any help, why not arrange a day during the week for you to pop in and meet the rest of the JH team?</p>
-                </div>
 
-                <form id="contactForm" action="/form/contact" method="post" class="contact-form__form">
-                    <fieldset>
-                        <div id="field-name-field" class="contact-form__name-field">
-                            <label for="name-field" class="contact-form__label">What is your name?</label>
-                        </div>
-                        <div class="contact-form__control">
-                            <input name="name" type="text" class="contact-form__input" id="name-field" placeholder="Your name">
-                        </div>
-                        <div id="field-email-field" class="contact-form__name-field">
-                            <label for="email-field" class="contact-form__label">What is your email?</label>
-                        </div>
-                        <div class="contact-form__control">
-                            <input name="email" type="email" class="contact-form__input" id="email-field" placeholder="Your email">
-                        </div>
-                        <div id="field-textarea" class="contact-form__textarea">
-                            <label for="textarea" class="contact-form__label">How can I help?</label>
-                        </div>
-                        <div class="contact-form__control">
+<main class="content" role="main">
+
+    <?= \Nano\ViewHelper::getPartialContent("hero") ?>
+
+    <section>
+        <div class="container">
+            <div class="contact-form">
+                <picture class="contact-form__img-wrapper">
+                    <source srcset=""
+                            media="(min-width: 768px)">
+                    <img class="contact-form__img" src="/assets/img/map.jpg" alt="Office Map">
+                </picture>
+                <div class="contact-form__content-wrapper">
+                    <div class="contact-form__content">
+                        <span class="info-snippet__bg-text">05</span>
+                        <h3 class="contact-form__title">You can also find me in the office</h3>
+                        <p class="contact-form__text">I aim to respond as quickly as possible, and if you need any help, why not arrange a day during the week for you to pop in and meet the rest of the JH team?</p>
+                    </div>
+
+                    <form id="contactForm" action="/form/contact" method="post" class="contact-form__form">
+                        <fieldset>
+                            <div id="field-name-field" class="contact-form__name-field">
+                                <label for="name-field" class="contact-form__label">What is your name?</label>
+                            </div>
+                            <div class="contact-form__control">
+                                <input name="name" type="text" class="contact-form__input" id="name-field" placeholder="Your name">
+                            </div>
+                            <div id="field-email-field" class="contact-form__name-field">
+                                <label for="email-field" class="contact-form__label">What is your email?</label>
+                            </div>
+                            <div class="contact-form__control">
+                                <input name="email" type="email" class="contact-form__input" id="email-field" placeholder="Your email">
+                            </div>
+                            <div id="field-textarea" class="contact-form__textarea">
+                                <label for="textarea" class="contact-form__label">How can I help?</label>
+                            </div>
+                            <div class="contact-form__control">
                     <textarea
-                        name="message"
-                        class="contact-form__textarea-input"
-                        id="textarea"
-                        placeholder="Your message"
+                            name="message"
+                            class="contact-form__textarea-input"
+                            id="textarea"
+                            placeholder="Your message"
                     ></textarea>
-                        </div>
-                        <button>
+                            </div>
+                            <button>
                     <span class="hero__button-content">
                         <span class="hero__button-text">Send message</span>
                         <svg class="hero__button-arrow" width="18" height="14"
@@ -70,13 +75,19 @@
                                       stroke-linejoin="round"
                                       d="M12 6L6 0 0 6"/></g></svg>
                     </span>
-                        </button>
-                    </fieldset>
-                </form>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <?= \Nano\ViewHelper::getPartialContent("latest_posts") ?>
+
+</main>
+
+<?= \Nano\ViewHelper::getPartialContent("footer") ?>
 
 <script>
     function sendFormData(action, method, formData, callback){
@@ -117,7 +128,6 @@
         });
     });
 </script>
-<?= \Nano\ViewHelper::getPartialContent("footer") ?>
 </body>
 
 </html>

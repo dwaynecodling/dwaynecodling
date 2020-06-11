@@ -16,9 +16,9 @@ function getPost($key, $fallback=""){
 }
 
 if (isset($_POST["email"])) {
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
 } else {
-    outputResult(false, "Email address is missing");
+    outputResult(false, "Email address is not valid");
     exit;
 }
 

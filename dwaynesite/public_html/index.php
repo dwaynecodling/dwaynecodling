@@ -39,8 +39,18 @@ $router->onGET("/about-me", function($req, $res, $next){
     ViewHelper::renderView("about_me");
 });
 
-$router->onGET("/blog", function($req, $res, $next){
-    ViewHelper::renderView("blog_posts");
+$router->onGET("/posts", function($req, $res, $next){
+    ViewHelper::renderView("all_posts");
+});
+
+$router->onGET("/post/{identifier}", function($req, $res, $next){
+
+    // get the identifier/slug
+    $identifier = $req['params']['identifier'];
+
+    ViewHelper::renderView("single_post", [
+        "identifier" => $identifier
+    ]);
 });
 
 
