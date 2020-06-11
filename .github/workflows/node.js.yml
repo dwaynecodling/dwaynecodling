@@ -22,11 +22,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm run build --if-present
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+    - name: Deploy app
+      uses: isthatcentered/dist-to-ftp@master
       with:
-        ftp-server: ftp://dwaynecodling.com:21/from_git
-        ftp-username: ftpaccess@dwaynecodling.com
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dwaynesite/public_html/
-        git-ftp-args: --insecure
+        user: ftpaccess@dwaynecodling.com
+        password: ${{ secrets.FTP_PASSWORD }}
+        host: dwaynecodling.com
+        port: 21 
+        path: dwaynesite/public_html
+        into: ./
