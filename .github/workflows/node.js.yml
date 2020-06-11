@@ -25,8 +25,8 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://dwaynecodling.com:21/
+        ftp-server: ftp://dwaynecodling.com:21/from_git
         ftp-username: ftpaccess@dwaynecodling.com
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dwaynesite/public_html/
-        git-ftp-args: --remote-root="/from_git" --insecure
+        git-ftp-args: --insecure
