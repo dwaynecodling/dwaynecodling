@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-<?= \Nano\ViewHelper::getPartialContent("nav") ?>
+<%- include("../partials/nav") %>
 
 <main class="content" role="main">
 
@@ -86,9 +86,9 @@
         </div>
     </section>
 
-    <?= \Nano\ViewHelper::getPartialContent("latest_posts") ?>
+    <%- include("../partials/latest_posts") %>
 </main>
 
-<?= \Nano\ViewHelper::getPartialContent("footer") ?>
+<%- include("../partials/footer") %>
 </body>
 </html>

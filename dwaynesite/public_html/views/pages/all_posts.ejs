@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-<?= \Nano\ViewHelper::getPartialContent("nav") ?>
+<%- include("../partials/nav") %>
 <main class="content" role="main">
 
     <section>
@@ -63,11 +63,11 @@
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/meet-magento@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/meet-magento@2x.webp">
-                            <source type="image/webp" srcset="assets/img/meet-magento.webp">
+                            <source type="image/jpeg" srcset="/assets/img/meet-magento@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/meet-magento@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/meet-magento.webp">
                             <img class="card__img"
-                                 src="assets/img/meet-magento.jpg"
+                                 src="/assets/img/meet-magento.jpg"
                                  alt="Meet Magento"
                                  height="160"
                                  width="360"/>
@@ -89,11 +89,11 @@
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/css-day-2019@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/css-day-2019@2x.webp">
-                            <source type="image/webp" srcset="assets/img/css-day-2019.webp">
+                            <source type="image/jpeg" srcset="/assets/img/css-day-2019@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/css-day-2019@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/css-day-2019.webp">
                             <img class="card__img"
-                                 src="assets/img/css-day-2019.jpg"
+                                 src="/assets/img/css-day-2019.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -114,11 +114,11 @@
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/new-adventures-2019@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/new-adventures-2019@2x.webp">
-                            <source type="image/webp" srcset="assets/img/new-adventures-2019.webp">
+                            <source type="image/jpeg" srcset="/assets/img/new-adventures-2019@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/new-adventures-2019@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/new-adventures-2019.webp">
                             <img class="card__img"
-                                 src="assets/img/css-day-2019.jpg"
+                                 src="/assets/img/css-day-2019.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -139,11 +139,11 @@
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/react-amsterdam@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/react-amsterdam@2x.webp">
-                            <source type="image/webp" srcset="assets/img/react-amsterdam.webp">
+                            <source type="image/jpeg" srcset="/assets/img/react-amsterdam@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/react-amsterdam@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/react-amsterdam.webp">
                             <img class="card__img"
-                                 src="assets/img/react-amsterdam.jpg"
+                                 src="/assets/img/react-amsterdam.jpg"
                                  alt="React Amsterdam Conference"
                                  height="160"
                                  width="360"/>
@@ -165,11 +165,11 @@
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/pixel-pioneers@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/pixel-pioneers@2x.webp">
-                            <source type="image/webp" srcset="assets/img/pixel-pioneers.webp">
+                            <source type="image/jpeg" srcset="/assets/img/pixel-pioneers@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/pixel-pioneers@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/pixel-pioneers.webp">
                             <img class="card__img"
-                                 src="assets/img/pixel-pioneers.jpg"
+                                 src="/assets/img/pixel-pioneers.jpg"
                                  alt="Pixel Pioneers"
                                  height="160"
                                  width="360"/>
@@ -189,11 +189,11 @@
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/frontend-north-east@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/frontend-north-east@2x.webp">
-                            <source type="image/webp" srcset="assets/img/frontend-north-east.webp">
+                            <source type="image/jpeg" srcset="/assets/img/frontend-north-east@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/frontend-north-east@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/frontend-north-east.webp">
                             <img class="card__img"
-                                 src="assets/img/frontend-north-east.jpg"
+                                 src="/assets/img/frontend-north-east.jpg"
                                  alt="Frontend North East The Conference"
                                  height="160"
                                  width="360"/>
@@ -213,11 +213,11 @@
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/google-pwa-training@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/google-pwa-training@2x.webp">
-                            <source type="image/webp" srcset="assets/img/google-pwa-training.webp">
+                            <source type="image/jpeg" srcset="/assets/img/google-pwa-training@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/google-pwa-training@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/google-pwa-training.webp">
                             <img class="card__img"
-                                 src="assets/img/google-pwa-training.jpg"
+                                 src="/assets/img/google-pwa-training.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -247,6 +247,6 @@
 
 </main>
 
-<?= \Nano\ViewHelper::getPartialContent("footer") ?>
+<%- include("../partials/footer") %>
 </body>
 </html>

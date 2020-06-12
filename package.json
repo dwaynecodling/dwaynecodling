@@ -2,10 +2,10 @@
   "name": "template",
   "version": "1.0.0",
   "description": "Dashboard app",
-  "main": "index.js",
+  "main": "dwaynesite/public_html/index.js",
   "scripts": {
     "watch:sass": "node-sass scss/main.scss dwaynesite/public_html/assets/css/style.css -w",
-    "devserver": "live-server",
+    "devserver": "node .",
     "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss dwaynesite/public_html/assets/css/style.comp.css",
     "concat:css": "concat -o dwaynesite/public_html/assets/css/style.concat.css css/style.comp.css",
@@ -17,15 +17,34 @@
   "author": "Dwayne",
   "license": "ISC",
   "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/markdown-it": "^0.0.9",
+    "@types/node": "^14.0.13",
+    "@types/nodemailer": "^6.4.0",
+    "@types/superagent": "^4.1.7",
     "autoprefixer": "^9.7.1",
     "concat": "^1.0.3",
     "minimist": "^1.2.5",
     "node-sass": "^4.14.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^7.1.1",
+    "reloadify": "^0.2.2"
   },
   "dependencies": {
-    "live-server": "^1.2.1"
+    "compression": "^1.7.4",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "gray-matter": "^4.0.2",
+    "he": "^1.2.0",
+    "markdown-it": "^11.0.0",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-emoji": "^1.4.0",
+    "markdown-it-modify-token": "^1.0.2",
+    "markdown-it-task-checkbox": "^1.0.6",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.8",
+    "superagent": "^5.2.2",
+    "typescript": "^3.7.4"
   },
   "resolutions": {
     "minimist": "^1.2.5"

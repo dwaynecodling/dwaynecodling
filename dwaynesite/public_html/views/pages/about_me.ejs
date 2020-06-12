@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-<?= \Nano\ViewHelper::getPartialContent("nav") ?>
+<%- include("../partials/nav") %>
 
 <main class="content" role="main">
-    <?= \Nano\ViewHelper::getPartialContent("know_more") ?>
+    <%- include("../partials/know_more") %>
 
     <section>
         <div class="container">
@@ -38,7 +38,7 @@
                                 <li class="about-me__quick-link"><a href="#family">Family Man</a></li>
                             </ul>
                         </div>
-                        <img class="about-me__img" src="assets/img/dwayne_sml.jpg" alt="Dwayne Codling">
+                        <img class="about-me__img" src="/assets/img/dwayne_sml.jpg" alt="Dwayne Codling">
                     </div>
 
                     <div class="about-me__details">
@@ -205,7 +205,7 @@
 
 </main>
 
-<?= \Nano\ViewHelper::getPartialContent("footer") ?>
+<%- include("../partials/footer") %>
 
 </body>
 </html>

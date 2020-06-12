@@ -16,11 +16,11 @@
 </head>
 
 <body>
-<?= \Nano\ViewHelper::getPartialContent("nav") ?>
+<%- include("../partials/nav") %>
 
 <main class="content" role="main">
 
-    <?= \Nano\ViewHelper::getPartialContent("hero") ?>
+    <%- include("../partials/hero") %>
 
     <section>
         <div class="container">
@@ -83,11 +83,11 @@
         </div>
     </section>
 
-    <?= \Nano\ViewHelper::getPartialContent("latest_posts") ?>
+    <%- include("../partials/latest_posts") %>
 
 </main>
 
-<?= \Nano\ViewHelper::getPartialContent("footer") ?>
+<%- include("../partials/footer") %>
 
 <script>
     function sendFormData(action, method, formData, callback){
