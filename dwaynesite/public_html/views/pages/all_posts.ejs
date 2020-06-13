@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-<?= \Nano\ViewHelper::getPartialContent("nav") ?>
+<%- include("../partials/nav") %>
 <main class="content" role="main">
 
     <section>
@@ -61,13 +61,61 @@
             </ul>
             <div class="grid grid--card-list">
                 <article class="grid__card-item">
-                    <div class="card">
+                    <a href="/post/tech-nottingham-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/meet-magento@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/meet-magento@2x.webp">
-                            <source type="image/webp" srcset="assets/img/meet-magento.webp">
+                            <source type="image/jpeg" srcset="/assets/img/tech-nottingham@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/tech-nottingham@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/tech-nottingham.webp">
                             <img class="card__img"
-                                 src="assets/img/meet-magento.jpg"
+                                 src="/assets/img/tech-nottingham.jpg"
+                                 alt="Meet Magento"
+                                 height="160"
+                                 width="360"/>
+                        </picture>
+                        <div class="card__content">
+                            <time datetime="2020-08-06" class="card__date">8th June, 2020</time>
+                            <h3 class="card__header">Tech Nottingham</h3>
+                            <p class="card__text">The talk will focus on the
+                                <strong> generational wealth gap</strong> in
+                                and how this facilitates a difference in circumstances between different races. </p>
+                        </div>
+                        <time  datetime="PT35M" class="card__read-time">
+                            35 min read
+                        </time>
+                    </a>
+                </article>
+                <article class="grid__card-item">
+                    <a href="/post/meet-magento" class="card">
+                        <picture class="card__img-container">
+                            <source type="image/jpeg" srcset="/assets/img/tech-nottingham@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/tech-nottingham@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/tech-nottingham.webp">
+                            <img class="card__img"
+                                 src="/assets/img/tech-nottingham.jpg"
+                                 alt="Meet Magento"
+                                 height="160"
+                                 width="360"/>
+                        </picture>
+                        <div class="card__content">
+                            <time datetime="2019-09-05" class="card__date">8th June, 2020</time>
+                            <h3 class="card__header">Tech Nottingham</h3>
+                            <p class="card__text">The talk will focus on the
+                                <strong> generational wealth gap</strong> in
+                                and how this facilitates a difference in circumstances between different races. </p>
+                        </div>
+                        <time  datetime="PT4M" class="card__read-time">
+                            4 min read
+                        </time>
+                    </a>
+                </article>
+                <article class="grid__card-item">
+                    <a href="/post/meet-magento" class="card">
+                        <picture class="card__img-container">
+                            <source type="image/jpeg" srcset="/assets/img/meet-magento@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/meet-magento@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/meet-magento.webp">
+                            <img class="card__img"
+                                 src="/assets/img/meet-magento.jpg"
                                  alt="Meet Magento"
                                  height="160"
                                  width="360"/>
@@ -84,16 +132,16 @@
                         <time  datetime="PT4M" class="card__read-time">
                             4 min read
                         </time>
-                    </div>
+                    </a>
                 </article>
                 <article class="grid__card-item">
-                    <div class="card">
+                    <a href="/post/css-day" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/css-day-2019@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/css-day-2019@2x.webp">
-                            <source type="image/webp" srcset="assets/img/css-day-2019.webp">
+                            <source type="image/jpeg" srcset="/assets/img/css-day-2019@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/css-day-2019@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/css-day-2019.webp">
                             <img class="card__img"
-                                 src="assets/img/css-day-2019.jpg"
+                                 src="/assets/img/css-day-2019.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -109,16 +157,16 @@
                         <time datetime="PT4M" class="card__read-time">
                             4 min read
                         </time>
-                    </div>
+                    </a>
                 </article>
                 <article class="grid__card-item">
-                    <div class="card">
+                    <a href="" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/new-adventures-2019@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/new-adventures-2019@2x.webp">
-                            <source type="image/webp" srcset="assets/img/new-adventures-2019.webp">
+                            <source type="image/jpeg" srcset="/assets/img/new-adventures-2019@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/new-adventures-2019@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/new-adventures-2019.webp">
                             <img class="card__img"
-                                 src="assets/img/css-day-2019.jpg"
+                                 src="/assets/img/css-day-2019.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -134,16 +182,16 @@
                         <time datetime="PT4M" class="card__read-time">
                             4 min read
                         </time>
-                    </div>
+                    </a>
                 </article>
                 <article class="grid__card-item">
                     <div class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/react-amsterdam@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/react-amsterdam@2x.webp">
-                            <source type="image/webp" srcset="assets/img/react-amsterdam.webp">
+                            <source type="image/jpeg" srcset="/assets/img/react-amsterdam@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/react-amsterdam@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/react-amsterdam.webp">
                             <img class="card__img"
-                                 src="assets/img/react-amsterdam.jpg"
+                                 src="/assets/img/react-amsterdam.jpg"
                                  alt="React Amsterdam Conference"
                                  height="160"
                                  width="360"/>
@@ -163,13 +211,13 @@
                     </div>
                 </article>
                 <article class="grid__card-item">
-                    <div class="card">
+                    <a href="/post/pixel-pioneers" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/pixel-pioneers@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/pixel-pioneers@2x.webp">
-                            <source type="image/webp" srcset="assets/img/pixel-pioneers.webp">
+                            <source type="image/jpeg" srcset="/assets/img/pixel-pioneers@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/pixel-pioneers@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/pixel-pioneers.webp">
                             <img class="card__img"
-                                 src="assets/img/pixel-pioneers.jpg"
+                                 src="/assets/img/pixel-pioneers.jpg"
                                  alt="Pixel Pioneers"
                                  height="160"
                                  width="360"/>
@@ -184,16 +232,16 @@
                         <time datetime="PT4M" class="card__read-time">
                             4 min read
                         </time>
-                    </div>
+                    </a>
                 </article>
                 <article class="grid__card-item">
-                    <div class="card">
+                    <a href="/post/frontend-north-east" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/frontend-north-east@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/frontend-north-east@2x.webp">
-                            <source type="image/webp" srcset="assets/img/frontend-north-east.webp">
+                            <source type="image/jpeg" srcset="/assets/img/frontend-north-east@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/frontend-north-east@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/frontend-north-east.webp">
                             <img class="card__img"
-                                 src="assets/img/frontend-north-east.jpg"
+                                 src="/assets/img/frontend-north-east.jpg"
                                  alt="Frontend North East The Conference"
                                  height="160"
                                  width="360"/>
@@ -208,16 +256,16 @@
                         <time datetime="PT4M" class="card__read-time">
                             4 min read
                         </time>
-                    </div>
+                    </a>
                 </article>
                 <article class="grid__card-item">
-                    <div class="card">
+                    <a href="/post/google-pwa-training" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="assets/img/google-pwa-training@2x.jpg">
-                            <source type="image/webp" srcset="assets/img/google-pwa-training@2x.webp">
-                            <source type="image/webp" srcset="assets/img/google-pwa-training.webp">
+                            <source type="image/jpeg" srcset="/assets/img/google-pwa-training@2x.jpg">
+                            <source type="image/webp" srcset="/assets/img/google-pwa-training@2x.webp">
+                            <source type="image/webp" srcset="/assets/img/google-pwa-training.webp">
                             <img class="card__img"
-                                 src="assets/img/google-pwa-training.jpg"
+                                 src="/assets/img/google-pwa-training.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -233,7 +281,7 @@
                         <time datetime="PT4M" class="card__read-time">
                             4 min read
                         </time>
-                    </div>
+                    </a>
                 </article>
             </div>
             <div class="container">
@@ -247,6 +295,6 @@
 
 </main>
 
-<?= \Nano\ViewHelper::getPartialContent("footer") ?>
+<%- include("../partials/footer") %>
 </body>
 </html>

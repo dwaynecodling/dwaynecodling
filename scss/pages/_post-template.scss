@@ -40,27 +40,29 @@
     margin-bottom: 4rem;
 }
 
-.post-template__text--underline {
-    padding-bottom: 4rem;
-    border-bottom: 1px solid $color-grey;
+hr {
+   margin-bottom: 4rem;
 }
-.post-template__blockquote {
-    font-size: $quotation-text;
-    font-weight: 300;
-    margin-bottom: 8rem;
-    margin-top: 8rem;
-    line-height: 4.2rem;
-    position: relative;
 
-    &:before {
-        content: '“';
-        position: absolute;
-        top: 9.5rem;
-        left: -7.5rem;
-        font-family: Rockwell ,sans-serif;
-        font-size: 27rem;
-        font-weight: 700;
-        color: $color-text;
-        z-index: -1;
+blockquote {
+    .post-template__text {
+        font-size: $quotation-text;
+        font-weight: 300;
+        margin-bottom: 8rem;
+        margin-top: 8rem;
+        line-height: 4.2rem;
+        position: relative;
+
+        &:before {
+            content: '“';
+            position: absolute;
+            top: 9.5rem;
+            left: -7.5rem;
+            font-family: Rockwell, sans-serif;
+            font-size: 27rem;
+            font-weight: 700;
+            color: $color-text;
+            z-index: -1;
+        }
     }
 }
