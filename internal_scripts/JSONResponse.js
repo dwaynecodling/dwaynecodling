@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.JSONResponse = exports.JSONResp = void 0;
 class JSONResp {
     constructor(success, title, messageOrData, data) {
         this._data = {};

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.PostRepository = void 0;
 const MarkdownTool_1 = require("../internal_scripts/MarkdownTool");
 var PostRepository;
 (function (PostRepository) {
@@ -18,7 +19,7 @@ var PostRepository;
     }
     PostRepository.getBySlug = getBySlug;
     async function getAllPosts() {
-        let dir = fs.readdirSync(path.resolve(__dirname, "../posts/"));
+        let dir = fs.readdirSync(path.resolve(__dirname, "../views/posts/"));
         let results = [];
         for (const filePath of dir) {
             if (filePath.endsWith(".md")) {
@@ -29,7 +30,7 @@ var PostRepository;
     }
     PostRepository.getAllPosts = getAllPosts;
     async function getPostFileContentStructure(fileName) {
-        let filePath = path.resolve(__dirname, "../posts/", fileName);
+        let filePath = path.resolve(__dirname, "../views/posts/", fileName);
         if (fs.existsSync(filePath)) {
             let content = fs.readFileSync(filePath, { encoding: "utf8" });
             let structure = matter(content);

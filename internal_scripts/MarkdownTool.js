@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.MarkdownTool = void 0;
 class MarkdownTool {
     constructor() {
         this.mdLib = require("markdown-it");

@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isVoid = exports.isEmptyOrUndefined = exports.isNullOrUndefined = exports.isNonValue = exports.isEmailFormatValid = void 0;
 function isEmailFormatValid(email) {
     let emailRegexPattern = /[a-zA-Z0-9-_]+(?:[.a-zA-Z0-9-_]*[a-zA-Z0-9-_]+)*@[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]+)*/gm;
     return emailRegexPattern.test(email.trim());
