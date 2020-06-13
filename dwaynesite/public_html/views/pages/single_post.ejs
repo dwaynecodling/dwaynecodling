@@ -37,8 +37,8 @@
 
         <div class="container">
             <div class="hero__content footer__content">
-                <p class="hero__subheading">5 SEP 2019 · 4 MINS READ </p>
-                <h2 class="hero__heading"><%- data.title %></h2>
+                <p class="hero__subheading"><%- data.date %> · <%- data.read %> </p>
+                <h1 class="hero__heading"><%- data.title %></h1>
             </div>
         </div>
     </section>
@@ -46,6 +46,12 @@
         <div class="container">
             <div class="post-template__header">
                 <picture class="post-template__img-wrapper">
+                    <source type="image/jpeg" srcset="<%= data.hero_2xjpeg %>">
+                    <source type="image/webp" srcset="<%= data.hero_2xwebp %>">
+                    <source type="image/webp" srcset="<%= data.hero_webp %>">
+                    <source type="image/webp" srcset="<%= data.hero_sml_webp %>">
+                    <source srcset="<%= data.hero_sml %>"
+                            media="(min-width: 768px)">
                     <img class="post-template__img" src="<%= data.hero %>" alt="<%= data.alt %>">
                 </picture>
             </div>
