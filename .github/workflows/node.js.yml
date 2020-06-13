@@ -29,5 +29,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         host: dwaynecodling.com
         port: 21 
-        path: dwaynesite/public_html
+        path: ./
         into: ./
