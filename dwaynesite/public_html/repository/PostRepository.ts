@@ -31,7 +31,7 @@ export namespace PostRepository{
     }
 
     export async function getAllPosts(): Promise<IPostEntry[]> {
-        let dir = fs.readdirSync(path.resolve(__dirname, "../posts/"));
+        let dir = fs.readdirSync(path.resolve(__dirname, "../views/posts/"));
         let results = [];
 
         for (const filePath of dir) {
@@ -44,7 +44,7 @@ export namespace PostRepository{
     }
 
     export async function getPostFileContentStructure(fileName:string):Promise<IPostEntry>{
-        let filePath = path.resolve(__dirname,"../posts/", fileName);
+        let filePath = path.resolve(__dirname,"../views/posts/", fileName);
         if (fs.existsSync( filePath )){
             let content = fs.readFileSync(filePath, { encoding : "utf8" });
             let structure = matter(content);
