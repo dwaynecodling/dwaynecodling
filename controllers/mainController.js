@@ -47,7 +47,7 @@ home.post("/form/contact", async function (req, res) {
             const he = require("he");
             // send the email
             await Mailer_1.Mailer.sendMail({
-                to: { name: "Daryl Cecile", email: "darylcecile@gmail.com" },
+                to: { name: "Dwayne Codling", email: "hello@dwaynecodling.com" },
                 from: { name: name, email: email },
                 subject: `Message from ${name}`,
                 body: {

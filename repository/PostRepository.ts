@@ -31,7 +31,7 @@ export namespace PostRepository{
     }
 
     export async function getAllPosts(): Promise<IPostEntry[]> {
-        let dir = fs.readdirSync(path.resolve(__dirname, "../views/posts/"));
+        let dir = fs.readdirSync(path.resolve(__dirname,"../views/posts/"));
         let results = [];
 
         for (const filePath of dir) {

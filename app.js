@@ -18,4 +18,4 @@ let server = app.listen(3000, () => {
     console.log("Ready");
 });
 module.exports = server;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=app.js.map
