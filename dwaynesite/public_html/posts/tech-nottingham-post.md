@@ -1,8 +1,14 @@
 ---
 slug: tech-nottingham-post
-hero: /assets/img/amsterdam.jpg
-alt:  Amsterdam
+hero: /assets/img/nottingham.jpg
+hero_sml: /assets/img/nottingham-sml.jpg
+hero_sml_webp: /assets/img/nottingham-sml.webp
+hero_2xwebp: /assets/img/nottingham-lrg.webp
+hero_2xjpeg: /assets/img/nottingham-lrg.jpg
+alt:  Nottingham
 title: My <strong>Talk</strong> at Tech Nottingham
+date: 8th June 2020
+read: 35 MINS READ
 ---
 
 ### Introduction
