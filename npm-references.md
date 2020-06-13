@@ -24,7 +24,7 @@ You will then be prompted to answer a series of questions in order to create you
 package name: (package) ".."
 version: (1.0.0)
 description: ""
-entry point: (index.js)
+entry point: (app.js)
 test command: ""
 git repository: ""
 keywords: ""
@@ -41,7 +41,7 @@ About to write to /Users/curtislee/Desktop/package/package.json:
   "name": "my package",
   "version": "1.0.0",
   "description": "package test",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

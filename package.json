@@ -2,7 +2,7 @@
   "name": "template",
   "version": "1.0.0",
   "description": "Dashboard app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "watch:sass": "node-sass scss/main.scss assets/css/style.css -w",
     "devserver": "node .",
