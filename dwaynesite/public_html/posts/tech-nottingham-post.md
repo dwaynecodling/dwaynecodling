@@ -13,7 +13,7 @@ read: 35 MINS READ
 
 ### Introduction
 
-So my name is Dwayne Codling I am a front-end developer at JH I've been doing frontend for the last three years and before becoming a front-end I was a lecturer Nottingham College for three years so you never know.
+So my name is Dwayne Codling I am a front-end develonpmper at JH I've been doing frontend for the last three years and before becoming a front-end I was a lecturer Nottingham College for three years so you never know.
 
 My arrival in the tech industry was not a traditional one no CS degree here. I like my place within the tech industry doing front-end I love it something that I actually love going to work to and love building stuff and I think if I can have some way of doing some type of things where I'm helping people on a day to day basis then I'm happy so I think that role suits me well.
 
