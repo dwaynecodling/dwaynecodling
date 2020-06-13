@@ -31,3 +31,4 @@ jobs:
         port: 21 
         path: ./
         into: ./
+        cleanupExisting: true
