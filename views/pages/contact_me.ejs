@@ -121,12 +121,12 @@
 
                     // TODO handle the response in UI
 
-                    if (data.Success === true){
-                        alert(data.Message)
+                    if (data.isSuccessful === true){
+                        alert(data.message)
                     }
                     else{
                         alert('Unable to send message');
-                        throw new Error(data.Message);
+                        throw new Error(data.message);
                     }
 
                 });

@@ -69,7 +69,7 @@ home.post("/form/contact", async function (req, res) {
             const he = require("he");
 
             // send the email
-            await Mailer.sendMail({
+            let r = await Mailer.sendMail({
                 to: { name: "Dwayne Codling", email: "hello@dwaynecodling.com" },
                 from: { name: name, email: email },
                 subject: `Message from ${name}`,
@@ -85,7 +85,10 @@ home.post("/form/contact", async function (req, res) {
             res.json(JSONResponse(
                 true,
                 "Message Sent",
-                "Message has been sent"
+                "Message has been sent",
+                {
+                    mailResult: r
+                }
             ));
         } else {
             // Possible spam, ignore email;
