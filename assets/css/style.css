@@ -189,7 +189,8 @@ img {
   text-decoration: none;
   padding: 2rem;
   border-radius: 3rem;
-  transition: .2s background-color; }
+  transition: .2s background-color;
+  cursor: pointer; }
   @media screen and (min-width: 40em) {
     .button {
       font-size: 1.6rem;
@@ -216,13 +217,15 @@ button {
   background-color: #c99550;
   padding: 2rem;
   border-radius: 3rem;
-  transition: .2s background-color; }
+  transition: .2s background-color;
+  cursor: pointer; }
   @media screen and (min-width: 40em) {
     button {
       font-size: 1.6rem;
       padding: 2rem 3rem; } }
   button:hover {
-    background-color: #c79048; }
+    background-color: #c79048;
+    cursor: pointer; }
 
 .link--alt a {
   color: #000;
