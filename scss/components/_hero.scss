@@ -90,7 +90,7 @@
     justify-content: center;
     border: .2rem solid #666;
     border-radius: 50%;
-    margin-top: 18rem;
+    margin-top: 8rem;
     height: 6rem;
     width: 6rem;
 
@@ -119,11 +119,10 @@
 }
 
 .hero__contact-wrapper {
-
   display: none;
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
     display: flex;
-    padding: 0 4rem;
+    padding: 0;
     justify-content: space-between;
     width: calc(100% + 108px);
     align-items: center;
