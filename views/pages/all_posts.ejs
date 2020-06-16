@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Latest Post</title>
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/assets/css/style-v1.min.css">
+    <%- include("../partials/links") %>
 </head>
 <body>
 <%- include("../partials/nav") %>
@@ -50,11 +43,11 @@
                 <article class="grid__card-item">
                     <a href="/post/we-dont-tell-people-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/dwayne-and-dante-720x320.jpg">
-                            <source type="image/webp" srcset="/assets/img/dwayne-and-dante-360x160.webp">
-                            <source type="image/webp" srcset="/assets/img/dwayne-and-dante-720x320.webp">
-                            <img class="card__img"
-                                 src="/assets/img/dwayne-and-dante-360x160.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/dwayne-and-dante-720x320.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/dwayne-and-dante-360x160.webp">
+                            <source type="image/webp" data-srcset="/assets/img/dwayne-and-dante-720x320.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/dwayne-and-dante-360x160.jpg"
                                  alt="Dwayne and family"
                                  height="160"
                                  width="360"/>
@@ -74,11 +67,11 @@
                 <article class="grid__card-item">
                     <a href="/post/tech-nottingham-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/tech-nottingham@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/tech-nottingham@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/tech-nottingham.webp">
-                            <img class="card__img"
-                                 src="/assets/img/tech-nottingham.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/tech-nottingham@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/tech-nottingham@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/tech-nottingham.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/tech-nottingham.jpg"
                                  alt="Meet Magento"
                                  height="160"
                                  width="360"/>
@@ -98,11 +91,11 @@
                 <article class="grid__card-item">
                     <a href="/post/design-exchange-march-2020-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/dxn-11-mar-2020@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/dxn-11-mar-2020@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/dxn-11-mar-2020.webp">
-                            <img class="card__img"
-                                 src="/assets/img/dxn-11-mar-2020.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/dxn-11-mar-2020@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/dxn-11-mar-2020@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/dxn-11-mar-2020.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/dxn-11-mar-2020.jpg"
                                  alt="Meet Magento"
                                  height="160"
                                  width="360"/>
@@ -124,11 +117,11 @@
                 <article class="grid__card-item">
                     <a href="/post/meet-magento-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/meet-magento@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/meet-magento@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/meet-magento.webp">
-                            <img class="card__img"
-                                 src="/assets/img/meet-magento.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/meet-magento@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/meet-magento@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/meet-magento.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/meet-magento.jpg"
                                  alt="Meet Magento"
                                  height="160"
                                  width="360"/>
@@ -150,11 +143,11 @@
                 <article class="grid__card-item">
                     <a href="/post/css-day-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/css-day-2019@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/css-day-2019@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/css-day-2019.webp">
-                            <img class="card__img"
-                                 src="/assets/img/css-day-2019.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/css-day-2019@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/css-day-2019@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/css-day-2019.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/css-day-2019.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -175,11 +168,11 @@
                 <article class="grid__card-item">
                     <a href="/post/new-adventures-2020-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/new-adventures-2019@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/new-adventures-2019@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/new-adventures-2019.webp">
-                            <img class="card__img"
-                                 src="/assets/img/new-adventures-2019.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/new-adventures-2019@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/new-adventures-2019@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/new-adventures-2019.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/new-adventures-2019.jpg"
                                  alt="New Adventures Nottingham"
                                  height="160"
                                  width="360"/>
@@ -200,11 +193,11 @@
                 <article class="grid__card-item">
                     <a href="/post/react-amsterdam-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/react-amsterdam@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/react-amsterdam@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/react-amsterdam.webp">
-                            <img class="card__img"
-                                 src="/assets/img/react-amsterdam.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/react-amsterdam@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/react-amsterdam@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/react-amsterdam.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/react-amsterdam.jpg"
                                  alt="React Amsterdam Conference"
                                  height="160"
                                  width="360"/>
@@ -226,11 +219,11 @@
                 <article class="grid__card-item">
                     <a href="/post/pixel-pioneers-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/pixel-pioneers@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/pixel-pioneers@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/pixel-pioneers.webp">
-                            <img class="card__img"
-                                 src="/assets/img/pixel-pioneers.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/pixel-pioneers@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/pixel-pioneers@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/pixel-pioneers.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/pixel-pioneers.jpg"
                                  alt="Pixel Pioneers"
                                  height="160"
                                  width="360"/>
@@ -250,11 +243,11 @@
                 <article class="grid__card-item">
                     <a href="/post/frontend-north-east-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/frontend-north-east@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/frontend-north-east@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/frontend-north-east.webp">
-                            <img class="card__img"
-                                 src="/assets/img/frontend-north-east.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/frontend-north-east@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/frontend-north-east@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/frontend-north-east.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/frontend-north-east.jpg"
                                  alt="Frontend North East The Conference"
                                  height="160"
                                  width="360"/>
@@ -274,11 +267,11 @@
                 <article class="grid__card-item">
                     <a href="/post/google-pwa-training-post" class="card">
                         <picture class="card__img-container">
-                            <source type="image/jpeg" srcset="/assets/img/google-pwa-training@2x.jpg">
-                            <source type="image/webp" srcset="/assets/img/google-pwa-training@2x.webp">
-                            <source type="image/webp" srcset="/assets/img/google-pwa-training.webp">
-                            <img class="card__img"
-                                 src="/assets/img/google-pwa-training.jpg"
+                            <source type="image/jpeg" data-srcset="/assets/img/google-pwa-training@2x.jpg">
+                            <source type="image/webp" data-srcset="/assets/img/google-pwa-training@2x.webp">
+                            <source type="image/webp" data-srcset="/assets/img/google-pwa-training.webp">
+                            <img class="card__img lazyload"
+                                 data-src="/assets/img/google-pwa-training.jpg"
                                  alt="CSS Day 2019"
                                  height="160"
                                  width="360"/>
@@ -307,5 +300,6 @@
 </main>
 
 <%- include("../partials/footer") %>
+<script src="/assets/js/lazysizes.min.js" async></script>
 </body>
 </html>

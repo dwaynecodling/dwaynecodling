@@ -3,17 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- data.title %></title>
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/assets/css/style-v1.min.css">
+    <%- include("../partials/links") %>
 </head>
 
 <body>
@@ -53,13 +46,13 @@
         <div class="container">
             <div class="post-template__header">
                 <picture class="post-template__img-wrapper">
-                    <source type="image/jpeg" srcset="<%= data.hero_2xjpeg %>">
-                    <source type="image/webp" srcset="<%= data.hero_2xwebp %>">
-                    <source type="image/webp" srcset="<%= data.hero_webp %>">
-                    <source type="image/webp" srcset="<%= data.hero_sml_webp %>">
-                    <source srcset="<%= data.hero_sml %>"
+                    <source type="image/jpeg" data-srcset="<%= data.hero_2xjpeg %>">
+                    <source type="image/webp" data-srcset="<%= data.hero_2xwebp %>">
+                    <source type="image/webp" data-srcset="<%= data.hero_webp %>">
+                    <source type="image/webp" data-srcset="<%= data.hero_sml_webp %>">
+                    <source data-srcset="<%= data.hero_sml %>"
                             media="(min-width: 768px)">
-                    <img class="post-template__img" src="<%= data.hero %>" alt="<%= data.alt %>">
+                    <img class="post-template__img lazyload" data-src="<%= data.hero %>" alt="<%= data.alt %>">
                 </picture>
             </div>
         </div>
@@ -78,5 +71,6 @@
 </main>
 
 <%- include("../partials/footer") %>
+<script src="/assets/js/lazysizes.min.js" async></script>
 </body>
 </html>
