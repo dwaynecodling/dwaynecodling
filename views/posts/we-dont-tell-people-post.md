@@ -1,5 +1,5 @@
 ---
-slug: we-dont-tell-people
+slug: we-dont-tell-people-post
 hero: /assets/img/dwayne-and-dante.jpg
 hero_sml: /assets/img/dwayne-and-dante-sml.jpg
 hero_sml_webp: /assets/img/dwayne-and-dante-sml.webp
@@ -11,7 +11,7 @@ date: 14th June 2020
 read: 10 MINS READ
 ---
 
-### The Why
+# The Why #
 
 I grew up in a below middle-class neighbourhood in Portmore, Jamaica. The situation growing up in a household where my mom and my dad were not fully educated was not the worst but was not the best, there were limitations on what they could do for us as children.
 
@@ -87,7 +87,7 @@ More opportunities from surrounding themselves with people and friends that come
 I know, no one, if they are being honest, would want to jump into the
 unknown, we could all stay in the same situation and just deal with the
 circumstances as best possible. But it’s against my nature, learning from the
-past, leaving the family I grew up with after 20 years and •venturing into the
-unknown world has brought me here.•
+past, leaving the family I grew up with after 20 years and *venturing into the
+unknown world has brought me here.*
 
 ---

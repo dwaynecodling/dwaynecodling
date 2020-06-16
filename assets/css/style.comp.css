@@ -227,6 +227,21 @@ button {
     background-color: #c79048;
     cursor: pointer; }
 
+h1 {
+  font-size: 4.6rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.6rem; }
+
+p {
+  font-size: 1.8rem; }
+
 .link--alt a {
   color: #000;
   background-color: #fff; }
