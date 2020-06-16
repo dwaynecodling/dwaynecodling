@@ -764,13 +764,14 @@ footer {
   margin-bottom: 6.5rem; }
   .contact-form__content .info-snippet__bg-text {
     z-index: 1;
-    color: #686a6c;
+    color: #808181;
     font-weight: 500; }
     @media screen and (min-width: 62em) {
       .contact-form__content .info-snippet__bg-text {
         font-size: 20rem;
         top: -10rem;
-        left: -7rem; } }
+        left: -7rem;
+        color: #686a6c; } }
 
 .contact-form__title {
   font-size: 3rem;
@@ -852,13 +853,14 @@ footer {
 .info-snippet {
   position: relative; }
   .info-snippet__bg-text {
-    color: #181a1b;
+    color: #808181;
     position: relative;
     font-size: 6rem;
     font-weight: 700;
     z-index: -1; }
     @media screen and (min-width: 62em) {
       .info-snippet__bg-text {
+        color: #181a1b;
         font-size: 12rem;
         position: absolute;
         top: -6rem;
