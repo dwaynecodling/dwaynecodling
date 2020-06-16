@@ -500,7 +500,7 @@ footer {
     color: #fff;
     font-size: 1.4rem;
     text-decoration: none;
-    background-color: #c99550;
+    background-color: #383737c2;
     padding: 2rem;
     border-radius: 3rem;
     transition: .2s background-color; }
@@ -527,7 +527,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: .2rem solid #666;
+    border: .2rem solid #fff;
     border-radius: 50%;
     margin-top: 8rem;
     height: 6rem;
@@ -764,7 +764,7 @@ footer {
   margin-bottom: 6.5rem; }
   .contact-form__content .info-snippet__bg-text {
     z-index: 1;
-    color: #26292b;
+    color: #686a6c;
     font-weight: 500; }
     @media screen and (min-width: 62em) {
       .contact-form__content .info-snippet__bg-text {
@@ -789,7 +789,9 @@ footer {
 
 .contact-form__form button {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #383737c2;
+  border: none; }
 
 .contact-form__name-field {
   margin-bottom: 1rem; }
