@@ -2,6 +2,7 @@
 export namespace Middleware{
 
     const path = require("path");
+    const fs = require("fs");
 
     /**
      * Handles not found (404)
@@ -50,7 +51,7 @@ export namespace Middleware{
                 fileSize: 10_000_000
             },
             storage : multer.diskStorage({
-                destination: path.resolve(__dirname, "../public_html/assets/uploads"),
+                destination: path.resolve(__dirname, "../assets/uploads"),
                 filename: function (req, file, cb) {
                     cb(null, `${Date.now()}-${file.originalname}`);
                 }
@@ -71,16 +72,67 @@ export namespace Middleware{
     }
 
 
-    /**
-     * Enables live-server on local development
-     */
-    export function LiveServer(req, res, next){
-        const args = process.argv.slice(2);
-        if (args.indexOf("--dev") > -1) {
-            let p = path.resolve(__dirname, '../assets');
-            console.log("With live reload", p);
-            return require('reloadify')(p)(req, res, next);
+    export function CheckForImageRequest(options:{listenIn:Array<string>}){
+        let normalizePath = (urlPath:string) => {
+            urlPath = urlPath.split("?")[0];
+            if (urlPath.endsWith(".svg")) return null;
+            let r = /@(?:(?<width>[0-9]+)x(?<height>[0-9]+)|(?<s_width>[0-9]+)w|(?<s_height>[0-9]+)h)/gm;
+            let m = r.exec(urlPath);
+            let workingMime = {
+                "jpeg" : "image/jpeg",
+                "jpg" : "image/jpeg",
+                "webp" : "image/webp",
+                "png" : "image/png"
+            }
+
+            if (Object.keys(m.groups).length > 0){
+                let normalPath = urlPath.replace(r,'').replace(/(?:-\.)/gm,'.');
+                let ext = urlPath.substr(urlPath.lastIndexOf(".") + 1);
+
+                let result:{[n:string]:any} = {
+                    url: normalPath,
+                    width: m.groups['width'] ?? m.groups['s_width'] ?? null,
+                    height: m.groups['height'] ?? m.groups['s_height'] ?? null,
+                    type: workingMime[ext]
+                };
+
+                if (result.width) result.width = Number(result.width);
+                if (result.height) result.height = Number(result.height);
+
+                return result;
+            }
+            return null;
         }
-        next();
+        const sharp = require('sharp');
+
+        return async (req, res, next) => {
+            let matchedUrl = options.listenIn.filter(d => req.url.startsWith(d));
+            if (matchedUrl.length > -1) {
+                console.log("returning resized image");
+                let urlParts = normalizePath(req.url);
+                let realFilePath = path.join(__dirname, ".." + urlParts.url);
+                let exists = fs.existsSync(realFilePath);
+                if (urlParts && exists){
+                    let instance = sharp(fs.readFileSync(realFilePath)) .resize({
+                        width: urlParts.width,
+                        height: urlParts.height
+                    });
+
+                    instance.toBuffer()
+                        .then( (data:Buffer) => {
+                            res.write(data);
+                            res.end();
+
+                            instance.toFile(path.join(__dirname, ".." + req.url));
+                        })
+                        .catch( err => {
+                            console.log(err);
+                            next();
+                        });
+                    return;
+                }
+            }
+            next();
+        };
     }
 }
