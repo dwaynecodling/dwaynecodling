@@ -11,10 +11,14 @@ app.use(express.json());                                    // to support JSON-e
 app.use(express.urlencoded({ extended: true }));    // to support URL-encoded bodies
 app.use('/assets', express.static(__dirname + "/assets"));    // makes assets folder directly accessible
 
-app.use(Middleware.Compression);
+// app.use(Middleware.Compression);
 app.use(Middleware.FormUploadHandler);
 
 app.use("/", home);
+
+app.use(Middleware.CheckForImageRequest({
+    listenIn: ["/assets"]
+}));
 
 app.use(Middleware.NotFoundHandler);
 app.use(Middleware.InternalErrorHandler);
