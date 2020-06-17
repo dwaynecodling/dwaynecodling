@@ -742,13 +742,14 @@ footer {
   margin-bottom: 6.5rem; }
   .contact-form__content .info-snippet__bg-text {
     z-index: 1;
-    color: #26292b;
+    color: #808181;
     font-weight: 500; }
     @media screen and (min-width: 62em) {
       .contact-form__content .info-snippet__bg-text {
         font-size: 20rem;
         top: -10rem;
-        left: -7rem; } }
+        left: -7rem;
+        color: #686a6c; } }
 
 .contact-form__title {
   font-size: 3rem;
@@ -767,7 +768,9 @@ footer {
 
 .contact-form__form button {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #383737c2;
+  border: none; }
 
 .contact-form__name-field {
   margin-bottom: 1rem; }
