@@ -6,7 +6,7 @@ hero:
     sml_webp: /assets/img/tech-nottingham.webp
     lrg_webp: /assets/img/nottingham-lrg.webp
     lrg_jpeg: /assets/img/nottingham-lrg.jpg
-    video_yt: XgI5kryJCaI
+    video_yt: zwvB88IKaTo
 alt:  Nottingham
 title: My <strong>Talk</strong> at Tech Nottingham
 date: 8th June 2020
