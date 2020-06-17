@@ -1,14 +1,16 @@
 ---
 slug: tech-nottingham-post
-hero: /assets/img/nottingham.jpg
-hero_sml: /assets/img/nottingham-sml.jpg
-hero_sml_webp: /assets/img/nottingham-sml.webp
-hero_2xwebp: /assets/img/nottingham-lrg.webp
-hero_2xjpeg: /assets/img/nottingham-lrg.jpg
+hero:
+    main: /assets/img/tech-nottingham.jpg
+    sml_jpeg: /assets/img/tech-nottingham.jpg
+    sml_webp: /assets/img/tech-nottingham.webp
+    lrg_webp: /assets/img/nottingham-lrg.webp
+    lrg_jpeg: /assets/img/nottingham-lrg.jpg
+    video_yt: XgI5kryJCaI
 alt:  Nottingham
 title: My <strong>Talk</strong> at Tech Nottingham
 date: 8th June 2020
-read: 35 MINS READ
+excerpt: The talk will focus on the <strong> generational wealth gap</strong> in and how this facilitates a difference in circumstances between different races.
 ---
 
 # Introduction 

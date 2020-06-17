@@ -1,14 +1,15 @@
 ---
 slug: we-dont-tell-people-post
-hero: /assets/img/dwayne-and-dante.jpg
-hero_sml: /assets/img/dwayne-and-dante-sml.jpg
-hero_sml_webp: /assets/img/dwayne-and-dante-sml.webp
-hero_2xwebp: /assets/img/dwayne-and-dante-lrg.webp
-hero_2xjpeg: /assets/img/dwayne-and-dante-lrg.jpg
+hero:
+    main: /assets/img/dwayne-and-dante.jpg
+    sml_jpeg: /assets/img/dwayne-and-dante-sml.jpg
+    sml_webp: /assets/img/dwayne-and-dante-sml.webp
+    lrg_webp: /assets/img/dwayne-and-dante-lrg.webp
+    lrg_jpeg: /assets/img/dwayne-and-dante-lrg.jpg
 alt:  Dwayne and Family
 title: We <strong>don't tell</strong> people how we feel
 date: 14th June 2020
-read: 10 MINS READ
+excerpt: "We <strong>don't tell</strong> people how we feel and why we feel that way. So, here goes:"
 ---
 
 # The Why #
