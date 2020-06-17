@@ -6,11 +6,13 @@ import {Mailer} from "../internal_scripts/Mailer";
 const home = require('express').Router();
 
 home.get("/", async function (req, res) {
-    res.render("pages/homepage");
+    let otherArticles = await PostRepository.getRecentPosts(3);
+    res.render("pages/homepage",{otherArticles});
 });
 
 home.get("/contact-me", async function (req, res) {
-    res.render("pages/contact_me");
+    let otherArticles = await PostRepository.getRecentPosts(3);
+    res.render("pages/contact_me", {otherArticles});
 });
 
 home.get("/about-me", async function (req, res) {
@@ -18,14 +20,20 @@ home.get("/about-me", async function (req, res) {
 });
 
 home.get("/posts", async function(req, res){
-    res.render("pages/all_posts");
+    let posts = await PostRepository.getAllPosts();
+
+    res.render("pages/all_posts",{ posts: posts.slice(0, 10) });
 });
 
 home.get("/post/:slug", async function (req, res) {
     let slug = req.params['slug'];
+    let otherArticles = await PostRepository.getRecentPosts(3);
     let article = await PostRepository.getBySlug(slug);
 
-    res.render("pages/single_post", article);
+    res.render("pages/single_post", {
+        currentArticle: article,
+        otherArticles: otherArticles
+    });
 });
 
 // handles incoming contact form submission
@@ -78,17 +86,19 @@ home.post("/form/contact", async function (req, res) {
                         <strong>Date: ${ (new Date()).toUTCString() }</strong> <br/>
                         <strong>Name: ${name}</strong><br/>
                         <strong>Message:</strong><br/>
-                        <pre>${ he.encode(message) }</pre>`
+                        <pre>${ he.encode(message) }</pre>`,
+                    text: `
+                    Date: ${ (new Date()).toUTCString() } \n
+                    Name: ${name} \n
+                    Message: \n
+                    ${he.encode(message)}`
                 }
             });
 
             res.json(JSONResponse(
                 true,
                 "Message Sent",
-                "Message has been sent",
-                {
-                    mailResult: r
-                }
+                "Message has been sent"
             ));
         } else {
             // Possible spam, ignore email;
