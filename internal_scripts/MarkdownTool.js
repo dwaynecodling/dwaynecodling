@@ -16,13 +16,9 @@ class MarkdownTool {
             breaks: true,
             langPrefix: 'lang-',
             linkify: true,
-            // Enable some language-neutral replacement + quotes beautification
             typographer: true,
             quotes: '“”‘’',
-            // Highlighter function. Should return escaped HTML,
-            // or '' if the source string is not changed and should be escaped externally.
-            // If result starts with <pre... internal wrapper is skipped.
-            highlight: function ( /*str, lang*/) { return ''; },
+            highlight: function () { return ''; },
             modifyToken: function (token, env) {
                 switch (token.type) {
                     case 'image':
@@ -53,7 +49,6 @@ class MarkdownTool {
                         }
                         break;
                     default:
-                        //console.log(token);
                         break;
                 }
             }
