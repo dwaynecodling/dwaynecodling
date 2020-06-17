@@ -9,7 +9,12 @@ var PostRepository;
     const matter = require("gray-matter");
     const fs = require("fs");
     const path = require("path");
-    const readCache = {};
+    let readCache = {};
+    setInterval(() => {
+        if (Object.keys(readCache).length > 0)
+            console.log("Clearing readCache");
+        readCache = {};
+    }, 3000).unref();
     async function getBySlug(slug) {
         let posts = await getAllPosts(true);
         for (const post of posts) {
