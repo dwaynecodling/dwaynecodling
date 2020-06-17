@@ -24,7 +24,3 @@
 @import "pages/home";
 @import "pages/post-template";
 
-/* to test cache on deploy is updated */
-.will-change{
-  will-change: opacity;
-}
