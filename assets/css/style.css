@@ -51,7 +51,8 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-300.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Light"), local("Roboto-Light"), url("../../assets/fonts/roboto-v20-latin-300.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-300.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-300.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-300.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-300.svg#Roboto") format("svg");
-  /* Legacy iOS */ }
+  /* Legacy iOS */
+  font-display: swap; }
 
 /* roboto-regular - latin */
 @font-face {
@@ -61,7 +62,8 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-regular.eot");
   /* IE9 Compat Modes */
   src: local("Roboto"), local("Roboto-Regular"), url("../../assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
-  /* Legacy iOS */ }
+  /* Legacy iOS */
+  font-display: swap; }
 
 /* roboto-500 - latin */
 @font-face {
@@ -71,7 +73,8 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-500.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Medium"), local("Roboto-Medium"), url("../../assets/fonts/roboto-v20-latin-500.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-500.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-500.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-500.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-500.svg#Roboto") format("svg");
-  /* Legacy iOS */ }
+  /* Legacy iOS */
+  font-display: swap; }
 
 /* roboto-700 - latin */
 @font-face {
@@ -81,7 +84,8 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-700.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Bold"), local("Roboto-Bold"), url("../../assets/fonts/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-700.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-700.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-700.svg#Roboto") format("svg");
-  /* Legacy iOS */ }
+  /* Legacy iOS */
+  font-display: swap; }
 
 /* roboto-900 - latin */
 @font-face {
@@ -91,7 +95,8 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-900.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Black"), local("Roboto-Black"), url("../../assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
-  /* Legacy iOS */ }
+  /* Legacy iOS */
+  font-display: swap; }
 
 /* Rockwell-700 - latin */
 @font-face {
@@ -223,6 +228,21 @@ button {
       padding: 2rem 3rem; } }
   button:hover {
     background-color: #c79048; }
+
+h1 {
+  font-size: 4.6rem; }
+
+h2 {
+  font-size: 3.6rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.6rem; }
+
+p {
+  font-size: 1.8rem; }
 
 .link--alt a {
   color: #000;
@@ -742,13 +762,14 @@ footer {
   margin-bottom: 6.5rem; }
   .contact-form__content .info-snippet__bg-text {
     z-index: 1;
-    color: #686a6c;
+    color: #808181;
     font-weight: 500; }
     @media screen and (min-width: 62em) {
       .contact-form__content .info-snippet__bg-text {
         font-size: 20rem;
         top: -10rem;
-        left: -7rem; } }
+        left: -7rem;
+        color: #686a6c; } }
 
 .contact-form__title {
   font-size: 3rem;
