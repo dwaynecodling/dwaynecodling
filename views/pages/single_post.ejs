@@ -38,23 +38,36 @@
 
         <div class="container">
             <div class="hero__content footer__content">
-                <p class="hero__subheading"><%- data.date %> · <%- data.read %> </p>
-                <h1 class="hero__heading"><%- data.title %></h1>
+                <p class="hero__subheading"><%- currentArticle.data.date %> · <%- currentArticle.data.readTime %> READ </p>
+                <h1 class="hero__heading"><%- currentArticle.data.titleHTML %></h1>
             </div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="post-template__header">
+                <% if (currentArticle.data.hero.video_yt){ %>
+                    <div class="post-template__iframe-wrapper">
+                        <iframe
+                                class="post-template__iframe"
+                                width="100%" height="100%"
+                                src="https://www.youtube-nocookie.com/embed/<%= currentArticle.data.hero.video_yt %>"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                        ></iframe>
+                    </div>
+                <% } else { %>
                 <picture class="post-template__img-wrapper">
-                    <source type="image/jpeg" data-srcset="<%= data.hero_2xjpeg %>">
-                    <source type="image/webp" data-srcset="<%= data.hero_2xwebp %>">
-                    <source type="image/webp" data-srcset="<%= data.hero_webp %>">
-                    <source type="image/webp" data-srcset="<%= data.hero_sml_webp %>">
-                    <source data-srcset="<%= data.hero_sml %>"
-                            media="(min-width: 768px)">
-                    <img class="post-template__img lazyload" data-src="<%= data.hero %>" alt="<%= data.alt %>">
+
+                    <source type="image/webp" data-srcset="<%= currentArticle.data.hero.lrg_webp %>">
+                    <source type="image/jpeg" data-srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
+                    <source type="image/webp" data-srcset="<%= currentArticle.data.hero.sml_webp %>">
+                    <source type="image/jpeg" media="(min-width: 768px)" data-srcset="<%= currentArticle.data.hero.sml_jpeg %>" >
+                    <img class="post-template__img lazyload" data-src="<%= currentArticle.data.hero.main %>" alt="<%= currentArticle.data.alt %>">
+
                 </picture>
+                <% } %>
             </div>
         </div>
 
@@ -63,12 +76,12 @@
     <section>
         <div class="container">
             <div class="post-template__content">
-                <%- content %>
+                <%- currentArticle.content %>
             </div>
         </div>
     </section>
 
-    <%- include("../partials/latest_posts") %>
+    <%- include("../partials/latest_posts", {posts: otherArticles}) %>
 </main>
 
 <%- include("../partials/footer") %>
