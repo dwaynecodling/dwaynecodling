@@ -1,4 +1,5 @@
-.post-template__img-wrapper {
+.post-template__img-wrapper,
+.post-template__iframe-wrapper{
     display: block;
     position: relative;
     padding-bottom: 62%;
@@ -9,6 +10,14 @@
     @media screen and (min-width: 768px) {
         padding-bottom: 35%;
     }
+}
+
+.post-template__iframe{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
 }
 
 .post-template__img {
