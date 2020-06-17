@@ -46,14 +46,13 @@
     position: relative;
 
     &__bg-text {
-        color: #808181;
+        color: $color-faded-number-1;
         position: relative;
         font-size: 6rem;
         font-weight: 700;
         z-index: -1;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-            color: $color-faded-number-1;
             font-size: 12rem;
             position: absolute;
             top: -6rem;

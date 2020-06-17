@@ -51,8 +51,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-300.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Light"), local("Roboto-Light"), url("../../assets/fonts/roboto-v20-latin-300.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-300.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-300.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-300.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-300.svg#Roboto") format("svg");
-  /* Legacy iOS */
-  font-display: swap; }
+  /* Legacy iOS */ }
 
 /* roboto-regular - latin */
 @font-face {
@@ -62,8 +61,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-regular.eot");
   /* IE9 Compat Modes */
   src: local("Roboto"), local("Roboto-Regular"), url("../../assets/fonts/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-regular.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-regular.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-regular.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-regular.svg#Roboto") format("svg");
-  /* Legacy iOS */
-  font-display: swap; }
+  /* Legacy iOS */ }
 
 /* roboto-500 - latin */
 @font-face {
@@ -73,8 +71,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-500.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Medium"), local("Roboto-Medium"), url("../../assets/fonts/roboto-v20-latin-500.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-500.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-500.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-500.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-500.svg#Roboto") format("svg");
-  /* Legacy iOS */
-  font-display: swap; }
+  /* Legacy iOS */ }
 
 /* roboto-700 - latin */
 @font-face {
@@ -84,8 +81,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-700.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Bold"), local("Roboto-Bold"), url("../../assets/fonts/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-700.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-700.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-700.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-700.svg#Roboto") format("svg");
-  /* Legacy iOS */
-  font-display: swap; }
+  /* Legacy iOS */ }
 
 /* roboto-900 - latin */
 @font-face {
@@ -95,8 +91,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   src: url("../../assets/fonts/roboto-v20-latin-900.eot");
   /* IE9 Compat Modes */
   src: local("Roboto Black"), local("Roboto-Black"), url("../../assets/fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../assets/fonts/roboto-v20-latin-900.woff") format("woff"), url("../../assets/fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../../assets/fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
-  /* Legacy iOS */
-  font-display: swap; }
+  /* Legacy iOS */ }
 
 /* Rockwell-700 - latin */
 @font-face {
@@ -194,8 +189,7 @@ img {
   text-decoration: none;
   padding: 2rem;
   border-radius: 3rem;
-  transition: .2s background-color;
-  cursor: pointer; }
+  transition: .2s background-color; }
   @media screen and (min-width: 40em) {
     .button {
       font-size: 1.6rem;
@@ -222,30 +216,13 @@ button {
   background-color: #c99550;
   padding: 2rem;
   border-radius: 3rem;
-  transition: .2s background-color;
-  cursor: pointer; }
+  transition: .2s background-color; }
   @media screen and (min-width: 40em) {
     button {
       font-size: 1.6rem;
       padding: 2rem 3rem; } }
   button:hover {
-    background-color: #c79048;
-    cursor: pointer; }
-
-h1 {
-  font-size: 4.6rem; }
-
-h2 {
-  font-size: 3.6rem; }
-
-h3 {
-  font-size: 3rem; }
-
-h4 {
-  font-size: 2.6rem; }
-
-p {
-  font-size: 1.8rem; }
+    background-color: #c79048; }
 
 .link--alt a {
   color: #000;
@@ -501,7 +478,7 @@ footer {
     color: #fff;
     font-size: 1.4rem;
     text-decoration: none;
-    background-color: #383737c2;
+    background-color: #c99550;
     padding: 2rem;
     border-radius: 3rem;
     transition: .2s background-color; }
@@ -528,7 +505,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: .2rem solid #fff;
+    border: .2rem solid #666;
     border-radius: 50%;
     margin-top: 8rem;
     height: 6rem;
@@ -690,7 +667,7 @@ footer {
 .my-posts__select {
   width: 100%;
   border-radius: 0;
-  background: url(../svg/dropdown.svg) no-repeat right 12px center #fff;
+  background: url(../assets/svg/dropdown.svg) no-repeat right 12px center #fff;
   background-size: 2.5rem;
   font-weight: 500;
   font-size: 1.4rem;
@@ -765,14 +742,13 @@ footer {
   margin-bottom: 6.5rem; }
   .contact-form__content .info-snippet__bg-text {
     z-index: 1;
-    color: #808181;
+    color: #26292b;
     font-weight: 500; }
     @media screen and (min-width: 62em) {
       .contact-form__content .info-snippet__bg-text {
         font-size: 20rem;
         top: -10rem;
-        left: -7rem;
-        color: #686a6c; } }
+        left: -7rem; } }
 
 .contact-form__title {
   font-size: 3rem;
@@ -791,9 +767,7 @@ footer {
 
 .contact-form__form button {
   display: block;
-  margin: 0 auto;
-  background-color: #383737c2;
-  border: none; }
+  margin: 0 auto; }
 
 .contact-form__name-field {
   margin-bottom: 1rem; }
@@ -854,14 +828,13 @@ footer {
 .info-snippet {
   position: relative; }
   .info-snippet__bg-text {
-    color: #808181;
+    color: #181a1b;
     position: relative;
     font-size: 6rem;
     font-weight: 700;
     z-index: -1; }
     @media screen and (min-width: 62em) {
       .info-snippet__bg-text {
-        color: #181a1b;
         font-size: 12rem;
         position: absolute;
         top: -6rem;
@@ -971,3 +944,7 @@ blockquote .post-template__text {
     font-weight: 700;
     color: #404040;
     z-index: -1; }
+
+/* to test cache on deploy is updated */
+.will-change {
+  will-change: opacity; }

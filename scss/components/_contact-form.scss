@@ -38,14 +38,13 @@
 
     .info-snippet__bg-text {
         z-index: 1;
-        color: #808181;
+        color: $color-faded-number-2;
         font-weight: 500;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
             font-size: 20rem;
             top: -10rem;
             left: -7rem;
-            color: #686a6c;
         }
 
     }
@@ -73,8 +72,6 @@
     button {
         display: block;
         margin: 0 auto;
-        background-color: #383737c2;
-        border: none;
     }
 }
 
@@ -100,10 +97,6 @@
 
 .contact-form__control {
 margin-bottom: 4rem;
-}
-
-.contact-form__button {
-
 }
 
 .contact-form__textarea-input {

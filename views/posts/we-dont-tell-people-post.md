@@ -12,7 +12,7 @@ date: 14th June 2020
 excerpt: "We <strong>don't tell</strong> people how we feel and why we feel that way. So, here goes:"
 ---
 
-# The Why #
+### The Why
 
 I grew up in a below middle-class neighbourhood in Portmore, Jamaica. The situation growing up in a household where my mom and my dad were not fully educated was not the worst but was not the best, there were limitations on what they could do for us as children.
 

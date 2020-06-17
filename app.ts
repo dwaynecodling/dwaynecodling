@@ -17,7 +17,8 @@ app.use(Middleware.FormUploadHandler);
 app.use("/", home);
 
 app.use(Middleware.CheckForImageRequest({
-    listenIn: ["/assets"]
+    listenIn: ["/assets"],
+    autoSave: true
 }));
 
 app.use(Middleware.NotFoundHandler);

@@ -7,7 +7,12 @@ export namespace PostRepository{
     const matter = require("gray-matter");
     const fs = require("fs");
     const path = require("path");
-    const readCache = {};
+    let readCache:{[cacheKey:string]:any} = {};
+
+    setInterval(()=>{
+        if (Object.keys(readCache).length > 0) console.log("Clearing readCache");
+        readCache = {};
+    }, 3_000).unref();
 
     export interface IPostEntry {
         content: string;

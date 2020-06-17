@@ -12,7 +12,8 @@ app.use('/assets', express.static(__dirname + "/assets"));
 app.use(Middlewares_1.Middleware.FormUploadHandler);
 app.use("/", home);
 app.use(Middlewares_1.Middleware.CheckForImageRequest({
-    listenIn: ["/assets"]
+    listenIn: ["/assets"],
+    autoSave: true
 }));
 app.use(Middlewares_1.Middleware.NotFoundHandler);
 app.use(Middlewares_1.Middleware.InternalErrorHandler);

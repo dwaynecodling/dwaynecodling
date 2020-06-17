@@ -13,13 +13,13 @@ date: 8th June 2020
 excerpt: The talk will focus on the <strong> generational wealth gap</strong> in and how this facilitates a difference in circumstances between different races.
 ---
 
-# Introduction 
+### Introduction
 
 So my name is Dwayne Codling I am a front-end develonpmper at JH I've been doing frontend for the last three years and before becoming a front-end I was a lecturer Nottingham College for three years so you never know.
 
 My arrival in the tech industry was not a traditional one no CS degree here. I like my place within the tech industry doing front-end I love it something that I actually love going to work to and love building stuff and I think if I can have some way of doing some type of things where I'm helping people on a day to day basis then I'm happy so I think that role suits me well.
 
-## Diversity Vs. Inclusion
+### Diversity Vs. Inclusion
 
 So the talk is on Diversity Vs. Inclusion versus inclusion and the reason I am doing the talk is because I am a Black man and maybe it would come across better if there was someone white standing up here talking about Diversity but you know.
 

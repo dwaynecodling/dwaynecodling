@@ -72,11 +72,11 @@ export namespace Middleware{
     }
 
 
-    export function CheckForImageRequest(options:{listenIn:Array<string>}){
+    export function CheckForImageRequest(options:{listenIn:Array<string>, autoSave?:boolean}){
         let normalizePath = (urlPath:string) => {
             urlPath = urlPath.split("?")[0];
             if (urlPath.endsWith(".svg")) return null;
-            let r = /@(?:(?<width>[0-9]+)x(?<height>[0-9]+)|(?<s_width>[0-9]+)w|(?<s_height>[0-9]+)h)/gm;
+            let r = /@(?:(?<width>[0-9]+)x(?<height>[0-9]+)|(?<s_width>[0-9]+)w|(?<s_height>[0-9]+)h|(?<scale>[0-9]+x))/gm;
             let m = r.exec(urlPath);
             let workingMime = {
                 "jpeg" : "image/jpeg",
@@ -85,7 +85,7 @@ export namespace Middleware{
                 "png" : "image/png"
             }
 
-            if (Object.keys(m.groups).length > 0){
+            if (m && Object.keys(m.groups).length > 0){
                 let normalPath = urlPath.replace(r,'').replace(/(?:-\.)/gm,'.');
                 let ext = urlPath.substr(urlPath.lastIndexOf(".") + 1);
 
@@ -93,6 +93,7 @@ export namespace Middleware{
                     url: normalPath,
                     width: m.groups['width'] ?? m.groups['s_width'] ?? null,
                     height: m.groups['height'] ?? m.groups['s_height'] ?? null,
+                    scale: m.groups['scale'] ?? "2x",
                     type: workingMime[ext]
                 };
 
@@ -110,9 +111,12 @@ export namespace Middleware{
             if (matchedUrl.length > -1) {
                 console.log("returning resized image");
                 let urlParts = normalizePath(req.url);
-                let realFilePath = path.join(__dirname, ".." + urlParts.url);
-                let exists = fs.existsSync(realFilePath);
-                if (urlParts && exists){
+                if (urlParts){
+                    let realFilePath = path.join(__dirname, ".." + urlParts.url);
+                    let exists = fs.existsSync(realFilePath);
+
+                    if (!exists) return next();
+
                     let instance = sharp(fs.readFileSync(realFilePath)) .resize({
                         width: urlParts.width,
                         height: urlParts.height
@@ -123,7 +127,9 @@ export namespace Middleware{
                             res.write(data);
                             res.end();
 
-                            instance.toFile(path.join(__dirname, ".." + req.url));
+                            if (options.autoSave){
+                                instance.toFile(path.join(__dirname, ".." + req.url));
+                            }
                         })
                         .catch( err => {
                             console.log(err);
