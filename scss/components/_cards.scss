@@ -23,13 +23,13 @@
     height:100%;
     background-color: #fff;
     overflow: hidden;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, .1);
+    box-shadow: 0 3rem 6rem rgba(255, 255, 255, .2);
     cursor: pointer;
     transition: $transition;
 
     &:hover {
       transform: translateY(-.5%);
-      box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
+      box-shadow: 0 4rem 8rem rgba(255, 255, 255, .3);
     }
   }
 }
