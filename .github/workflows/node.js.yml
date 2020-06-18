@@ -1,11 +1,11 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Deploy to Live
+name: Deploy to Dev
 
 on:
   push:
-    branches: [ live ]
+    branches: [ dev ]
 
 jobs:
   build:
@@ -25,8 +25,8 @@ jobs:
     - name: Deploy app
       uses: isthatcentered/dist-to-ftp@master
       with:
-        user: ftpaccess@dwaynecodling.com
-        password: ${{ secrets.FTP_PASSWORD }}
+        user: dev_user@dwaynecodling.com
+        password: ${{ secrets.DEV_PASS }}
         host: dwaynecodling.com
         port: 21 
         path: ./
