@@ -31,6 +31,7 @@ jobs:
           into: ./
           cleanupExisting: true
   build_live:
+    if: github.event.base_ref == 'refs/heads/live'
     runs-on: ubuntu-latest
     strategy:
       matrix:
