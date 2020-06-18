@@ -25,10 +25,10 @@ jobs:
     - name: Deploy app
       uses: isthatcentered/dist-to-ftp@master
       with:
-        user: dev_user@dwaynecodling.com
+        user: dev_user
         password: ${{ secrets.DEV_PASS }}
         host: dwaynecodling.com
-        port: 21 
+        port: 22 
         path: ./
         into: ./
         cleanupExisting: true
