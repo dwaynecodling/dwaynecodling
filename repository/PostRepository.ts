@@ -1,10 +1,10 @@
 import {MarkdownTool} from "../internal_scripts/MarkdownTool";
 import {dateParse, getReadTime} from "../internal_scripts/convinienceHelper";
+import {raw} from "express";
 
 export namespace PostRepository{
 
     let markdownTool = new MarkdownTool();
-    const matter = require("gray-matter");
     const fs = require("fs");
     const path = require("path");
     let readCache:{[cacheKey:string]:any} = {};
@@ -74,14 +74,15 @@ export namespace PostRepository{
     }
 
     export async function getPostFileContentStructure(fileName:string):Promise<IPostEntry>{
+        if (readCache[`post_content_structure_${fileName}`]){
+            return readCache[`post_content_structure_${fileName}`];
+        }
+
         let filePath = path.resolve(__dirname,"../views/posts/", fileName);
         if (fs.existsSync( filePath )){
 
-            if (readCache[`postStructure_${fileName}`]){
-                return readCache[`postStructure_${fileName}`];
-            }
-
             let content = fs.readFileSync(filePath, { encoding : "utf8" });
+            const matter = require("gray-matter");
             let structure = matter(content);
 
             let transformedContent = markdownTool.transform(structure.content);
@@ -91,6 +92,9 @@ export namespace PostRepository{
                 content: transformedContent
             });
 
+            let rawTitle = structure.data.title;
+            let cleanedTitle = rawTitle?.replace(/<[^>]+>/gm, '').replace(/([\r\n]+ +)+/gm, '');
+
             structure.data = Object.assign(structure.data, {
                 readTime: getReadTime(transformedContent, {
                     secondPlural: "SECS",
@@ -98,11 +102,11 @@ export namespace PostRepository{
                     minutePlural: "MINS",
                     minuteSingular: "MIN"
                 }),
-                titleHTML: structure.data.title,
-                title: structure.data.title?.replace(/<[^>]+>/gm, '').replace(/([\r\n]+ +)+/gm, '')
+                titleText: cleanedTitle,
+                title: rawTitle
             });
 
-            readCache[`postStructure_${fileName}`] = structure;
+            readCache[`post_content_structure_${fileName}`] = structure;
 
             return structure;
         }

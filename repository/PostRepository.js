@@ -58,12 +58,11 @@ var PostRepository;
     }
     PostRepository.getAllFilteredPosts = getAllFilteredPosts;
     async function getPostFileContentStructure(fileName) {
-        var _a;
+        if (readCache[`post_content_structure_${fileName}`]) {
+            return readCache[`post_content_structure_${fileName}`];
+        }
         let filePath = path.resolve(__dirname, "../views/posts/", fileName);
         if (fs.existsSync(filePath)) {
-            if (readCache[`postStructure_${fileName}`]) {
-                return readCache[`postStructure_${fileName}`];
-            }
             let content = fs.readFileSync(filePath, { encoding: "utf8" });
             let structure = matter(content);
             let transformedContent = markdownTool.transform(structure.content);
@@ -71,6 +70,8 @@ var PostRepository;
                 rawContent: structure.content,
                 content: transformedContent
             });
+            let rawTitle = structure.data.title;
+            let cleanedTitle = rawTitle === null || rawTitle === void 0 ? void 0 : rawTitle.replace(/<[^>]+>/gm, '').replace(/([\r\n]+ +)+/gm, '');
             structure.data = Object.assign(structure.data, {
                 readTime: convinienceHelper_1.getReadTime(transformedContent, {
                     secondPlural: "SECS",
@@ -78,10 +79,10 @@ var PostRepository;
                     minutePlural: "MINS",
                     minuteSingular: "MIN"
                 }),
-                titleHTML: structure.data.title,
-                title: (_a = structure.data.title) === null || _a === void 0 ? void 0 : _a.replace(/<[^>]+>/gm, '').replace(/([\r\n]+ +)+/gm, '')
+                titleText: cleanedTitle,
+                title: rawTitle
             });
-            readCache[`postStructure_${fileName}`] = structure;
+            readCache[`post_content_structure_${fileName}`] = structure;
             return structure;
         }
     }

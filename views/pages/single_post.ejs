@@ -6,7 +6,7 @@
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Dwayne Codling stories and thoughts that you can watch and read.">
-    <title><%- currentArticle.data.title %></title>
+    <title><%- currentArticle.data.titleText %></title>
     <%- include("../partials/links") %>
 </head>
 
@@ -39,7 +39,7 @@
         <div class="container">
             <div class="hero__content footer__content">
                 <p class="hero__subheading"><%- currentArticle.data.date %> · <%- currentArticle.data.readTime %> READ </p>
-                <h1 class="hero__heading"><%- currentArticle.data.titleHTML %></h1>
+                <h1 class="hero__heading"><%- currentArticle.data.title %></h1>
             </div>
         </div>
     </section>
