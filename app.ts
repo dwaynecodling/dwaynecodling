@@ -2,10 +2,13 @@ import {Middleware} from "./internal_scripts/Middlewares";
 import * as home from "./controllers/mainController";
 
 const express = require("express");
+const helmet = require("helmet");
 const app = express();
 
 app.set('views', require("path").resolve(__dirname,"views") );
 app.set('view engine', 'ejs');
+
+app.use(helmet());
 
 app.use(express.json());                                    // to support JSON-encoded bodies
 app.use(express.urlencoded({ extended: true }));    // to support URL-encoded bodies
