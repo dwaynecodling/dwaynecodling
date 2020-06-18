@@ -5,6 +5,7 @@ import {raw} from "express";
 export namespace PostRepository{
 
     let markdownTool = new MarkdownTool();
+    const matter = require("gray-matter");
     const fs = require("fs");
     const path = require("path");
     let readCache:{[cacheKey:string]:any} = {};
@@ -82,7 +83,6 @@ export namespace PostRepository{
         if (fs.existsSync( filePath )){
 
             let content = fs.readFileSync(filePath, { encoding : "utf8" });
-            const matter = require("gray-matter");
             let structure = matter(content);
 
             let transformedContent = markdownTool.transform(structure.content);
