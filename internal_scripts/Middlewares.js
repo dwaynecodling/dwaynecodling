@@ -68,8 +68,8 @@ var Middleware;
                 let ext = urlPath.substr(urlPath.lastIndexOf(".") + 1);
                 let result = {
                     url: normalPath,
-                    width: (_b = (_a = m.groups['width']) !== null && _a !== void 0 ? _a : m.groups['s_width']) !== null && _b !== void 0 ? _b : null,
-                    height: (_d = (_c = m.groups['height']) !== null && _c !== void 0 ? _c : m.groups['s_height']) !== null && _d !== void 0 ? _d : null,
+                    width: ((_b = (_a = m.groups['width']) !== null && _a !== void 0 ? _a : m.groups['s_width']) !== null && _b !== void 0 ? _b : null),
+                    height: ((_d = (_c = m.groups['height']) !== null && _c !== void 0 ? _c : m.groups['s_height']) !== null && _d !== void 0 ? _d : null),
                     scale: (_e = m.groups['scale']) !== null && _e !== void 0 ? _e : "2x",
                     type: workingMime[ext]
                 };
@@ -81,7 +81,7 @@ var Middleware;
             }
             return null;
         };
-        const sharp = require('sharp');
+        const imgResizer = require('./ImageResizer');
         return async (req, res, next) => {
             let matchedUrl = options.listenIn.filter(d => req.url.startsWith(d));
             if (matchedUrl.length > -1) {
@@ -92,19 +92,20 @@ var Middleware;
                     let exists = fs.existsSync(realFilePath);
                     if (!exists)
                         return next();
-                    let instance = sharp(fs.readFileSync(realFilePath)).resize({
-                        width: urlParts.width,
-                        height: urlParts.height
-                    });
-                    instance.toBuffer()
-                        .then((data) => {
+                    imgResizer.resizer(realFilePath, {
+                        newWidth: urlParts.width,
+                        newHeight: urlParts.height,
+                        outputFileType: urlParts.type === "image/webp" ? "webp" : "jpg"
+                    }).then((data) => {
                         res.write(data);
                         res.end();
                         if (options.autoSave) {
-                            instance.toFile(path.join(__dirname, ".." + req.url));
+                            let finalPath = path.join(__dirname, ".." + req.url);
+                            fs.writeFile(finalPath, data, () => {
+                                console.log("saved", finalPath);
+                            });
                         }
-                    })
-                        .catch(err => {
+                    }).catch(err => {
                         console.log(err);
                         next();
                     });

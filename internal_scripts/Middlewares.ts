@@ -1,3 +1,4 @@
+import {url} from "inspector";
 
 export namespace Middleware{
 
@@ -89,10 +90,10 @@ export namespace Middleware{
                 let normalPath = urlPath.replace(r,'').replace(/(?:-\.)/gm,'.');
                 let ext = urlPath.substr(urlPath.lastIndexOf(".") + 1);
 
-                let result:{[n:string]:any} = {
+                let result = {
                     url: normalPath,
-                    width: m.groups['width'] ?? m.groups['s_width'] ?? null,
-                    height: m.groups['height'] ?? m.groups['s_height'] ?? null,
+                    width: <any>(m.groups['width'] ?? m.groups['s_width'] ?? null),
+                    height: <any>(m.groups['height'] ?? m.groups['s_height'] ?? null),
                     scale: m.groups['scale'] ?? "2x",
                     type: workingMime[ext]
                 };
@@ -104,7 +105,7 @@ export namespace Middleware{
             }
             return null;
         }
-        const sharp = require('sharp');
+        const imgResizer = require('./ImageResizer');
 
         return async (req, res, next) => {
             let matchedUrl = options.listenIn.filter(d => req.url.startsWith(d));
@@ -117,24 +118,25 @@ export namespace Middleware{
 
                     if (!exists) return next();
 
-                    let instance = sharp(fs.readFileSync(realFilePath)) .resize({
-                        width: urlParts.width,
-                        height: urlParts.height
+                    imgResizer.resizer(realFilePath, {
+                        newWidth: urlParts.width,
+                        newHeight: urlParts.height,
+                        outputFileType: urlParts.type === "image/webp" ? "webp" : "jpg"
+                    }).then( (data:Buffer) => {
+                        res.write(data);
+                        res.end();
+
+                        if (options.autoSave){
+                            let finalPath = path.join(__dirname, ".." + req.url);
+                            fs.writeFile(finalPath, data, ()=>{
+                                console.log("saved", finalPath);
+                            });
+                            // instance.toFile(path.join(__dirname, ".." + req.url));
+                        }
+                    }).catch( err => {
+                        console.log(err);
+                        next();
                     });
-
-                    instance.toBuffer()
-                        .then( (data:Buffer) => {
-                            res.write(data);
-                            res.end();
-
-                            if (options.autoSave){
-                                instance.toFile(path.join(__dirname, ".." + req.url));
-                            }
-                        })
-                        .catch( err => {
-                            console.log(err);
-                            next();
-                        });
                     return;
                 }
             }

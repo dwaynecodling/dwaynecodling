@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.7.1",
+    "canvas": "^2.6.1",
     "compression": "^1.7.4",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
@@ -42,9 +43,9 @@
     "multer": "^1.4.2",
     "node-sass": "^4.14.1",
     "nodemailer": "^6.4.8",
-    "sharp": "^0.25.4",
     "superagent": "^5.2.2",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.4",
+    "webp-converter": "^2.2.3"
   },
   "browserslist": [
     "last 1 version",
