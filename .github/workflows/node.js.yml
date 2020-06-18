@@ -28,7 +28,7 @@ jobs:
         user: dev_user
         password: ${{ secrets.DEV_PASS }}
         host: dwaynecodling.com
-        port: 22 
+        port: 21
         path: ./
         into: ./
         cleanupExisting: true
