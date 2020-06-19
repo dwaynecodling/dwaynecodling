@@ -1,11 +1,11 @@
 ---
 slug: we-dont-tell-people-post
 hero:
-    main: /assets/img/dwayne-and-dante.jpg
-    sml_jpeg: /assets/img/dwayne-and-dante-sml.jpg
-    sml_webp: /assets/img/dwayne-and-dante-sml.webp
-    lrg_webp: /assets/img/dwayne-and-dante-lrg.webp
-    lrg_jpeg: /assets/img/dwayne-and-dante-lrg.jpg
+    main: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante.jpg
+    sml_jpeg: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-sml.jpg
+    sml_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-sml.webp
+    lrg_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg.webp
+    lrg_jpeg: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg.jpg
 alt:  Dwayne and Family
 title: We <strong>don't tell</strong> people how we feel
 date: 14th June 2020
