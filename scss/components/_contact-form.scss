@@ -35,7 +35,6 @@
     border-bottom: 1px solid $color-grey;
     margin-bottom: 6.5rem;
 
-
     .info-snippet__bg-text {
         z-index: 1;
         color: #808181;
@@ -45,11 +44,9 @@
             font-size: 20rem;
             top: -10rem;
             left: -7rem;
-            color: #686a6c;
+            color: $color-faded-number-2;
         }
-
     }
-
 }
 
 .contact-form__title {

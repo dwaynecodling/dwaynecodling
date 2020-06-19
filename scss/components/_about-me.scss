@@ -111,19 +111,22 @@
             color: $color-primary-gold;
         }
     }
-
-
 }
 
-.about-me__img {
+.about-me__img--wrapper {
     width: 100%;
     margin-bottom: 3rem;
-    object-fit: cover;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
         width: 36.5%;
         margin-bottom: 0;
     }
+}
+
+.about-me__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about-me__details {
