@@ -16,7 +16,7 @@ home.get("/about-me", async function (req, res) {
 });
 home.get("/posts", async function(req, res){
     let posts = await PostRepository.getAllPosts(true);
-    res.render("pages/all_posts",{ posts: posts.slice(0, 10) });
+    res.render("pages/all_posts",{ posts: posts.slice(0, 20) });
 });
 home.get("/post/:slug", async function (req, res) {
     let slug = req.params['slug'];

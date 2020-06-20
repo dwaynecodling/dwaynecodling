@@ -228,6 +228,15 @@ h4 {
 p {
   font-size: 1.8rem; }
 
+li {
+  font-size: 1.8rem; }
+
+.para li {
+  font-size: 1.8rem;
+  line-height: 1.5; }
+  .para li:not(:last-of-type) {
+    margin-bottom: 1rem; }
+
 .link--alt a {
   color: #000;
   background-color: #fff; }
