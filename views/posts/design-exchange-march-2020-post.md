@@ -10,4 +10,6 @@ date: 11th March 2020
 excerpt: Diverse representations <strong> in design</strong> in and awkward conversations with colleagues <br/><br/>How to keep your <strong> green </strong>onions
 ---
 
-# Coming Soon
+# My Last in Physical Meet-up
+
+Corona was coming and this was probably the last time I would be in room with strangers.
