@@ -9,7 +9,7 @@ title: Rich Dad poor Dad
 date: 9th March 2017
 excerpt: What the Rich Teach Their Kids About <strong>Money </strong> That the Poor and Middle Class Do Not!
 ---
-# Notes #
+## Notes ##
 ---
 - Rich people make money work for them. 
 - Poor people work for money. 
