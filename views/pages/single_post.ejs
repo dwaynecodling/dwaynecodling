@@ -7,14 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Dwayne Codling stories and thoughts that you can watch and read.">
     <title><%- currentArticle.data.titleText %></title>
-    <%- include("../partials/links") %>
-
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:creator" content="@codling" />
     <meta property="og:title" content="<%= currentArticle.data.titleText %>" />
     <meta property="og:description" content="<%= currentArticle.data.excerpt %>" />
     <meta property="og:image" content="https://dwaynecodling.com<%= currentArticle.data.hero.lrg_jpeg %>" />
-
+    <%- include("../partials/links") %>
 </head>
 
 <body>
