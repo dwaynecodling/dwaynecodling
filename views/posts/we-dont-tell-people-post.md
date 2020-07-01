@@ -30,7 +30,7 @@ I would have to work hard with my limited resources.
 
 I learnt, as well. that having other people to help, who help you along the way, would be more beneficial to uplift myself from my situation and progress to a more joyous life. People who already had this backing in place were already in an advantageous situation than me.
 
-At high school, I did this by smartly pooling together money with friends and buying meals that we could share. Due to me being friends with older students, I was able to get their second-hand books at a reduced cost or for free. Still, though, the best I could do was to get to the university level and the was faced with the reality that I was just not the type of person that could afford University.
+At high school, I did this by smartly pooling together money with friends and buying meals that we could share. Due to me being friends with older students, I was able to get their second-hand books at a reduced cost or for free. Still, though, the best I could do was to get to the university level, and then I was faced with the reality that I was just not the type of person that could afford University.
 
 In Jamaica, only 3% of the entire country was able to get a university education.
 
@@ -38,7 +38,7 @@ Where I came from there was no one from my area that could attend if not awarded
 
 So I went to work at age 18, working as an accounts payable clerk, at a public utility company in Jamaica, the National Water Commission where once again, I met people in higher positions who went to university and were highly sought after to work in prime positions due to them having Engineering degrees.
 
-And that frankly could have been where my story ends, it was a job that paid enough so you could pay the fare back to work and just enough for lunch and a bit left to pay a household bill to help the family out.
+And that frankly could have been where my story ends, it was a job that paid enough, so you could pay the fare back to work and just enough for lunch, and a bit left to pay a household bill to help the family out.
 
 Luckily, I had people who saw me and felt I could make more of myself if my situation was a bit better. I was wasting away in a job that was not going anywhere.
 

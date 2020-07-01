@@ -11,6 +11,7 @@ alt:  Nottingham
 title: My <strong>Talk</strong> at Tech Nottingham
 date: 8th June 2020
 excerpt: The talk will focus on the <strong> generational wealth gap</strong> in and how this facilitates a difference in circumstances between different races.
+published: false
 ---
 
 ### Introduction

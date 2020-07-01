@@ -33,7 +33,9 @@ var PostRepository;
         if (results.length === 0) {
             for (const filePath of dir) {
                 if (filePath.endsWith(".md")) {
-                    results.push(await getPostFileContentStructure(filePath));
+                    let postEntry = await getPostFileContentStructure(filePath);
+                    if (postEntry && postEntry.data.published !== false)
+                        results.push(postEntry);
                 }
             }
         }
@@ -83,8 +85,12 @@ var PostRepository;
                 title: rawTitle
             });
             readCache[`post_content_structure_${fileName}`] = structure;
-            return structure;
+            if (structure && structure.data.published !== false)
+                return structure;
+            else
+                return null;
         }
+        return null;
     }
     PostRepository.getPostFileContentStructure = getPostFileContentStructure;
 })(PostRepository = exports.PostRepository || (exports.PostRepository = {}));
