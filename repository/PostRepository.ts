@@ -25,6 +25,7 @@ export namespace PostRepository{
             alt: string;
             date?: string;
             readTime?: string;
+            published?: boolean;
         }
     }
 
@@ -47,7 +48,8 @@ export namespace PostRepository{
         if (results.length === 0){
             for (const filePath of dir) {
                 if (filePath.endsWith(".md")) {
-                    results.push(await getPostFileContentStructure(filePath));
+                    let postEntry = await getPostFileContentStructure(filePath);
+                    if (postEntry.data.published !== false) results.push(postEntry);
                 }
             }
         }
@@ -108,7 +110,9 @@ export namespace PostRepository{
 
             readCache[`post_content_structure_${fileName}`] = structure;
 
-            return structure;
+            if (structure.data.published !== false) return structure
+            else return null;
         }
+        return null;
     }
 }
