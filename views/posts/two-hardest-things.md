@@ -8,6 +8,7 @@ hero:
 title: <strong>Frustration</strong> Why don't this work
 date: 4th September 2019
 excerpt: The two things that are the <strong>hardest</strong> in programming is naming things and validate cache.
+published: false
 ---
 
 ## Notes ##

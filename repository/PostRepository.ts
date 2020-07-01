@@ -49,7 +49,7 @@ export namespace PostRepository{
             for (const filePath of dir) {
                 if (filePath.endsWith(".md")) {
                     let postEntry = await getPostFileContentStructure(filePath);
-                    if (postEntry.data.published !== false) results.push(postEntry);
+                    if (postEntry && postEntry.data.published !== false) results.push(postEntry);
                 }
             }
         }
@@ -110,7 +110,7 @@ export namespace PostRepository{
 
             readCache[`post_content_structure_${fileName}`] = structure;
 
-            if (structure.data.published !== false) return structure
+            if (structure && structure.data.published !== false) return structure
             else return null;
         }
         return null;

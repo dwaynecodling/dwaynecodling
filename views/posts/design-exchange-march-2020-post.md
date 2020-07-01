@@ -8,6 +8,7 @@ hero:
 title: Design Exchange (DXN) Nottingham
 date: 11th March 2020
 excerpt: Diverse representations <strong> in design</strong> in and awkward conversations with colleagues <br/><br/>How to keep your <strong> green </strong>onions
+published: false
 ---
 
 # My Last in Physical Meet-up

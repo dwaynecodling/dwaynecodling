@@ -8,6 +8,7 @@ hero:
 title: CSS Day
 date: 14th June 2019
 excerpt: Capture the stunning <strong>essence</strong> of the early morning sunrise in the Californian wilderness.
+published: false
 ---
 
 
