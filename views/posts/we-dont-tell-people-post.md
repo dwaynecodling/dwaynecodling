@@ -81,9 +81,9 @@ I wanted to counter this by giving them a better start, wanting them better educ
 
 This leads on to the how, how can we do this.
 
-Why try to do it all by myself when every aspect of my life has shown me that having people, who can help you progress removes so many of the barriers that I alone would have found it hard to get pass? I believe in this, so will live by it, takes a community to raise a child.
+Why try to do it all by myself when every aspect of my life has shown me that having people, who can help you progress removes so many of the barriers that I alone would have found it hard to get pass? I believe in this, so will live by it, "it takes a community to raise a child".
 
-More opportunities from surrounding themselves with people and friends that come from homes that also have a more progressive mindset.
+More opportunities come from surrounding them with people and friends that come from homes that also have a more progressive mindset.
 
 I know, no one, if they are being honest, would want to jump into the
 unknown, we could all stay in the same situation and just deal with the
