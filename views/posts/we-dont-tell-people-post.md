@@ -38,7 +38,9 @@ Where I came from there was no one from my area that could attend if not awarded
 
 So I went to work at age 18, working as an accounts payable clerk, at a public utility company in Jamaica, the National Water Commission where once again, I met people in higher positions who went to university and were highly sought after to work in prime positions due to them having Engineering degrees.
 
+
 Frankly that could have been where my story ends, it was a job that paid enough, so you could pay the fare back to work and just enough for lunch, and a bit left to pay a household bill to help the family out.
+
 
 Luckily,there were people who saw me and felt I could make more of myself if my situation was a bit better. I was wasting away in a job that was not going anywhere.
 
