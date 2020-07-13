@@ -28,7 +28,7 @@ He lived in a two-story house, 4 bedrooms and 2 bathrooms, and was an only child
 
 I would have to work hard with my limited resources. 
 
-I learnt, as well. that having other people to help, who help you along the way, would be more beneficial to uplift myself from my situation and progress to a more joyous life. People who already had this backing in place were already in an advantageous situation than me.
+I learnt, as well, that having other people to help, who help you along the way, would be more beneficial to uplift myself from my situation and progress to a more joyous life. People who already had this backing in place were already in an advantageous situation than me.
 
 At high school, I did this by smartly pooling together money with friends and buying meals that we could share. Due to me being friends with older students, I was able to get their second-hand books at a reduced cost or for free. Still, though, the best I could do was to get to the university level, and then I was faced with the reality that I was just not the type of person that could afford University.
 
