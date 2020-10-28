@@ -561,6 +561,8 @@ footer {
     transition: all 0.2s; }
     .hero__down-arrow:hover {
       border: .4rem solid #fff; }
+    .hero__down-arrow:after {
+      display: none; }
     @media screen and (min-width: 40em) {
       .hero__down-arrow {
         bottom: 6rem; } }
