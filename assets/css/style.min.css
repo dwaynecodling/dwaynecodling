@@ -534,6 +534,8 @@ footer {
         padding: 2rem 3rem; } }
     .hero__button:hover {
       background-color: #c79048; }
+    .hero__button:after {
+      display: none; }
   .hero__button-content {
     display: flex;
     align-items: center; }
