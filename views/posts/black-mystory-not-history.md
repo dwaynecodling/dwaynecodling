@@ -9,36 +9,31 @@ title: Black <strong>My Story</strong> (Not History)
 date: 28th October 2020
 excerpt: "I wanted to write a little about this month, in particular, <strong>October</strong> the month in the UK where we celebrate Black History."
 ---
-So let’s talk, I haven’t done a post in a while. So the world changed a bit but rather than focusing on the negative let’s be positive, things have been going well at work, and I am now a Pod Lead. The reason I wanted to be a Pod Lead is that I wanted to put my colleagues and company in the best position that would make them successful. 
-
-Personally, also I wanted to change the current levels of underrepresented black professionals in the tech industry, particularly in a Leadership position.
-
+So let's talk, I haven't done a post in a while. So the world changed a bit but rather than focusing on the negative let's be positive, things have been going well at work and I am now a Pod Lead. The reason I wanted to be a Pod Lead is that I wanted to put my colleagues and company in the best position that would make them successful. Personally, also I wanted to change the current levels of under represented black professionals in the tech industry, particularly in a Leadership position.\
 You cannot be what you cannot see, and I want to be a role model, especially to my two little black boys who look up to me.
 
 All that being said I wanted to write a little about this month, in particular, October, the month in the UK where we celebrate Black History.
 
-Some home truths, I have never celebrated black history month in the UK even though this month started way back in 1989, and I have been in the UK since 2002. I cannot remember a time when it was a thing I celebrated, it’s not like Halloween that we have adopted as a celebration event it seems to always been low key, under the radar thing, but with recent events highlighting the fight for racial equality, and the resurgence of the Black Lives Matter movement it seems to have had some traction this year and I have seen more mention of it in the mainstream.
+Some home truths, I have never celebrated black history month in the UK even though this month started way back in 1989, and I have been in the UK since 2002. I cannot remember a time when it was a thing I celebrated, it's not like Halloween that we have adopted as a celebration event it seems to always been low key, under the radar thing, but with recent events highlighting the fight for racial equality and the resurgence of the Black Lives Matter movement it seems to have had some traction this year and I have seen more mention of it in the mainstream.
 
 Do I feel bad I never took time to reflect and celebrate in previous years, short answer Yes I do, but probably not for the reasons you think.
 
-So this year to celebrate I started with a simple idea, being in lockdown and wanting to do something to not just focus on work and family at home. I could stick to a new routine for 31 days that could help put more interesting learning within every quickly passing day.
-
+So this year to celebrate I started with a simple idea, being in lockdown and wanting to do something to not just focus on work and family at home. I could stick to a new routine for 31 days that could help put more interesting learning within every quickly passing day.\
 I seem to work particularly well when I have a set goal to achieve with a time limit, ala P90x, Insanity, frankly any Beachbody fitness program and Veganuary to name a few. I am just particularly wired to stick to set programs until completion.
 
-So for 28 days straight I have been sharing Black people who inspire me with my work colleagues on the company’s slack channel and sharing these inspirational black individuals’ history, stories, books, movies and videos. It seems like an easy enough task as I somewhat have a trump card of being a black person who loves history. It would have been a straightforward task to complete.
+So for 28 days straight I have been sharing Black people who inspire me with my work colleagues on the company's slack channel and sharing these inspirational black individuals' history, stories, books, movies and videos. It seems like an easy enough task as I somewhat have a trump card of being a black person who loves history. It would have been a straightforward task to complete.
 
-At first, it was easy as I knew about most of the Black Americans historical figures that we see posted about every year but then I felt I could go deeper, so I focused on finding other inspirational black people whose stories are not in the mainstream. Focusing on the UK, Africa, Caribbean and US from different eras past and present.
-
+At first, it was easy as I knew about most of the Black Americans historical figures that we see posted about every year but then I felt I could go deeper, so I focused on finding other inspirational black people whose stories are not in the mainstream. Focusing on the UK, Africa, Caribbean and US from different eras past and present.\
 I learnt a lot more and shared these incredible stories but there was a point where I felt somewhat self-conscious about bombarding my work colleagues on slack every day at 7:30 am with a post about black individuals lives, stories and histories, I mean most of my colleagues are white and some of these figures and events are brand new to them, it could be too much to get through and keep up with.
 
-This feeling changed however for the better, It was on day 19 where I felt like maybe this was too much plus I felt like I was the only one doing this. Me being that one black guy singing the praise hymn out aloud in church annoying the heck out of everyone else. I don’t like that guy, just saying.
+This feeling changed however for the better, It was on day 19 where I felt like maybe this was too much plus I felt like I was the only one doing this. Me being that one black guy singing the praise hymn out aloud in church annoying the heck out of everyone else. I don't like that guy, just saying.
 
-So I just ask everyone a simple question,
-@here today marks day 19 of Black History Month, though I think I have been celebrating this with everyone, I do feel like I am the only guy at the party so here’s the challenge from tomorrow until the end of Black History Month. I would appreciate it if you could find time to join in by highlighting someone black that has inspired you. That is all."
+So I just ask everyone a simple question,\
+@here today marks day 19 of Black History Month, though I think I have been celebrating this with everyone, I do feel like I am the only guy at the party so here's the challenge from tomorrow until the end of Black History Month. I would appreciate it if you could find time to join in by highlighting someone black that has inspired you. That is all ."
 
-It’s crazy how things work when you show vulnerability. The responses I got led me to have one of the best feelings by far I have ever had working at any company. I felt like I was celebrating with everyone else that posted and took the time to talk about what black person inspired them and why they inspired them. It was all digital, but the feelings that came over me could not have been more real.
+It's crazy how things work when you show vulnerability. The responses I got led me to have one of the best feelings by far I have ever had working at any company. I felt like I was celebrating with everyone else that posted and took the time to talk about what black person inspired them and why they inspired them. It was all digital, but the feelings that came over me could not have been more real.
 
-It caused a pivotal shift in my mindset. It was not about me as the only black person pushing the message but everyone that I worked with that took part also had those black people they also wanted to celebrate with that they held in high regards and looked upon as inspirational. I was in awe of some people that got posted and learnt so much more by having more people involved. I don’t think words can truly express how it made me feel; it made me appreciate my colleagues more and saw them as like-minded individuals.
+It caused a pivotal shift in my mindset. It was not about me as the only black person pushing the message but everyone that I worked with that took part also had those black people they also wanted to celebrate with that they held in high regards and looked upon as inspirational. I was in awe of some people that got posted and learnt so much more by having more people involved. I don't think words can truly express how it made me feel; it made me appreciate my colleagues more and saw them as like-minded individuals.
 
 That gave me the boost to carry on researching and posting and sharing, and not only did it inspire me to continue, but it also made me think how truly lucky I am to work where I work.
 
@@ -264,10 +259,7 @@ https://youtu.be/huN2DQg-zAw\
 https://youtu.be/yr0OwxPteeI\
 https://youtu.be/MwGoMEo5rIw
 
-
-## Steve McQueen
-Sir Steven Rodney McQueen CBE (born 9 October 1969) is a British filmmaker and video artist. He is known for his film 12 Years a Slave (2013), a historical adaptation of an 1853 slave narrative memoir, for which he won the Academy Award for Best Picture, the BAFTA Award for Best Film, and the Golden Globe Award for Best Motion Picture – Drama, as well as the New York Film Critics Circle Award for Best Director.McQueen is the first black filmmaker to win the Academy Award for Best Picture.
-
+### Steve McQueen
 https://www.esquire.com/uk/culture/a34367773/watch-steve-mcqueen-esquire-townhouse-2020/
 
 #### 19/31
@@ -280,17 +272,14 @@ https://www.english-heritage.org.uk/learn/histories/women-in-history/dido-belle/
 https://youtu.be/8GC43pbkX4g
 
 ## Nathaniel Mary Quinn
-is an American painter. Quinn is known for his collage-style composite portraits that feature disfigured faces.\
 https://youtu.be/mZJwGaJaJOQ
 
 ### All post have been shared by colleagues
 
 ## Neil deGrasse Tyson
-is an American astrophysicist, planetary scientist, author, and science communicator\
 https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson
 
 ## Daryl Davis
-is an American R&B and blues musician, activist, author, actor and bandleader.[1] His efforts to improve race relations, in which as an African-American he engaged with members of the Ku Klux Klan (KKK), convinced Klansmen to leave and denounce the KKK.\
 https://www.youtube.com/watch?v=ORp3q1Oaezw
 
 ## Misty Copeland
@@ -382,11 +371,9 @@ See her in: How to get away with Murder, The Help, Fences, Widows, Doubt, Suicid
 
 #### 22/31
 ## Doreen Lawrence
-Doreen Delceita Lawrence, Baroness Lawrence of Clarendon, OBE (née Graham; born 24 October 1952) is a British Jamaican campaigner and the mother of Stephen Lawrence, a black British teenager who was murdered in a racist attack in South East London in 1993. She promoted reforms of the police service and founded the Stephen Lawrence Charitable Trust. She was appointed to the Order of the British Empire for "services to community relations" in 2003; Lawrence was created a Life Peer in 2013. She served as Chancellor of De Montfort University, Leicester from January 2016 to January 2020\
-\
-**Links**\
 https://en.m.wikipedia.org/wiki/Doreen_Lawrence\
 \
+**Links**\
 https://www.amazon.co.uk/dp/0571234593/ref=cm_sw_em_r_mt_btf_awdb_ZPrKFbCZ4X79D
 \
 https://blackculturalarchives.org/baroness-doreen-lawrence\
@@ -451,7 +438,6 @@ https://youtu.be/5Jbjiv4I0oY
 
 #### 28/31
 ## Akala
-Kingslee James McLean Daley (born 1 December 1983), better known by the stage name Akala, is a British rapper, journalist, author, activist and poet from Kentish Town, London. In 2006, he was voted the Best Hip Hop Act at the MOBO Awards and has been included on the annual Powerlist of the 100 most influential Black British people in the UK.
 \
 **Links**\
 <https://en.m.wikipedia.org/wiki/Akala_(rapper)>
