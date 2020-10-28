@@ -264,7 +264,10 @@ https://youtu.be/huN2DQg-zAw\
 https://youtu.be/yr0OwxPteeI\
 https://youtu.be/MwGoMEo5rIw
 
-### Steve McQueen
+
+## Steve McQueen
+Sir Steven Rodney McQueen CBE (born 9 October 1969) is a British filmmaker and video artist. He is known for his film 12 Years a Slave (2013), a historical adaptation of an 1853 slave narrative memoir, for which he won the Academy Award for Best Picture, the BAFTA Award for Best Film, and the Golden Globe Award for Best Motion Picture – Drama, as well as the New York Film Critics Circle Award for Best Director.McQueen is the first black filmmaker to win the Academy Award for Best Picture.
+
 https://www.esquire.com/uk/culture/a34367773/watch-steve-mcqueen-esquire-townhouse-2020/
 
 #### 19/31
@@ -277,14 +280,17 @@ https://www.english-heritage.org.uk/learn/histories/women-in-history/dido-belle/
 https://youtu.be/8GC43pbkX4g
 
 ## Nathaniel Mary Quinn
+is an American painter. Quinn is known for his collage-style composite portraits that feature disfigured faces.\
 https://youtu.be/mZJwGaJaJOQ
 
 ### All post have been shared by colleagues
 
 ## Neil deGrasse Tyson
+is an American astrophysicist, planetary scientist, author, and science communicator\
 https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson
 
 ## Daryl Davis
+is an American R&B and blues musician, activist, author, actor and bandleader.[1] His efforts to improve race relations, in which as an African-American he engaged with members of the Ku Klux Klan (KKK), convinced Klansmen to leave and denounce the KKK.\
 https://www.youtube.com/watch?v=ORp3q1Oaezw
 
 ## Misty Copeland
@@ -376,9 +382,11 @@ See her in: How to get away with Murder, The Help, Fences, Widows, Doubt, Suicid
 
 #### 22/31
 ## Doreen Lawrence
-https://en.m.wikipedia.org/wiki/Doreen_Lawrence\
+Doreen Delceita Lawrence, Baroness Lawrence of Clarendon, OBE (née Graham; born 24 October 1952) is a British Jamaican campaigner and the mother of Stephen Lawrence, a black British teenager who was murdered in a racist attack in South East London in 1993. She promoted reforms of the police service and founded the Stephen Lawrence Charitable Trust. She was appointed to the Order of the British Empire for "services to community relations" in 2003; Lawrence was created a Life Peer in 2013. She served as Chancellor of De Montfort University, Leicester from January 2016 to January 2020\
 \
 **Links**\
+https://en.m.wikipedia.org/wiki/Doreen_Lawrence\
+\
 https://www.amazon.co.uk/dp/0571234593/ref=cm_sw_em_r_mt_btf_awdb_ZPrKFbCZ4X79D
 \
 https://blackculturalarchives.org/baroness-doreen-lawrence\
