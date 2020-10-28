@@ -355,8 +355,9 @@ https://www.amazon.co.uk/dp/1785906038/ref=cm_sw_r_cp_api_i_Wa9JFb9KF9V18
 ## Betye Saar - Shared by my colleague
 Betye Irene Saar (born July 30, 1926) is an African-American artist known for her work in the medium of assemblage. Saar has been called "a legend" in the world of contemporary art. She is a visual storyteller and an accomplished printmaker.\
 Saar's work explores both the realities of African-American oppression, and the mysticism of symbols through the combination of every day found objects. "I'm the kind of person who recycles materials but I also recycle emotions and feelings," she explains. "And I had a great deal of anger about the segregation and the racism in this country."\
-She was a part of the Black Arts Movement in the 1970s, and her work tackles racism through the appropriation and recontextualization of African-American folklore and icons, as seen in the seminal The Liberation of Aunt Jemima (1972), a wooden box containing a doll of a stereotypical "mammy" figure.\
-/
+She was a part of the Black Arts Movement in the 1970s, and her work tackles racism through the appropriation and recontextualization of African-American folklore and icons, as seen in the seminal The Liberation of Aunt Jemima (1972), a wooden box containing a doll of a stereotypical "mammy" figure.
+
+
 **Links**\
 https://www.moma.org/artists/5102\
 https://www.youtube.com/watch?v=G2iK2LHttfc\
