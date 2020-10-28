@@ -264,10 +264,8 @@ https://youtu.be/huN2DQg-zAw\
 https://youtu.be/yr0OwxPteeI\
 https://youtu.be/MwGoMEo5rIw
 
-
 ## Steve McQueen
 Sir Steven Rodney McQueen CBE (born 9 October 1969) is a British filmmaker and video artist. He is known for his film 12 Years a Slave (2013), a historical adaptation of an 1853 slave narrative memoir, for which he won the Academy Award for Best Picture, the BAFTA Award for Best Film, and the Golden Globe Award for Best Motion Picture – Drama, as well as the New York Film Critics Circle Award for Best Director.McQueen is the first black filmmaker to win the Academy Award for Best Picture.
-
 https://www.esquire.com/uk/culture/a34367773/watch-steve-mcqueen-esquire-townhouse-2020/
 
 #### 19/31
@@ -286,7 +284,7 @@ https://youtu.be/mZJwGaJaJOQ
 ### All post have been shared by colleagues
 
 ## Neil deGrasse Tyson
-is an American astrophysicist, planetary scientist, author, and science communicator\
+ is an American astrophysicist, planetary scientist, author, and science communicator\
 https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson
 
 ## Daryl Davis
@@ -355,9 +353,8 @@ https://www.amazon.co.uk/dp/1785906038/ref=cm_sw_r_cp_api_i_Wa9JFb9KF9V18
 ## Betye Saar - Shared by my colleague
 Betye Irene Saar (born July 30, 1926) is an African-American artist known for her work in the medium of assemblage. Saar has been called "a legend" in the world of contemporary art. She is a visual storyteller and an accomplished printmaker.\
 Saar's work explores both the realities of African-American oppression, and the mysticism of symbols through the combination of every day found objects. "I'm the kind of person who recycles materials but I also recycle emotions and feelings," she explains. "And I had a great deal of anger about the segregation and the racism in this country."\
-She was a part of the Black Arts Movement in the 1970s, and her work tackles racism through the appropriation and recontextualization of African-American folklore and icons, as seen in the seminal The Liberation of Aunt Jemima (1972), a wooden box containing a doll of a stereotypical "mammy" figure.
-
-
+She was a part of the Black Arts Movement in the 1970s, and her work tackles racism through the appropriation and recontextualization of African-American folklore and icons, as seen in the seminal The Liberation of Aunt Jemima (1972), a wooden box containing a doll of a stereotypical "mammy" figure.\
+\
 **Links**\
 https://www.moma.org/artists/5102\
 https://www.youtube.com/watch?v=G2iK2LHttfc\
@@ -387,7 +384,6 @@ Doreen Delceita Lawrence, Baroness Lawrence of Clarendon, OBE (née Graham; born
 \
 **Links**\
 https://en.m.wikipedia.org/wiki/Doreen_Lawrence\
-\
 https://www.amazon.co.uk/dp/0571234593/ref=cm_sw_em_r_mt_btf_awdb_ZPrKFbCZ4X79D
 \
 https://blackculturalarchives.org/baroness-doreen-lawrence\
