@@ -534,6 +534,10 @@ footer {
         padding: 2rem 3rem; } }
     .hero__button:hover {
       background-color: #c79048; }
+
+    .hero__button:after {
+      display: none; }
+
   .hero__button-content {
     display: flex;
     align-items: center; }
@@ -559,6 +563,10 @@ footer {
     transition: all 0.2s; }
     .hero__down-arrow:hover {
       border: .4rem solid #fff; }
+
+    .hero__down-arrow:after {
+      display: none; }
+
     @media screen and (min-width: 40em) {
       .hero__down-arrow {
         bottom: 6rem; } }

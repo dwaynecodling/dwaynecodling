@@ -62,6 +62,9 @@
     &:hover {
       background-color: darken($color-primary-gold, 2%);
     }
+    &:after {
+      display: none;
+    }
   }
 
   &__button-content {
@@ -98,6 +101,9 @@
         &:hover {
            border: .4rem solid #fff;
         }
+    &:after {
+      display: none;
+    }
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
       bottom: 6rem;
