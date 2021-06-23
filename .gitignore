@@ -2,3 +2,5 @@
 node_modules
 .idea/
 *.imi
+*.js
+*.js.map
