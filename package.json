@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "watch:sass": "node-sass scss/main.scss assets/css/style.min.css -w",
-    "devserver": "node .",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start": "node .",
+    "devserver": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass scss/main.scss assets/css/style.comp.css",
     "concat:css": "concat -o assets/css/style.concat.css assets/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' assets/css/style.concat.css -o assets/css/style.prefix.css",
