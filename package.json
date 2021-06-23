@@ -43,7 +43,7 @@
     "markdown-it-task-checkbox": "^1.0.6",
     "multer": "^1.4.2",
     "node-sass": "^4.14.1",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.4.16",
     "superagent": "^5.2.2",
     "typescript": "^3.7.4",
     "webp-converter": "^2.2.3"
