@@ -1,6 +1,8 @@
 //about me
 
 import Layout from "../../components/layouts/Layout";
+import Image from 'next/image'
+import profilePic from '../../public/assets/img/pages/dwayne_sml.jpg'
 
 export default function AboutMe({children}){
 	return (
@@ -33,12 +35,9 @@ export default function AboutMe({children}){
 										<li className="about-me__quick-link"><a href="#family">Family Man</a></li>
 									</ul>
 								</div>
-								<picture className="about-me__img--wrapper">
-									<source type="image/jpeg" data-srcset="/assets/img/pages/dwayne_sml.jpg"/>
-										<source type="image/webp" data-srcset="/assets/img/pages/dwayne_sml.webp"/>
-											<img className="about-me__img lazyload"
-											     data-src="/assets/img/pages/dwayne_sml.jpg" alt="Dwayne Codling"/>
-								</picture>
+								<div className="about-me__img--wrapper">
+									<Image src={profilePic}  alt="Dwayne Codling" />
+								</div>
 
 							</div>
 							<div className="about-me__details">

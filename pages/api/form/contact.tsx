@@ -1,5 +1,5 @@
 
-// contct endpoint
+// contact endpoint
 
 export default (req, res)=>{
 	/*
