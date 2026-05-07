@@ -8,6 +8,7 @@ Proofread every markdown file in `views/posts/` and fix any grammar, punctuation
 
 - Fix grammar, punctuation, spelling, and capitalisation errors only
 - Do NOT restructure sentences or paragraphs
+- Do NOT introduce em dashes (—); use semicolons instead where a joining punctuation is needed
 - Do NOT change the meaning of anything
 - Do NOT alter Dwayne's voice — keep it direct, personal, and first-person
 - Do NOT change frontmatter fields (slug, title, date, excerpt, hero, published, alt)
