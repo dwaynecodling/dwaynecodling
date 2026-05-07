@@ -22,7 +22,7 @@ export namespace Mailer{
         const { Resend } = require('resend');
         const resend = new Resend(process.env.RESEND_API_KEY);
 
-        return await resend.emails.send({
+        const { data, error } = await resend.emails.send({
             from: options.from.name
                 ? `${options.from.name} <onboarding@resend.dev>`
                 : 'onboarding@resend.dev',
@@ -32,6 +32,9 @@ export namespace Mailer{
             html: options.body.html,
             text: options.body.text
         });
+
+        if (error) throw new Error(JSON.stringify(error));
+        return data;
     }
 
 }
