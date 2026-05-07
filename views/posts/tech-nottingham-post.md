@@ -6,7 +6,6 @@ hero:
     sml_webp: /assets/img/posts/2020-tech-notts/nottingham-sml.webp
     lrg_webp: /assets/img/posts/2020-tech-notts/nottingham-lrg.webp
     lrg_jpeg: /assets/img/posts/2020-tech-notts/nottingham-lrg.jpg
-    video_yt: zwvB88IKaTo
 alt: Nottingham
 title: Diversity <strong>vs</strong> Inclusion
 date: 30th July 2020
