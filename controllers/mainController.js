@@ -43,7 +43,7 @@ home.post("/form/contact", async function (req, res) {
         return;
     }
     superAgent.post("https://www.google.com/recaptcha/api/siteverify").type("form").send({
-        secret: "6Lf5DgEVAAAAABvIlQM1XngklKvnoclH76bgNhS5",
+        secret: process.env.RECAPTCHA_SECRET,
         response: token
     }).end(async (err, resp) => {
         let response = resp.body;

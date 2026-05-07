@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lf5DgEVAAAAAAFVzjdmsdIe1yRIiBrsx9ZzBspa"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lcdhd4sAAAAAOxvi9Pgtnb4sejx0SNPT_-XTOsx"></script>
 </head>
 
 <body>
@@ -105,7 +105,7 @@
         let fData = new FormData(form);
 
         grecaptcha.ready(function() {
-            grecaptcha.execute('6Lf5DgEVAAAAAAFVzjdmsdIe1yRIiBrsx9ZzBspa', {action: 'send_message'}).then(function(token) {
+            grecaptcha.execute('6Lcdhd4sAAAAAOxvi9Pgtnb4sejx0SNPT_-XTOsx', {action: 'send_message'}).then(function(token) {
                 fData.append("token", token);
                 fData.append("action", "send_message");
                 sendFormData(form.getAttribute("action"), form.getAttribute("method"), fData, data => {
