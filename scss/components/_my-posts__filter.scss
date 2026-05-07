@@ -30,15 +30,16 @@
 
 .my-posts__select {
     width: 100%;
-    border-radius: 0;
-    background: url(../svg/dropdown.svg) no-repeat right 12px center #fff;
+    border-radius: 4px;
+    background-color: $color-forest-card;
     background-size: 2.5rem;
     font-weight: 500;
     font-size: $nav-text-uppercase;
-    border: 1px solid $color-grey-container;
+    border: 1px solid rgba(200,133,58,0.25);
     padding: 1rem 2rem;
     appearance: none;
     text-transform: uppercase;
+    color: $color-cream;
 }
 
 .my-posts__filter--desktop {
@@ -70,8 +71,7 @@
     &:hover{
         position: relative;
         cursor: pointer;
-        color: $color-primary-gold;
-        color: $color-primary-gold;
+        color: $color-amber;
     }
 
     &:after {

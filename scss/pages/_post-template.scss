@@ -1,19 +1,20 @@
 .post-template__img-wrapper{
-    display: block;
-    position: relative;
-    padding-bottom: 50%;
-    background-color: #fff;
     width: 100%;
-    height: 0;
+    height: 44rem;
+    max-height: 50vh;
+    overflow: hidden;
+    background-color: $color-forest-mid;
+    margin-bottom: 6rem;
 }
 
 .post-template__iframe-wrapper{
     display: block;
     position: relative;
-    padding-bottom: 50%;
-    background-color: #fff;
+    padding-bottom: 56.25%;
+    background-color: $color-forest-mid;
     width: 100%;
     height: 0;
+    margin-bottom: 6rem;
 }
 
 .post-template__iframe{
@@ -26,18 +27,97 @@
 
 .post-template__img {
     display: block;
-    position: absolute;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
 }
 
 .post-template__content {
-    max-width: 640px;
+    max-width: 68rem;
     margin: 0 auto;
+
+    // First paragraph stands out slightly
+    > p:first-of-type {
+        font-size: 2rem;
+        line-height: 3.6rem;
+        color: $color-cream;
+        font-weight: 400;
+        margin-bottom: 3.2rem;
+    }
+
+    p {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        color: rgba(244, 237, 224, 0.8);
+        margin-bottom: 2.4rem;
+    }
+
+    h2, h3, h4 {
+        font-family: 'Playfair Display', Georgia, serif;
+        color: $color-cream;
+        margin-top: 5.6rem;
+        margin-bottom: 1.6rem;
+        line-height: 1.25;
+    }
+
+    h2 { font-size: 3rem; }
+    h3 { font-size: 2.4rem; }
+    h4 { font-size: 2rem; }
+
+    a {
+        color: $color-amber;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-color: rgba(200,133,58,0.4);
+        font-weight: 500;
+        &:after { display: none; }
+        &:hover {
+            color: $color-cream;
+            text-decoration-color: $color-amber;
+        }
+    }
+
+    ul, ol {
+        padding-left: 2.4rem;
+        margin-bottom: 2.8rem;
+        li {
+            font-size: 1.8rem;
+            line-height: 3rem;
+            color: rgba(244, 237, 224, 0.8);
+            margin-bottom: 1rem;
+        }
+    }
+
+    blockquote {
+        margin: 5rem 0;
+        padding: 2.4rem 3rem;
+        border-left: 3px solid $color-amber;
+        background-color: $color-forest-card;
+
+        p {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2.2rem;
+            line-height: 3.6rem;
+            color: $color-cream;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid rgba(200,133,58,0.18);
+        margin: 5.6rem 0;
+    }
+
+    strong { color: $color-cream; font-weight: 700; }
+    em { color: $color-cream; }
+
+    img {
+        width: 100%;
+        margin: 3rem 0;
+    }
 }
 
 .post-template__header {

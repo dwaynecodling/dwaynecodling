@@ -1,118 +1,246 @@
 .page {
     font-size: 1.2rem;
-
-    h3 {
-        font-size: 1.5rem;
-    }
+    h3 { font-size: 1.5rem; }
 }
 
-.page__container {
-    display: flex;
-    flex-wrap: wrap;
-
-    &:not(:first-of-type) {
-
-    }
-}
-
-.page__section:not(:last-of-type) {
-    margin-right: $base-spacing * 2;;
-
-}
-
-.page__links {
-    font-size: 1.2rem;
-    list-style: none;
-}
-
+.page__container { display: flex; flex-wrap: wrap; }
+.page__section:not(:last-of-type) { margin-right: $base-spacing * 2; }
+.page__links { font-size: 1.2rem; list-style: none; }
 .page__link {
     font-size: 1rem;
-
     a {
         text-decoration: none;
-        padding: $base-spacing/4;
+        padding: calc(#{$base-spacing} / 4);
         line-height: 1.8;
-
-        &:hover {
-            background-color: $color-primary-gold;
-            color: $color-white;
-        }
+        &:hover { background-color: $color-amber; color: $color-cream; }
     }
 }
 
-// Landing page content
+// Open to work badge
+.open-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: rgba(200,133,58,0.12);
+  border: 1px solid rgba(200,133,58,0.35);
+  color: $color-amber;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.7rem 1.6rem;
+  border-radius: 99px;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
 
+  &__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: $color-amber;
+    animation: pulse 2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.75); }
+}
+
+// Pillars (3-card section)
 .info-snippet {
+    padding: $padding-medium-1 0 $padding-large;
     position: relative;
 
     &__bg-text {
-        color: #808181;
-        position: relative;
+        color: $color-faded-number-2;
+        position: absolute;
         font-size: 6rem;
         font-weight: 700;
-        z-index: -1;
+        z-index: 0;
+        top: 0;
+        left: -1rem;
+        line-height: 1;
+        font-family: 'Playfair Display', Georgia, serif;
+        user-select: none;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-            color: $color-faded-number-1;
-            font-size: 12rem;
-            position: absolute;
-            top: -6rem;
-            left: -4rem;
+            font-size: 14rem;
+            top: -2rem;
+            left: -3rem;
         }
+    }
+
+    &__accent {
+        display: block;
+        width: 3rem;
+        height: 3px;
+        background-color: $color-amber;
+        margin-bottom: 1.6rem;
+        position: relative;
+        z-index: 1;
     }
 
     &__heading {
         font-size: var(--heading-3);
-        margin-bottom: .7rem;
+        font-family: 'Playfair Display', Georgia, serif;
+        font-weight: 700;
+        color: $color-cream;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
     }
 
     &__text {
         font-size: var(--body-text-main);
         font-weight: 400;
-        line-height: 1.55;
+        line-height: 1.7;
+        color: $color-cream-muted;
+        position: relative;
+        z-index: 1;
     }
 }
 
-.post-heading__wrapper {
+// Strength / competition section
+.strength-section {
+  overflow: hidden;
+  margin-bottom: 12rem;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
-        display: flex;
-        justify-content: space-between;
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 56rem;
+  }
+
+  &__image {
+    position: relative;
+    min-height: 32rem;
+    overflow: hidden;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+      min-height: auto;
     }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+  }
+
+  &__content {
+    background-color: $color-forest-card;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+      padding: 6rem;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $color-amber;
+    margin-bottom: 1.6rem;
+  }
+
+  &__heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-cream;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+      font-size: 3.8rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: $color-cream-muted;
+    margin-bottom: 3rem;
+  }
+
+  &__stats {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(200,133,58,0.2);
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__stat-value {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $color-amber;
+    line-height: 1;
+  }
+
+  &__stat-label {
+    font-size: 1.1rem;
+    color: $color-cream-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 0.5rem;
+  }
+}
+
+// Posts section
+.post-heading__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    margin-bottom: 4rem;
+  }
 }
 
 .post-heading {
-    font-size: var(--heading-2);
-    font-weight: 200;
-    margin-bottom: $padding-medium-1;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: var(--heading-2);
+  font-weight: 300;
+  color: $color-cream;
+  margin-bottom: 0;
 
-    strong {
-        margin-right: 1rem;
-    }
-
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-        margin-bottom: $padding-medium-2;
-    }
+  strong {
+    font-weight: 900;
+    color: $color-amber;
+    margin-right: 0.6rem;
+  }
 }
 
 .post-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: $color-white;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 3rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: $color-cream-muted;
+  font-weight: 500;
+  font-size: 1.4rem;
+  transition: $transition;
+  white-space: nowrap;
 
-}
+  &:hover { color: $color-amber; }
+  &:after { display: none; }
 
-.post-link__text {
-    font-size: $nav-text-default;
-    font-weight: 700;
-    color: $color-white;
-}
-
-.post-link__arrow {
-    margin-left: 1.2rem;
-
+  &__text { font-size: $nav-text-default; font-weight: 500; }
+  &__arrow { margin-left: 0.4rem; }
 }

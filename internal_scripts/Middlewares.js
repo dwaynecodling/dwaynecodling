@@ -81,7 +81,8 @@ var Middleware;
             }
             return null;
         };
-        const imgResizer = require('./ImageResizer');
+        let imgResizer;
+        try { imgResizer = require('./ImageResizer'); } catch(e) { imgResizer = null; }
         return async (req, res, next) => {
             let matchedUrl = options.listenIn.filter(d => req.url.startsWith(d));
             if (matchedUrl.length > -1) {
@@ -90,7 +91,7 @@ var Middleware;
                 if (urlParts) {
                     let realFilePath = path.join(__dirname, ".." + urlParts.url);
                     let exists = fs.existsSync(realFilePath);
-                    if (!exists)
+                    if (!exists || !imgResizer)
                         return next();
                     imgResizer.resizer(realFilePath, {
                         newWidth: urlParts.width,

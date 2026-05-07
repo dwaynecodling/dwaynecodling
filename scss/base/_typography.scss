@@ -1,6 +1,11 @@
+h1, h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+}
+
 h1 {font-size: $heading-1;}
 h2 {font-size: $heading-2;}
-h3 {font-size: $heading-3;}
+h3 {font-size: $heading-3; font-family: 'Playfair Display', Georgia, serif;}
 h4 {font-size: $heading-4;}
 
 p {font-size: $body-text-main;}
@@ -18,7 +23,7 @@ li {font-size: $body-text-main;}
 }
 a {
     text-decoration: none;
-    color: $color-white;
+    color: $color-cream;
     font-weight: 700;
     position: relative;
     z-index: 1;
@@ -31,8 +36,8 @@ a {
         content: '';
         position: absolute;
         width: 0;
-        height: 3px;
-        background-color: $color-primary-gold;
+        height: 2px;
+        background-color: $color-amber;
         bottom: -4px;
         left: 0;
         transition: 0.3s ease all;
@@ -40,6 +45,7 @@ a {
 
     &:hover {
         position: relative;
+        color: $color-amber;
     }
 
     &:hover:after {

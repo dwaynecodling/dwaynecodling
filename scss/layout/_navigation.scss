@@ -64,7 +64,7 @@
             position: absolute;
             width: 0;
             height: 3px;
-            background-color: $color-primary-gold;
+            background-color: $color-amber;
             bottom: -4px;
             left: 0;
             transition: 0.3s ease all;
@@ -93,19 +93,22 @@
 
         a {
             border: none;
-            color: $color-black;
-            background-color: $color-white;
+            color: $color-forest-dark;
+            background-color: $color-amber;
             padding: 1.2rem 2.4rem;
             border-radius: 21.5px;
             transition: $transition;
+            font-weight: 700;
 
             &:hover {
+                background-color: $color-amber-dark;
+                color: $color-cream;
                 transform: translateY(-.5%);
-                box-shadow: 0 4rem 8rem rgba(255, 255, 255, .3);
+                box-shadow: 0 1rem 3rem rgba(200, 133, 58, .3);
             }
 
             &:after {
-                width: 0;
+                display: none;
             }
         }
     }

@@ -7,15 +7,15 @@
 }
 
 html {
-  font-family: Roboto, sans-serif;
-  font-size: 62.5%; // 1rem = 10px 10px/16px = 62.5%
+  font-family: 'Inter', Roboto, sans-serif;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
 body {
   box-sizing: border-box;
-  background-color: $color-black;
-  color: $color-white;
+  background-color: $color-forest-dark;
+  color: $color-cream;
 
   @include respond(tab-port) {
     padding: 0;

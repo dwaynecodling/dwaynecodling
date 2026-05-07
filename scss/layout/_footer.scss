@@ -1,5 +1,5 @@
 footer {
-    border-top: .1rem solid $color-grey;
+    border-top: .1rem solid rgba(200,133,58,0.2);
 }
 
 .footer__top {
@@ -20,7 +20,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    background-color: $color-grey-container;
+    background-color: $color-forest-card;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
         padding: 4rem;

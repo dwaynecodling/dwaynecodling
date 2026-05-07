@@ -1,69 +1,61 @@
-/* These sizes are all desktop first
-
-   It may be worth working out some
-   media queries to build mobile-first instead?
-*/
-
 //COLORS
-$color-primary-gold: #c99550;
+$color-forest-dark: #0d1a10;
+$color-forest-mid: #162419;
+$color-forest-card: #1c2b1e;
+$color-amber: #c8853a;
+$color-amber-dark: darken(#c8853a, 8%);
+$color-teal: #2d8070;
+$color-cream: #f4ede0;
+$color-cream-muted: #a89e90;
+
+// legacy aliases kept for backward compat
+$color-primary-gold: $color-amber;
 $color-black: #000;
 $color-white: #fff;
-$color-grey: #666666;
-
-$color-grey-container: #1d1f21;
-
-$color-faded-number-1: #181a1b;
-$color-faded-number-2: #26292b;
-
-$color-quotation-mark: #404040;
-
-$color-card-body-text: #333;
-$color-card-meta-text: #4d4d4d;
+$color-grey: rgba(255,255,255,0.12);
+$color-grey-container: $color-forest-card;
+$color-faded-number-1: #0f1e12;
+$color-faded-number-2: #182a1b;
+$color-quotation-mark: #2d4030;
+$color-card-body-text: #1c2b1e;
+$color-card-meta-text: #4d5e50;
+$color-header: #0d1a10;
+$color-text: $color-cream-muted;
+$color-btn-text: $color-amber;
+$color-btn-background: rgba(200, 133, 58, 0.12);
 
 //GRID
-$grid-container-width: 120rem; //1200px = desktop
+$grid-container-width: 120rem;
 
 //SPACING
-$padding-small: 2rem; //20px
-$padding-medium-1: $padding-small + 1rem; //30px
-$padding-medium-2: $padding-small * 2; //40px
-$padding-large: $padding-small * 3; //60px
+$padding-small: 2rem;
+$padding-medium-1: $padding-small + 1rem;
+$padding-medium-2: $padding-small * 2;
+$padding-large: $padding-small * 3;
 
-$margin-default: 24rem; //240px
-$margin-medium: $margin-default / 2; //120px
-$margin-small: $margin-default / 3; //80px
+$margin-default: 24rem;
+$margin-medium: calc(#{$margin-default} / 2);
+$margin-small: calc(#{$margin-default} / 3);
 
 //FONT SIZES
-$heading-1: 4.6rem; //46px
-$heading-2: 3.6rem; //36px
-$heading-3: 3rem; //30px
-$heading-4: 2.6rem; //26px
+$heading-1: 4.6rem;
+$heading-2: 3.6rem;
+$heading-3: 3rem;
+$heading-4: 2.6rem;
 
-$body-text-main: 1.8rem; //18px
-$meta-text: 1.6rem; //16px = sub-heading too
-$logo-copyright-text: 2rem; //20px
-
-$card-date: 1.2rem; //12px
-
-$nav-text-default: 1.6rem; //16px
+$body-text-main: 1.8rem;
+$meta-text: 1.6rem;
+$logo-copyright-text: 2rem;
+$card-date: 1.2rem;
+$nav-text-default: 1.6rem;
 $nav-text-uppercase: 1.4rem;
-
-$quotation-text: 2.6rem; //26px
-
-$form-input-label: 1.4rem; //14px = placeholder, text
-$form-input-text: 1.8rem; //18px = placeholder, text
-
-$faded-number-small: 12rem; //120px
-$faded-number-large: 20rem; //200px = quotation mark too
-
-$color-header: #0d0d0d;
-$color-text: #404040;
-
-$color-btn-text: #3363ff;
-$color-btn-background: #e6ecff;
+$quotation-text: 2.6rem;
+$form-input-label: 1.4rem;
+$form-input-text: 1.8rem;
+$faded-number-small: 12rem;
+$faded-number-large: 20rem;
 
 $transition: all .2s;
-
 $base-spacing: 1rem;
 
 // Breakpoints
@@ -85,26 +77,19 @@ $breakpoints: (
 
 // CSS Properties
 :root {
-  // Layout
   --container: 120rem;
   --container-padding: #{$padding-medium-1};
   --noOfColumns: 1;
-
-  // Headings
   --heading-1: 3.2rem;
   --heading-2: 2.8rem;
   --heading-3: 2.2rem;
-
-  // Fonts
   --body-text-main: 1.4rem;
-
-  // Spacing
 
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
     --container-padding: #{$padding-large};
-    --heading-1: 4.6rem;
-    --heading-2: 3.6rem;
-    --heading-3: 2.6rem;
+    --heading-1: 4.8rem;
+    --heading-2: 3.8rem;
+    --heading-3: 2.8rem;
     --body-text-main: 1.8rem;
   }
 

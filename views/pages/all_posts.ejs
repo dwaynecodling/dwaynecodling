@@ -2,51 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Dwayne Codling thoughts and insight into his Journey.">
-    <title>Latest Post</title>
+    <meta name="Description" content="Thoughts, insights and reflections from Dwayne Codling — Development Director and people-first leader.">
+    <title>My Posts — Dwayne Codling</title>
     <%- include("../partials/links") %>
 </head>
 <body>
 <%- include("../partials/nav") %>
+
 <main class="content" role="main">
 
-    <section>
-
-        <div class="container">
-            <div class="hero__content footer__content">
-                <p class="hero__subheading">What I'm Thinking</p>
-                <h2 class="hero__heading">An <strong>insight</strong> into my journey</h2>
+    <!-- Page Header -->
+    <section style="margin-bottom:0;">
+        <div style="
+            background-color: #162419;
+            border-bottom: 1px solid rgba(200,133,58,0.15);
+            padding: 8rem 0 6rem;
+        ">
+            <div class="container">
+                <p style="font-size:1.2rem; font-weight:600; text-transform:uppercase; letter-spacing:0.2em; color:#c8853a; margin-bottom:1.6rem;">Writing</p>
+                <h1 style="font-family:'Playfair Display',Georgia,serif; font-size:var(--heading-1); font-weight:700; color:#f4ede0; line-height:1.15; max-width:56rem; margin-bottom:1.6rem;">
+                    Thoughts &amp; <strong style="color:#c8853a;">reflections</strong>
+                </h1>
+                <p style="font-size:1.7rem; line-height:3rem; color:#a89e90; max-width:52rem;">
+                    Leadership, diversity, tech, and the occasional life lesson from the platform.
+                </p>
             </div>
         </div>
     </section>
 
+    <!-- Filter + Posts -->
     <section class="card-wrapper">
         <div class="container">
-            <div class="my-posts__filter--mobile">
-                <label class="my-posts__filter--label" for="track-select">View all or Events or Notes</label>
-                <div class="my-posts__filter" data-filter-mobile="speaker_track">
-                    <select id="track-select" class="my-posts__select" name="field" data-ui="0" data-ajax="0" data-multiple="0" data-placeholder="Select" data-allow_null="0">
-                        <option value="all">all</option>
-                        <option value="events">events</option>
-                        <option value="notes">notes</option>
-                    </select>
-                </div>
-            </div>
-            <ul class="my-posts__filter--desktop">
-                <li class="my-posts__item">View All</li>
-                <li class="my-posts__item">Events</li>
-                <li class="my-posts__item">Notes</li>
-            </ul>
+
             <article class="grid grid--card-list">
                 <% for (let currentArticle of posts){ %>
                     <article class="grid__card-item">
                         <a href="/post/<%= currentArticle.data.slug %>" class="card">
                             <picture class="card__img-container">
                                 <source type="image/jpeg" data-srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
-                                <source type="image/webp" data-srcset="<%= currentArticle.data.hero.sml_webp %>">
                                 <source type="image/webp" data-srcset="<%= currentArticle.data.hero.lrg_webp %>">
                                 <img class="card__img lazyload"
                                      data-src="<%= currentArticle.data.hero.main %>"
@@ -55,24 +50,21 @@
                                      width="360"/>
                             </picture>
                             <div class="card__content">
-                                <time datetime="2020-14-06" class="card__date"><%= currentArticle.data.date %></time>
+                                <time class="card__date"><%= currentArticle.data.date %></time>
                                 <h3 class="card__header"><%- currentArticle.data.title %></h3>
                                 <p class="card__text"><%- currentArticle.data.excerpt %></p>
                             </div>
-                            <time  datetime="PT10M" class="card__read-time">
+                            <time class="card__read-time">
                                 <%= currentArticle.data.readTime %> READ
                             </time>
                         </a>
                     </article>
                 <% } %>
             </article>
-            <div class="container">
-                <div class="button__align--center">
-                    <button class="button button--load-more">Load more</button>
-                </div>
-            </div>
+
         </div>
     </section>
+
 </main>
 
 <%- include("../partials/footer") %>

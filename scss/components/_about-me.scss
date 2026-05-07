@@ -16,7 +16,7 @@
 }
 
 .about-me__info-content {
-    background-color: $color-grey-container;
+    background-color: $color-forest-card;
     padding: 2rem;
     position: relative;
 
@@ -100,15 +100,15 @@
         text-decoration: none;
 
         &:hover {
-            color: $color-primary-gold;
+            color: $color-amber;
         }
 
         &:active {
-            color: $color-primary-gold;
+            color: $color-amber;
         }
 
         &:visited {
-            color: $color-primary-gold;
+            color: $color-amber;
         }
     }
 }

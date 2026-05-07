@@ -5,65 +5,113 @@
   justify-content: center;
   text-align: center;
   position: relative;
+  min-height: 100vh;
+  padding: 12rem 2rem 8rem;
+
+  background-image:
+    linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
+    url('/assets/img/hero-beach.jpg');
+  background-size: cover;
+  background-position: center 23%;
+  background-repeat: no-repeat;
 
   &__content {
     text-align: center;
     padding: 0;
-
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
-
-    }
-
+    max-width: 72rem;
+    margin: 0 auto;
   }
 
   &__subheading {
-    font-size: 1.4rem;
-    font-weight: lighter;
+    font-size: 1.3rem;
+    font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: .4rem;
+    letter-spacing: 0.25em;
+    color: $color-amber;
+    margin-bottom: 1.6rem;
   }
 
   &__heading {
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: var(--heading-1);
-    font-weight: lighter;
+    font-weight: 700;
+    line-height: 1.15;
+    color: $color-cream;
+    max-width: 64rem;
+    margin: 0 auto $padding-medium-1;
 
-    max-width: 54rem;
-    margin: 0 auto  $padding-large;
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
-      margin-bottom: 3.5rem;
+    strong {
+      color: $color-amber;
+      font-weight: 900;
     }
+  }
+
+  &__intro {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: rgba(244, 237, 224, 0.8);
+    max-width: 52rem;
+    margin: 0 auto $padding-large;
+  }
+
+  &__cta-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
   }
 
   &__link {
     font-size: var(--heading-1);
     font-weight: 900;
     text-decoration: none;
-    color: $color-white;
+    color: $color-amber;
     &:hover {
-      text-decoration: none
+      text-decoration: none;
+      color: $color-amber;
     }
+    &:after { display: none; }
   }
 
   &__button {
-    display: inline-block;
-    color: #fff;
-    font-size: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    color: $color-forest-dark;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-decoration: none;
-    background-color: #383737c2;
-    padding: $padding-small;
+    background-color: $color-amber;
+    padding: 1.4rem 3rem;
     border-radius: 3rem;
-    transition: .2s background-color;
+    transition: .2s all;
+    letter-spacing: 0.02em;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
       font-size: 1.6rem;
-      padding: $padding-small $padding-medium-1;
     }
 
     &:hover {
-      background-color: darken($color-primary-gold, 2%);
+      background-color: $color-amber-dark;
+      color: $color-cream;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200,133,58,0.35);
     }
-    &:after {
-      display: none;
+
+    &:after { display: none; }
+
+    &--outline {
+      background-color: transparent;
+      color: $color-cream;
+      border: 2px solid rgba(244,237,224,0.4);
+
+      &:hover {
+        background-color: rgba(244,237,224,0.08);
+        color: $color-cream;
+        border-color: $color-amber;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      }
     }
   }
 
@@ -91,23 +139,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: .2rem solid #fff;
+    border: .2rem solid rgba(244,237,224,0.4);
     border-radius: 50%;
-    margin-top: 8rem;
+    margin-top: 6rem;
     height: 6rem;
     width: 6rem;
     transition: $transition;
+    color: $color-cream;
 
-        &:hover {
-           border: .4rem solid #fff;
-        }
-    &:after {
-      display: none;
+    &:hover {
+       border: .2rem solid $color-amber;
     }
-
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
-      bottom: 6rem;
-    }
+    &:after { display: none; }
   }
 }
 
