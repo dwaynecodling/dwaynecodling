@@ -61,36 +61,32 @@ home.post("/form/contact", async function (req, res) {
         // Check reCaptcha response
         if(response["success"] === true && response["action"] === action && response["score"] >= 0.5) {
             const he = require("he");
-            // send the email
-            let r = await Mailer.sendMail({
-                to: { name: "Dwayne Codling", email: "dwayneandrecodling@gmail.com" },
-                from: { name: name, email: email },
-                subject: `Message from ${name}`,
-                body: {
-                    html: `
-                        <strong>Date: ${ (new Date()).toUTCString() }</strong> <br/>
-                        <strong>Name: ${name}</strong><br/>
-                        <strong>Message:</strong><br/>
-                        <pre>${ he.encode(message) }</pre>`,
-                    text: `
-                    Date: ${ (new Date()).toUTCString() } \n
-                    Name: ${name} \n
-                    Message: \n
-                    ${he.encode(message)}`
-                }
-            });
-            res.json(JSONResponse(
-                true,
-                "Message Sent",
-                "Message has been sent"
-            ));
+            try {
+                await Mailer.sendMail({
+                    to: { name: "Dwayne Codling", email: "dwayneandrecodling@gmail.com" },
+                    from: { name: name, email: email },
+                    subject: `Message from ${name}`,
+                    body: {
+                        html: `
+                            <strong>Date: ${ (new Date()).toUTCString() }</strong> <br/>
+                            <strong>Name: ${name}</strong><br/>
+                            <strong>Message:</strong><br/>
+                            <pre>${ he.encode(message) }</pre>`,
+                        text: `
+                        Date: ${ (new Date()).toUTCString() } \n
+                        Name: ${name} \n
+                        Message: \n
+                        ${he.encode(message)}`
+                    }
+                });
+                res.json(JSONResponse(true, "Message Sent", "Message has been sent"));
+            } catch(e) {
+                console.error("Mail send failed:", e);
+                res.json(JSONResponse(false, "Failed", "Message not sent (mail error)"));
+            }
         } else {
-            // Possible spam, ignore email;
-            res.json(JSONResponse(
-                false,
-                "Failed",
-                "Message not sent (reCaptcha fail)"
-            ));
+            console.error("reCAPTCHA failed:", response);
+            res.json(JSONResponse(false, "Failed", "Message not sent (reCaptcha fail)"));
         }
     });
 });
