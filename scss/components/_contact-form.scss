@@ -100,7 +100,18 @@ margin-bottom: 4rem;
 }
 
 .contact-form__button {
+    cursor: pointer;
 
+    &:hover {
+        background-color: darken(rgba(56, 55, 55, 0.76), 10%);
+        transform: translateY(-2px);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+    }
 }
 
 .contact-form__textarea-input {
