@@ -20,8 +20,9 @@ home.get("/posts", async function(req, res){
 });
 home.get("/post/:slug", async function (req, res) {
     let slug = req.params['slug'];
-    let otherArticles = await PostRepository.getRecentPosts(3);
     let article = await PostRepository.getBySlug(slug);
+    if (!article) return res.status(404).render("pages/not_found", { title: `404: Post Not Found` });
+    let otherArticles = await PostRepository.getRecentPosts(3);
     res.render("pages/single_post", {
         currentArticle: article,
         otherArticles: otherArticles
