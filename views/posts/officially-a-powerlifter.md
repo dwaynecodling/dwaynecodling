@@ -9,13 +9,13 @@ hero:
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Officially an <strong>amateur powerlifter</strong>
 date: 07 April 2025
-excerpt: "I recently competed in my first powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class. What makes this result meaningful isn't just the numbers — it's the journey behind it."
+excerpt: "I recently competed in my first powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class. What makes this result meaningful isn't just the numbers; it's the journey behind it."
 published: true
 ---
 
 I recently competed in my first powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class.
 
-What makes this result meaningful isn't just the numbers — it's the journey behind it.
+What makes this result meaningful isn't just the numbers; it's the journey behind it.
 
 When I first walked into Ash's bootcamp class, I was pushed well beyond my comfort zone. It was one of those sessions where you genuinely question whether you'll come back. I did, and that decision has led to a complete transformation in both my body composition and strength.
 
@@ -23,7 +23,7 @@ When I first walked into Ash's bootcamp class, I was pushed well beyond my comfo
 
 Competition day itself was a lesson in resilience.
 
-Squats didn't go to plan early on — missing 140kg and 147.5kg. Resetting mentally was key, and I was able to come back and secure 150kg with three white lights.
+Squats didn't go to plan early on; missing 140kg and 147.5kg. Resetting mentally was key, and I was able to come back and secure 150kg with three white lights.
 
 Bench press was more composed. 120kg moved well, 127.5kg highlighted a small technical issue, but I adjusted and finished strong with 130kg. There's more to come there.
 
@@ -33,7 +33,7 @@ Deadlifts were consistent throughout. The work I've put into improving my lockou
 
 Beyond the lifts, this experience reinforced something I already believed but needed to live: **setbacks are part of the process, but how you respond defines the outcome.**
 
-When the squats went wrong, I had a choice. Fold, or reset. I reset. That's not a powerlifting lesson — it's a leadership lesson. It's a life lesson.
+When the squats went wrong, I had a choice. Fold, or reset. I reset. That's not a powerlifting lesson; it's a leadership lesson. It's a life lesson.
 
 I apply this same thinking to every team I've led, every difficult conversation I've had, every project that didn't go to plan. You don't get to control what happens. You get to control what you do next.
 
