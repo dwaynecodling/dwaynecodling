@@ -13,6 +13,7 @@
     "compress:css": "sass assets/css/style.prefix.css assets/css/style.min.css --style=compressed --no-source-map",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
     "build": "npm i && npm-run-all compile:sass concat:css prefix:css compress:css && tsc -p tsconfig.json && npm run clean",
+    "build:railway": "npm-run-all compile:sass concat:css prefix:css compress:css",
     "clean": "rm -rf node_modules"
   },
   "author": "Dwayne",

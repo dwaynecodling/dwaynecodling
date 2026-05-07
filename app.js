@@ -19,7 +19,8 @@ app.use(Middlewares_1.Middleware.CheckForImageRequest({
 }));
 app.use(Middlewares_1.Middleware.NotFoundHandler);
 app.use(Middlewares_1.Middleware.InternalErrorHandler);
-let server = app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+let server = app.listen(PORT, () => {
     console.log("Ready");
 });
 module.exports = server;
