@@ -102,7 +102,10 @@
     $('#contactForm').submit(function(ev) {
         ev.preventDefault();
         let form = this;
+        let $btn = $(form).find('button');
         let fData = new FormData(form);
+
+        $btn.prop('disabled', true).find('.hero__button-text').text('Sending...');
 
         grecaptcha.ready(function() {
             grecaptcha.execute('6Lcdhd4sAAAAAOxvi9Pgtnb4sejx0SNPT_-XTOsx', {action: 'send_message'}).then(function(token) {
@@ -110,14 +113,12 @@
                 fData.append("action", "send_message");
                 sendFormData(form.getAttribute("action"), form.getAttribute("method"), fData, data => {
 
-                    // TODO handle the response in UI
-
                     if (data.isSuccessful === true){
-                        alert(data.message)
-                    }
-                    else{
-                        alert('Unable to send message');
-                        throw new Error(data.message);
+                        form.reset();
+                        $btn.find('.hero__button-text').text('Message sent!');
+                    } else {
+                        $btn.prop('disabled', false).find('.hero__button-text').text('Send message');
+                        alert('Unable to send message. Please try again.');
                     }
 
                 });
