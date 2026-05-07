@@ -87,6 +87,14 @@
 
     }
 
+    &--active a {
+        color: $color-amber;
+
+        &:after {
+            width: 100%;
+        }
+    }
+
     &.link--alt {
         display: inline-block;
         margin-top: 0;

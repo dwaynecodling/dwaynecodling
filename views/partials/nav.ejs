@@ -8,3 +8,14 @@
         </ul>
     </div>
 </nav>
+<script>
+    (function() {
+        var path = window.location.pathname;
+        document.querySelectorAll('.navigation__link:not(.link--alt) a').forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (path === href || path.startsWith(href + '/')) {
+                link.closest('.navigation__link').classList.add('navigation__link--active');
+            }
+        });
+    })();
+</script>
