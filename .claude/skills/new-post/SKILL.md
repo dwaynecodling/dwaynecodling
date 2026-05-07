@@ -1,18 +1,15 @@
-# New Blog Post
+---
+description: Create a new blog post for dwaynecodling.com. Pass a topic, title, or paste a LinkedIn post as the argument.
+---
 
-Create a new blog post for dwaynecodling.com from the provided content or topic.
+Create a new blog post for dwaynecodling.com using this input: $ARGUMENTS
 
-## Input
-The argument (`$ARGUMENTS`) will be one of:
-- A LinkedIn post to adapt into a blog post
-- A topic or title to write from scratch
+## Steps
 
-## What to do
-
-1. **Draft the post** following the voice and format guidelines below.
-2. **Ask the user to pick a hero image** from the available options (show the list).
-3. **Save the file** to `views/posts/[slug].md` with `published: false`.
-4. **Tell the user** the filename and that they can set `published: true` when ready to go live.
+1. Draft the post following the voice and format guidelines below.
+2. Ask the user to pick a hero image from the available options (show the list).
+3. Save the file to `views/posts/[slug].md` with `published: false`.
+4. Tell the user the filename and that they can set `published: true` when ready to go live.
 
 ## Voice and style
 
