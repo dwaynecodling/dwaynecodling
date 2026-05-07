@@ -23,7 +23,8 @@ home.get("/posts", async function (req, res) {
 home.get("/post/:slug", async function (req, res) {
     let slug = req.params['slug'];
     let article = await PostRepository_1.PostRepository.getBySlug(slug);
-    if (!article) return res.status(404).render("pages/not_found", { title: `404: Post Not Found` });
+    if (!article)
+        return res.status(404).render("pages/not_found", { title: `404: Post Not Found` });
     let otherArticles = await PostRepository_1.PostRepository.getRecentPosts(3);
     res.render("pages/single_post", {
         currentArticle: article,
@@ -49,7 +50,7 @@ home.post("/form/contact", async function (req, res) {
         if (response["success"] === true && response["action"] === action && response["score"] >= 0.5) {
             const he = require("he");
             let r = await Mailer_1.Mailer.sendMail({
-                to: { name: "Dwayne Codling", email: "hello@dwaynecodling.com" },
+                to: { name: "Dwayne Codling", email: "dwayneandrecodling@gmail.com" },
                 from: { name: name, email: email },
                 subject: `Message from ${name}`,
                 body: {
