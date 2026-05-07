@@ -1,9 +1,9 @@
 .post-template__img-wrapper{
     width: 100%;
-    max-height: 80vh;
-    overflow: hidden;
     background-color: $color-forest-mid;
     margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
 }
 
 .post-template__iframe-wrapper{
@@ -26,7 +26,9 @@
 
 .post-template__img {
     display: block;
-    width: 100%;
+    max-width: 100%;
+    max-height: 75vh;
+    width: auto;
     height: auto;
 }
 
