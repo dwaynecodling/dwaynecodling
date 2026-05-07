@@ -47,7 +47,6 @@ export namespace Middleware{
     export function FormUploadHandler(req, res, next){
         let multer = require("multer");
         let accept = multer({
-            preservePath: true,
             limits: {
                 fileSize: 10_000_000
             },
