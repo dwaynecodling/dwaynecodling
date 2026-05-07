@@ -58,11 +58,13 @@ home.post("/form/contact", async function (req, res) {
                         html: `
                             <strong>Date: ${(new Date()).toUTCString()}</strong> <br/>
                             <strong>Name: ${name}</strong><br/>
+                            <strong>Email: ${email}</strong><br/>
                             <strong>Message:</strong><br/>
                             <pre>${he.encode(message)}</pre>`,
                         text: `
                         Date: ${(new Date()).toUTCString()} \n
                         Name: ${name} \n
+                        Email: ${email} \n
                         Message: \n
                         ${he.encode(message)}`
                     }
