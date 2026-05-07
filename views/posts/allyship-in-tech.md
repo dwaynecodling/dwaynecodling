@@ -1,11 +1,11 @@
 ---
 slug: allyship-in-tech
 hero:
-    main: /assets/img/pages/dwayne-community-1.jpg
-    sml_jpeg: /assets/img/pages/dwayne-community-1.jpg
-    lrg_jpeg: /assets/img/pages/dwayne-community-1.jpg
-    sml_webp: /assets/img/pages/dwayne-community-1.jpg
-    lrg_webp: /assets/img/pages/dwayne-community-1.jpg
+    main: /assets/img/pages/allyship.jpg
+    sml_jpeg: /assets/img/pages/allyship.jpg
+    lrg_jpeg: /assets/img/pages/allyship.jpg
+    sml_webp: /assets/img/pages/allyship.jpg
+    lrg_webp: /assets/img/pages/allyship.jpg
 alt: Dwayne at a community event
 title: Allyship in <strong>Tech</strong>
 date: 05 February 2025
