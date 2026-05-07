@@ -45,6 +45,7 @@
     "markdown-it-task-checkbox": "^1.0.6",
     "multer": "^2.1.1",
     "nodemailer": "^8.0.7",
+    "resend": "^6.12.3",
     "superagent": "^5.2.2",
     "typescript": "^3.7.4",
     "webp-converter": "^2.2.3"

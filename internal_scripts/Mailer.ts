@@ -2,8 +2,6 @@
 
 export namespace Mailer{
 
-    const nodemailer = require('nodemailer');
-
     export interface IMailDefinition{
         to: {
             name?: string;
@@ -21,22 +19,18 @@ export namespace Mailer{
     }
 
     export async function sendMail(options:IMailDefinition){
-        const transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 587,
-            secure: false,
-            auth: {
-                user: process.env.MAIL_USER,
-                pass: process.env.MAIL_PASS
-            }
-        });
+        const { Resend } = require('resend');
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
-        return await transporter.sendMail({
-            from: options.from.name ? `"${options.from.name}" <${process.env.MAIL_USER}>` : process.env.MAIL_USER,
-            to: options.to.name ? `"${options.to.name}" <${options.to.email}>` : options.to.email,
-            replyTo: options.from.name ? `"${options.from.name}" <${options.from.email}>` : options.from.email,
+        return await resend.emails.send({
+            from: options.from.name
+                ? `${options.from.name} <onboarding@resend.dev>`
+                : 'onboarding@resend.dev',
+            to: options.to.email,
+            reply_to: options.from.email,
             subject: options.subject,
-            ...options.body
+            html: options.body.html,
+            text: options.body.text
         });
     }
 
