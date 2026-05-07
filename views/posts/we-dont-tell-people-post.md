@@ -6,7 +6,7 @@ hero:
     sml_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-sml.webp
     lrg_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg.webp
     lrg_jpeg: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg.jpg
-alt:  Dwayne and Family
+alt: Dwayne and Family
 title: We <strong>don't tell</strong> people how we feel
 date: 14th June 2020
 excerpt: "We <strong>don't tell</strong> people how we feel and why we feel that way. So, here goes:"
@@ -14,7 +14,7 @@ excerpt: "We <strong>don't tell</strong> people how we feel and why we feel that
 
 ### The Why
 
-I grew up in a below middle-class neighbourhood in Portmore, Jamaica. The situation growing up in a household where fully educated my mom, and my dad were not. Growing up was not the worst but was not the best, there were limitations on what they could do for us as children.
+I grew up in a below middle-class neighbourhood in Portmore, Jamaica. Growing up, my mom and dad were not fully educated — a reality that shaped everything about our household. Growing up was not the worst but was not the best, there were limitations on what they could do for us as children.
 
 My mom left education when she was 13 when she became pregnant, and my dad left education at about the age of 11. My dad had to work to help his family out as he was the oldest boy.
 
@@ -42,7 +42,7 @@ So I went to work at age 18, working as an accounts payable clerk, at a public u
 Frankly that could have been where my story ends, it was a job that paid enough, so you could pay the fare back to work and just enough for lunch, and a bit left to pay a household bill to help the family out.
 
 
-Luckily,there were people who saw me and felt I could make more of myself if my situation was a bit better. I was wasting away in a job that was not going anywhere.
+Luckily, there were people who saw me and felt I could make more of myself if my situation was a bit better. I was wasting away in a job that was not going anywhere.
 
 I saved up enough money for airfare and got enough money for a month’s school fee from my dad and took a leap of faith leaving the place I grew up at age 20 and coming to England. It was the kindness of strangers that helped me, people who weren't family but provided me with a place to stay while I could go to college and work.
 
@@ -84,7 +84,7 @@ I wanted to counter this by giving them a better start, wanting them better educ
 This leads on to the how, how can we do this.
 
 
-Why try to do it all by myself when every aspect of my life has shown me that having people, who can help you progress removes so many of the barriers that I alone would have found it hard to get pass? I believe in this, so will live by it, "it takes a community to raise a child".
+Why try to do it all by myself when every aspect of my life has shown me that having people, who can help you progress removes so many of the barriers that I alone would have found it hard to get past? I believe in this, so will live by it, "it takes a community to raise a child".
 
 
 More opportunities come from surrounding them with people and friends that come from homes that also have a more progressive mindset.

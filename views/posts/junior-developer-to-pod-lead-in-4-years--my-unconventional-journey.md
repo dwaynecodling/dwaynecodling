@@ -6,7 +6,7 @@ hero:
    
 title: Junior Developer to Pod Lead in 4 Years - My Unconventional Journey
 date: 06th April 2021
-excerpt:  Unconventional career journey, looking back <stong>4 years</strong> after joining the team at JH.
+excerpt: Unconventional career journey, looking back <strong>4 years</strong> after joining the team at JH.
 ---
 
 In this post, I will share some reflections of my unconventional career journey, looking back 4 years after joining the team at JH.
@@ -22,7 +22,7 @@ After 3 years of this, I wanted to invest in myself, and make a path forward whe
 
 ### Starting from the bottom
 
-So 4 years in - what has happened? Well... a lot! I started from the bottom, a 36 year old Junior Front End Developer at a JH - you don’t know what you don’t know, until you know. You know?!
+So 4 years in - what has happened? Well... a lot! I started from the bottom, a 36 year old Junior Front End Developer at JH - you don’t know what you don’t know, until you know. You know?!
 
 ![First day at JH](/assets/img/posts/2020-unconventional-career-journey/first-day-at-jh.jpg "First day at JH")
 ![First day work swag](/assets/img/posts/2020-unconventional-career-journey/first-day-work-swag.jpg "First day work swag")
@@ -31,7 +31,7 @@ I found out that there were so many more levels to it than I could have imagined
 
 ### It’s all about the journey
 
-So with all those challenges - how did I get to become a better developer and become a Pod Lead - leading a team consisting of several Developers, Account Manager and PM’s - just 4 years later?
+So with all those challenges - how did I get to become a better developer and become a Pod Lead - leading a team consisting of several Developers, Account Managers and PMs - just 4 years later?
 
 As well as a lot of hard work - I took some of the best advice I was given.
 
@@ -53,7 +53,8 @@ My key was that I care about my team: I care about the people I work with and wa
 
 It’s that simple: whatever it is that I can use to amplify that, and make others succeed is what I want to do. Developing students and mentoring them as a Lecturer has put me in a position where this is a natural task - and putting in the time to talk and develop someone is what makes me happy. Leaving a legacy that goes beyond, to help make other people’s dreams a reality, is all part of the journey that I have set myself.
 
-### ![Eating out at jh](/assets/img/posts/2020-unconventional-career-journey/eating-out-at-jh.jpg "Home work set up")![Dwayne and Janak at awards event](/assets/img/posts/2020-unconventional-career-journey/dwayne-janak-at-awards-event.jpg "Dwayne and Janak at awards event")
+![Eating out at jh](/assets/img/posts/2020-unconventional-career-journey/eating-out-at-jh.jpg "Home work set up")
+![Dwayne and Janak at awards event](/assets/img/posts/2020-unconventional-career-journey/dwayne-janak-at-awards-event.jpg "Dwayne and Janak at awards event")
 
 ### Four years later
 

@@ -7,7 +7,7 @@ hero:
     lrg_webp: /assets/img/posts/2020-tech-notts/nottingham-lrg.webp
     lrg_jpeg: /assets/img/posts/2020-tech-notts/nottingham-lrg.jpg
     video_yt: zwvB88IKaTo
-alt:  Nottingham
+alt: Nottingham
 title: Diversity <strong>vs</strong> Inclusion
 date: 30th July 2020
 excerpt: The talk will focus on the <strong> generational wealth gap</strong> in and how this facilitates a difference in circumstances between different races.
@@ -108,7 +108,7 @@ But how does one gain some understanding from somebody else? It is through havin
 In order for you to have a vested interest, you have to have these conversations. We have to talk for you to know how I feel as a black man working in the tech industry. Plus, you have to talk to other people from other cultures for them to know where you are coming from, in order to try to make this a better industry we first have to start from the ground up.
 
 ### Look at things through different lenses.
-![ook at things through different lenses](/assets/img/posts/2020-tech-notts/man-taking-photo-of-couple.jpg "Look at things through different lenses")
+![Look at things through different lenses](/assets/img/posts/2020-tech-notts/man-taking-photo-of-couple.jpg "Look at things through different lenses")
 
 We need to be looking at things with different lenses, we need to invite diversity and inclusivity into our workplace in the tech industry. We need diversity and we need inclusivity. The tech industry needs people to help them look through different lenses in order to change the response to different problems we face because we have loads of problems that we go through on a day to day. Hence, it’s important that there are different people from different backgrounds, culture, ethnic groups involved in order to help to fix those issues.
 
@@ -196,7 +196,7 @@ If you are a white and in a privileged position in your company, it is not enoug
 
 Try a different approach or go against the grain.
 
-Giving somebody a job because they are given to you by a recruiter is just lazy. Do some research. Use another matrix, are people smart, Do they work hard? Are they humble? Are they a A player. In companies, you have many people that are married, do you have a matrix showing how many of them have children? Do you have a matrix showing how many own their own homes? These are stats that show how well you are treating people in your workplace. These are stats that show how comfortable people are in their jobs to be making these long term commitments.
+Giving somebody a job because they are given to you by a recruiter is just lazy. Do some research. Use another matrix, are people smart, Do they work hard? Are they humble? Are they an A player? In companies, you have many people that are married, do you have a matrix showing how many of them have children? Do you have a matrix showing how many own their own homes? These are stats that show how well you are treating people in your workplace. These are stats that show how comfortable people are in their jobs to be making these long term commitments.
 
 You need to change the philosophy of the company. You shouldn’t be focusing on only profit.
 

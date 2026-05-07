@@ -4,7 +4,7 @@ hero:
     main: /assets/img/posts/2020-black-my-story/black-my-story-not-history.jpg
     sml_jpeg: /assets/img/posts/2020-black-my-story/black-my-story-not-history-360.jpg
     lrg_jpeg: /assets/img/posts/2020-black-my-story/black-my-story-not-history-lrg.jpg
-alt:  Black History Month Celebration
+alt: Black History Month Celebration
 title: How the JH team celebrated <strong>Black History Month</strong>
 date: 28th October 2020
 excerpt: "I wanted to write a little about this month, in particular, <strong>October</strong> the month in the UK where we celebrate Black History."
@@ -31,7 +31,7 @@ I learnt a lot more and shared these incredible stories, but there was a point w
 
 It was on day 19 where I felt like something needed to change. Me being that one black guy singing the praise hymn out aloud in church annoying the heck out of everyone else. I don’t like that guy, just saying!
 
-**So I just ask everyone a simple question,**
+**So I asked everyone a simple question:**
 
 _“Today marks day 19 of Black History Month, though I think I have been celebrating this with everyone, I do feel like I am the only guy at the party so here’s the challenge from tomorrow until the end of Black History Month. I would appreciate it if you could find time to join in by highlighting someone black that has inspired you. That is all.”_
 
@@ -141,7 +141,7 @@ Haile Selassie I, original name Tafari Makonnen, (born July 23, 1892, near Harer
 
 #### [**20/31 Steve McQueen**](https://www.esquire.com/uk/culture/a34367773/watch-steve-mcqueen-esquire-townhouse-2020/)
 
-Sir Steven Rodney McQueen CBE (born 9 October 1969) is a British filmmaker and video artist. He is known for his film 12 Years a Slave (2013), a historical adaptation of an 1853 slave narrative memoir, for which he won the Academy Award for Best Picture, the BAFTA Award for Best Film, and the Golden Globe Award for Best Motion Picture – Drama, as well as the New York Film Critics Circle Award for Best Director.McQueen is the first black filmmaker to win the Academy Award for Best Picture.
+Sir Steven Rodney McQueen CBE (born 9 October 1969) is a British filmmaker and video artist. He is known for his film 12 Years a Slave (2013), a historical adaptation of an 1853 slave narrative memoir, for which he won the Academy Award for Best Picture, the BAFTA Award for Best Film, and the Golden Globe Award for Best Motion Picture – Drama, as well as the New York Film Critics Circle Award for Best Director. McQueen is the first black filmmaker to win the Academy Award for Best Picture.
 
 #### [**21/31 Dido Elizabeth Belle**](https://en.m.wikipedia.org/wiki/Dido_Elizabeth_Belle)
 
