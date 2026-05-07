@@ -10,7 +10,7 @@ alt: Dwayne celebrating with family
 title: What is <strong>wealth</strong> to me
 date: 06 August 2024
 excerpt: "For me, having the most money was never the goal. Having enough money to give you time — that's the real goal. Turning 44 made me reflect on what wealth actually means."
-published: false
+published: true
 ---
 
 There's a clip from an interview with Bob Marley where he's asked whether he considers himself rich or wealthy. His answer has always stayed with me.
