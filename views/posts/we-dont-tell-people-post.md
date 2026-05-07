@@ -14,7 +14,7 @@ excerpt: "We <strong>don't tell</strong> people how we feel and why we feel that
 
 ### The Why
 
-I grew up in a below middle-class neighbourhood in Portmore, Jamaica. Growing up, my mom and dad were not fully educated — a reality that shaped everything about our household. Growing up was not the worst but was not the best, there were limitations on what they could do for us as children.
+I grew up in a below middle-class neighbourhood in Portmore, Jamaica. Growing up, my mom and dad were not fully educated; it shaped everything about our household. Growing up was not the worst but was not the best, there were limitations on what they could do for us as children.
 
 My mom left education when she was 13 when she became pregnant, and my dad left education at about the age of 11. My dad had to work to help his family out as he was the oldest boy.
 
