@@ -22,7 +22,7 @@ home.get("/post/:slug", async function (req, res) {
     let slug = req.params['slug'];
     let article = await PostRepository.getBySlug(slug);
     if (!article) return res.status(404).render("pages/not_found", { title: `404: Post Not Found` });
-    let otherArticles = await PostRepository.getRecentPosts(3);
+    let otherArticles = (await PostRepository.getAllFilteredPosts(p => p.data.slug !== slug, true)).slice(0, 3);
     res.render("pages/single_post", {
         currentArticle: article,
         otherArticles: otherArticles
