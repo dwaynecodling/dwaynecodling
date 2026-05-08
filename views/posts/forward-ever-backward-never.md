@@ -8,7 +8,7 @@ hero:
     lrg_webp: /assets/img/pages/dwayne-profile.jpg
 alt: Dwayne Codling
 title: Forward ever, <strong>backward never</strong>
-date: 17 January 2025
+date: 17 January 2026
 excerpt: "After three years at IDHL, today was my last day. A chapter of real growth, lasting friendships, and work I'm genuinely proud of. Here's what I'm taking with me."
 published: true
 ---

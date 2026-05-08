@@ -8,7 +8,7 @@ hero:
     lrg_webp: /assets/img/pages/dwayne-bw.jpg
 alt: Dwayne Codling
 title: Maximising your <strong>value</strong>
-date: 14 March 2025
+date: 14 March 2026
 excerpt: "To maximise your value, you have to commit fully to the work. That means putting in the time, showing up consistently, and accepting that value isn't always something you can measure in numbers."
 published: true
 ---

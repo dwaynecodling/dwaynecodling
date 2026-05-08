@@ -8,7 +8,7 @@ hero:
     lrg_webp: /assets/img/pages/allyship.jpg
 alt: Dwayne at a community event
 title: Allyship in <strong>Tech</strong>
-date: 05 February 2025
+date: 17 December 2025
 excerpt: "How can we build products for a diverse world, yet still hesitate to collaborate with and invest in diverse talent? I attended an allyship event in Leeds and came away with a lot to reflect on."
 published: true
 ---
