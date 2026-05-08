@@ -46,8 +46,8 @@
                     <article class="grid__card-item">
                         <a href="/post/<%= currentArticle.data.slug %>" class="card">
                             <picture class="card__img-container">
-                                <source type="image/jpeg" data-srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
                                 <source type="image/webp" data-srcset="<%= currentArticle.data.hero.lrg_webp %>">
+                                <source type="image/jpeg" data-srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
                                 <img class="card__img lazyload"
                                      data-src="<%= currentArticle.data.hero.main %>"
                                      alt="<%= currentArticle.data.alt %>"

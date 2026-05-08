@@ -8,7 +8,7 @@
     <title>About Me — Dwayne Codling</title>
     <meta property="og:title" content="About Me — Dwayne Codling" />
     <meta property="og:description" content="Development Director. People-first leader. D&I advocate." />
-    <meta property="og:image" content="/assets/img/pages/dwayne-profile.jpg" />
+    <meta property="og:image" content="https://dwaynecodling.com/assets/img/pages/dwayne-profile.jpg" />
     <%- include("../partials/links") %>
     <style>
         .about-hero {
@@ -209,7 +209,7 @@
         .fitness-section {
             display: grid;
             gap: 4rem;
-            align-items: center;
+            align-items: start;
             margin-top: 5rem;
         }
 
@@ -222,14 +222,24 @@
 
         .fitness-reel {
             position: relative;
+            min-height: 48rem;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #162419 25%, #1e3224 50%, #162419 75%);
+            background-size: 200% 100%;
+            animation: reel-shimmer 1.5s ease-in-out infinite;
+        }
+
+        @keyframes reel-shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
         }
 
         .fitness-reel__accent {
             position: absolute;
             bottom: -1.2rem;
             left: -1.2rem;
-            width: 40%;
-            height: 30%;
+            width: 12rem;
+            height: 12rem;
             border: 2px solid #c8853a;
             z-index: -1;
         }
@@ -316,7 +326,7 @@
                 <div class="fitness-section">
                     <div>
                         <p class="about-intro__label">Fitness</p>
-                        <h3 class="about-intro__heading">Training outside the office.</h3>
+                        <h3 class="about-story__heading" style="margin-top:0; padding-top:0; border-top:none;">Training outside the office.</h3>
                         <p class="about-story__text">Follow along on Instagram for updates from the platform, competition prep, and the ongoing journey.</p>
                         <ul class="about-intro__links">
                             <li class="about-intro__link">
