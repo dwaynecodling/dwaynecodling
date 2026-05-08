@@ -1048,16 +1048,15 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  border: none;
   background-color: #c8853a;
   color: #0d1a10;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 1.4rem 2.4rem;
-  border-radius: 3rem;
-  border: none;
   cursor: pointer;
   transition: all 0.2s;
-  letter-spacing: 0.02em;
+  flex-shrink: 0;
 }
 .posts-pagination__btn:hover:not(:disabled) {
   background-color: rgb(169.7952380952, 112.0476190476, 47.4047619048);
