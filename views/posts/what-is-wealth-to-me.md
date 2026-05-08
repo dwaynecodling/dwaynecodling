@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/pages/dwayne-birthday.jpg
     sml_webp: /assets/img/pages/dwayne-birthday.jpg
     lrg_webp: /assets/img/pages/dwayne-birthday.jpg
+    position: center 20%
 alt: Dwayne celebrating with family
 title: What is <strong>wealth</strong> to me
 date: 06 August 2025

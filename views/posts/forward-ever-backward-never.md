@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/pages/dwayne-profile.jpg
     sml_webp: /assets/img/pages/dwayne-profile.jpg
     lrg_webp: /assets/img/pages/dwayne-profile.jpg
+    position: center 35%
 alt: Dwayne Codling
 title: Forward ever, <strong>backward never</strong>
 date: 17 January 2026
