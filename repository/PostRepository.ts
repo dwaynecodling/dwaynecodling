@@ -98,7 +98,7 @@ export namespace PostRepository{
             let cleanedTitle = rawTitle?.replace(/<[^>]+>/gm, '').replace(/([\r\n]+ +)+/gm, '');
 
             structure.data = Object.assign(structure.data, {
-                readTime: getReadTime(transformedContent, {
+                readTime: getReadTime(transformedContent.replace(/<[^>]+>/gm, ' '), {
                     secondPlural: "SECS",
                     secondSingular: "SEC",
                     minutePlural: "MINS",

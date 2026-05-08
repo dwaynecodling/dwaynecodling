@@ -75,7 +75,7 @@ var PostRepository;
             let rawTitle = structure.data.title;
             let cleanedTitle = rawTitle === null || rawTitle === void 0 ? void 0 : rawTitle.replace(/<[^>]+>/gm, '').replace(/([\r\n]+ +)+/gm, '');
             structure.data = Object.assign(structure.data, {
-                readTime: convinienceHelper_1.getReadTime(transformedContent, {
+                readTime: convinienceHelper_1.getReadTime(transformedContent.replace(/<[^>]+>/gm, ' '), {
                     secondPlural: "SECS",
                     secondSingular: "SEC",
                     minutePlural: "MINS",
