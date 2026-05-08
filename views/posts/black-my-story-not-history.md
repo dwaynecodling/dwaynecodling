@@ -4,6 +4,8 @@ hero:
     main: /assets/img/posts/2020-black-my-story/black-my-story-not-history.jpg
     sml_jpeg: /assets/img/posts/2020-black-my-story/black-my-story-not-history-360.jpg
     lrg_jpeg: /assets/img/posts/2020-black-my-story/black-my-story-not-history-lrg.jpg
+    sml_webp: /assets/img/posts/2020-black-my-story/black-my-story-not-history-360.jpg
+    lrg_webp: /assets/img/posts/2020-black-my-story/black-my-story-not-history-lrg.jpg
 alt: Black History Month Celebration
 title: How the JH team celebrated <strong>Black History Month</strong>
 date: 28 October 2020
