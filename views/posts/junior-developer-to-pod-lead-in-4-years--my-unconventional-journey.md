@@ -7,6 +7,7 @@ hero:
 title: Junior Developer to Pod Lead in 4 Years - My Unconventional Journey
 date: 06th April 2021
 excerpt: Unconventional career journey, looking back <strong>4 years</strong> after joining the team at JH.
+published: true
 ---
 
 > *I joined JH at 36 as a junior developer, later than most and well aware of it. Four years later I was leading a team. Here is what made the difference, and it wasn't the code.*

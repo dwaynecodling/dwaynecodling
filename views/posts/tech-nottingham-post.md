@@ -125,7 +125,7 @@ I have been told by someone that they treat everyone the same and "don't see col
 
 I grew up in Jamaica, where the majority of the population is Black but a lighter skin tone meant preferential treatment. The Prime Minister, governing a distinctly Black country, looked like a white man. I never grew up thinking I could be Prime Minister; because that was not what I saw.
 
-If someone is telling me, in England, where the population is predominantly white: "I don't see colour, everyone is the same" — I see colour. Everybody is not the same.
+If someone is telling me, in England, where the population is predominantly white: "I don't see colour, everyone is the same." I see colour. Everybody is not the same.
 
 You do not lose your white privilege by not understanding it. I do not want you to feel bad about being white, the same way I do not want to feel uncomfortable for being Black. But critiquing an industry from a different point of view is not a negative thing. It is a positive thing. That is why I am here.
 

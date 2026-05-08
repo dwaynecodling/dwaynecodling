@@ -8,6 +8,7 @@ alt: Black History Month Celebration
 title: How the JH team celebrated <strong>Black History Month</strong>
 date: 28th October 2020
 excerpt: "I wanted to write a little about this month, in particular, <strong>October</strong> the month in the UK where we celebrate Black History."
+published: true
 ---
 
 > *For 19 days I posted about inspiring Black people to my colleagues every morning at 7:30am. I felt like the only one at the party. Then I asked a simple question, and what came back changed how I see the people I work with.*
