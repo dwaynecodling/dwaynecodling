@@ -14,7 +14,7 @@
 <body>
 <%- include("../partials/nav") %>
 
-<main class="content" role="main">
+<main id="main-content" class="content" role="main">
 
     <!-- Page Header -->
     <section style="margin-bottom:0;">
@@ -54,12 +54,12 @@
             </div>
 
             <!-- Desktop filter tabs -->
-            <ul class="my-posts__filter--desktop" role="tablist">
-                <li class="my-posts__item my-posts__item--active" data-filter="all" role="tab" tabindex="0">All</li>
-                <li class="my-posts__item" data-filter="leadership" role="tab" tabindex="0">Leadership</li>
-                <li class="my-posts__item" data-filter="fitness" role="tab" tabindex="0">Fitness</li>
-                <li class="my-posts__item" data-filter="personal" role="tab" tabindex="0">Personal</li>
-                <li class="my-posts__item" data-filter="tech" role="tab" tabindex="0">Tech</li>
+            <ul class="my-posts__filter--desktop" role="tablist" aria-label="Filter posts by category">
+                <li class="my-posts__item my-posts__item--active" data-filter="all" role="tab" tabindex="0" aria-selected="true">All</li>
+                <li class="my-posts__item" data-filter="leadership" role="tab" tabindex="-1" aria-selected="false">Leadership</li>
+                <li class="my-posts__item" data-filter="fitness" role="tab" tabindex="-1" aria-selected="false">Fitness</li>
+                <li class="my-posts__item" data-filter="personal" role="tab" tabindex="-1" aria-selected="false">Personal</li>
+                <li class="my-posts__item" data-filter="tech" role="tab" tabindex="-1" aria-selected="false">Tech</li>
             </ul>
 
             <!-- Cards grid -->
@@ -78,7 +78,7 @@
                             </picture>
                             <div class="card__content">
                                 <time class="card__date"><%= currentArticle.data.date %></time>
-                                <h3 class="card__header"><%- currentArticle.data.title %></h3>
+                                <h2 class="card__header"><%- currentArticle.data.title %></h2>
                                 <p class="card__text"><%- currentArticle.data.excerpt %></p>
                             </div>
                             <time class="card__read-time">
@@ -157,7 +157,10 @@
         currentCategory = cat;
         currentPage = 1;
         tabs.forEach(function (t) {
-            t.classList.toggle('my-posts__item--active', t.dataset.filter === cat);
+            var isActive = t.dataset.filter === cat;
+            t.classList.toggle('my-posts__item--active', isActive);
+            t.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            t.setAttribute('tabindex', isActive ? '0' : '-1');
         });
         if (select) select.value = cat;
         render();
