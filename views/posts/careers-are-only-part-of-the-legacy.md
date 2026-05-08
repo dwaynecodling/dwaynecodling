@@ -13,6 +13,8 @@ excerpt: "Every role we hold is temporary. Organisations continue to evolve long
 published: true
 ---
 
+> *I was on holiday when I started thinking about this. Standing somewhere beautiful, present with the people who matter most, I found myself asking what we are actually working towards.*
+
 I was reminded of this while on holiday with my family; they took this photo of me having a moment to pause and reflect.
 
 After leaving my last role, something became very clear to me: **every role we hold is temporary.** Organisations continue to evolve long after we move on, and we each contribute for a period of that journey.

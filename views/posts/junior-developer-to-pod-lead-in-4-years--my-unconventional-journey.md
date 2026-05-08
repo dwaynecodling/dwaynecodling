@@ -9,6 +9,8 @@ date: 06th April 2021
 excerpt: Unconventional career journey, looking back <strong>4 years</strong> after joining the team at JH.
 ---
 
+> *I joined JH at 36 as a junior developer, later than most and well aware of it. Four years later I was leading a team. Here is what made the difference, and it wasn't the code.*
+
 In this post, I will share some reflections of my unconventional career journey, looking back 4 years after joining the team at JH.
 
 ### A turning point

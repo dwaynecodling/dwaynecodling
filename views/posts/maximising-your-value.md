@@ -13,6 +13,8 @@ excerpt: "To maximise your value, you have to commit fully to the work. That mea
 published: true
 ---
 
+> *At 44 I signed up for my first weightlifting competition. I told myself it was a personal challenge. What I didn't expect was how much it would affect the people watching.*
+
 To maximise your value, you have to commit fully to the work.
 
 That means putting in the time, showing up consistently, and accepting that value isn't always something you can measure in numbers. Sometimes it's defined by your progression; by how much you've improved, and whether the end result justifies the effort you invested.

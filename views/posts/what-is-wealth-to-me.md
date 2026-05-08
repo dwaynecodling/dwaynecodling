@@ -13,6 +13,8 @@ excerpt: "For me, having the most money was never the goal. Having enough money 
 published: true
 ---
 
+> *I turned 44 this year. A Bob Marley interview I watched years ago has been sitting with me ever since, and this birthday finally made it land.*
+
 There's a clip from an interview with Bob Marley where he's asked whether he considers himself rich or wealthy. His answer has always stayed with me.
 
 Bob Marley is probably the most famous Jamaican who ever lived, alongside Usain Bolt. His legacy is undeniable. And yet he passed away at just 36.

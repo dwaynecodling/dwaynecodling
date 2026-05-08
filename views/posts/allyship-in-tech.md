@@ -13,6 +13,8 @@ excerpt: "How can we build products for a diverse world, yet still hesitate to c
 published: true
 ---
 
+> *I attended an allyship event in Leeds and came home thinking less about the industry and more about my own front door. Sometimes the most important acts of allyship happen there.*
+
 I recently attended **The Importance of Allyship in Tech**, hosted by Georgie Lynskey and the G&T (girls and tech!) community in Leeds.
 
 It was a timely and necessary conversation; one that gave me a lot to reflect on during the journey home.

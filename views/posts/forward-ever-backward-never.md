@@ -13,6 +13,8 @@ excerpt: "After three years at IDHL, today was my last day. A chapter of real gr
 published: true
 ---
 
+> *Today was my last day at IDHL. Three years, five agencies brought together into one, and a team of people I am genuinely proud to have worked alongside. Here is what I am taking with me.*
+
 Today marks my last day at IDHL.
 
 I want to take a moment to say thank you and goodbye to an incredible team, and to reflect honestly on what these three years have meant to me.

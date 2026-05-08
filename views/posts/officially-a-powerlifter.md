@@ -13,6 +13,8 @@ excerpt: "I recently competed in my first powerlifting competition, finishing wi
 published: true
 ---
 
+> *My first powerlifting competition started with two missed squats. What happened next taught me something I already believed but hadn't yet lived.*
+
 I recently competed in my first powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class.
 
 What makes this result meaningful isn't just the numbers; it's the journey behind it.
