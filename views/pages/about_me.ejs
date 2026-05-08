@@ -204,6 +204,35 @@
                 min-height: 24rem;
             }
         }
+
+        /* Fitness reel section */
+        .fitness-section {
+            display: grid;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+        @media (min-width: 62em) {
+            .fitness-section {
+                grid-template-columns: 1.4fr 1fr;
+                gap: 6rem;
+            }
+        }
+
+        .fitness-reel {
+            position: relative;
+        }
+
+        .fitness-reel__accent {
+            position: absolute;
+            bottom: -1.2rem;
+            left: -1.2rem;
+            width: 40%;
+            height: 30%;
+            border: 2px solid #c8853a;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
@@ -284,6 +313,31 @@
                 <p class="about-story__text">I'm a dad first. I do the school runs, read in class with the kids, show up at sports days. Family isn't something I fit around work; it's the reason I take my work seriously.</p>
                 <p class="about-story__text">I also compete in raw powerlifting. In March 2025 I entered my first WRPF competition and finished 2nd in my class with a 495kg total. Training taught me something I already believed but needed to live: setbacks are part of the process. How you respond defines the outcome.</p>
 
+                <div class="fitness-section">
+                    <div>
+                        <p class="about-intro__label">Fitness</p>
+                        <h3 class="about-intro__heading">Training outside the office.</h3>
+                        <p class="about-story__text">Follow along on Instagram for updates from the platform, competition prep, and the ongoing journey.</p>
+                        <ul class="about-intro__links">
+                            <li class="about-intro__link">
+                                <a href="https://www.instagram.com/dwaynecodling.fitness"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+                                    Follow the fitness journey
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fitness-reel">
+                        <blockquote class="instagram-media"
+                            data-instgrm-permalink="https://www.instagram.com/reel/DWl50ZECEhA/"
+                            data-instgrm-version="14"
+                            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); max-width:100%; min-width:326px; width:100%; padding:0; margin:0;">
+                        </blockquote>
+                        <div class="fitness-reel__accent"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -313,5 +367,6 @@
 
 <%- include("../partials/footer") %>
 <script src="/assets/js/lazysizes.min.js" async></script>
+<script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
