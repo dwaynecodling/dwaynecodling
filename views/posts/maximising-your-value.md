@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/pages/dwayne-bw.jpg
     sml_webp: /assets/img/pages/dwayne-bw.jpg
     lrg_webp: /assets/img/pages/dwayne-bw.jpg
-    position: center bottom
+    position: center center
 alt: Dwayne Codling
 title: Maximising your <strong>value</strong>
 date: 14 March 2026

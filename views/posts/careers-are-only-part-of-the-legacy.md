@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/hero-beach.jpg
     sml_webp: /assets/img/hero-beach.jpg
     lrg_webp: /assets/img/hero-beach.jpg
-    position: center bottom
+    position: center 25%
 alt: A moment to pause and reflect
 title: Careers are only part of the <strong>legacy</strong> we leave
 date: 21 March 2026
