@@ -97,10 +97,16 @@
         .post-share__link:after { display: none; }
 
         button.post-share__link {
-            background: none;
+            background-color: #c8853a;
+            color: #0d1a10;
             font-family: inherit;
             cursor: pointer;
-            border: 1px solid rgba(200,133,58,0.3);
+            border: none;
+            letter-spacing: 0.04em;
+        }
+
+        button.post-share__link:hover {
+            background-color: #b8742a;
         }
 
         .post-back {
@@ -177,7 +183,6 @@
 
             <!-- Share -->
             <div class="post-share" style="max-width:72rem; margin:5rem auto 0;">
-                <span class="post-share__label">Share</span>
                 <button class="post-share__link" onclick="sharePost(this)">Share this post</button>
             </div>
             <script>
