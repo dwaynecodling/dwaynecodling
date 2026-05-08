@@ -96,6 +96,12 @@
 
         .post-share__link:after { display: none; }
 
+        button.post-share__link {
+            background: none;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
         .post-back {
             display: inline-flex;
             align-items: center;
@@ -171,13 +177,19 @@
             <!-- Share -->
             <div class="post-share" style="max-width:72rem; margin:5rem auto 0;">
                 <span class="post-share__label">Share</span>
-                <a href="https://www.linkedin.com/in/dwayne-codling/" target="_blank" rel="noopener" class="post-share__link">
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dwaynecodling.com/post/<%= currentArticle.data.slug %>" target="_blank" rel="noopener" class="post-share__link">
                     LinkedIn
                 </a>
-                <a href="https://github.com/dwaynecodling" target="_blank" rel="noopener" class="post-share__link">
-                    GitHub
-                </a>
+                <button class="post-share__link" onclick="copyPostLink(this)">Copy link</button>
             </div>
+            <script>
+                function copyPostLink(btn) {
+                    navigator.clipboard.writeText(window.location.href).then(function() {
+                        btn.textContent = 'Copied!';
+                        setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
+                    });
+                }
+            </script>
         </div>
     </section>
 
