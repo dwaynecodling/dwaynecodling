@@ -100,6 +100,7 @@
             background: none;
             font-family: inherit;
             cursor: pointer;
+            border: 1px solid rgba(200,133,58,0.3);
         }
 
         .post-back {
@@ -177,17 +178,20 @@
             <!-- Share -->
             <div class="post-share" style="max-width:72rem; margin:5rem auto 0;">
                 <span class="post-share__label">Share</span>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dwaynecodling.com/post/<%= currentArticle.data.slug %>" target="_blank" rel="noopener" class="post-share__link">
-                    LinkedIn
-                </a>
-                <button class="post-share__link" onclick="copyPostLink(this)">Copy link</button>
+                <button class="post-share__link" onclick="sharePost(this)">Share this post</button>
             </div>
             <script>
-                function copyPostLink(btn) {
-                    navigator.clipboard.writeText(window.location.href).then(function() {
-                        btn.textContent = 'Copied!';
-                        setTimeout(function() { btn.textContent = 'Copy link'; }, 2000);
-                    });
+                function sharePost(btn) {
+                    var title = '<%- currentArticle.data.titleText %>';
+                    var url = window.location.href;
+                    if (navigator.share) {
+                        navigator.share({ title: title, url: url });
+                    } else {
+                        navigator.clipboard.writeText(url).then(function() {
+                            btn.textContent = 'Link copied!';
+                            setTimeout(function() { btn.textContent = 'Share this post'; }, 2000);
+                        });
+                    }
                 }
             </script>
         </div>
