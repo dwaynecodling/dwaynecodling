@@ -9,7 +9,7 @@ hero:
     position: center center
 alt: Mrs Dorothy — the inspiration behind this post
 title: There is beauty in the <strong>struggle</strong>
-date: 08 May 2025
+date: 8 May 2025
 excerpt: "Everyone loves an underdog story. But the beauty of the struggle isn't in how it ends — it's in the grinding-to-make-it phase."
 published: true
 ---

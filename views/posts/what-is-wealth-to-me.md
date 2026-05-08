@@ -9,7 +9,7 @@ hero:
     position: center 20%
 alt: Dwayne celebrating with family
 title: What is <strong>wealth</strong> to me
-date: 06 August 2025
+date: 6 August 2025
 excerpt: "For me, having the most money was never the goal. Having enough money to give you time; that's the real goal. Turning 44 made me reflect on what wealth actually means."
 published: true
 ---

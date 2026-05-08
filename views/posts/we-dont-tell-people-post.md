@@ -8,7 +8,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg.jpg
 alt: Dwayne and Family
 title: We <strong>don't tell</strong> people how we feel
-date: 14th June 2020
+date: 14 June 2020
 excerpt: "We <strong>don't tell</strong> people how we feel and why we feel that way. So, here goes:"
 published: true
 ---

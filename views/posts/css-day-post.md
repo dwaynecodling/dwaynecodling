@@ -6,7 +6,7 @@ hero:
     lrg_webp: /assets/img/posts/2019-css-day/css-day720.webp
     sml_webp: /assets/img/posts/2019-css-day/css-day360.webp
 title: CSS Day
-date: 14th June 2019
+date: 14 June 2019
 excerpt: Capture the stunning <strong>essence</strong> of the early morning sunrise in the Californian wilderness.
 published: false
 ---

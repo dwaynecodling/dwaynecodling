@@ -9,7 +9,7 @@ hero:
     position: center 45%
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Officially an <strong>amateur powerlifter</strong>
-date: 07 April 2026
+date: 7 April 2026
 excerpt: "I recently competed in my first powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class. What makes this result meaningful isn't just the numbers; it's the journey behind it."
 published: true
 ---

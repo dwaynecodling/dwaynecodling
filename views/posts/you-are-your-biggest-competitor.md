@@ -9,7 +9,7 @@ hero:
     position: center center
 alt: Dwayne competing in DEKA Strong
 title: You are your <strong>biggest competitor</strong>
-date: 08 May 2025
+date: 8 May 2025
 excerpt: "Mindset and motivation can slip when you don't recognise the moments that truly test them. This is about one of those moments."
 published: true
 ---

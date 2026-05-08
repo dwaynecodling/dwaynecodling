@@ -8,7 +8,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2020-tech-notts/nottingham-lrg.jpg
 alt: Nottingham
 title: Diversity <strong>vs</strong> Inclusion
-date: 30th July 2020
+date: 30 July 2020
 excerpt: The talk will focus on the <strong> generational wealth gap</strong> in and how this facilitates a difference in circumstances between different races.
 published: true
 ---

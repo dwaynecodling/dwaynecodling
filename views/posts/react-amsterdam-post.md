@@ -6,7 +6,7 @@ hero:
     lrg_webp: /assets/img/posts/2019-react-amsterdam/react-amsterdam@2x.webp
     sml_webp: /assets/img/posts/2019-react-amsterdam/react-amsterdam.webp
 title: React Amsterdam Conference
-date: 12th April 2019
+date: 12 April 2019
 excerpt: Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. 
 published: false
 ---

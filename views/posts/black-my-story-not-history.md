@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2020-black-my-story/black-my-story-not-history-lrg.jpg
 alt: Black History Month Celebration
 title: How the JH team celebrated <strong>Black History Month</strong>
-date: 28th October 2020
+date: 28 October 2020
 excerpt: "I wanted to write a little about this month, in particular, <strong>October</strong> the month in the UK where we celebrate Black History."
 published: true
 ---

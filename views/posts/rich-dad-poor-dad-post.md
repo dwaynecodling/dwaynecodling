@@ -6,7 +6,7 @@ hero:
     lrg_webp: /assets/img/posts/2017-rich-dad/rich-dad-720.webp
     sml_webp: /assets/img/posts/2017-rich-dad/rich-dad-360.webp
 title: Rich Dad poor Dad
-date: 9th March 2017
+date: 9 March 2017
 excerpt: What the Rich Teach Their Kids About <strong>Money </strong> That the Poor and Middle Class Do Not!
 published: false
 ---
