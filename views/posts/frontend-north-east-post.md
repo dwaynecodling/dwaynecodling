@@ -9,6 +9,7 @@ title: Frontend NE The Conference
 date: 5 April 2018
 excerpt: Sunsets over the <strong>stunning</strong> Utah Canyonlands, is truly something much more than incredible.
 published: false
+category: tech
 ---
 
 # Coming Soon #

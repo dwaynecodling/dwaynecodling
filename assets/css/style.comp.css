@@ -1013,25 +1013,68 @@ footer {
 }
 .my-posts__item {
   padding-bottom: 2rem;
+  cursor: pointer;
 }
 .my-posts__item:hover {
-  position: relative;
-  cursor: pointer;
   color: #c8853a;
 }
 .my-posts__item:after {
   content: "";
   position: absolute;
   width: 0;
-  height: 1px;
-  background-color: #fff;
+  height: 2px;
+  background-color: #c8853a;
   bottom: 0;
   left: -30%;
   transition: 0.3s ease all;
 }
-.my-posts__item:hover:after {
+.my-posts__item:hover:after, .my-posts__item--active:after {
   width: 160%;
-  transition: 0.3s ease all;
+}
+.my-posts__item--active {
+  color: #c8853a;
+}
+
+.posts-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.posts-pagination__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  border: 1px solid rgba(200, 133, 58, 0.4);
+  background: transparent;
+  color: #c8853a;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.posts-pagination__btn:hover:not(:disabled) {
+  background-color: #c8853a;
+  color: #0d1a10;
+}
+.posts-pagination__btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.posts-pagination__info {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a89e90;
+  min-width: 6rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 62em) {

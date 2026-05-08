@@ -12,6 +12,7 @@ title: What is <strong>wealth</strong> to me
 date: 6 August 2025
 excerpt: "For me, having the most money was never the goal. Having enough money to give you time; that's the real goal. Turning 44 made me reflect on what wealth actually means."
 published: true
+category: personal
 ---
 
 > *I turned 44 this year. A Bob Marley interview I watched years ago has been sitting with me ever since, and this birthday finally made it land.*

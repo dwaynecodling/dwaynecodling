@@ -12,6 +12,7 @@ title: There is beauty in the <strong>struggle</strong>
 date: 8 May 2025
 excerpt: "Everyone loves an underdog story. But the beauty of the struggle isn't in how it ends — it's in the grinding-to-make-it phase."
 published: true
+category: personal
 ---
 
 > *Everyone loves an underdog story. The grinding-to-make-it phase is the best part. Success comes secondary to the memory of the struggle.*

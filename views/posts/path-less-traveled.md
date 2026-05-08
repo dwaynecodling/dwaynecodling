@@ -12,6 +12,7 @@ title: Is the path less traveled <strong>better</strong>?
 date: 8 May 2025
 excerpt: "We make choices every day, and some are more difficult than others. Do you ever wonder what happens when you take the path less traveled?"
 published: true
+category: personal
 ---
 
 > *We all end up where we are destined to be. But sometimes, the path less traveled gives us a much richer experience.*

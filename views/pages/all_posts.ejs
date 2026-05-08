@@ -38,12 +38,34 @@
     </section>
 
     <!-- Filter + Posts -->
-    <section class="card-wrapper" style="padding-top: 6rem;">
+    <section class="card-wrapper" style="padding-top: 5rem;">
         <div class="container">
 
+            <!-- Mobile filter -->
+            <div class="my-posts__filter my-posts__filter--mobile">
+                <label class="my-posts__filter--label" for="category-select">Filter by</label>
+                <select class="my-posts__select" id="category-select">
+                    <option value="all">All posts</option>
+                    <option value="leadership">Leadership</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="personal">Personal</option>
+                    <option value="tech">Tech</option>
+                </select>
+            </div>
+
+            <!-- Desktop filter tabs -->
+            <ul class="my-posts__filter--desktop" role="tablist">
+                <li class="my-posts__item my-posts__item--active" data-filter="all" role="tab" tabindex="0">All</li>
+                <li class="my-posts__item" data-filter="leadership" role="tab" tabindex="0">Leadership</li>
+                <li class="my-posts__item" data-filter="fitness" role="tab" tabindex="0">Fitness</li>
+                <li class="my-posts__item" data-filter="personal" role="tab" tabindex="0">Personal</li>
+                <li class="my-posts__item" data-filter="tech" role="tab" tabindex="0">Tech</li>
+            </ul>
+
+            <!-- Cards grid -->
             <article class="grid grid--card-list">
                 <% for (let currentArticle of posts){ %>
-                    <article class="grid__card-item">
+                    <article class="grid__card-item" data-category="<%= currentArticle.data.category || 'all' %>">
                         <a href="/post/<%= currentArticle.data.slug %>" class="card">
                             <picture class="card__img-container">
                                 <source type="image/webp" data-srcset="<%= currentArticle.data.hero.lrg_webp %>">
@@ -67,6 +89,16 @@
                 <% } %>
             </article>
 
+            <!-- Empty state -->
+            <p id="posts-empty" style="display:none; text-align:center; color:#a89e90; font-size:1.7rem; padding: 6rem 0;">No posts in this category yet.</p>
+
+            <!-- Pagination -->
+            <nav id="posts-pagination" class="posts-pagination" aria-label="Posts pagination" style="display:none;">
+                <button class="posts-pagination__btn" id="posts-prev" aria-label="Previous page">&larr;</button>
+                <span class="posts-pagination__info" id="posts-page-info"></span>
+                <button class="posts-pagination__btn" id="posts-next" aria-label="Next page">&rarr;</button>
+            </nav>
+
         </div>
     </section>
 
@@ -74,5 +106,84 @@
 
 <%- include("../partials/footer") %>
 <script src="/assets/js/lazysizes.min.js" async></script>
+<script>
+(function () {
+    var POSTS_PER_PAGE = 6;
+    var currentCategory = 'all';
+    var currentPage = 1;
+
+    var cards = Array.from(document.querySelectorAll('.grid__card-item'));
+    var tabs = Array.from(document.querySelectorAll('.my-posts__item'));
+    var select = document.getElementById('category-select');
+    var pagination = document.getElementById('posts-pagination');
+    var prevBtn = document.getElementById('posts-prev');
+    var nextBtn = document.getElementById('posts-next');
+    var pageInfo = document.getElementById('posts-page-info');
+    var emptyState = document.getElementById('posts-empty');
+
+    function getFiltered() {
+        if (currentCategory === 'all') return cards;
+        return cards.filter(function (c) { return c.dataset.category === currentCategory; });
+    }
+
+    function render() {
+        var filtered = getFiltered();
+        var totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
+        if (currentPage > totalPages) currentPage = 1;
+
+        var start = (currentPage - 1) * POSTS_PER_PAGE;
+        var visible = filtered.slice(start, start + POSTS_PER_PAGE);
+
+        cards.forEach(function (c) { c.style.display = 'none'; });
+        visible.forEach(function (c) { c.style.display = ''; });
+
+        emptyState.style.display = filtered.length === 0 ? 'block' : 'none';
+
+        if (totalPages <= 1) {
+            pagination.style.display = 'none';
+        } else {
+            pagination.style.display = 'flex';
+            prevBtn.disabled = currentPage === 1;
+            nextBtn.disabled = currentPage === totalPages;
+            pageInfo.textContent = currentPage + ' of ' + totalPages;
+        }
+    }
+
+    function setCategory(cat) {
+        currentCategory = cat;
+        currentPage = 1;
+        tabs.forEach(function (t) {
+            t.classList.toggle('my-posts__item--active', t.dataset.filter === cat);
+        });
+        if (select) select.value = cat;
+        render();
+    }
+
+    function scrollToGrid() {
+        var section = document.querySelector('.card-wrapper');
+        if (section) window.scrollTo({ top: section.offsetTop - 80, behavior: 'smooth' });
+    }
+
+    tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () { setCategory(tab.dataset.filter); });
+        tab.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') setCategory(tab.dataset.filter); });
+    });
+
+    if (select) {
+        select.addEventListener('change', function () { setCategory(select.value); });
+    }
+
+    prevBtn.addEventListener('click', function () {
+        if (currentPage > 1) { currentPage--; render(); scrollToGrid(); }
+    });
+
+    nextBtn.addEventListener('click', function () {
+        var totalPages = Math.ceil(getFiltered().length / POSTS_PER_PAGE);
+        if (currentPage < totalPages) { currentPage++; render(); scrollToGrid(); }
+    });
+
+    render();
+}());
+</script>
 </body>
 </html>

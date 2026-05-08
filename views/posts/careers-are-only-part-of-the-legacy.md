@@ -12,6 +12,7 @@ title: Careers are only part of the <strong>legacy</strong> we leave
 date: 21 March 2026
 excerpt: "Every role we hold is temporary. Organisations continue to evolve long after we move on, and we each contribute for a period of that journey. But the legacy that lasts is built outside of work too."
 published: true
+category: leadership
 ---
 
 > *I was on holiday when I started thinking about this. Standing somewhere beautiful, present with the people who matter most, I found myself asking what we are actually working towards.*

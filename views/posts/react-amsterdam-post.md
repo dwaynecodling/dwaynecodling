@@ -9,6 +9,7 @@ title: React Amsterdam Conference
 date: 12 April 2019
 excerpt: Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. 
 published: false
+category: tech
 ---
 
 

@@ -11,6 +11,7 @@ title: We <strong>don't tell</strong> people how we feel
 date: 14 June 2020
 excerpt: "We <strong>don't tell</strong> people how we feel and why we feel that way. So, here goes:"
 published: true
+category: personal
 ---
 
 > *I grew up not knowing I was poor. I left everyone I loved at 20 with nothing but a plane ticket. Now I'm a father, and there are things I've never said out loud about what that means for my kids.*

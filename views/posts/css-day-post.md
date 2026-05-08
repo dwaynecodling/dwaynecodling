@@ -11,6 +11,7 @@ title: What I took from <strong>CSS Day</strong>
 date: 14 June 2019
 excerpt: "CSS Day in Amsterdam was two days of talks that challenged how I think about design, code, and the craft behind both."
 published: true
+category: tech
 ---
 
 > *To learn something you have to do a lot of repetition and learn it yourself. There are no shortcuts.*

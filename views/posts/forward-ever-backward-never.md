@@ -12,6 +12,7 @@ title: Forward ever, <strong>backward never</strong>
 date: 17 January 2026
 excerpt: "After three years at IDHL, today was my last day. A chapter of real growth, lasting friendships, and work I'm genuinely proud of. Here's what I'm taking with me."
 published: true
+category: leadership
 ---
 
 > *Today was my last day at IDHL. Three years, five agencies brought together into one, and a team of people I am genuinely proud to have worked alongside. Here is what I am taking with me.*

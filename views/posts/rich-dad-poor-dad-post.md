@@ -11,6 +11,7 @@ title: Rich Dad <strong>Poor Dad</strong>
 date: 9 March 2017
 excerpt: "Wealth isn't measured by how much money you earn. It's measured by what you do with it."
 published: true
+category: personal
 ---
 
 > *Wealth isn't measured by how much money you earn. It's measured by what you do with the money you earn.*

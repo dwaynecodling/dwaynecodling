@@ -11,6 +11,7 @@ title: Allyship in <strong>Tech</strong>
 date: 17 December 2025
 excerpt: "How can we build products for a diverse world, yet still hesitate to collaborate with and invest in diverse talent? I attended an allyship event in Leeds and came away with a lot to reflect on."
 published: true
+category: leadership
 ---
 
 > *I attended an allyship event in Leeds and came home thinking less about the industry and more about my own front door. Sometimes the most important acts of allyship happen there.*

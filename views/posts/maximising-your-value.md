@@ -12,6 +12,7 @@ title: Maximising your <strong>value</strong>
 date: 14 March 2026
 excerpt: "To maximise your value, you have to commit fully to the work. That means putting in the time, showing up consistently, and accepting that value isn't always something you can measure in numbers."
 published: true
+category: leadership
 ---
 
 > *At 44 I signed up for my first weightlifting competition. I told myself it was a personal challenge. What I didn't expect was how much it would affect the people watching.*

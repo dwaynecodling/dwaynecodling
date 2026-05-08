@@ -9,6 +9,7 @@ title: Google PWA Roadshow
 date: 2 March 2018
 excerpt: Capture the stunning <strong>essence</strong> of the early morning sunrise in the Californian wilderness.
 published: false
+category: tech
 ---
 
 # Coming Soon

@@ -12,6 +12,7 @@ title: Celebrating 40 as a <strong>better version of me</strong>
 date: 1 August 2021
 excerpt: "I made a decision: to look and feel the best I ever have in my life. Little did I know what that statement would mean in a pandemic with no gym and no personal trainer."
 published: true
+category: fitness
 ---
 
 > *Discipline is without a doubt the hardest skill to master. But commitment is about showing up every day, no matter what.*

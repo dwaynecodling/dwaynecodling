@@ -12,6 +12,7 @@ title: Eat that <strong>frog</strong>
 date: 12 August 2025
 excerpt: "We all know what eat that frog means. But knowing it and actually doing it are two very different things."
 published: true
+category: leadership
 ---
 
 > *A colleague brought this up in conversation and it stuck. We all know what "eat that frog" means. But knowing it and actually doing it are two very different things.*

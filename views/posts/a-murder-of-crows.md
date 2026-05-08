@@ -12,6 +12,7 @@ title: I witnessed a <strong>murder</strong>
 date: 8 May 2025
 excerpt: "I saw a murder happen right in front of me, and the most unexpected thing took place. Most people, when they hear \"murder,\" think crime. But what do you see?"
 published: true
+category: fitness
 ---
 
 > *Joy often shows up when we're not chasing it. And change, even forced change, can be good for the soul.*

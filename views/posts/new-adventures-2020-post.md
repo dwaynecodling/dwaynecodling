@@ -9,6 +9,7 @@ title: New Adventures Conference
 date: 25 January 2019
 excerpt: Capture the stunning <strong>essence</strong> of the early morning sunrise in the Californian wilderness.
 published: false
+category: tech
 ---
 
 
