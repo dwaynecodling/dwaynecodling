@@ -1,11 +1,11 @@
 ---
 slug: careers-are-only-part-of-the-legacy
 hero:
-    main: /assets/img/hero-beach.jpg
-    sml_jpeg: /assets/img/hero-beach.jpg
-    lrg_jpeg: /assets/img/hero-beach.jpg
-    sml_webp: /assets/img/hero-beach.jpg
-    lrg_webp: /assets/img/hero-beach.jpg
+    main: /assets/img/pages/hero-about.jpg
+    sml_jpeg: /assets/img/pages/hero-about.jpg
+    lrg_jpeg: /assets/img/pages/hero-about.jpg
+    sml_webp: /assets/img/pages/hero-about.jpg
+    lrg_webp: /assets/img/pages/hero-about.jpg
     position: center 25%
 alt: A moment to pause and reflect
 title: Careers are only part of the <strong>legacy</strong> we leave
