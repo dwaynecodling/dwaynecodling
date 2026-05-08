@@ -1,9 +1,12 @@
 .post-template__img-wrapper{
-    width: 100%;
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
     background-color: $color-forest-mid;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
     margin-bottom: 6rem;
-    display: flex;
-    justify-content: center;
 }
 
 .post-template__iframe-wrapper{
@@ -25,11 +28,14 @@
 }
 
 .post-template__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
     display: block;
-    max-width: 100%;
-    max-height: 75vh;
-    width: auto;
-    height: auto;
 }
 
 .post-template__content {
