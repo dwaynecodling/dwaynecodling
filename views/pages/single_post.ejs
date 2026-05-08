@@ -138,7 +138,7 @@
             <div class="container">
                 <a href="/posts" class="post-back">← Back to all posts</a>
                 <div class="post-hero__meta">
-                    <span class="post-hero__tag">Writing</span>
+                    <span class="post-hero__tag"><%= currentArticle.data.category ? currentArticle.data.category.charAt(0).toUpperCase() + currentArticle.data.category.slice(1) : 'Writing' %></span>
                     <span class="post-hero__date"><%- currentArticle.data.date %></span>
                     <span class="post-hero__read-time">· <%- currentArticle.data.readTime %> read</span>
                 </div>
