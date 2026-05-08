@@ -27,7 +27,7 @@ That means financial planning. Understanding assets and liabilities. Not just co
 
 ## Assets over everything
 
-Kiyosaki is clear: acquiring assets is the best route to building wealth. An asset puts money in your pocket. A liability takes money out. The trap most people fall into is buying things that feel like assets — a bigger car, a bigger house — when they are actually liabilities.
+Kiyosaki is clear: acquiring assets is the best route to building wealth. An asset puts money in your pocket. A liability takes money out. The trap most people fall into is buying things that feel like assets (a bigger car, a bigger house) when they are actually liabilities.
 
 His example that stuck with me: it's better to live in a small house for five years, own it outright, and use it as a foundation to invest and grow, than to sell quickly and chase a bigger home. The small house becomes an asset. Patience turns it into leverage.
 
@@ -35,7 +35,7 @@ His example that stuck with me: it's better to live in a small house for five ye
 
 One of the most honest lines in the book: being broke is temporary, being poor is eternal.
 
-Broke is a financial state. Poor is a mindset. You can be broke today and rich in five years if you are making the right decisions now. But if you stay in a poor mindset — spending everything, avoiding risk, waiting for someone to sort it out — the situation becomes permanent.
+Broke is a financial state. Poor is a mindset. You can be broke today and rich in five years if you are making the right decisions now. But if you stay in a poor mindset: spending everything, avoiding risk, waiting for someone to sort it out, the situation becomes permanent.
 
 ## Managing fear and greed
 
@@ -47,7 +47,7 @@ The discipline is managing both. Not letting fear keep you from building, and no
 
 The book points toward several ways to build income-generating assets: investing in start-ups and small businesses, real estate, investment partnerships, and backing ideas with potential. None of these are overnight wins. All of them require patience, research, and a willingness to take calculated risk.
 
-Partnership is highlighted as one of the smarter moves — sharing risk, combining knowledge, and moving faster than you could alone.
+Partnership is highlighted as one of the smarter moves: sharing risk, combining knowledge, and moving faster than you could alone.
 
 ## The takeaway
 
