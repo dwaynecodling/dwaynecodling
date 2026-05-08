@@ -13,7 +13,11 @@
         var path = window.location.pathname;
         document.querySelectorAll('.navigation__link:not(.link--alt) a').forEach(function(link) {
             var href = link.getAttribute('href');
-            if (path === href || path.startsWith(href + '/')) {
+            var isActive = path === href || path.startsWith(href + '/');
+            if (!isActive && href === '/posts' && path.startsWith('/post/')) {
+                isActive = true;
+            }
+            if (isActive) {
                 link.closest('.navigation__link').classList.add('navigation__link--active');
             }
         });
