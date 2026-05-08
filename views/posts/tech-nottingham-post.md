@@ -9,7 +9,8 @@ hero:
 alt: Nottingham
 title: Diversity <strong>vs</strong> Inclusion
 date: 30 July 2020
-excerpt: The talk will focus on the <strong> generational wealth gap</strong> in and how this facilitates a difference in circumstances between different races.
+excerpt: The talk will focus on the <strong>generational wealth gap</strong> and how this facilitates a difference in circumstances between different races.
+category: leadership
 published: true
 ---
 
