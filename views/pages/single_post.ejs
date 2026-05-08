@@ -114,11 +114,11 @@
             display: inline-flex;
             align-items: center;
             gap: 0.8rem;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-weight: 600;
             color: #a89e90;
             text-decoration: none;
-            margin-bottom: 4rem;
+            margin-bottom: 2.4rem;
             transition: color .2s;
         }
 
@@ -136,6 +136,7 @@
     <section style="margin-bottom:0;">
         <div class="post-hero">
             <div class="container">
+                <a href="/posts" class="post-back">← My posts</a>
                 <div class="post-hero__meta">
                     <span class="post-hero__tag">Writing</span>
                     <span class="post-hero__date"><%- currentArticle.data.date %></span>
@@ -175,9 +176,6 @@
     <!-- Post content -->
     <section>
         <div class="container">
-            <a href="/posts" class="post-back">
-                ← Back to all posts
-            </a>
             <div class="post-template__content">
                 <%- currentArticle.content %>
             </div>
