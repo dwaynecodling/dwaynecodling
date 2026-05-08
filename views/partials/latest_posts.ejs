@@ -24,7 +24,7 @@
                              data-src="<%= currentArticle.data.hero.main %>"
                              alt="<%= currentArticle.data.alt %>"
                              height="160"
-                             width="360"/>
+                             width="360"<% if (currentArticle.data.hero.position) { %> style="object-position: <%= currentArticle.data.hero.position %>;"<% } %>/>
                     </picture>
                     <div class="card__content">
                         <time class="card__date"><%= currentArticle.data.date %></time>

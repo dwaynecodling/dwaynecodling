@@ -166,7 +166,7 @@
                     <picture>
                         <source type="image/webp" data-srcset="<%= currentArticle.data.hero.lrg_webp %>">
                         <source type="image/jpeg" data-srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
-                        <img class="post-template__img lazyload" data-src="<%= currentArticle.data.hero.main %>" alt="<%= currentArticle.data.alt %>">
+                        <img class="post-template__img lazyload" data-src="<%= currentArticle.data.hero.main %>" alt="<%= currentArticle.data.alt %>"<% if (currentArticle.data.hero.position) { %> style="object-position: <%= currentArticle.data.hero.position %>;"<% } %>>
                     </picture>
                 </div>
             <% } %>
