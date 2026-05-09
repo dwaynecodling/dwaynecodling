@@ -1,11 +1,11 @@
 ---
 slug: why-does-it-have-to-be-this-hard
 hero:
-    main: /assets/img/pages/deka-1.jpg
-    sml_jpeg: /assets/img/pages/deka-1@720w.jpg
-    lrg_jpeg: /assets/img/pages/deka-1.jpg
-    sml_webp: /assets/img/pages/deka-1@720w.jpg
-    lrg_webp: /assets/img/pages/deka-1.jpg
+    main: /assets/img/pages/deka-new.jpg
+    sml_jpeg: /assets/img/pages/deka-new@720w.jpg
+    lrg_jpeg: /assets/img/pages/deka-new.jpg
+    sml_webp: /assets/img/pages/deka-new@720w.jpg
+    lrg_webp: /assets/img/pages/deka-new.jpg
     position: center 40%
 alt: Competing at the Deka Fit challenge
 title: Why does it have to be <strong>this hard?</strong>
