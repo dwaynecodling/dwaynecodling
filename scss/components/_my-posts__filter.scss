@@ -106,28 +106,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 5.2rem;
-    height: 5.2rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
-    border: none;
-    background-color: $color-amber;
-    color: $color-forest-dark;
+    border: .2rem solid rgba(244,237,224,0.4);
+    background-color: transparent;
+    color: $color-cream;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: $transition;
     flex-shrink: 0;
 
     &:hover:not(:disabled) {
-        background-color: $color-amber-dark;
-        color: $color-cream;
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(200,133,58,0.35);
+        border-color: $color-amber;
     }
 
     &:disabled {
         opacity: 0.3;
         cursor: default;
-        transform: none;
-        box-shadow: none;
     }
 }
 
