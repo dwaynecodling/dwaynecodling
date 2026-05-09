@@ -1,9 +1,9 @@
-import MarkdownIt = require("markdown-it/lib");
+import MarkdownIt from "markdown-it";
 
 export class MarkdownTool {
 
     private mdLib = require("markdown-it");
-    private md:MarkdownIt;
+    private md: MarkdownIt;
     private plugins = {
         emoji : require('markdown-it-emoji'),
         abbreviation : require('markdown-it-abbr'),
@@ -28,7 +28,7 @@ export class MarkdownTool {
             // If result starts with <pre... internal wrapper is skipped.
             highlight: function (/*str, lang*/) { return ''; },
 
-            modifyToken: function (token, env) {
+            modifyToken: function (token: any, env: any) {
                 switch (token.type) {
                     case 'image':
                         token.attrObj.loading = 'lazy';
@@ -72,7 +72,7 @@ export class MarkdownTool {
         });
         this.md.use(this.plugins.modToken);
 
-        this.md.renderer.rules.image = function(tokens, idx, options, env, self) {
+        this.md.renderer.rules.image = function(tokens: any, idx: any, options: any, env: any, self: any) {
             const token = tokens[idx];
             const src = token.attrGet('src') || '';
             const alt = token.attrGet('alt') || '';

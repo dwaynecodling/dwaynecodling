@@ -7,7 +7,9 @@
 		"preserveConstEnums": true,
 		"sourceMap": true,
 		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true
+		"experimentalDecorators": true,
+		"types": ["node"],
+		"esModuleInterop": true
 	},
 	"exclude": [
 		"node_modules"
