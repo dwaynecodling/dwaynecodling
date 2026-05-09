@@ -113,16 +113,19 @@
     background-color: transparent;
     color: $color-cream;
     cursor: pointer;
-    transition: $transition;
+    transition: border-color .2s;
     flex-shrink: 0;
+    appearance: none;
 
     &:hover:not(:disabled) {
         border-color: $color-amber;
+        background-color: transparent;
     }
 
     &:disabled {
         opacity: 0.3;
         cursor: default;
+        background-color: transparent;
     }
 }
 
