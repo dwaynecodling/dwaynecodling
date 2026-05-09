@@ -736,7 +736,7 @@ footer {
 .hero__button {
   display: inline-flex;
   align-items: center;
-  color: #0d1a10;
+  color: #f4ede0;
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
@@ -1183,8 +1183,6 @@ footer {
 .contact-form__form button {
   display: block;
   margin: 0 auto;
-  background-color: rgba(56, 55, 55, 0.7607843137);
-  border: none;
 }
 
 .contact-form__name-field {
