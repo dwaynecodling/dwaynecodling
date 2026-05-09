@@ -75,7 +75,7 @@ export class MarkdownTool {
         this.md.renderer.rules.image = function(tokens, idx, options, env, self) {
             const token = tokens[idx];
             const src = token.attrGet('src') || '';
-            const alt = self.renderInlineAsText(token.children, options, env);
+            const alt = token.attrGet('alt') || '';
             const mobileSrc = src.replace(/(\.(?:jpe?g|png|gif|webp))$/i, '@720w$1');
             return `<img src="${src}" srcset="${mobileSrc} 720w, ${src} 1440w" sizes="(max-width: 62em) 100vw, 800px" alt="${alt}" loading="lazy">`;
         };
