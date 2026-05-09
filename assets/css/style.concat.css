@@ -420,6 +420,23 @@ footer {
   }
 }
 
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background-color: #c8853a;
+  color: #0d1a10;
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  border-radius: 0 0 3px 3px;
+  z-index: 9999;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
 .navigation {
   margin-bottom: 2rem;
 }
@@ -639,10 +656,15 @@ footer {
   position: relative;
   min-height: 100vh;
   padding: 12rem 2rem 8rem;
-  background-image: linear-gradient(to bottom, rgba(13, 26, 16, 0.82) 0%, rgba(13, 26, 16, 0.65) 50%, rgba(13, 26, 16, 0.88) 100%), url("/assets/img/pages/hero-about-me.jpg");
+  background-image: linear-gradient(to bottom, rgba(13, 26, 16, 0.82) 0%, rgba(13, 26, 16, 0.65) 50%, rgba(13, 26, 16, 0.88) 100%), url("/assets/img/pages/hero-about-me@720w.jpg");
   background-size: cover;
   background-position: center 23%;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 62em) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(13, 26, 16, 0.82) 0%, rgba(13, 26, 16, 0.65) 50%, rgba(13, 26, 16, 0.88) 100%), url("/assets/img/pages/hero-about-me.jpg");
+  }
 }
 .hero__content {
   text-align: center;
@@ -1048,27 +1070,26 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 5.2rem;
-  height: 5.2rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  border: none;
-  background-color: #c8853a;
-  color: #0d1a10;
+  border: 0.2rem solid rgba(244, 237, 224, 0.4);
+  background-color: transparent;
+  color: #f4ede0;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: border-color 0.2s;
   flex-shrink: 0;
+  appearance: none;
+  padding: 0;
 }
 .posts-pagination__btn:hover:not(:disabled) {
-  background-color: rgb(169.7952380952, 112.0476190476, 47.4047619048);
-  color: #f4ede0;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(200, 133, 58, 0.35);
+  border-color: #c8853a;
+  background-color: transparent;
 }
 .posts-pagination__btn:disabled {
   opacity: 0.3;
   cursor: default;
-  transform: none;
-  box-shadow: none;
+  background-color: transparent;
 }
 
 .posts-pagination__info {
