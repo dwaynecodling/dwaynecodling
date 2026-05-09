@@ -45,6 +45,8 @@ I apply this same thinking to every team I've led, every difficult conversation 
 
 I'm building on this now. The 220kg deadlift is there. The numbers will come.
 
+![Dwayne and Ash, medal presentation](/assets/img/pages/dwayne-and-ash-wrpf.jpg)
+
 More importantly, the mindset is locked in.
 
 > "Setbacks are part of the process. How you respond defines the outcome."
