@@ -116,6 +116,7 @@
     transition: border-color .2s;
     flex-shrink: 0;
     appearance: none;
+    padding: 0;
 
     &:hover:not(:disabled) {
         border-color: $color-amber;
