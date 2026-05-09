@@ -555,13 +555,14 @@ footer {
 .navigation__link.link--alt.navigation__link--active a {
   background-color: transparent;
   color: #f4ede0;
-  border-color: rgba(244, 237, 224, 0.5);
+  border-color: #c8853a;
 }
 .navigation__link.link--alt.navigation__link--active a:hover {
   background-color: rgba(244, 237, 224, 0.08);
-  border-color: #c8853a;
+  border-color: rgba(244, 237, 224, 0.5);
   color: #f4ede0;
-  box-shadow: none;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .card-wrapper {
@@ -1212,11 +1213,17 @@ footer {
 
 .contact-form__button {
   cursor: pointer;
+  background-color: transparent;
+  color: #f4ede0;
+  border: 2px solid #c8853a;
+  transition: all 0.2s;
 }
 .contact-form__button:hover {
-  background-color: rgba(30.2702702703, 29.7297297297, 29.7297297297, 0.76);
+  background-color: rgba(244, 237, 224, 0.08);
+  border-color: rgba(244, 237, 224, 0.5);
+  color: #f4ede0;
   transform: translateY(-2px);
-  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 .contact-form__button:disabled {
   opacity: 0.6;

@@ -141,13 +141,14 @@
         &.navigation__link--active a {
             background-color: transparent;
             color: $color-cream;
-            border-color: rgba(244, 237, 224, 0.5);
+            border-color: $color-amber;
 
             &:hover {
                 background-color: rgba(244, 237, 224, 0.08);
-                border-color: $color-amber;
+                border-color: rgba(244, 237, 224, 0.5);
                 color: $color-cream;
-                box-shadow: none;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
             }
         }
     }

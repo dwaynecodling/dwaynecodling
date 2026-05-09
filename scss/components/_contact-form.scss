@@ -70,8 +70,6 @@
     button {
         display: block;
         margin: 0 auto;
-        background-color: #383737c2;
-        border: none;
     }
 }
 
@@ -101,11 +99,17 @@ margin-bottom: 4rem;
 
 .contact-form__button {
     cursor: pointer;
+    background-color: transparent;
+    color: $color-cream;
+    border: 2px solid $color-amber;
+    transition: $transition;
 
     &:hover {
-        background-color: darken(rgba(56, 55, 55, 0.76), 10%);
+        background-color: rgba(244, 237, 224, 0.08);
+        border-color: rgba(244, 237, 224, 0.5);
+        color: $color-cream;
         transform: translateY(-2px);
-        color: #fff;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     }
 
     &:disabled {
