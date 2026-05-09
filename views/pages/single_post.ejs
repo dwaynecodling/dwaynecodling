@@ -136,7 +136,13 @@
     <section style="margin-bottom:0;">
         <div class="post-hero">
             <div class="container">
-                <a href="/posts" class="post-back">← Back to all posts</a>
+                <a href="/posts" class="post-back">
+                    <svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+                        <rect fill="currentColor" x="6" y="5" width="14" height="2" rx="1"/>
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 0l-6 6 6 6"/>
+                    </svg>
+                    Back to all posts
+                </a>
                 <div class="post-hero__meta">
                     <span class="post-hero__tag"><%= currentArticle.data.category ? currentArticle.data.category.charAt(0).toUpperCase() + currentArticle.data.category.slice(1) : 'Writing' %></span>
                     <span class="post-hero__date"><%- currentArticle.data.date %></span>
