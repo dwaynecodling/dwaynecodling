@@ -12,7 +12,7 @@
 <script>
     (function() {
         var path = window.location.pathname;
-        document.querySelectorAll('.navigation__link:not(.link--alt) a').forEach(function(link) {
+        document.querySelectorAll('.navigation__link a').forEach(function(link) {
             var href = link.getAttribute('href');
             var isActive = path === href || path.startsWith(href + '/');
             if (!isActive && href === '/posts' && path.startsWith('/post/')) {

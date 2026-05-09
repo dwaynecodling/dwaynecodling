@@ -118,7 +118,7 @@
         margin-top: 0;
 
         a {
-            border: none;
+            border: 2px solid transparent;
             color: $color-forest-dark;
             background-color: $color-amber;
             padding: 1.2rem 2.4rem;
@@ -135,6 +135,19 @@
 
             &:after {
                 display: none;
+            }
+        }
+
+        &.navigation__link--active a {
+            background-color: transparent;
+            color: $color-cream;
+            border-color: rgba(244, 237, 224, 0.5);
+
+            &:hover {
+                background-color: rgba(244, 237, 224, 0.08);
+                border-color: $color-amber;
+                color: $color-cream;
+                box-shadow: none;
             }
         }
     }
