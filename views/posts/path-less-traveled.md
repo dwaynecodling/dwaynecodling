@@ -2,9 +2,9 @@
 slug: path-less-traveled
 hero:
     main: /assets/img/pages/path.jpg
-    sml_jpeg: /assets/img/pages/path.jpg
+    sml_jpeg: /assets/img/pages/path@720w.jpg
     lrg_jpeg: /assets/img/pages/path.jpg
-    sml_webp: /assets/img/pages/path.jpg
+    sml_webp: /assets/img/pages/path@720w.jpg
     lrg_webp: /assets/img/pages/path.jpg
     position: center center
 alt: Two paths diverging through nature

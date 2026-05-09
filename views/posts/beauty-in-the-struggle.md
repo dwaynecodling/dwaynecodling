@@ -2,9 +2,9 @@
 slug: beauty-in-the-struggle
 hero:
     main: /assets/img/pages/mrs-dorothy.jpg
-    sml_jpeg: /assets/img/pages/mrs-dorothy.jpg
+    sml_jpeg: /assets/img/pages/mrs-dorothy@720w.jpg
     lrg_jpeg: /assets/img/pages/mrs-dorothy.jpg
-    sml_webp: /assets/img/pages/mrs-dorothy.jpg
+    sml_webp: /assets/img/pages/mrs-dorothy@720w.jpg
     lrg_webp: /assets/img/pages/mrs-dorothy.jpg
     position: center center
 alt: Mrs Dorothy — the inspiration behind this post

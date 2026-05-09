@@ -2,9 +2,9 @@
 slug: maximising-your-value
 hero:
     main: /assets/img/pages/dwayne-bw.jpg
-    sml_jpeg: /assets/img/pages/dwayne-bw.jpg
+    sml_jpeg: /assets/img/pages/dwayne-bw@720w.jpg
     lrg_jpeg: /assets/img/pages/dwayne-bw.jpg
-    sml_webp: /assets/img/pages/dwayne-bw.jpg
+    sml_webp: /assets/img/pages/dwayne-bw@720w.jpg
     lrg_webp: /assets/img/pages/dwayne-bw.jpg
     position: center center
 alt: Dwayne Codling

@@ -2,9 +2,9 @@
 slug: what-is-wealth-to-me
 hero:
     main: /assets/img/pages/dwayne-birthday.jpg
-    sml_jpeg: /assets/img/pages/dwayne-birthday.jpg
+    sml_jpeg: /assets/img/pages/dwayne-birthday@720w.jpg
     lrg_jpeg: /assets/img/pages/dwayne-birthday.jpg
-    sml_webp: /assets/img/pages/dwayne-birthday.jpg
+    sml_webp: /assets/img/pages/dwayne-birthday@720w.jpg
     lrg_webp: /assets/img/pages/dwayne-birthday.jpg
     position: center 20%
 alt: Dwayne celebrating with family

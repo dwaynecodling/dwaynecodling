@@ -2,9 +2,9 @@
 slug: a-murder-of-crows
 hero:
     main: /assets/img/pages/crows.jpg
-    sml_jpeg: /assets/img/pages/crows.jpg
+    sml_jpeg: /assets/img/pages/crows@720w.jpg
     lrg_jpeg: /assets/img/pages/crows.jpg
-    sml_webp: /assets/img/pages/crows.jpg
+    sml_webp: /assets/img/pages/crows@720w.jpg
     lrg_webp: /assets/img/pages/crows.jpg
     position: center center
 alt: A flock of crows gathered together

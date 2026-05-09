@@ -2,9 +2,9 @@
 slug: forward-ever-backward-never
 hero:
     main: /assets/img/pages/dwayne-profile.jpg
-    sml_jpeg: /assets/img/pages/dwayne-profile.jpg
+    sml_jpeg: /assets/img/pages/dwayne-profile@720w.jpg
     lrg_jpeg: /assets/img/pages/dwayne-profile.jpg
-    sml_webp: /assets/img/pages/dwayne-profile.jpg
+    sml_webp: /assets/img/pages/dwayne-profile@720w.jpg
     lrg_webp: /assets/img/pages/dwayne-profile.jpg
     position: center 35%
 alt: Dwayne Codling

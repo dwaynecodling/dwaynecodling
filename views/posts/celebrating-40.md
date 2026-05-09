@@ -2,9 +2,9 @@
 slug: celebrating-40
 hero:
     main: /assets/img/pages/jh-40-transformation.png
-    sml_jpeg: /assets/img/pages/jh-40-transformation.png
+    sml_jpeg: /assets/img/pages/jh-40-transformation@720w.png
     lrg_jpeg: /assets/img/pages/jh-40-transformation.png
-    sml_webp: /assets/img/pages/jh-40-transformation.png
+    sml_webp: /assets/img/pages/jh-40-transformation@720w.png
     lrg_webp: /assets/img/pages/jh-40-transformation.png
     position: center center
 alt: Dwayne Codling at 40, transformed through discipline and commitment

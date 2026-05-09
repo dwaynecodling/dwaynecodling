@@ -2,22 +2,22 @@
 slug: officially-a-powerlifter
 hero:
     main: /assets/img/pages/dwayne-competition.jpg
-    sml_jpeg: /assets/img/pages/dwayne-competition.jpg
+    sml_jpeg: /assets/img/pages/dwayne-competition@720w.jpg
     lrg_jpeg: /assets/img/pages/dwayne-competition.jpg
-    sml_webp: /assets/img/pages/dwayne-competition.jpg
+    sml_webp: /assets/img/pages/dwayne-competition@720w.jpg
     lrg_webp: /assets/img/pages/dwayne-competition.jpg
     position: center 45%
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Officially an <strong>amateur powerlifter</strong>
 date: 7 April 2026
-excerpt: "I recently competed in my first powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class. What makes this result meaningful isn't just the numbers; it's the journey behind it."
+excerpt: "I recently competed in my first WRPF Great Britain powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class. What makes this result meaningful isn't just the numbers; it's the journey behind it."
 published: true
 category: fitness
 ---
 
 > *My first powerlifting competition started with two missed squats. What happened next taught me something I already believed but hadn't yet lived.*
 
-I recently competed in my first powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class.
+I recently competed in my first WRPF Great Britain powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class.
 
 What makes this result meaningful isn't just the numbers; it's the journey behind it.
 

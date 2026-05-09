@@ -2,9 +2,9 @@
 slug: you-are-your-biggest-competitor
 hero:
     main: /assets/img/pages/deka.jpg
-    sml_jpeg: /assets/img/pages/deka.jpg
+    sml_jpeg: /assets/img/pages/deka@720w.jpg
     lrg_jpeg: /assets/img/pages/deka.jpg
-    sml_webp: /assets/img/pages/deka.jpg
+    sml_webp: /assets/img/pages/deka@720w.jpg
     lrg_webp: /assets/img/pages/deka.jpg
     position: center center
 alt: Dwayne competing in DEKA Strong

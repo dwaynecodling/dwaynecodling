@@ -2,9 +2,9 @@
 slug: allyship-in-tech
 hero:
     main: /assets/img/pages/allyship.jpg
-    sml_jpeg: /assets/img/pages/allyship.jpg
+    sml_jpeg: /assets/img/pages/allyship@720w.jpg
     lrg_jpeg: /assets/img/pages/allyship.jpg
-    sml_webp: /assets/img/pages/allyship.jpg
+    sml_webp: /assets/img/pages/allyship@720w.jpg
     lrg_webp: /assets/img/pages/allyship.jpg
 alt: Dwayne at a community event
 title: Allyship in <strong>Tech</strong>
