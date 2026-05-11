@@ -234,7 +234,7 @@ img {
   cursor: pointer;
 }
 
-button {
+button:not(.back-to-top) {
   display: inline-block;
   color: #fff;
   font-size: 1.4rem;
@@ -245,12 +245,12 @@ button {
   transition: 0.2s background-color;
 }
 @media screen and (min-width: 40em) {
-  button {
+  button:not(.back-to-top) {
     font-size: 1.6rem;
     padding: 2rem 3rem;
   }
 }
-button:hover {
+button:not(.back-to-top):hover {
   background-color: rgb(193.7166666667, 127.8333333333, 54.0833333333);
 }
 

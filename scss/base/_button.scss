@@ -33,7 +33,7 @@
     }
 }
 
-button {
+button:not(.back-to-top) {
         display: inline-block;
         color: #fff;
         font-size: 1.4rem;
