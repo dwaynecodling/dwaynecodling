@@ -97,9 +97,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
+
+    > * + * { margin-left: 2rem; }
+
+    @supports (gap: 1rem) {
+        gap: 2rem;
+        > * + * { margin-left: 0; }
+    }
 }
 
 .posts-pagination__btn {

@@ -46,6 +46,7 @@
   height: 100%;
   color: $color-cream;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 
   &__img-container {
     display: block;

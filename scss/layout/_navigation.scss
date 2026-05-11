@@ -28,6 +28,7 @@
     font-size: 1.8rem;
     padding: 2rem;
     max-width: calc(var(--container) + 40rem);
+    -webkit-tap-highlight-color: transparent;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
         display: flex;

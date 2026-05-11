@@ -6,6 +6,7 @@
   text-align: center;
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 12rem 2rem 8rem;
 
   background-image:
@@ -64,9 +65,19 @@
   &__cta-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.6rem;
     justify-content: center;
     align-items: center;
+    margin: -0.8rem;
+
+    > * {
+      margin: 0.8rem;
+    }
+
+    @supports (gap: 1rem) {
+      margin: 0;
+      gap: 1.6rem;
+      > * { margin: 0; }
+    }
   }
 
   &__link {

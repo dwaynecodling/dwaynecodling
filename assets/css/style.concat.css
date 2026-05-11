@@ -450,6 +450,7 @@ footer {
   font-size: 1.8rem;
   padding: 2rem;
   max-width: calc(var(--container) + 40rem);
+  -webkit-tap-highlight-color: transparent;
 }
 @media screen and (min-width: 40em) {
   .navigation__container {
@@ -596,6 +597,7 @@ footer {
   height: 100%;
   color: #f4ede0;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .card__img-container {
   display: block;
@@ -667,6 +669,7 @@ footer {
   text-align: center;
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 12rem 2rem 8rem;
   background-image: linear-gradient(to bottom, rgba(13, 26, 16, 0.82) 0%, rgba(13, 26, 16, 0.65) 50%, rgba(13, 26, 16, 0.88) 100%), url("/assets/img/pages/about-me/hero-about-me@720w.jpg");
   background-size: cover;
@@ -716,9 +719,21 @@ footer {
 .hero__cta-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.6rem;
   justify-content: center;
   align-items: center;
+  margin: -0.8rem;
+}
+.hero__cta-group > * {
+  margin: 0.8rem;
+}
+@supports (gap: 1rem) {
+  .hero__cta-group {
+    margin: 0;
+    gap: 1.6rem;
+  }
+  .hero__cta-group > * {
+    margin: 0;
+  }
 }
 .hero__link {
   font-size: var(--heading-1);
@@ -1073,9 +1088,19 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
+}
+.posts-pagination > * + * {
+  margin-left: 2rem;
+}
+@supports (gap: 1rem) {
+  .posts-pagination {
+    gap: 2rem;
+  }
+  .posts-pagination > * + * {
+    margin-left: 0;
+  }
 }
 
 .posts-pagination__btn {
