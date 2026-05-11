@@ -35,7 +35,7 @@ It was now January 2021. I wanted to change my current state.
 
 I made a decision early in the year: I wanted to look and feel the best I ever have in my life. Little did I know what that statement would mean in a pandemic with no gym and no personal trainer.
 
-So January 4th is when everyone makes a new year's resolution. Mine was, for 360 days of the year, to do at least 20 minutes of exercise every day.
+So January 4th is when everyone makes a New Year's resolution. Mine was, for 360 days of the year, to do at least 20 minutes of exercise every day.
 
 What I learned in a little over half a year is that discipline is without a doubt the hardest skill to master.
 

@@ -13,4 +13,4 @@ published: false
 
 # My Last in Physical Meet-up
 
-Corona was coming and this was probably the last time I would be in room with strangers.
+Corona was coming and this was probably the last time I would be in a room with strangers.

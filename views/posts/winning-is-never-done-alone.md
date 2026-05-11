@@ -1,11 +1,11 @@
 ---
 slug: winning-is-never-done-alone
 hero:
-    main: /assets/img/pages/winning-team.jpg
-    sml_jpeg: /assets/img/pages/winning-team@720w.jpg
-    lrg_jpeg: /assets/img/pages/winning-team.jpg
-    sml_webp: /assets/img/pages/winning-team@720w.jpg
-    lrg_webp: /assets/img/pages/winning-team.jpg
+    main: /assets/img/pages/winning-team-1.jpg
+    sml_jpeg: /assets/img/pages/winning-team-1@720w.jpg
+    lrg_jpeg: /assets/img/pages/winning-team-1.jpg
+    sml_webp: /assets/img/pages/winning-team-1@720w.jpg
+    lrg_webp: /assets/img/pages/winning-team-1.jpg
 alt: A team celebrating a shared win together
 title: Winning is never done <strong>alone</strong>
 date: 11 May 2026

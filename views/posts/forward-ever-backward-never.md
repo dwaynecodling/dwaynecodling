@@ -41,7 +41,7 @@ Along the way, I built lasting friendships and worked with people who truly care
 
 I'm open to new opportunities and actively considering my next adventure.
 
-In the meantime, I'm choosing to invest in becoming the strongest version of myself, physically as well as professionally. Strength training and fitness has long been a passion of mine, and I'm now fully committed to it, with a clear goal of competing in the WRPF Novice amateur powerlifting competition.
+In the meantime, I'm choosing to invest in becoming the strongest version of myself, physically as well as professionally. Strength training and fitness have long been a passion of mine, and I'm now fully committed to it, with a clear goal of competing in the WRPF Novice amateur powerlifting competition.
 
 ## The thing about legacy
 
