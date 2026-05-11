@@ -23,7 +23,7 @@ try {
     app.locals.cssVersion = Date.now().toString(36);
 }
 
-// app.use(Middleware.Compression);
+app.use(Middleware.Compression);
 app.use(Middleware.FormUploadHandler);
 
 app.use("/", home);

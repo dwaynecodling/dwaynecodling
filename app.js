@@ -18,6 +18,7 @@ try {
 catch {
     app.locals.cssVersion = Date.now().toString(36);
 }
+app.use(Middlewares_1.Middleware.Compression);
 app.use(Middlewares_1.Middleware.FormUploadHandler);
 app.use("/", home);
 app.use(Middlewares_1.Middleware.CheckForImageRequest({

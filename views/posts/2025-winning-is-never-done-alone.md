@@ -8,6 +8,7 @@ hero:
     lrg_webp: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.jpg
 alt: A team celebrating a shared win together
 title: Winning is never done <strong>alone</strong>
+category: leadership
 date: 09 September 2025
 excerpt: "The wins I'm most proud of didn't happen in isolation. They happened because of the people around me; some I expected, some I didn't."
 published: true

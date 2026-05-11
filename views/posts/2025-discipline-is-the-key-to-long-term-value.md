@@ -8,6 +8,7 @@ hero:
     lrg_webp: /assets/img/posts/2026-discipline-is-the-key-to-long-term-value/discipline-running.jpg
 alt: A runner on a track, embodying discipline and consistency
 title: Discipline is the key to unlocking long-term <strong>value</strong>
+category: personal
 date: 09 September 2025
 excerpt: "The small, consistent actions you take every day are building something far bigger than you realise. It all starts with discipline."
 published: true

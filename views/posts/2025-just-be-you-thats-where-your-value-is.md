@@ -8,6 +8,7 @@ hero:
     lrg_webp: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne.jpg
 alt: AI-generated portrait of Dwayne Codling
 title: Just be you; that's where your real <strong>value</strong> is
+category: personal
 date: 09 September 2025
 excerpt: "I spent time feeling like more should be coming my way. It took me a while to realise I was asking the wrong question."
 published: true
