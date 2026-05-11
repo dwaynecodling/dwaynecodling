@@ -17,18 +17,7 @@
     <link rel="canonical" href="https://dwaynecodling.com/post/<%= currentArticle.data.slug %>" />
     <%- include("../partials/links") %>
     <style>
-        .reading-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 3px;
-            background-color: #c8853a;
-            z-index: 9999;
-            transition: width 0.1s linear;
-        }
-
-        .post-hero {
+.post-hero {
             background-color: #162419;
             border-bottom: 1px solid rgba(200,133,58,0.15);
             padding: 8rem 0 6rem;
@@ -190,7 +179,6 @@
 </head>
 
 <body>
-<div class="reading-progress" id="reading-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Reading progress"></div>
 <%- include("../partials/nav") %>
 
 <main id="main-content" class="content" role="main">
@@ -285,49 +273,25 @@
 <script src="/assets/js/lazysizes.min.js" async></script>
 <script>
 (function () {
-    var bar = document.getElementById('reading-progress');
     var btn = document.getElementById('back-to-top');
-    var raf = null;
+    var hero = document.querySelector('.post-hero');
 
-    function getScrollY() {
-        // visualViewport.pageTop is reliable on iOS Safari during chrome collapse;
-        // window.scrollY stays 0 during that phase, causing the bar to not initialise.
-        if (window.visualViewport) return window.visualViewport.pageTop;
-        return window.pageYOffset !== undefined
-            ? window.pageYOffset
-            : (document.documentElement.scrollTop || document.body.scrollTop || 0);
-    }
-
-    function update() {
-        raf = null;
-        var scrolled = Math.max(0, getScrollY());
-        var viewH = window.visualViewport
-            ? window.visualViewport.height
-            : (window.innerHeight || document.documentElement.clientHeight);
-        var total = document.documentElement.scrollHeight - viewH;
-        var pct = total > 0 ? Math.min(100, (scrolled / total) * 100) : 0;
-        bar.style.width = pct + '%';
-        bar.setAttribute('aria-valuenow', Math.round(pct));
-        btn.classList.toggle('visible', scrolled > 400);
-    }
-
-    function schedule() {
-        if (!raf) raf = requestAnimationFrame(update);
+    // Back-to-top: IntersectionObserver — the browser tracks visibility natively,
+    // no JS scroll reading needed, works on all iOS Safari versions.
+    if ('IntersectionObserver' in window && hero) {
+        new IntersectionObserver(function (entries) {
+            btn.classList.toggle('visible', !entries[0].isIntersecting);
+        }, { threshold: 0 }).observe(hero);
+    } else {
+        window.addEventListener('scroll', function () {
+            btn.classList.toggle('visible', (window.pageYOffset || document.documentElement.scrollTop || 0) > 400);
+        }, { passive: true });
     }
 
     btn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         this.blur();
     });
-
-    window.addEventListener('scroll', schedule, { passive: true });
-    window.addEventListener('resize', schedule, { passive: true });
-    window.addEventListener('load', update);
-    if (window.visualViewport) {
-        window.visualViewport.addEventListener('resize', schedule);
-        window.visualViewport.addEventListener('scroll', schedule);
-    }
-    update();
 }());
 </script>
 </body>
