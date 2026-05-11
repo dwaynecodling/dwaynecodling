@@ -83,7 +83,7 @@ var Middleware;
         const imgResizer = require('./ImageResizer');
         return async (req, res, next) => {
             let matchedUrl = options.listenIn.filter(d => req.url.startsWith(d));
-            if (matchedUrl.length > -1) {
+            if (matchedUrl.length > 0) {
                 console.log("returning resized image");
                 let urlParts = normalizePath(req.url);
                 if (urlParts) {
