@@ -10,11 +10,33 @@
     <meta property="og:description" content="<%= currentArticle.data.excerpt %>" />
     <meta property="og:image" content="https://dwaynecodling.com<%= currentArticle.data.hero.lrg_jpeg %>" />
     <meta property="og:url" content="https://dwaynecodling.com/post/<%= currentArticle.data.slug %>" />
+    <meta property="og:type" content="article" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="<%- currentArticle.data.titleText %>" />
     <meta name="twitter:description" content="<%= currentArticle.data.excerpt %>" />
     <meta name="twitter:image" content="https://dwaynecodling.com<%= currentArticle.data.hero.lrg_jpeg %>" />
     <link rel="canonical" href="https://dwaynecodling.com/post/<%= currentArticle.data.slug %>" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": <%- JSON.stringify(currentArticle.data.titleText) %>,
+      "description": <%- JSON.stringify(currentArticle.data.excerpt) %>,
+      "image": "https://dwaynecodling.com<%= currentArticle.data.hero.lrg_jpeg %>",
+      "url": "https://dwaynecodling.com/post/<%= currentArticle.data.slug %>",
+      "datePublished": "<%= (function(){ var d=new Date(currentArticle.data.date); return isNaN(d)?'':d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); })() %>",
+      "author": {
+        "@type": "Person",
+        "name": "Dwayne Codling",
+        "url": "https://dwaynecodling.com"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Dwayne Codling",
+        "url": "https://dwaynecodling.com"
+      }
+    }
+    </script>
     <%- include("../partials/links") %>
     <style>
 .post-hero {

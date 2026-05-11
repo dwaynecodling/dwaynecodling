@@ -20,18 +20,29 @@ home.get("/posts", async function (req, res) {
     let posts = await PostRepository_1.PostRepository.getAllPosts(true);
     res.render("pages/all_posts", { posts });
 });
+home.get("/robots.txt", function (req, res) {
+    res.header("Content-Type", "text/plain");
+    res.send("User-agent: *\nAllow: /\nSitemap: https://dwaynecodling.com/sitemap.xml");
+});
 home.get("/sitemap.xml", async function (req, res) {
     let posts = await PostRepository_1.PostRepository.getAllPosts(true);
     const base = "https://dwaynecodling.com";
+    const today = new Date().toISOString().split('T')[0];
+    function toISODate(dateStr) {
+        const d = new Date(dateStr);
+        if (isNaN(d.getTime()))
+            return today;
+        return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    }
     const staticPages = [
-        { url: "/", priority: "1.0" },
-        { url: "/about-me", priority: "0.8" },
-        { url: "/posts", priority: "0.9" },
-        { url: "/contact-me", priority: "0.7" }
+        { url: "/", priority: "1.0", lastmod: "2025-01-01" },
+        { url: "/about-me", priority: "0.8", lastmod: "2025-01-01" },
+        { url: "/posts", priority: "0.9", lastmod: today },
+        { url: "/contact-me", priority: "0.7", lastmod: "2025-01-01" }
     ];
     const urls = [
-        ...staticPages.map(p => `  <url><loc>${base}${p.url}</loc><priority>${p.priority}</priority></url>`),
-        ...posts.map(p => `  <url><loc>${base}/post/${p.data.slug}</loc><lastmod>${new Date().toISOString().split('T')[0]}</lastmod><priority>0.8</priority></url>`)
+        ...staticPages.map(p => `  <url><loc>${base}${p.url}</loc><lastmod>${p.lastmod}</lastmod><priority>${p.priority}</priority></url>`),
+        ...posts.map(p => `  <url><loc>${base}/post/${p.data.slug}</loc><lastmod>${toISODate(p.data.date)}</lastmod><priority>0.8</priority></url>`)
     ].join('\n');
     res.header("Content-Type", "application/xml");
     res.send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
