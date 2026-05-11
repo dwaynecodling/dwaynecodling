@@ -1,11 +1,11 @@
 ---
 slug: maximising-your-value
 hero:
-    main: /assets/img/pages/dwayne-bw.jpg
-    sml_jpeg: /assets/img/pages/dwayne-bw@720w.jpg
-    lrg_jpeg: /assets/img/pages/dwayne-bw.jpg
-    sml_webp: /assets/img/pages/dwayne-bw@720w.jpg
-    lrg_webp: /assets/img/pages/dwayne-bw.jpg
+    main: /assets/img/posts/2026-maximising-your-value/maximising-value.jpg
+    sml_jpeg: /assets/img/posts/2026-maximising-your-value/maximising-value@720w.jpg
+    lrg_jpeg: /assets/img/posts/2026-maximising-your-value/maximising-value.jpg
+    sml_webp: /assets/img/posts/2026-maximising-your-value/maximising-value@720w.jpg
+    lrg_webp: /assets/img/posts/2026-maximising-your-value/maximising-value.jpg
     position: center center
 alt: Dwayne Codling
 title: Maximising your <strong>value</strong>

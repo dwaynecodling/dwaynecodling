@@ -1,11 +1,11 @@
 ---
 slug: officially-a-powerlifter
 hero:
-    main: /assets/img/pages/dwayne-competition.jpg
-    sml_jpeg: /assets/img/pages/dwayne-competition@720w.jpg
-    lrg_jpeg: /assets/img/pages/dwayne-competition.jpg
-    sml_webp: /assets/img/pages/dwayne-competition@720w.jpg
-    lrg_webp: /assets/img/pages/dwayne-competition.jpg
+    main: /assets/img/posts/2026-officially-a-powerlifter/powerlifter.jpg
+    sml_jpeg: /assets/img/posts/2026-officially-a-powerlifter/powerlifter@720w.jpg
+    lrg_jpeg: /assets/img/posts/2026-officially-a-powerlifter/powerlifter.jpg
+    sml_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter@720w.jpg
+    lrg_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter.jpg
     position: center 45%
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Officially an <strong>amateur powerlifter</strong>
@@ -45,7 +45,7 @@ I apply this same thinking to every team I've led, every difficult conversation 
 
 I'm building on this now. The 220kg deadlift is there. The numbers will come.
 
-![Dwayne and Ash, medal presentation](/assets/img/pages/dwayne-and-ash-wrpf.jpg)
+![Dwayne and Ash, medal presentation](/assets/img/posts/2026-officially-a-powerlifter/dwayne-and-ash-wrpf.jpg)
 
 More importantly, the mindset is locked in.
 

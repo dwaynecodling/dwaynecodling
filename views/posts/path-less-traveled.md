@@ -1,11 +1,11 @@
 ---
 slug: path-less-traveled
 hero:
-    main: /assets/img/pages/path.jpg
-    sml_jpeg: /assets/img/pages/path@720w.jpg
-    lrg_jpeg: /assets/img/pages/path.jpg
-    sml_webp: /assets/img/pages/path@720w.jpg
-    lrg_webp: /assets/img/pages/path.jpg
+    main: /assets/img/posts/2025-path-less-traveled/path.jpg
+    sml_jpeg: /assets/img/posts/2025-path-less-traveled/path@720w.jpg
+    lrg_jpeg: /assets/img/posts/2025-path-less-traveled/path.jpg
+    sml_webp: /assets/img/posts/2025-path-less-traveled/path@720w.jpg
+    lrg_webp: /assets/img/posts/2025-path-less-traveled/path.jpg
     position: center center
 alt: Two paths diverging through nature
 title: Is the path less traveled <strong>better</strong>?

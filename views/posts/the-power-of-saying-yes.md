@@ -1,11 +1,11 @@
 ---
 slug: the-power-of-saying-yes
 hero:
-    main: /assets/img/pages/peak-1.jpg
-    sml_jpeg: /assets/img/pages/peak-1@720w.jpg
-    lrg_jpeg: /assets/img/pages/peak-1.jpg
-    sml_webp: /assets/img/pages/peak-1@720w.jpg
-    lrg_webp: /assets/img/pages/peak-1.jpg
+    main: /assets/img/posts/2025-the-power-of-saying-yes/peak-1.jpg
+    sml_jpeg: /assets/img/posts/2025-the-power-of-saying-yes/peak-1@720w.jpg
+    lrg_jpeg: /assets/img/posts/2025-the-power-of-saying-yes/peak-1.jpg
+    sml_webp: /assets/img/posts/2025-the-power-of-saying-yes/peak-1@720w.jpg
+    lrg_webp: /assets/img/posts/2025-the-power-of-saying-yes/peak-1.jpg
     position: center 40%
 alt: Views from a four-hour hike in the Peak District
 title: The power of <strong>saying yes</strong>
@@ -21,7 +21,7 @@ I ended up on a four-hour hike today because I said yes to another challenge I w
 
 Not because I enjoy hiking. But I've been making an effort this year to say yes more often, especially when something feels exciting and hard at the same time.
 
-![Views across the Peak District on a clear day](/assets/img/pages/peak-2.jpg)
+![Views across the Peak District on a clear day](/assets/img/posts/2025-the-power-of-saying-yes/peak-2.jpg)
 
 ## The simulation question
 
@@ -33,13 +33,13 @@ It stuck with me.
 
 If there were no consequences, no real fear of failure, we'd say yes to more things. We'd put ourselves out there more, try new directions, back ourselves a little harder.
 
-![Looking out across the valley mid-hike](/assets/img/pages/peak-3.jpg)
+![Looking out across the valley mid-hike](/assets/img/posts/2025-the-power-of-saying-yes/peak-3.jpg)
 
 Maybe we should treat real life a bit more like a simulation sometimes. Not recklessly. But with the mindset that you can afford to take a few more risks. You can say yes more often, especially when something lights something up in you.
 
 **Because the truth is, fear stops us from doing a lot of things that could actually help us grow.**
 
-![The route ahead, four hours of it](/assets/img/pages/peak-4.jpg)
+![The route ahead, four hours of it](/assets/img/posts/2025-the-power-of-saying-yes/peak-4.jpg)
 
 ## Yes takes an environment
 
@@ -49,7 +49,7 @@ When you're around people who support you, where someone's got your back even if
 
 That environment matters more than most people acknowledge. The people around you either expand your world or shrink it.
 
-![Reaching the top, worth every step](/assets/img/pages/peak-5.jpg)
+![Reaching the top, worth every step](/assets/img/posts/2025-the-power-of-saying-yes/peak-5.jpg)
 
 Saying no has its place. Sometimes it's absolutely the right call.
 

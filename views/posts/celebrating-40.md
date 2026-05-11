@@ -1,11 +1,11 @@
 ---
 slug: celebrating-40
 hero:
-    main: /assets/img/pages/jh-40-transformation.png
-    sml_jpeg: /assets/img/pages/jh-40-transformation@720w.png
-    lrg_jpeg: /assets/img/pages/jh-40-transformation.png
-    sml_webp: /assets/img/pages/jh-40-transformation@720w.png
-    lrg_webp: /assets/img/pages/jh-40-transformation.png
+    main: /assets/img/posts/2021-celebrating-40/jh-40-transformation.png
+    sml_jpeg: /assets/img/posts/2021-celebrating-40/jh-40-transformation@720w.png
+    lrg_jpeg: /assets/img/posts/2021-celebrating-40/jh-40-transformation.png
+    sml_webp: /assets/img/posts/2021-celebrating-40/jh-40-transformation@720w.png
+    lrg_webp: /assets/img/posts/2021-celebrating-40/jh-40-transformation.png
     position: center center
 alt: Dwayne Codling at 40, transformed through discipline and commitment
 title: Celebrating 40 as a <strong>better version of me</strong>
@@ -19,7 +19,7 @@ category: fitness
 
 I was in the best shape of my life prior to my wedding day (February 17th 2020), looking forward to a new chapter and exciting times.
 
-![Dwayne and Mrs Codling on their wedding day, February 2020](/assets/img/pages/jh-40-wedding.png)
+![Dwayne and Mrs Codling on their wedding day, February 2020](/assets/img/posts/2021-celebrating-40/jh-40-wedding.png)
 
 A month later, well, *Covid happened*. Like many others I had to isolate, as my family had vulnerable people who would be affected, so I stayed home.
 
@@ -27,7 +27,7 @@ I was able to work from home, look after my family, pitch in and do my share of 
 
 But the lifestyle change wasn't all great. I was just in the house, every day. That led to not eating the best and not exercising as much. It was inevitable that I would get to a place where I was physically, mentally, and emotionally not where I wanted to be.
 
-![Dwayne during lockdown, and with the youngest at home](/assets/img/pages/jh-40-lockdown.png)
+![Dwayne during lockdown, and with the youngest at home](/assets/img/posts/2021-celebrating-40/jh-40-lockdown.png)
 
 ## A resolution to change
 
@@ -43,7 +43,7 @@ Commitment is about showing up every day, no matter what. I get up at 5am before
 
 This has been a fitness journey and I have enjoyed every phase of it: getting stronger, the wonder of not seeing the scale move a pound, the disbelief from not seeing any change, and then the joy of suddenly looking like a slimmed-down version of your former self.
 
-![Post-workout selfies from the early morning sessions](/assets/img/pages/jh-40-grind.png)
+![Post-workout selfies from the early morning sessions](/assets/img/posts/2021-celebrating-40/jh-40-grind.png)
 
 ## Every goal needs a support network
 
@@ -55,7 +55,7 @@ We created a JH 360 Fitness Challenge WhatsApp group and committed to sharing ou
 
 The group has now grown to nine people. We cheer each other on and it's a great vibe, full of banter that encourages everyone to get in at least a 20-minute session every day. There's something about knowing your friends and colleagues are along for the ride. Speaking to them every day brings another level of accountability, and all those "well done!" messages make you feel doubly good about yourself and your achievements.
 
-![Training variety: weights, Peloton, badminton](/assets/img/pages/jh-40-training.png)
+![Training variety: weights, Peloton, badminton](/assets/img/posts/2021-celebrating-40/jh-40-training.png)
 
 **Change your mindset. Nothing that lasts for a long time is ever rushed.**
 
@@ -69,7 +69,7 @@ To realise success and see change, you have to change what you do. Doing the sam
 
 I love my Jamaican food, but I realised that opening my palate and stopping consuming meat for three months was a game changer. That combination of exercise and eating well was effectively a cheat code to getting where I wanted before turning 40. I would say that now I am mostly vegan.
 
-![Feeling better at 40 than ever before](/assets/img/pages/jh-40-results.png)
+![Feeling better at 40 than ever before](/assets/img/posts/2021-celebrating-40/jh-40-results.png)
 
 Having just celebrated my 40th birthday, feeling physically and mentally better than ever, I am now on a journey, looking forward to seeing where it takes me. I learned that discipline, commitment, and support are necessary to achieve any goal.
 

@@ -1,11 +1,11 @@
 ---
 slug: forward-ever-backward-never
 hero:
-    main: /assets/img/pages/dwayne-profile.jpg
-    sml_jpeg: /assets/img/pages/dwayne-profile@720w.jpg
-    lrg_jpeg: /assets/img/pages/dwayne-profile.jpg
-    sml_webp: /assets/img/pages/dwayne-profile@720w.jpg
-    lrg_webp: /assets/img/pages/dwayne-profile.jpg
+    main: /assets/img/posts/2026-forward-ever-backward-never/forward-ever.jpg
+    sml_jpeg: /assets/img/posts/2026-forward-ever-backward-never/forward-ever@720w.jpg
+    lrg_jpeg: /assets/img/posts/2026-forward-ever-backward-never/forward-ever.jpg
+    sml_webp: /assets/img/posts/2026-forward-ever-backward-never/forward-ever@720w.jpg
+    lrg_webp: /assets/img/posts/2026-forward-ever-backward-never/forward-ever.jpg
     position: center 35%
 alt: Dwayne Codling
 title: Forward ever, <strong>backward never</strong>

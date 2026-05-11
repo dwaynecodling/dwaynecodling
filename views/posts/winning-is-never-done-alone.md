@@ -1,11 +1,11 @@
 ---
 slug: winning-is-never-done-alone
 hero:
-    main: /assets/img/pages/winning-team-1.jpg
-    sml_jpeg: /assets/img/pages/winning-team-1@720w.jpg
-    lrg_jpeg: /assets/img/pages/winning-team-1.jpg
-    sml_webp: /assets/img/pages/winning-team-1@720w.jpg
-    lrg_webp: /assets/img/pages/winning-team-1.jpg
+    main: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.jpg
+    sml_jpeg: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1@720w.jpg
+    lrg_jpeg: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.jpg
+    sml_webp: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1@720w.jpg
+    lrg_webp: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.jpg
 alt: A team celebrating a shared win together
 title: Winning is never done <strong>alone</strong>
 date: 11 May 2026
@@ -53,7 +53,7 @@ When I slacked off, Ash called it out. When I wanted to stop, Ash was already a 
 
 And that's the part that stayed with me. The win mattered. But the person who made it possible mattered more.
 
-![Celebrating the win together](/assets/img/pages/winning-team-2.jpg)
+![Celebrating the win together](/assets/img/posts/2026-winning-is-never-done-alone/winning-team-2.jpg)
 
 ## It takes a team
 
@@ -63,6 +63,6 @@ It happens because of the partner who holds you accountable, the mentor who buil
 
 **Success comes from the team that surrounds you and the drive they inspire.**
 
-![The team that makes winning possible](/assets/img/pages/winning-team-3.jpg)
+![The team that makes winning possible](/assets/img/posts/2026-winning-is-never-done-alone/winning-team-3.jpg)
 
 The best thing you can do is know who those people are in your life; and make sure they know what they mean to you.
