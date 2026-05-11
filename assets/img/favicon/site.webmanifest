@@ -1,14 +1,21 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Dwayne Codling",
+    "short_name": "Dwayne",
+    "description": "Development Director, people-first leader, and D&I advocate.",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#0d1a10",
+    "background_color": "#0d1a10",
     "icons": [
         {
-            "src": "/android-chrome-48x48.png",
+            "src": "/assets/img/favicon/android-chrome-48x48.png",
             "sizes": "48x48",
             "type": "image/png"
+        },
+        {
+            "src": "/assets/img/favicon/android-chrome-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
         }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    ]
 }

@@ -14,6 +14,15 @@ app.use(express.json());                                    // to support JSON-e
 app.use(express.urlencoded({ extended: true }));    // to support URL-encoded bodies
 app.use('/assets', express.static(__dirname + "/assets"));    // makes assets folder directly accessible
 
+// Compute CSS version once at startup — stable URL browsers can cache,
+// only changes when the CSS file is actually rebuilt.
+try {
+    const stat = require("fs").statSync(require("path").resolve(__dirname, "assets/css/style.min.css"));
+    app.locals.cssVersion = stat.mtimeMs.toString(36);
+} catch {
+    app.locals.cssVersion = Date.now().toString(36);
+}
+
 // app.use(Middleware.Compression);
 app.use(Middleware.FormUploadHandler);
 

@@ -11,6 +11,13 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/assets', express.static(__dirname + "/assets"));
+try {
+    const stat = require("fs").statSync(require("path").resolve(__dirname, "assets/css/style.min.css"));
+    app.locals.cssVersion = stat.mtimeMs.toString(36);
+}
+catch {
+    app.locals.cssVersion = Date.now().toString(36);
+}
 app.use(Middlewares_1.Middleware.FormUploadHandler);
 app.use("/", home);
 app.use(Middlewares_1.Middleware.CheckForImageRequest({
