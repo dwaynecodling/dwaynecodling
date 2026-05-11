@@ -1,5 +1,5 @@
 import {Middleware} from "./internal_scripts/Middlewares";
-import * as home from "./controllers/mainController";
+const home = require("./controllers/mainController");
 
 const express = require("express");
 const helmet = require("helmet");
