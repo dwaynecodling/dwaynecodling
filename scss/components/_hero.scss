@@ -10,7 +10,7 @@
 
   background-image:
     linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-    url('/assets/img/pages/hero-about-me@720w.jpg');
+    url('/assets/img/pages/about-me/hero-about-me@720w.jpg');
   background-size: cover;
   background-position: center 23%;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
     background-image:
       linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-      url('/assets/img/pages/hero-about-me.jpg');
+      url('/assets/img/pages/about-me/hero-about-me.jpg');
   }
 
   &__content {
