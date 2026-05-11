@@ -18,6 +18,22 @@ home.get("/posts", async function(req, res){
     let posts = await PostRepository.getAllPosts(true);
     res.render("pages/all_posts",{ posts });
 });
+home.get("/sitemap.xml", async function(req, res){
+    let posts = await PostRepository.getAllPosts(true);
+    const base = "https://dwaynecodling.com";
+    const staticPages = [
+        { url: "/", priority: "1.0" },
+        { url: "/about-me", priority: "0.8" },
+        { url: "/posts", priority: "0.9" },
+        { url: "/contact-me", priority: "0.7" }
+    ];
+    const urls = [
+        ...staticPages.map(p => `  <url><loc>${base}${p.url}</loc><priority>${p.priority}</priority></url>`),
+        ...posts.map(p => `  <url><loc>${base}/post/${p.data.slug}</loc><lastmod>${new Date().toISOString().split('T')[0]}</lastmod><priority>0.8</priority></url>`)
+    ].join('\n');
+    res.header("Content-Type", "application/xml");
+    res.send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
+});
 home.get("/post/:slug", async function (req, res) {
     let slug = req.params['slug'];
     let article = await PostRepository.getBySlug(slug);

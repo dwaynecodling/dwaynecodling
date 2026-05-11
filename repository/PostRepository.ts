@@ -21,9 +21,11 @@ export namespace PostRepository{
         data: {
             title : string;
             slug: string;
-            hero: string;
+            hero: any;
             alt: string;
             date?: string;
+            excerpt?: string;
+            category?: string;
             readTime?: string;
             published?: boolean;
         }

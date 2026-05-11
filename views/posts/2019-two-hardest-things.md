@@ -8,7 +8,7 @@ hero:
     lrg_webp: /assets/img/posts/2019-frustrating/frustration-computing.jpg
 alt: The frustration of being stuck on a problem
 title: The two <strong>hardest</strong> things
-date: 4 September 2019
+date: 04 September 2019
 excerpt: "There's a famous quote in programming about the two hardest things. But the hardest thing I faced that day wasn't technical."
 published: true
 category: tech

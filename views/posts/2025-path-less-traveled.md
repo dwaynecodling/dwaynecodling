@@ -9,7 +9,7 @@ hero:
     position: center center
 alt: Two paths diverging through nature
 title: Is the path less traveled <strong>better</strong>?
-date: 8 May 2025
+date: 08 May 2025
 excerpt: "We make choices every day, and some are more difficult than others. Do you ever wonder what happens when you take the path less traveled?"
 published: true
 category: personal

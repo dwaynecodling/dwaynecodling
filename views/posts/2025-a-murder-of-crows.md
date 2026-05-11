@@ -9,7 +9,7 @@ hero:
     position: center center
 alt: A flock of crows gathered together
 title: I witnessed a <strong>murder</strong>
-date: 8 May 2025
+date: 08 May 2025
 excerpt: "I saw a murder happen right in front of me, and the most unexpected thing took place. Most people, when they hear \"murder,\" think crime. But what do you see?"
 published: true
 category: fitness

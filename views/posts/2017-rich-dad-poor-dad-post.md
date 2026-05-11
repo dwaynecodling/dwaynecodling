@@ -8,7 +8,7 @@ hero:
     lrg_webp: /assets/img/posts/2017-rich-dad/rich-dad-720.webp
 alt: Rich Dad Poor Dad book by Robert Kiyosaki
 title: Rich Dad <strong>Poor Dad</strong>
-date: 9 March 2017
+date: 09 March 2017
 excerpt: "Wealth isn't measured by how much money you earn. It's measured by what you do with it."
 published: true
 category: personal

@@ -9,7 +9,7 @@ hero:
     position: center center
 alt: Dwayne Codling at 40, transformed through discipline and commitment
 title: Celebrating 40 as a <strong>better version of me</strong>
-date: 1 August 2021
+date: 01 August 2021
 excerpt: "I made a decision: to look and feel the best I ever have in my life. Little did I know what that statement would mean in a pandemic with no gym and no personal trainer."
 published: true
 category: fitness
