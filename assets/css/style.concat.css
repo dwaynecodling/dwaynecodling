@@ -234,7 +234,7 @@ img {
   cursor: pointer;
 }
 
-button:not(.back-to-top) {
+button:not(.back-to-top):not(.posts-pagination__btn) {
   display: inline-block;
   color: #fff;
   font-size: 1.4rem;
@@ -245,12 +245,12 @@ button:not(.back-to-top) {
   transition: 0.2s background-color;
 }
 @media screen and (min-width: 40em) {
-  button:not(.back-to-top) {
+  button:not(.back-to-top):not(.posts-pagination__btn) {
     font-size: 1.6rem;
     padding: 2rem 3rem;
   }
 }
-button:not(.back-to-top):hover {
+button:not(.back-to-top):not(.posts-pagination__btn):hover {
   background-color: rgb(193.7166666667, 127.8333333333, 54.0833333333);
 }
 
