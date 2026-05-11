@@ -10,7 +10,7 @@ alt: AI-generated portrait of Dwayne Codling
 title: Just be you; that's where your real <strong>value</strong> is
 date: 11 May 2026
 excerpt: "I spent time feeling like more should be coming my way. It took me a while to realise I was asking the wrong question."
-published: false
+published: true
 ---
 
 > *I've learned more about my own value from the hard stretches than from any of the good ones.*
