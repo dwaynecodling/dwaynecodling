@@ -1,11 +1,11 @@
 ---
 slug: everything-in-its-own-time
 hero:
-    main: /assets/img/posts/2026-everything-in-its-own-time/dusting-off-laptop.jpg
-    sml_jpeg: /assets/img/posts/2026-everything-in-its-own-time/dusting-off-laptop.jpg
-    lrg_jpeg: /assets/img/posts/2026-everything-in-its-own-time/dusting-off-laptop.jpg
-    sml_webp: /assets/img/posts/2026-everything-in-its-own-time/dusting-off-laptop.jpg
-    lrg_webp: /assets/img/posts/2026-everything-in-its-own-time/dusting-off-laptop.jpg
+    main: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
+    sml_jpeg: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
+    lrg_jpeg: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
+    sml_webp: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
+    lrg_webp: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
 alt: Dusting off the laptop and getting back to work
 title: Everything in its own <strong>time</strong>
 date: 11 May 2026
