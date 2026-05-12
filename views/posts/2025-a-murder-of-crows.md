@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2025-a-murder-of-crows/crows.jpg
     sml_jpeg: /assets/img/posts/2025-a-murder-of-crows/crows@720w.jpg
     lrg_jpeg: /assets/img/posts/2025-a-murder-of-crows/crows.jpg
-    sml_webp: /assets/img/posts/2025-a-murder-of-crows/crows@720w.jpg
-    lrg_webp: /assets/img/posts/2025-a-murder-of-crows/crows.jpg
+    sml_webp: /assets/img/posts/2025-a-murder-of-crows/crows@720w.webp
+    lrg_webp: /assets/img/posts/2025-a-murder-of-crows/crows.webp
     position: center center
 alt: A flock of crows gathered together
 title: I witnessed a <strong>murder</strong>

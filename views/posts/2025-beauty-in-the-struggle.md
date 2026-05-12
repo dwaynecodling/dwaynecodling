@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy.jpg
     sml_jpeg: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy@720w.jpg
     lrg_jpeg: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy.jpg
-    sml_webp: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy@720w.jpg
-    lrg_webp: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy.jpg
+    sml_webp: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy@720w.webp
+    lrg_webp: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy.webp
     position: center center
 alt: Mrs Dorothy — the inspiration behind this post
 title: There is beauty in the <strong>struggle</strong>

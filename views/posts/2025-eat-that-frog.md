@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2025-eat-that-frog/dwayne-squat.jpg
     sml_jpeg: /assets/img/posts/2025-eat-that-frog/dwayne-squat@720w.jpg
     lrg_jpeg: /assets/img/posts/2025-eat-that-frog/dwayne-squat.jpg
-    sml_webp: /assets/img/posts/2025-eat-that-frog/dwayne-squat@720w.jpg
-    lrg_webp: /assets/img/posts/2025-eat-that-frog/dwayne-squat.jpg
+    sml_webp: /assets/img/posts/2025-eat-that-frog/dwayne-squat@720w.webp
+    lrg_webp: /assets/img/posts/2025-eat-that-frog/dwayne-squat.webp
     position: center 65%
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Eat that <strong>frog</strong>

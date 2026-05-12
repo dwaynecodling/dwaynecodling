@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.jpg
     sml_jpeg: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1@720w.jpg
     lrg_jpeg: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.jpg
-    sml_webp: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1@720w.jpg
-    lrg_webp: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.jpg
+    sml_webp: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1@720w.webp
+    lrg_webp: /assets/img/posts/2026-winning-is-never-done-alone/winning-team-1.webp
 alt: A team celebrating a shared win together
 title: Winning is never done <strong>alone</strong>
 category: leadership

@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2025-allyship-in-tech/allyship.jpg
     sml_jpeg: /assets/img/posts/2025-allyship-in-tech/allyship@720w.jpg
     lrg_jpeg: /assets/img/posts/2025-allyship-in-tech/allyship.jpg
-    sml_webp: /assets/img/posts/2025-allyship-in-tech/allyship@720w.jpg
-    lrg_webp: /assets/img/posts/2025-allyship-in-tech/allyship.jpg
+    sml_webp: /assets/img/posts/2025-allyship-in-tech/allyship@720w.webp
+    lrg_webp: /assets/img/posts/2025-allyship-in-tech/allyship.webp
 alt: Dwayne at a community event
 title: Allyship in <strong>Tech</strong>
 date: 17 December 2025

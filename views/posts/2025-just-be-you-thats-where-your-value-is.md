@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne.jpg
     sml_jpeg: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne@720w.jpg
     lrg_jpeg: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne.jpg
-    sml_webp: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne@720w.jpg
-    lrg_webp: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne.jpg
+    sml_webp: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne@720w.webp
+    lrg_webp: /assets/img/posts/2026-just-be-you-thats-where-your-value-is/ai-image-dwayne.webp
 alt: AI-generated portrait of Dwayne Codling
 title: Just be you; that's where your real <strong>value</strong> is
 category: personal

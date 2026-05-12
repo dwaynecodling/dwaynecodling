@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday.jpg
     sml_jpeg: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday@720w.jpg
     lrg_jpeg: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday.jpg
-    sml_webp: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday@720w.jpg
-    lrg_webp: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday.jpg
+    sml_webp: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday@720w.webp
+    lrg_webp: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday.webp
     position: center 20%
 alt: Dwayne celebrating with family
 title: What is <strong>wealth</strong> to me

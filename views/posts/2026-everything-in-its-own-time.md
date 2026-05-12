@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
     sml_jpeg: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
     lrg_jpeg: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
-    sml_webp: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
-    lrg_webp: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
+    sml_webp: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.webp
+    lrg_webp: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.webp
 alt: Andre and Dante
 title: Everything in its own <strong>time</strong>
 date: 11 May 2026

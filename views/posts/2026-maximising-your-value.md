@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2026-maximising-your-value/maximising-value.jpg
     sml_jpeg: /assets/img/posts/2026-maximising-your-value/maximising-value@720w.jpg
     lrg_jpeg: /assets/img/posts/2026-maximising-your-value/maximising-value.jpg
-    sml_webp: /assets/img/posts/2026-maximising-your-value/maximising-value@720w.jpg
-    lrg_webp: /assets/img/posts/2026-maximising-your-value/maximising-value.jpg
+    sml_webp: /assets/img/posts/2026-maximising-your-value/maximising-value@720w.webp
+    lrg_webp: /assets/img/posts/2026-maximising-your-value/maximising-value.webp
     position: center 35%
 alt: Dwayne Codling
 title: Maximising your <strong>value</strong>

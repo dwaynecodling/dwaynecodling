@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2025-you-are-your-biggest-competitor/deka.jpg
     sml_jpeg: /assets/img/posts/2025-you-are-your-biggest-competitor/deka@720w.jpg
     lrg_jpeg: /assets/img/posts/2025-you-are-your-biggest-competitor/deka.jpg
-    sml_webp: /assets/img/posts/2025-you-are-your-biggest-competitor/deka@720w.jpg
-    lrg_webp: /assets/img/posts/2025-you-are-your-biggest-competitor/deka.jpg
+    sml_webp: /assets/img/posts/2025-you-are-your-biggest-competitor/deka@720w.webp
+    lrg_webp: /assets/img/posts/2025-you-are-your-biggest-competitor/deka.webp
     position: center center
 alt: Dwayne competing in DEKA Strong
 title: You are your <strong>biggest competitor</strong>

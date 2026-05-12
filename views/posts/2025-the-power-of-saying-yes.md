@@ -4,8 +4,8 @@ hero:
     main: /assets/img/posts/2025-the-power-of-saying-yes/peak-1.jpg
     sml_jpeg: /assets/img/posts/2025-the-power-of-saying-yes/peak-1@720w.jpg
     lrg_jpeg: /assets/img/posts/2025-the-power-of-saying-yes/peak-1.jpg
-    sml_webp: /assets/img/posts/2025-the-power-of-saying-yes/peak-1@720w.jpg
-    lrg_webp: /assets/img/posts/2025-the-power-of-saying-yes/peak-1.jpg
+    sml_webp: /assets/img/posts/2025-the-power-of-saying-yes/peak-1@720w.webp
+    lrg_webp: /assets/img/posts/2025-the-power-of-saying-yes/peak-1.webp
     position: center 40%
 alt: Views from a four-hour hike in the Peak District
 title: The power of <strong>saying yes</strong>
