@@ -1,6 +1,6 @@
 # dwaynecodling.com
 
-[![Deployed on Railway](https://img.shields.io/badge/Deployed_on-Railway-blueviolet?logo=railway&logoColor=white)](https://railway.app/project/9c74e6cf-4f5b-4224-a75a-a28923646656) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
+[![Deployed on Railway](https://img.shields.io/badge/Deployed_on-Railway-blueviolet?logo=railway&logoColor=white)](https://railway.app/project/9c74e6cf-4f5b-4224-a75a-a28923646656) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) ![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white) ![EJS](https://img.shields.io/badge/EJS-B4CA65?logo=ejs&logoColor=black) ![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white)
 
 Personal blog and portfolio site for Dwayne Codling. Built with Express, TypeScript, and EJS, hosted on Railway behind Cloudflare.
 
