@@ -81,8 +81,8 @@ scss/
 
 ### Deployment
 
-Deployment is via FTP to shared hosting. Run `npm run build` before deploying:
+The app is hosted on Railway. Pushing to either branch triggers an automatic build and deploy:
 - `dev` branch → dev.dwaynecodling.com
 - `live` branch → dwaynecodling.com (production)
 
-The build script removes `node_modules` at the end (`npm run clean`) so only compiled output is deployed.
+Railway runs `npm run build:railway` on deploy (compiles SCSS only — TypeScript is pre-compiled and committed). The compiled `.js` files must be committed to the repo before pushing.

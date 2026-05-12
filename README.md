@@ -72,4 +72,4 @@ All source is in `.ts` files. The compiled `.js` and `.js.map` files are committ
 | `live` | dwaynecodling.com |
 | `dev` | dev.dwaynecodling.com |
 
-Deployment is via FTP. Run `npm run build` before deploying — it compiles SCSS and TypeScript then removes `node_modules` so only compiled output is transferred.
+The app is hosted on Railway. Pushing to either branch triggers an automatic build and deploy via `npm run build:railway`. TypeScript is pre-compiled and committed to the repo — Railway only needs to compile the SCSS on deploy.
