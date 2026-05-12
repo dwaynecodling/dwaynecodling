@@ -11,7 +11,7 @@ Personal blog and portfolio site for Dwayne Codling. Built with Express, TypeScr
 - **Language**: TypeScript (compiled JS committed alongside source)
 - **Styles**: SCSS → compiled to `assets/css/style.min.css`
 - **Content**: Markdown files with gray-matter frontmatter
-- **Deployment**: GitHub Actions → FTP
+- **Deployment**: Railway (auto-deploy on push) behind Cloudflare
 
 ## Getting started
 
@@ -27,7 +27,8 @@ npm start
 | Command | Description |
 |---|---|
 | `npm start` | Start dev server + watch SCSS |
-| `npm run build` | Full production build (SCSS → TS → remove node_modules) |
+| `npm run build` | Full local build (SCSS → TS → remove node_modules) |
+| `npm run build:railway` | Railway deploy build (SCSS only) |
 | `npm run build:css` | Compile SCSS only |
 | `npm run watch:sass` | Watch SCSS only |
 | `tsc -p tsconfig.json` | Compile TypeScript only |
