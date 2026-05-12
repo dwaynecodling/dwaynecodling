@@ -1,12 +1,12 @@
 ---
 slug: everything-in-its-own-time
 hero:
-    main: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
-    sml_jpeg: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
-    lrg_jpeg: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
-    sml_webp: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
-    lrg_webp: /assets/img/posts/2026-everything-in-its-own-time/curtis-and-mel.jpg
-alt: Dusting off the laptop and getting back to work
+    main: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
+    sml_jpeg: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
+    lrg_jpeg: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
+    sml_webp: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
+    lrg_webp: /assets/img/posts/2026-everything-in-its-own-time/dante-and-andre.jpg
+alt: Andre and Dante
 title: Everything in its own <strong>time</strong>
 date: 11 May 2026
 excerpt: "I have been off work since January. That was not the plan, but that is how it went. Here is what the slower path taught me."
@@ -18,7 +18,11 @@ category: personal
 
 I have been off work since January. That was not the plan, but that is how it went.
 
-I took the time to actually stop. We went to Jamaica as a family. Then I competed in my first weightlifting competition as an athlete. Both of those things reminded me what it feels like to be fully present somewhere.
+I took the time to actually stop. Then I competed in my first weightlifting competition as an athlete.  We went to Jamaica as a family. Both of those things reminded me what it feels like to be fully present somewhere.
+
+![Jamaican Vacation](/assets/img/posts/2026-everything-in-its-own-time/vacation.jpg "Jamaican Vacation")
+
+![Medal Ceremony](/assets/img/posts/2026-everything-in-its-own-time/competing.jpg "Medal Ceremony")
 
 **If I am honest, I did not really start looking properly until after the competition.** And even then, things moved slower than I expected.
 
@@ -39,6 +43,8 @@ So rather than forcing a move into something new for the sake of it, I leaned in
 I went back to frontend development, which I had not touched properly in years. I started learning again. Not frantically, but properly.
 
 One of the things that came out of that period was rebuilding this site. It had been offline for four years. Getting it back up became part of the learning process.
+
+![Dusting off the laptop](/assets/img/posts/2026-everything-in-its-own-time/dusting-off-laptop.jpg "Dusting off the laptop")
 
 I used Claude Code throughout. It helped me get back to where I was as a developer and, honestly, further. But what I learned quickly is that AI is not a shortcut for knowing what you are doing.
 
