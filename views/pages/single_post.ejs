@@ -244,9 +244,9 @@
             <% } else { %>
                 <div class="post-template__img-wrapper">
                     <picture>
-                        <source type="image/webp" data-srcset="<%= currentArticle.data.hero.lrg_webp %>">
-                        <source type="image/jpeg" data-srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
-                        <img class="post-template__img lazyload" data-src="<%= currentArticle.data.hero.main %>" alt="<%= currentArticle.data.alt %>"<% if (currentArticle.data.hero.position) { %> style="object-position: <%= currentArticle.data.hero.position %>;"<% } %>>
+                        <source type="image/webp" srcset="<%= currentArticle.data.hero.lrg_webp %>">
+                        <source type="image/jpeg" srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
+                        <img class="post-template__img" src="<%= currentArticle.data.hero.main %>" alt="<%= currentArticle.data.alt %>" loading="lazy"<% if (currentArticle.data.hero.position) { %> style="object-position: <%= currentArticle.data.hero.position %>;"<% } %>>
                     </picture>
                 </div>
             <% } %>
@@ -293,7 +293,6 @@
 </button>
 
 <%- include("../partials/footer") %>
-<script src="/assets/js/lazysizes.min.js" async></script>
 <script>
 (function () {
     var btn = document.getElementById('back-to-top');
