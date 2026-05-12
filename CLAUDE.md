@@ -81,7 +81,7 @@ scss/
 
 ### Deployment
 
-GitHub Actions (`.github/workflows/node.js.yml`) runs `npm run build` then deploys via FTP on push to either branch:
+Deployment is via FTP to shared hosting. Run `npm run build` before deploying:
 - `dev` branch → dev.dwaynecodling.com
 - `live` branch → dwaynecodling.com (production)
 
