@@ -1,6 +1,6 @@
 # dwaynecodling.com
 
-[![Deployed on Railway](https://img.shields.io/badge/Deployed_on-Railway-blueviolet?logo=railway&logoColor=white)](https://railway.app/project/9c74e6cf-4f5b-4224-a75a-a28923646656)
+[![Deployed on Railway](https://img.shields.io/badge/Deployed_on-Railway-blueviolet?logo=railway&logoColor=white)](https://railway.app/project/9c74e6cf-4f5b-4224-a75a-a28923646656) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white)
 
 Personal blog and portfolio site for Dwayne Codling. Built with Express, TypeScript, and EJS, hosted on Railway behind Cloudflare.
 
