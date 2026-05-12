@@ -1,3 +1,77 @@
 ![Deploy to Live](https://github.com/dwaynecodling/dwaynecodling/workflows/Deploy%20to%20Live/badge.svg?branch=live)
 
-# dwaynecodling
+# dwaynecodling.com
+
+Personal blog and portfolio site for Dwayne Codling. Built with Express, TypeScript, and EJS, deployed to shared hosting via GitHub Actions.
+
+## Stack
+
+- **Server**: Node.js + Express
+- **Templates**: EJS
+- **Language**: TypeScript (compiled JS committed alongside source)
+- **Styles**: SCSS → compiled to `assets/css/style.min.css`
+- **Content**: Markdown files with gray-matter frontmatter
+- **Deployment**: GitHub Actions → FTP
+
+## Getting started
+
+```bash
+npm install
+npm start
+```
+
+`npm start` runs the Express server and SCSS watcher in parallel. The site will be available at `http://localhost:3000`.
+
+## Commands
+
+| Command | Description |
+|---|---|
+| `npm start` | Start dev server + watch SCSS |
+| `npm run build` | Full production build (SCSS → TS → remove node_modules) |
+| `npm run build:css` | Compile SCSS only |
+| `npm run watch:sass` | Watch SCSS only |
+| `tsc -p tsconfig.json` | Compile TypeScript only |
+
+## Writing a post
+
+Posts live in `views/posts/*.md` as Markdown with gray-matter frontmatter. Required fields:
+
+```yaml
+---
+slug: my-post-slug
+title: My <strong>Post</strong>
+date: 05 February 2025
+hero:
+    main: /assets/img/posts/my-post/hero.jpg
+    sml_jpeg: /assets/img/posts/my-post/hero@720w.jpg
+    lrg_jpeg: /assets/img/posts/my-post/hero.jpg
+    sml_webp: /assets/img/posts/my-post/hero@720w.jpg
+    lrg_webp: /assets/img/posts/my-post/hero.jpg
+    position: center center
+alt: Image alt text
+excerpt: "Short description shown in post listings."
+published: true
+category: leadership
+---
+```
+
+Set `published: false` to hide a post without deleting it. HTML is allowed in `title`.
+
+## Images
+
+Requesting an image with an `@WxH` suffix (e.g. `/assets/img/photo@400x300.jpg`) resizes it on the fly and optionally caches the result to disk for subsequent static serving.
+
+Post images live in `assets/img/posts/<post-folder>/`.
+
+## TypeScript
+
+All source is in `.ts` files. The compiled `.js` and `.js.map` files are committed to the repo — the production server runs the compiled JS directly with no build step on the host. **Never edit `.js` files directly.**
+
+## Deployment
+
+| Branch | Environment |
+|---|---|
+| `live` | dwaynecodling.com |
+| `dev` | dev.dwaynecodling.com |
+
+Pushing to either branch triggers GitHub Actions, which runs `npm run build` and deploys via FTP. The build removes `node_modules` at the end so only compiled output is transferred.
