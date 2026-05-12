@@ -1,6 +1,8 @@
 # dwaynecodling.com
 
-Personal blog and portfolio site for Dwayne Codling. Built with Express, TypeScript, and EJS, deployed to shared hosting via GitHub Actions.
+[![Deployed on Railway](https://img.shields.io/badge/Deployed_on-Railway-blueviolet?logo=railway&logoColor=white)](https://railway.app/project/9c74e6cf-4f5b-4224-a75a-a28923646656)
+
+Personal blog and portfolio site for Dwayne Codling. Built with Express, TypeScript, and EJS, deployed on Railway.
 
 ## Stack
 
