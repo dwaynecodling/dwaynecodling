@@ -1,11 +1,11 @@
 ---
 slug: careers-are-only-part-of-the-legacy
 hero:
-    main: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy.jpg
-    sml_jpeg: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy@720w.jpg
-    lrg_jpeg: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy.jpg
-    sml_webp: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy@720w.jpg
-    lrg_webp: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy.jpg
+    main: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.jpg
+    sml_jpeg: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.jpg
+    lrg_jpeg: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.jpg
+    sml_webp: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.jpg
+    lrg_webp: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.jpg
     position: center 25%
 alt: A moment to pause and reflect
 title: Careers are only part of the <strong>legacy</strong> we leave
