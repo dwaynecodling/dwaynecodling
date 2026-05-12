@@ -45,7 +45,7 @@ I apply this same thinking to every team I've led, every difficult conversation 
 
 I'm building on this now. The 220kg deadlift is there. The numbers will come.
 
-<img src="/assets/img/posts/2026-officially-a-powerlifter/dwayne-and-ash-wrpf.jpg" alt="Dwayne and Ash, medal presentation" loading="lazy" style="object-position: center 30%;">
+![Dwayne and Ash, medal presentation](/assets/img/posts/2026-officially-a-powerlifter/dwayne-and-ash-wrpf.jpg)
 
 More importantly, the mindset is locked in.
 
