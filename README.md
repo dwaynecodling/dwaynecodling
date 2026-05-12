@@ -1,5 +1,3 @@
-![Deploy to Live](https://github.com/dwaynecodling/dwaynecodling/workflows/Deploy%20to%20Live/badge.svg?branch=live)
-
 # dwaynecodling.com
 
 Personal blog and portfolio site for Dwayne Codling. Built with Express, TypeScript, and EJS, deployed to shared hosting via GitHub Actions.
@@ -74,4 +72,4 @@ All source is in `.ts` files. The compiled `.js` and `.js.map` files are committ
 | `live` | dwaynecodling.com |
 | `dev` | dev.dwaynecodling.com |
 
-Pushing to either branch triggers GitHub Actions, which runs `npm run build` and deploys via FTP. The build removes `node_modules` at the end so only compiled output is transferred.
+Deployment is via FTP. Run `npm run build` before deploying — it compiles SCSS and TypeScript then removes `node_modules` so only compiled output is transferred.
