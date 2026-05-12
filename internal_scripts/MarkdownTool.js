@@ -67,8 +67,10 @@ class MarkdownTool {
             const token = tokens[idx];
             const src = token.attrGet('src') || '';
             const alt = token.attrGet('alt') || '';
+            const webpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '.webp');
+            const mobileWebpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '@720w.webp');
             const mobileSrc = src.replace(/(\.(?:jpe?g|png|gif|webp))$/i, '@720w$1');
-            return `<img src="${src}" srcset="${mobileSrc} 720w, ${src} 1440w" sizes="(max-width: 62em) 100vw, 800px" alt="${alt}" loading="lazy">`;
+            return `<picture><source type="image/webp" srcset="${mobileWebpSrc} 720w, ${webpSrc} 1440w" sizes="(max-width: 62em) 100vw, 800px"><img src="${src}" srcset="${mobileSrc} 720w, ${src} 1440w" sizes="(max-width: 62em) 100vw, 800px" alt="${alt}" loading="lazy"></picture>`;
         };
     }
     transform(input) {
