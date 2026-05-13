@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2025-why-does-it-have-to-be-this-hard/deka-new.jpg
     sml_webp: /assets/img/posts/2025-why-does-it-have-to-be-this-hard/deka-new@720w.webp
     lrg_webp: /assets/img/posts/2025-why-does-it-have-to-be-this-hard/deka-new.webp
-    card_webp: assets/img/posts/2025-why-does-it-have-to-be-this-hard/deka-new@card.webp
+    card_webp: /assets/img/posts/2025-why-does-it-have-to-be-this-hard/deka-new@card.webp
     position: center 40%
 alt: Competing at the Deka Fit challenge
 title: Why does it have to be <strong>this hard?</strong>

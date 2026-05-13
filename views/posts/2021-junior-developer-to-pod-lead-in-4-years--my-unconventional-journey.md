@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2020-unconventional-career-journey/dwayne-and-curtis-at-jh.jpg
     sml_webp: /assets/img/posts/2020-unconventional-career-journey/dwayne-and-curtis-at-jh@720w.jpg
     lrg_webp: /assets/img/posts/2020-unconventional-career-journey/dwayne-and-curtis-at-jh.jpg
-    card_webp: assets/img/posts/2020-unconventional-career-journey/dwayne-and-curtis-at-jh@card.webp
+    card_webp: /assets/img/posts/2020-unconventional-career-journey/dwayne-and-curtis-at-jh@card.webp
 alt: Dwayne Codling and Curtis at JH
 title: Junior Developer to Pod Lead in 4 Years - My Unconventional Journey
 date: 06 April 2021

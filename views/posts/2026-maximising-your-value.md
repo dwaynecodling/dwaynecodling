@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-maximising-your-value/maximising-value.jpg
     sml_webp: /assets/img/posts/2026-maximising-your-value/maximising-value@720w.webp
     lrg_webp: /assets/img/posts/2026-maximising-your-value/maximising-value.webp
-    card_webp: assets/img/posts/2026-maximising-your-value/maximising-value@card.webp
+    card_webp: /assets/img/posts/2026-maximising-your-value/maximising-value@card.webp
     position: center 35%
 alt: Dwayne Codling
 title: Maximising your <strong>value</strong>

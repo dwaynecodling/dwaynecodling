@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2021-celebrating-40/jh-40-transformation.png
     sml_webp: /assets/img/posts/2021-celebrating-40/jh-40-transformation@720w.png
     lrg_webp: /assets/img/posts/2021-celebrating-40/jh-40-transformation.png
-    card_webp: assets/img/posts/2021-celebrating-40/jh-40-transformation@card.webp
+    card_webp: /assets/img/posts/2021-celebrating-40/jh-40-transformation@card.webp
     position: center center
 alt: Dwayne Codling at 40, transformed through discipline and commitment
 title: Celebrating 40 as a <strong>better version of me</strong>
