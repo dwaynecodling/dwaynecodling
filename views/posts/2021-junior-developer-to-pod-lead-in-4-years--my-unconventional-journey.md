@@ -57,7 +57,7 @@ The second sound advice I was given is that you can contribute without being the
 
 My key was that I care about my team: I care about the people I work with and want to see them become successful. I care about the place I work, and want it to succeed in achieving the company’s goals. I care about the clients we serve, and want them to be successful.
 
-![Jerk chicken and dumplins at jh](/assets/img/posts/2020-unconventional-career-journey/jerk-chicken-and-dumplins-at-jh.gif "Jerk chicken and dumplins at jh")
+![Jerk chicken and dumplins at jh](/assets/img/posts/2020-unconventional-career-journey/jerk-chicken-and-dumplins-at-jh.jpg "Jerk chicken and dumplins at jh")
 
 It’s that simple: whatever it is that I can use to amplify that, and make others succeed is what I want to do. Developing students and mentoring them as a Lecturer has put me in a position where this is a natural task - and putting in the time to talk and develop someone is what makes me happy. Leaving a legacy that goes beyond, to help make other people’s dreams a reality, is all part of the journey that I have set myself.
 
