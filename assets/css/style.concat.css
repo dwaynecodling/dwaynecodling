@@ -346,6 +346,7 @@ a {
   text-decoration: none;
   color: #f4ede0;
   font-weight: 700;
+  cursor: pointer;
   position: relative;
   z-index: 1;
   font-size: 1.4rem;
