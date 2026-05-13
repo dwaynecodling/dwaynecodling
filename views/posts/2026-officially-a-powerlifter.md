@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-officially-a-powerlifter/powerlifter.jpg
     sml_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter@720w.webp
     lrg_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter.webp
+    card_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter@card.webp
     position: center 45%
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Officially an <strong>amateur powerlifter</strong>
