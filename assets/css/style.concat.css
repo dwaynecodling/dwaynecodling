@@ -753,7 +753,7 @@ footer {
 .hero__button {
   display: inline-flex;
   align-items: center;
-  color: #f4ede0;
+  color: #0d1a10;
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
@@ -770,7 +770,7 @@ footer {
 }
 .hero__button:hover {
   background-color: rgb(169.7952380952, 112.0476190476, 47.4047619048);
-  color: #f4ede0;
+  color: #0d1a10;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(200, 133, 58, 0.35);
 }
