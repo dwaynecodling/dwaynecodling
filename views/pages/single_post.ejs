@@ -63,6 +63,12 @@
             border: 1px solid rgba(200,133,58,0.3);
             padding: 0.4rem 1.2rem;
             border-radius: 99px;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+        .post-hero__tag:hover {
+            background: rgba(200,133,58,0.22);
+            border-color: rgba(200,133,58,0.55);
         }
 
         .post-hero__date {
@@ -218,7 +224,7 @@
                     Back to all posts
                 </a>
                 <div class="post-hero__meta">
-                    <span class="post-hero__tag"><%= currentArticle.data.category ? currentArticle.data.category.charAt(0).toUpperCase() + currentArticle.data.category.slice(1) : 'Writing' %></span>
+                    <a href="/posts#<%= currentArticle.data.category || 'all' %>" class="post-hero__tag"><%= currentArticle.data.category ? currentArticle.data.category.charAt(0).toUpperCase() + currentArticle.data.category.slice(1) : 'Writing' %></a>
                     <span class="post-hero__date"><%- currentArticle.data.date %></span>
                     <span class="post-hero__read-time">· <%- currentArticle.data.readTime %> read</span>
                 </div>
