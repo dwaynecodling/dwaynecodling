@@ -5,6 +5,7 @@ hero:
     sml_jpeg: /assets/img/posts/2020-tech-notts/nottingham-sml.jpg
     sml_webp: /assets/img/posts/2020-tech-notts/nottingham-sml.webp
     lrg_webp: /assets/img/posts/2020-tech-notts/nottingham-lrg.webp
+    card_webp: assets/img/posts/2020-tech-notts/nottingham-lrg@card.webp
     lrg_jpeg: /assets/img/posts/2020-tech-notts/nottingham-lrg.jpg
 alt: Nottingham
 title: Diversity <strong>vs</strong> Inclusion

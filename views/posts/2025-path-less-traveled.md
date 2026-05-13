@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2025-path-less-traveled/path.jpg
     sml_webp: /assets/img/posts/2025-path-less-traveled/path@720w.webp
     lrg_webp: /assets/img/posts/2025-path-less-traveled/path.webp
+    card_webp: assets/img/posts/2025-path-less-traveled/path@card.webp
     position: center center
 alt: Two paths diverging through nature
 title: Is the path less traveled <strong>better</strong>?

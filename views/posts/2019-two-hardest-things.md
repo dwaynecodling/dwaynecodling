@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2019-frustrating/frustration-computing.jpg
     sml_webp: /assets/img/posts/2019-frustrating/frustration-computing@720w.jpg
     lrg_webp: /assets/img/posts/2019-frustrating/frustration-computing.jpg
+    card_webp: assets/img/posts/2019-frustrating/frustration-computing@card.webp
 alt: The frustration of being stuck on a problem
 title: The two <strong>hardest</strong> things
 date: 04 September 2019

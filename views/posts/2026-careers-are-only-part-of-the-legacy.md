@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.jpg
     sml_webp: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.webp
     lrg_webp: /assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1.webp
+    card_webp: assets/img/posts/2026-careers-are-only-part-of-the-legacy/careers-legacy-1@card.webp
     position: center 25%
 alt: A moment to pause and reflect
 title: Careers are only part of the <strong>legacy</strong> we leave

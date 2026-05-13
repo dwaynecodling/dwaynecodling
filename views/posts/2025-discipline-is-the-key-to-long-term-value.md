@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-discipline-is-the-key-to-long-term-value/discipline-running.jpg
     sml_webp: /assets/img/posts/2026-discipline-is-the-key-to-long-term-value/discipline-running@720w.webp
     lrg_webp: /assets/img/posts/2026-discipline-is-the-key-to-long-term-value/discipline-running.webp
+    card_webp: assets/img/posts/2026-discipline-is-the-key-to-long-term-value/discipline-running@card.webp
     position: center 35%
 alt: A runner on a track, embodying discipline and consistency
 title: Discipline is the key to unlocking long-term <strong>value</strong>

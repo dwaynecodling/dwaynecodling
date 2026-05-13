@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2019-css-day-post/amsterdam.jpg
     sml_webp: /assets/img/posts/2019-css-day-post/amsterdam_sml.webp
     lrg_webp: /assets/img/posts/2019-css-day-post/amsterdam.webp
+    card_webp: assets/img/posts/2019-css-day-post/amsterdam@card.webp
 alt: Amsterdam, home of CSS Day 2019
 title: What I took from <strong>CSS Day</strong>
 date: 14 June 2019
