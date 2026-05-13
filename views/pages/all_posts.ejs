@@ -172,7 +172,9 @@
         }
     }
 
-    function setCategory(cat) {
+    var validCategories = ['all', 'leadership', 'fitness', 'personal', 'tech'];
+
+    function setCategory(cat, updateHash) {
         currentCategory = cat;
         currentPage = 1;
         tabs.forEach(function (t) {
@@ -182,6 +184,9 @@
             t.setAttribute('tabindex', isActive ? '0' : '-1');
         });
         if (select) select.value = cat;
+        if (updateHash !== false) {
+            history.replaceState(null, '', cat === 'all' ? location.pathname : '#' + cat);
+        }
         render();
     }
 
@@ -208,7 +213,8 @@
         if (currentPage < totalPages) { currentPage++; render(); scrollToGrid(); }
     });
 
-    render();
+    var initialCat = location.hash.slice(1);
+    setCategory(validCategories.indexOf(initialCat) !== -1 ? initialCat : 'all', false);
 }());
 </script>
 </body>
