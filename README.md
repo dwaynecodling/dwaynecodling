@@ -46,9 +46,10 @@ hero:
     main: /assets/img/posts/my-post/hero.jpg
     sml_jpeg: /assets/img/posts/my-post/hero@720w.jpg
     lrg_jpeg: /assets/img/posts/my-post/hero.jpg
-    sml_webp: /assets/img/posts/my-post/hero@720w.jpg
-    lrg_webp: /assets/img/posts/my-post/hero.jpg
-    position: center center
+    sml_webp: /assets/img/posts/my-post/hero@720w.webp
+    lrg_webp: /assets/img/posts/my-post/hero.webp
+    card_webp: /assets/img/posts/my-post/hero@card.webp
+    position: center 30%
 alt: Image alt text
 excerpt: "Short description shown in post listings."
 published: true
@@ -60,9 +61,54 @@ Set `published: false` to hide a post without deleting it. HTML is allowed in `t
 
 ## Images
 
-Requesting an image with an `@WxH` suffix (e.g. `/assets/img/photo@400x300.jpg`) resizes it on the fly and optionally caches the result to disk for subsequent static serving.
+Post images live in `assets/img/posts/<post-folder>/`. Every post needs **four image files** — all in WebP with JPEG fallbacks.
 
-Post images live in `assets/img/posts/<post-folder>/`.
+### Required files per post
+
+| File | Dimensions | Notes |
+|---|---|---|
+| `hero.jpg` | 1440×810px | Full-size JPEG fallback |
+| `hero.webp` | 1440×810px | Full-size WebP |
+| `hero@720w.jpg` | 720×405px | Mobile JPEG (used below 62em) |
+| `hero@720w.webp` | 720×405px | Mobile WebP (used below 62em) |
+| `hero@card.webp` | 720×320px | Card thumbnail — cropped to this exact ratio |
+
+The `position` frontmatter field sets the `object-position` CSS property for the hero image. Use values like `center top`, `center 30%`, `left 40%` to control which part of the image shows as the focal point in cards and hero banners.
+
+### Generating images with sharp
+
+```js
+const sharp = require('sharp');
+
+// Full-size WebP
+await sharp('source.jpg').rotate().resize(1440).webp({ quality: 82 }).toFile('hero.webp');
+
+// Mobile WebP
+await sharp('source.jpg').rotate().resize(750).webp({ quality: 82 }).toFile('hero@720w.webp');
+
+// Card thumbnail (720×320 crop — adjust extract values for focal point)
+await sharp('source.jpg').rotate().resize(1440)
+  .extract({ left: 0, top: 200, width: 1440, height: 640 })
+  .resize(720, 320)
+  .webp({ quality: 82 })
+  .toFile('hero@card.webp');
+```
+
+Always call `.rotate()` before `.resize()` to bake in EXIF orientation so the image displays correctly in all browsers.
+
+### Inline post images
+
+Inside post Markdown, reference JPEG files — `MarkdownTool` auto-generates a `<picture>` element with a WebP source. Place both files alongside the hero images:
+
+```md
+![Alt text](/assets/img/posts/my-post/photo.jpg "Caption")
+```
+
+Requires `photo.jpg`, `photo.webp`, and `photo@720w.webp` to exist.
+
+### On-the-fly resizing
+
+Requesting any image URL with an `@WxH` or `@Nw`/`@Nh` suffix (e.g. `/assets/img/photo@400x300.jpg`) resizes it on the fly and caches the result to disk for subsequent static serving.
 
 ## TypeScript
 
