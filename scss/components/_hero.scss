@@ -12,6 +12,12 @@
   background-image:
     linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
     url('/assets/img/pages/about-me/hero-about-me@720w.jpg');
+  background-image:
+    linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
+    image-set(
+      url('/assets/img/pages/about-me/hero-about-me@720w.webp') type('image/webp'),
+      url('/assets/img/pages/about-me/hero-about-me@720w.jpg') type('image/jpeg')
+    );
   background-size: cover;
   background-position: center 23%;
   background-repeat: no-repeat;
@@ -20,6 +26,12 @@
     background-image:
       linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
       url('/assets/img/pages/about-me/hero-about-me.jpg');
+    background-image:
+      linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
+      image-set(
+        url('/assets/img/pages/about-me/hero-about-me.webp') type('image/webp'),
+        url('/assets/img/pages/about-me/hero-about-me.jpg') type('image/jpeg')
+      );
   }
 
   &__content {

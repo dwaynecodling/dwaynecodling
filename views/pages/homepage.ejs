@@ -32,6 +32,8 @@
     }
     </script>
     <%- include("../partials/links") %>
+    <link rel="preload" as="image" href="/assets/img/pages/about-me/hero-about-me@720w.webp" type="image/webp" media="(max-width: 61.99em)" fetchpriority="high">
+    <link rel="preload" as="image" href="/assets/img/pages/about-me/hero-about-me.webp" type="image/webp" media="(min-width: 62em)" fetchpriority="high">
 </head>
 <body>
 <%- include("../partials/nav") %>
@@ -104,8 +106,10 @@
         <div class="strength-section">
             <div class="strength-section__image">
                 <picture>
-                    <source type="image/webp" srcset="/assets/img/pages/home/dwayne-competition.webp">
+                    <source type="image/webp" srcset="/assets/img/pages/home/dwayne-competition@720w.webp 720w, /assets/img/pages/home/dwayne-competition.webp 1440w" sizes="(max-width: 62em) 100vw, 50vw">
                     <img src="/assets/img/pages/home/dwayne-competition.jpg"
+                         srcset="/assets/img/pages/home/dwayne-competition@720w.jpg 720w, /assets/img/pages/home/dwayne-competition.jpg 1440w"
+                         sizes="(max-width: 62em) 100vw, 50vw"
                          alt="Dwayne Codling competing at the WRPF Great Britain powerlifting competition"
                          loading="lazy" />
                 </picture>

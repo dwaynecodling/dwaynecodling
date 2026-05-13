@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/assets', express.static(__dirname + "/assets"));
+app.use('/assets', express.static(__dirname + "/assets", { maxAge: '1y' }));
 try {
     const stat = require("fs").statSync(require("path").resolve(__dirname, "assets/css/style.min.css"));
     app.locals.cssVersion = stat.mtimeMs.toString(36);
