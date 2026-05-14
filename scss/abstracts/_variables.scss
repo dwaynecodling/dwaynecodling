@@ -46,11 +46,11 @@ $heading-4: 2.6rem;
 $body-text-main: 1.8rem;
 $meta-text: 1.6rem;
 $logo-copyright-text: 2rem;
-$card-date: 1.2rem;
+$card-date: 1.4rem;
 $nav-text-default: 1.6rem;
 $nav-text-uppercase: 1.4rem;
 $quotation-text: 2.6rem;
-$form-input-label: 1.4rem;
+$form-input-label: 1.6rem;
 $form-input-text: 1.8rem;
 $faded-number-small: 12rem;
 $faded-number-large: 20rem;
@@ -83,7 +83,7 @@ $breakpoints: (
   --heading-1: 3.2rem;
   --heading-2: 2.8rem;
   --heading-3: 2.2rem;
-  --body-text-main: 1.4rem;
+  --body-text-main: 1.6rem;
 
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
     --container-padding: #{$padding-large};

@@ -2,25 +2,72 @@
 <nav class="navigation">
     <div class="container navigation__container">
         <a class="navigation__logo" href="/">DwayneCodling.</a>
+        <button class="navigation__menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                <circle cx="14" cy="14" r="13" class="hamburger-circle" fill="none"></circle>
+                <line x1="7" y1="10" x2="21" y2="10" class="hamburger-line"></line>
+                <line x1="7" y1="14" x2="21" y2="14" class="hamburger-line"></line>
+                <line x1="7" y1="18" x2="21" y2="18" class="hamburger-line"></line>
+            </svg>
+        </button>
         <ul class="navigation__links">
             <li class="navigation__link"><a href="/about-me">About me</a></li>
             <li class="navigation__link"><a href="/posts">My posts</a></li>
             <li class="navigation__link link--alt"><a href="/contact-me">Contact</a></li>
         </ul>
     </div>
+    <div class="navigation__mobile-menu" id="mobile-menu">
+        <ul class="navigation__mobile-links">
+            <li class="navigation__mobile-link"><a href="/about-me">About me</a></li>
+            <li class="navigation__mobile-link"><a href="/posts">My posts</a></li>
+            <li class="navigation__mobile-link"><a href="/contact-me">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 <script>
     (function() {
         var path = window.location.pathname;
-        document.querySelectorAll('.navigation__link a').forEach(function(link) {
-            var href = link.getAttribute('href');
-            var isActive = path === href || path.startsWith(href + '/');
-            if (!isActive && href === '/posts' && path.startsWith('/post/')) {
-                isActive = true;
-            }
-            if (isActive) {
-                link.closest('.navigation__link').classList.add('navigation__link--active');
-            }
+        var menuToggle = document.getElementById('menu-toggle');
+        var mobileMenu = document.getElementById('mobile-menu');
+
+        function setActiveLinks() {
+            document.querySelectorAll('.navigation__link a').forEach(function(link) {
+                var href = link.getAttribute('href');
+                var isActive = path === href || path.startsWith(href + '/');
+                if (!isActive && href === '/posts' && path.startsWith('/post/')) {
+                    isActive = true;
+                }
+                if (isActive) {
+                    link.closest('.navigation__link').classList.add('navigation__link--active');
+                }
+            });
+
+            document.querySelectorAll('.navigation__mobile-link a').forEach(function(link) {
+                var href = link.getAttribute('href');
+                var isActive = path === href || path.startsWith(href + '/');
+                if (!isActive && href === '/posts' && path.startsWith('/post/')) {
+                    isActive = true;
+                }
+                if (isActive) {
+                    link.closest('.navigation__mobile-link').classList.add('navigation__mobile-link--active');
+                }
+            });
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('navigation__mobile-menu--active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        menuToggle.addEventListener('click', function() {
+            var isOpen = mobileMenu.classList.toggle('navigation__mobile-menu--active');
+            menuToggle.setAttribute('aria-expanded', isOpen);
         });
+
+        document.querySelectorAll('.navigation__mobile-link a').forEach(function(link) {
+            link.addEventListener('click', closeMenu);
+        });
+
+        setActiveLinks();
     })();
 </script>

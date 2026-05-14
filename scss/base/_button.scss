@@ -33,7 +33,7 @@
     }
 }
 
-button:not(.back-to-top):not(.posts-pagination__btn) {
+button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggle):not(.contact-form__button) {
         display: inline-block;
         color: #fff;
         font-size: 1.4rem;

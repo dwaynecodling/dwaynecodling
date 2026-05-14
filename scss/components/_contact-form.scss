@@ -83,6 +83,8 @@
 
 .contact-form__label {
     font-size: $form-input-label;
+    display: block;
+    margin-bottom: 0.8rem;
 }
 
 .contact-form__error {
@@ -101,8 +103,12 @@
 .contact-form__input {
     font-size: $form-input-text;
     color: #999999;
-    padding: 2rem;
+    padding: 1.2rem 2rem;
     width: 100%;
+    min-height: 4.4rem;
+    border: 1px solid rgba(200, 133, 58, 0.15);
+    background-color: transparent;
+    border-radius: 0.4rem;
 
     &:focus-visible {
         outline: 2px solid $color-amber;
@@ -119,23 +125,34 @@
 margin-bottom: 4rem;
 }
 
-.contact-form__button {
+.contact-form__form .contact-form__button {
+    display: inline-flex;
+    align-items: center;
     cursor: pointer;
-    background-color: transparent;
-    color: $color-cream;
-    border: 2px solid $color-amber;
+    background-color: $color-amber;
+    color: $color-forest-dark;
+    border: none;
+    padding: 1.6rem 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    min-height: 4.4rem;
+    border-radius: 3rem;
     transition: $transition;
 
+    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+        padding: 1.8rem 3.8rem;
+        min-height: 4.8rem;
+    }
+
     &:hover {
-        background-color: rgba(244, 237, 224, 0.08);
-        border-color: rgba(244, 237, 224, 0.5);
-        color: $color-cream;
+        background-color: $color-amber-dark;
+        color: $color-forest-dark;
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 24px rgba(200, 133, 58, 0.35);
     }
 
     &:focus-visible {
-        outline: 2px solid $color-cream;
+        outline: 2px solid $color-amber;
         outline-offset: 2px;
     }
 
@@ -144,20 +161,43 @@ margin-bottom: 4rem;
         cursor: not-allowed;
         transform: none;
     }
+
+    .contact-form__button-content {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .contact-form__button-text {
+        font-weight: 500;
+    }
+
+    .contact-form__button-arrow {
+        width: 2rem;
+        height: 1.2rem;
+        transform: scale(1);
+        transition: transform 0.2s;
+    }
+
+    &:hover .contact-form__button-arrow {
+        transform: translateX(0.2rem);
+    }
 }
 
 .contact-form__textarea-input {
     width: 100%;
     font-size: $form-input-text;
-    padding: 2rem;
+    padding: 1.2rem 2rem;
     color: #999999;
-    min-height: 140px;
+    min-height: 160px;
     font-family: Roboto, sans-serif;
+    border: 1px solid rgba(200, 133, 58, 0.15);
+    background-color: transparent;
+    border-radius: 0.4rem;
 
-    ::placeholder {
+    &::placeholder {
         font-size: 1.8rem;
         font-family: Roboto, sans-serif;
-
     }
 
     &:focus-visible {
