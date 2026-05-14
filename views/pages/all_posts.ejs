@@ -204,7 +204,7 @@
 
     function scrollToGrid() {
         var section = document.querySelector('.card-wrapper');
-        if (section) window.scrollTo({ top: section.offsetTop - 80, behavior: 'smooth' });
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     tabs.forEach(function (tab) {
