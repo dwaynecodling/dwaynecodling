@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="<%= currentArticle.data.excerpt %>">
+    <meta name="keywords" content="<%= currentArticle.data.category %>, <%= currentArticle.data.category ? currentArticle.data.category + ', ' : '' %>technology, leadership, insights">
     <title><%- currentArticle.data.titleText %> — Dwayne Codling</title>
     <meta property="og:title" content="<%= currentArticle.data.titleText %>" />
     <meta property="og:description" content="<%= currentArticle.data.excerpt %>" />
     <meta property="og:image" content="https://dwaynecodling.com<%= currentArticle.data.hero.lrg_jpeg %>" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://dwaynecodling.com/post/<%= currentArticle.data.slug %>" />
     <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="<%= (function(){ var d=new Date(currentArticle.data.date); return isNaN(d)?'':d.toISOString(); })() %>" />
+    <meta property="article:author" content="https://dwaynecodling.com/" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@codling" />
     <meta name="twitter:title" content="<%- currentArticle.data.titleText %>" />
     <meta name="twitter:description" content="<%= currentArticle.data.excerpt %>" />
     <meta name="twitter:image" content="https://dwaynecodling.com<%= currentArticle.data.hero.lrg_jpeg %>" />
@@ -28,13 +34,44 @@
       "author": {
         "@type": "Person",
         "name": "Dwayne Codling",
-        "url": "https://dwaynecodling.com"
+        "url": "https://dwaynecodling.com",
+        "sameAs": [
+          "https://x.com/codling",
+          "https://www.linkedin.com/in/dwayne-codling/",
+          "https://github.com/dwaynecodling"
+        ]
       },
       "publisher": {
         "@type": "Person",
         "name": "Dwayne Codling",
         "url": "https://dwaynecodling.com"
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dwaynecodling.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Posts",
+          "item": "https://dwaynecodling.com/posts"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": <%- JSON.stringify(currentArticle.data.titleText) %>,
+          "item": "https://dwaynecodling.com/post/<%= currentArticle.data.slug %>"
+        }
+      ]
     }
     </script>
     <%- include("../partials/links") %>
