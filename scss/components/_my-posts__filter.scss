@@ -40,6 +40,11 @@
     appearance: none;
     text-transform: uppercase;
     color: $color-cream;
+
+    &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 2px;
+    }
 }
 
 .my-posts__filter--desktop {
@@ -70,6 +75,11 @@
 
     &:hover {
         color: $color-amber;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 4px;
     }
 
     &:after {
@@ -127,6 +137,11 @@
     &:hover:not(:disabled) {
         border-color: $color-amber;
         background-color: transparent;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 2px;
     }
 
     &:disabled {

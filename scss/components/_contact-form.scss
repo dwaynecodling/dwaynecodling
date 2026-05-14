@@ -85,11 +85,29 @@
     font-size: $form-input-label;
 }
 
+.contact-form__error {
+    color: #e74c3c;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.contact-form__status {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    min-height: 1.5rem;
+}
+
 .contact-form__input {
     font-size: $form-input-text;
     color: #999999;
     padding: 2rem;
     width: 100%;
+
+    &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 2px;
+    }
 }
 
 .contact-form__textarea {
@@ -116,6 +134,11 @@ margin-bottom: 4rem;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     }
 
+    &:focus-visible {
+        outline: 2px solid $color-cream;
+        outline-offset: 2px;
+    }
+
     &:disabled {
         opacity: 0.6;
         cursor: not-allowed;
@@ -135,5 +158,10 @@ margin-bottom: 4rem;
         font-size: 1.8rem;
         font-family: Roboto, sans-serif;
 
+    }
+
+    &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 2px;
     }
 }

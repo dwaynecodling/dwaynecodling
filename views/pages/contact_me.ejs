@@ -43,18 +43,21 @@
                     </div>
 
                     <form id="contactForm" action="/form/contact" method="post" class="contact-form__form">
+                        <div id="form-status" aria-live="polite" aria-atomic="true" role="status" class="contact-form__status"></div>
                         <fieldset>
                             <div id="field-name-field" class="contact-form__name-field">
                                 <label for="name-field" class="contact-form__label">What is your name?</label>
                             </div>
                             <div class="contact-form__control">
-                                <input name="name" type="text" class="contact-form__input" id="name-field" placeholder="Your name">
+                                <input name="name" type="text" class="contact-form__input" id="name-field" placeholder="Your name" aria-required="true" aria-invalid="false" aria-describedby="error-name">
+                                <div id="error-name" role="alert" class="contact-form__error"></div>
                             </div>
                             <div id="field-email-field" class="contact-form__name-field">
                                 <label for="email-field" class="contact-form__label">What is your email?</label>
                             </div>
                             <div class="contact-form__control">
-                                <input name="email" type="email" class="contact-form__input" id="email-field" placeholder="Your email">
+                                <input name="email" type="email" class="contact-form__input" id="email-field" placeholder="Your email" aria-required="true" aria-invalid="false" aria-describedby="error-email">
+                                <div id="error-email" role="alert" class="contact-form__error"></div>
                             </div>
                             <div id="field-textarea" class="contact-form__textarea">
                                 <label for="textarea" class="contact-form__label">How can I help?</label>
@@ -65,9 +68,13 @@
                             class="contact-form__textarea-input"
                             id="textarea"
                             placeholder="Your message"
+                            aria-required="true"
+                            aria-invalid="false"
+                            aria-describedby="error-message"
                     ></textarea>
+                                <div id="error-message" role="alert" class="contact-form__error"></div>
                             </div>
-                            <button class="contact-form__button">
+                            <button class="contact-form__button" type="submit">
                     <span class="hero__button-content">
                         <span class="hero__button-text">Send message</span>
                         <svg class="hero__button-arrow" width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
@@ -102,12 +109,68 @@
         });
     }
 
+    function validateForm(form) {
+        let isValid = true;
+        const nameField = document.getElementById('name-field');
+        const emailField = document.getElementById('email-field');
+        const messageField = document.getElementById('textarea');
+
+        // Clear previous error messages
+        document.getElementById('error-name').textContent = '';
+        document.getElementById('error-email').textContent = '';
+        document.getElementById('error-message').textContent = '';
+
+        // Reset aria-invalid
+        nameField.setAttribute('aria-invalid', 'false');
+        emailField.setAttribute('aria-invalid', 'false');
+        messageField.setAttribute('aria-invalid', 'false');
+
+        // Validate name
+        if (nameField.value.trim() === '') {
+            document.getElementById('error-name').textContent = 'Name is required';
+            nameField.setAttribute('aria-invalid', 'true');
+            isValid = false;
+        }
+
+        // Validate email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailField.value.trim() === '') {
+            document.getElementById('error-email').textContent = 'Email is required';
+            emailField.setAttribute('aria-invalid', 'true');
+            isValid = false;
+        } else if (!emailRegex.test(emailField.value)) {
+            document.getElementById('error-email').textContent = 'Please enter a valid email address';
+            emailField.setAttribute('aria-invalid', 'true');
+            isValid = false;
+        }
+
+        // Validate message
+        if (messageField.value.trim() === '') {
+            document.getElementById('error-message').textContent = 'Message is required';
+            messageField.setAttribute('aria-invalid', 'true');
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
     $('#contactForm').submit(function(ev) {
         ev.preventDefault();
         let form = this;
         let $btn = $(form).find('button');
-        let fData = new FormData(form);
+        let formStatus = document.getElementById('form-status');
 
+        // Clear previous status message
+        formStatus.textContent = '';
+
+        // Validate form
+        if (!validateForm(form)) {
+            formStatus.textContent = 'Please fix the errors below';
+            formStatus.style.color = '#e74c3c';
+            return;
+        }
+
+        let fData = new FormData(form);
         $btn.prop('disabled', true).find('.hero__button-text').text('Sending...');
 
         grecaptcha.ready(function() {
@@ -119,9 +182,15 @@
                     if (data.isSuccessful === true){
                         form.reset();
                         $btn.find('.hero__button-text').text('Message sent!');
+                        formStatus.textContent = 'Your message has been sent successfully!';
+                        formStatus.style.color = '#27ae60';
+                        document.getElementById('name-field').setAttribute('aria-invalid', 'false');
+                        document.getElementById('email-field').setAttribute('aria-invalid', 'false');
+                        document.getElementById('textarea').setAttribute('aria-invalid', 'false');
                     } else {
                         $btn.prop('disabled', false).find('.hero__button-text').text('Send message');
-                        alert('Unable to send message. Please try again.');
+                        formStatus.textContent = 'Unable to send message. Please try again.';
+                        formStatus.style.color = '#e74c3c';
                     }
 
                 });

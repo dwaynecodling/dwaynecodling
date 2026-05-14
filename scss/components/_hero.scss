@@ -128,6 +128,11 @@
       box-shadow: 0 8px 24px rgba(200,133,58,0.35);
     }
 
+    &:focus-visible {
+      outline: 2px solid $color-amber;
+      outline-offset: 2px;
+    }
+
     &:after { display: none; }
 
     &--outline {
@@ -140,6 +145,11 @@
         color: $color-cream;
         border-color: $color-amber;
         box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 2px;
       }
     }
   }
