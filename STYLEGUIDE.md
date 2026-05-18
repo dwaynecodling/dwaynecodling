@@ -196,8 +196,56 @@ category: leadership               # leadership | fitness | personal | tech
 
 ## Spacing & Layout
 
+### Container & breakpoints
+
 - Container max-width: `120rem`
-- Section bottom margin: `8rem` mobile, `12rem` desktop
-- Main breakpoints in use: `breakpoint-2` (40em), `breakpoint-3` (48em), `breakpoint-4` (62em)
+- Container padding: `3rem` (mobile), `6rem` (≥40em), `0` (≥80em)
+- Primary responsive breakpoint: `breakpoint-4` (62em / 992px) — all major spacing transitions happen here
+- Secondary breakpoint: `breakpoint-7` (80em / 1280px) — large screen refinements
+
+### Section spacing
+
+| Element | Mobile | Desktop (≥62em) |
+|---------|--------|-----------------|
+| `section { margin-bottom }` | `8rem` | `12rem` |
+| `.contact-form { padding-bottom }` | `8rem` | `12rem` |
+
+### Hero section spacing
+
+Hero padding is **intentionally asymmetrical** for visual hierarchy:
+
+| Breakpoint | Vertical | Horizontal | Purpose |
+|-----------|----------|-----------|---------|
+| Mobile | `12rem top, 8rem bottom` | `2rem` | Dramatic height, narrow sides preserve content |
+| Tablet+ (≥62em) | `12rem top, 8rem bottom` | `4rem` | More breathing room |
+| Desktop+ (≥80em) | `12rem top, 8rem bottom` | `6rem` | Maximum spaciousness |
+
+### Post content spacing
+
+Post content uses **intentionally tighter** spacing than page sections for readability (narrow max-width 68rem + large line-heights create natural breathing room):
+
+| Element | Mobile (< 80em) | Desktop (≥80em) |
+|---------|-----------------|-----------------|
+| Paragraphs | `2.4rem` margin-bottom | `3.2rem` |
+| First paragraph | `3.2rem` margin-bottom | `4rem` |
+| Headings | `5.6rem` top, `1.6rem` bottom | `7.2rem` top, `1.6rem` bottom |
+| Lists | `2.8rem` bottom | `2.8rem` bottom |
+| Blockquotes | `5rem` margin, `2.4rem` padding | `5rem` margin, `2.4rem` padding |
+
+### Card & grid spacing
+
+| Component | Mobile | Desktop (≥62em) |
+|-----------|--------|-----------------|
+| Card list gap | `3rem` | `6rem` |
+| List-of-3 gap | `4rem` | `9rem` |
+| Card content padding | `2rem` | `2rem` |
+
+### Typography in forms
+
+Links within body text (e.g. WhatsApp in contact form) inherit parent font size: `font-size: inherit` instead of the global link size. Ensures visual consistency.
+
+### Global styling
+
 - Global transition: `$transition: all .2s`
 - Border accents: `rgba(200,133,58,0.15)` for subtle dividers, `rgba(200,133,58,0.35)` for hover states
+- Links: Global base is `1.4rem` (mobile) or `1.6rem` (tablet+), but context-specific overrides apply
