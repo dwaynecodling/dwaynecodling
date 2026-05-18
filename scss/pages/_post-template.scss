@@ -38,6 +38,9 @@
     display: block;
 }
 
+// Post content uses tighter spacing (2.4-3.2rem) than page sections (8-12rem).
+// This is intentional for readability: narrow max-width (68rem) + larger line-heights
+// create natural breathing room without needing aggressive margins.
 .post-template__content {
     max-width: 68rem;
     margin: 0 auto;
@@ -49,6 +52,10 @@
         color: $color-cream;
         font-weight: 400;
         margin-bottom: 3.2rem;
+
+        @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+            margin-bottom: 4rem;
+        }
     }
 
     p {
@@ -56,6 +63,10 @@
         line-height: 3.2rem;
         color: rgba(244, 237, 224, 0.8);
         margin-bottom: 2.4rem;
+
+        @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+            margin-bottom: 3.2rem;
+        }
     }
 
     h2, h3, h4 {
@@ -64,6 +75,10 @@
         margin-top: 5.6rem;
         margin-bottom: 1.6rem;
         line-height: 1.25;
+
+        @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+            margin-top: 7.2rem;
+        }
     }
 
     h2 { font-size: 3rem; }

@@ -22,7 +22,7 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
   --heading-1: 3.2rem;
   --heading-2: 2.8rem;
   --heading-3: 2.2rem;
-  --body-text-main: 1.4rem;
+  --body-text-main: 1.6rem;
 }
 @media screen and (min-width: 40em) {
   :root {
@@ -46,14 +46,6 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
 }
 
 /* Inter */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("../../assets/fonts/inter-latin-300-normal.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
 @font-face {
   font-family: "Inter";
   font-style: normal;
@@ -105,26 +97,10 @@ Order Bae + Typography > General Layout > Grid > Page Layout  > Component
 }
 @font-face {
   font-family: "Playfair Display";
-  font-style: italic;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../../assets/fonts/playfair-display-latin-400-italic.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("../../assets/fonts/playfair-display-latin-700-normal.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Playfair Display";
-  font-style: italic;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../../assets/fonts/playfair-display-latin-700-italic.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
@@ -284,7 +260,7 @@ img {
   cursor: pointer;
 }
 
-button:not(.back-to-top):not(.posts-pagination__btn) {
+button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggle):not(.contact-form__button) {
   display: inline-block;
   color: #fff;
   font-size: 1.4rem;
@@ -295,15 +271,15 @@ button:not(.back-to-top):not(.posts-pagination__btn) {
   transition: 0.2s background-color;
 }
 @media screen and (min-width: 40em) {
-  button:not(.back-to-top):not(.posts-pagination__btn) {
+  button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggle):not(.contact-form__button) {
     font-size: 1.6rem;
     padding: 2rem 3rem;
   }
 }
-button:not(.back-to-top):not(.posts-pagination__btn):hover {
+button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggle):not(.contact-form__button):hover {
   background-color: rgb(193.7166666667, 127.8333333333, 54.0833333333);
 }
-button:not(.back-to-top):not(.posts-pagination__btn):focus-visible {
+button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggle):not(.contact-form__button):focus-visible {
   outline: 2px solid #c8853a;
   outline-offset: 2px;
 }
@@ -450,7 +426,7 @@ footer {
   border-bottom: 0.1rem solid rgba(200, 133, 58, 0.15);
   grid-gap: 4rem;
 }
-@media screen and (min-width: 82em) {
+@media screen and (min-width: 62em) {
   .grid--list-of-3 {
     grid-gap: 9rem;
   }
@@ -461,7 +437,7 @@ footer {
 .grid__info:last-child {
   margin-bottom: 6rem;
 }
-@media screen and (min-width: 75em) {
+@media screen and (min-width: 62em) {
   .grid__info:last-child {
     margin-bottom: 12rem;
   }
@@ -506,12 +482,15 @@ footer {
   padding: 2rem;
   max-width: calc(var(--container) + 40rem);
   -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 @media screen and (min-width: 40em) {
   .navigation__container {
-    display: flex;
     justify-content: space-between;
     padding: 4rem;
+    gap: 0;
   }
 }
 
@@ -521,25 +500,26 @@ footer {
   font-weight: 900;
   font-size: 2rem;
   display: inline-block;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   transition: all 0.2s;
+  line-height: 1;
 }
 .navigation__logo:hover {
   transform: translateY(-0.5%);
   box-shadow: 0 4rem 8rem rgba(255, 255, 255, 0.3);
 }
-@media screen and (min-width: 40em) {
-  .navigation__logo {
-    margin-bottom: 0;
-  }
-}
 
 .navigation__links {
   list-style: none;
-  display: flex;
+  display: none;
   align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 0;
+}
+@media screen and (min-width: 40em) {
+  .navigation__links {
+    display: flex;
+  }
 }
 
 .navigation__link {
@@ -625,6 +605,122 @@ footer {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
+.navigation__menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  border: none;
+  cursor: pointer;
+  color: #f4ede0;
+  padding: 0;
+  width: 4.4rem;
+  height: 4.4rem;
+  margin-left: auto;
+  margin-right: 0;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 40em) {
+  .navigation__menu-toggle {
+    display: none !important;
+  }
+}
+.navigation__menu-toggle:hover {
+  color: #c8853a;
+}
+.navigation__menu-toggle:hover .hamburger-line {
+  stroke: #c8853a;
+}
+.navigation__menu-toggle:focus-visible {
+  outline: 2px solid #c8853a;
+  outline-offset: 2px;
+}
+.navigation__menu-toggle svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  transition: stroke 0.2s;
+}
+.navigation__menu-toggle .hamburger-circle {
+  fill: none !important;
+  stroke: currentColor;
+  stroke-width: 1.2;
+  transition: stroke 0.2s;
+}
+.navigation__menu-toggle .hamburger-line {
+  stroke: currentColor;
+  stroke-width: 1.2;
+  transition: stroke 0.2s;
+}
+
+.navigation__mobile-menu {
+  display: none;
+  background-color: #0d1a10;
+  padding: 2rem;
+  border-top: 1px solid rgba(200, 133, 58, 0.15);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.navigation__mobile-menu.navigation__mobile-menu--active {
+  display: block;
+  max-height: 50vh;
+}
+@media screen and (min-width: 40em) {
+  .navigation__mobile-menu {
+    display: none !important;
+  }
+}
+
+.navigation__mobile-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__mobile-link {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.navigation__mobile-link a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f4ede0;
+  font-weight: 700;
+  font-size: 1.6rem;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+.navigation__mobile-link a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #c8853a;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+.navigation__mobile-link a:hover {
+  color: #c8853a;
+}
+.navigation__mobile-link a:hover:after {
+  width: 100%;
+}
+.navigation__mobile-link a:focus-visible {
+  outline: 2px solid #c8853a;
+  outline-offset: 2px;
+}
+.navigation__mobile-link--active a {
+  color: #c8853a;
+}
+.navigation__mobile-link--active a:after {
+  width: 100%;
+}
+
 .card-wrapper {
   display: flex;
   justify-content: center;
@@ -686,7 +782,7 @@ footer {
   justify-content: flex-start;
 }
 .card__date {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #c8853a;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -730,6 +826,18 @@ footer {
   min-height: 100vh;
   min-height: 100dvh;
   padding: 12rem 2rem 8rem;
+}
+@media screen and (min-width: 62em) {
+  .hero {
+    padding: 12rem 4rem 8rem;
+  }
+}
+@media screen and (min-width: 80em) {
+  .hero {
+    padding: 12rem 6rem 8rem;
+  }
+}
+.hero {
   background-image: linear-gradient(to bottom, rgba(13, 26, 16, 0.82) 0%, rgba(13, 26, 16, 0.65) 50%, rgba(13, 26, 16, 0.88) 100%), url("/assets/img/pages/about-me/hero-about-me@720w.jpg");
   background-image: linear-gradient(to bottom, rgba(13, 26, 16, 0.82) 0%, rgba(13, 26, 16, 0.65) 50%, rgba(13, 26, 16, 0.88) 100%), image-set(url("/assets/img/pages/about-me/hero-about-me@720w.webp") type('image/webp'), url("/assets/img/pages/about-me/hero-about-me@720w.jpg") type('image/jpeg'));
   background-size: cover;
@@ -813,18 +921,21 @@ footer {
   display: inline-flex;
   align-items: center;
   color: #0d1a10;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-decoration: none;
   background-color: #c8853a;
-  padding: 1.4rem 3rem;
+  padding: 2rem 3rem;
   border-radius: 3rem;
   transition: 0.2s all;
   letter-spacing: 0.02em;
+  min-height: 4.4rem;
 }
 @media screen and (min-width: 40em) {
   .hero__button {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    padding: 2.2rem 3.6rem;
+    min-height: 4.8rem;
   }
 }
 .hero__button:hover {
@@ -866,6 +977,7 @@ footer {
   display: block;
   margin-left: 1.2rem;
   transform: scale(1);
+  color: currentColor;
 }
 @media screen and (min-width: 40em) {
   .hero__button-arrow {
@@ -940,7 +1052,7 @@ footer {
   .about-me__info-wrapper {
     display: flex;
     height: 100%;
-    margin-bottom: calc(24rem / 2);
+    margin-bottom: 12rem;
   }
 }
 
@@ -1059,7 +1171,7 @@ footer {
 @media screen and (min-width: 62em) {
   .about-me__details {
     width: 64.5%;
-    padding-left: calc(24rem / 2);
+    padding-left: 12rem;
   }
 }
 
@@ -1220,6 +1332,9 @@ footer {
   text-align: center;
 }
 
+.contact-form {
+  padding-bottom: 8rem;
+}
 @media screen and (min-width: 62em) {
   .contact-form {
     display: flex;
@@ -1262,7 +1377,7 @@ footer {
   position: relative;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  margin-bottom: 6.5rem;
+  margin-bottom: 6rem;
 }
 .contact-form__content .info-snippet__bg-text {
   z-index: 1;
@@ -1291,6 +1406,13 @@ footer {
   position: relative;
   z-index: 2;
 }
+.contact-form__text a {
+  font-size: inherit;
+  color: #c8853a;
+}
+.contact-form__text a:hover {
+  color: #f4ede0;
+}
 
 .contact-form__form fieldset {
   border: none;
@@ -1305,7 +1427,9 @@ footer {
 }
 
 .contact-form__label {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.8rem;
 }
 
 .contact-form__error {
@@ -1324,8 +1448,12 @@ footer {
 .contact-form__input {
   font-size: 1.8rem;
   color: #999999;
-  padding: 2rem;
+  padding: 1.2rem 2rem;
   width: 100%;
+  min-height: 4.4rem;
+  border: 1px solid rgba(200, 133, 58, 0.15);
+  background-color: transparent;
+  border-radius: 0.4rem;
 }
 .contact-form__input:focus-visible {
   outline: 2px solid #c8853a;
@@ -1341,39 +1469,71 @@ footer {
   margin-bottom: 4rem;
 }
 
-.contact-form__button {
+.contact-form__form .contact-form__button {
+  display: inline-flex;
+  align-items: center;
   cursor: pointer;
-  background-color: transparent;
-  color: #f4ede0;
-  border: 2px solid #c8853a;
+  background-color: #c8853a;
+  color: #0d1a10;
+  border: none;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  min-height: 4.4rem;
+  border-radius: 3rem;
   transition: all 0.2s;
 }
-.contact-form__button:hover {
-  background-color: rgba(244, 237, 224, 0.08);
-  border-color: rgba(244, 237, 224, 0.5);
-  color: #f4ede0;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+@media screen and (min-width: 40em) {
+  .contact-form__form .contact-form__button {
+    padding: 1.8rem 3.8rem;
+    min-height: 4.8rem;
+  }
 }
-.contact-form__button:focus-visible {
-  outline: 2px solid #f4ede0;
+.contact-form__form .contact-form__button:hover {
+  background-color: rgb(169.7952380952, 112.0476190476, 47.4047619048);
+  color: #0d1a10;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 133, 58, 0.35);
+}
+.contact-form__form .contact-form__button:focus-visible {
+  outline: 2px solid #c8853a;
   outline-offset: 2px;
 }
-.contact-form__button:disabled {
+.contact-form__form .contact-form__button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
   transform: none;
+}
+.contact-form__form .contact-form__button .contact-form__button-content {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contact-form__form .contact-form__button .contact-form__button-text {
+  font-weight: 500;
+}
+.contact-form__form .contact-form__button .contact-form__button-arrow {
+  width: 2rem;
+  height: 1.2rem;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.contact-form__form .contact-form__button:hover .contact-form__button-arrow {
+  transform: translateX(0.2rem);
 }
 
 .contact-form__textarea-input {
   width: 100%;
   font-size: 1.8rem;
-  padding: 2rem;
+  padding: 1.2rem 2rem;
   color: #999999;
-  min-height: 140px;
+  min-height: 160px;
   font-family: Roboto, sans-serif;
+  border: 1px solid rgba(200, 133, 58, 0.15);
+  background-color: transparent;
+  border-radius: 0.4rem;
 }
-.contact-form__textarea-input ::placeholder {
+.contact-form__textarea-input::placeholder {
   font-size: 1.8rem;
   font-family: Roboto, sans-serif;
 }
@@ -1608,7 +1768,7 @@ footer {
 .post-heading {
   font-family: "Playfair Display", Georgia, serif;
   font-size: var(--heading-2);
-  font-weight: 300;
+  font-weight: 400;
   color: #f4ede0;
   margin-bottom: 0;
 }
@@ -1694,11 +1854,21 @@ footer {
   font-weight: 400;
   margin-bottom: 3.2rem;
 }
+@media screen and (min-width: 80em) {
+  .post-template__content > p:first-of-type {
+    margin-bottom: 4rem;
+  }
+}
 .post-template__content p {
   font-size: 1.8rem;
   line-height: 3.2rem;
   color: rgba(244, 237, 224, 0.8);
   margin-bottom: 2.4rem;
+}
+@media screen and (min-width: 80em) {
+  .post-template__content p {
+    margin-bottom: 3.2rem;
+  }
 }
 .post-template__content h2, .post-template__content h3, .post-template__content h4 {
   font-family: "Playfair Display", Georgia, serif;
@@ -1706,6 +1876,11 @@ footer {
   margin-top: 5.6rem;
   margin-bottom: 1.6rem;
   line-height: 1.25;
+}
+@media screen and (min-width: 80em) {
+  .post-template__content h2, .post-template__content h3, .post-template__content h4 {
+    margin-top: 7.2rem;
+  }
 }
 .post-template__content h2 {
   font-size: 3rem;
@@ -1790,7 +1965,7 @@ hr {
 
 blockquote .post-template__text {
   font-size: 2.6rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 8rem;
   margin-top: 8rem;
   line-height: 4.2rem;

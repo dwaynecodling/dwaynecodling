@@ -11,7 +11,7 @@
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
         display: flex;
         height: 100%;
-        margin-bottom: $margin-medium;
+        margin-bottom: 12rem;
     }
 }
 
@@ -132,7 +132,7 @@
 .about-me__details {
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
         width: 64.5%;
-        padding-left: $margin-medium;
+        padding-left: 12rem;
     }
 }
 
