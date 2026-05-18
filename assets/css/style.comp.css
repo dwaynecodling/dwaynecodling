@@ -1381,7 +1381,7 @@ footer {
 }
 .contact-form__content .info-snippet__bg-text {
   z-index: 1;
-  color: #808181;
+  color: #3a4d47;
   font-weight: 500;
 }
 @media screen and (min-width: 62em) {
@@ -1615,7 +1615,7 @@ footer {
   position: relative;
 }
 .info-snippet__bg-text {
-  color: #2a3d2d;
+  color: #3a4d47;
   position: absolute;
   font-size: 6rem;
   font-weight: 700;

@@ -43,7 +43,7 @@
 
     .info-snippet__bg-text {
         z-index: 1;
-        color: #808181;
+        color: $color-decorative-text;
         font-weight: 500;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
