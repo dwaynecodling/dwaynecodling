@@ -196,6 +196,35 @@ category: leadership               # leadership | fitness | personal | tech
 
 ## Spacing & Layout
 
+### 9-Tier Standardized Spacing Scale
+
+All spacing uses semantic variables defined in `scss/abstracts/_variables.scss`. This enables global adjustability and future-proof design:
+
+| Tier | Variable | Value | Usage |
+|------|----------|-------|-------|
+| 1 | `$spacing-xs` | 0.5rem (8px) | Micro-spacing, rare edge cases |
+| 2 | `$spacing-sm` | 1rem (16px) | Small gaps, inline spacing, base unit |
+| 3 | `$spacing-md` | 1.5rem (24px) | Fine-tuning, optional adjustments |
+| 4 | `$spacing-lg` | 2.4rem (38px) | Standard vertical spacing, paragraphs, lists |
+| 5 | `$spacing-xl` | 3.2rem (51px) | Larger gaps, card text, first paragraph |
+| 6 | `$spacing-2xl` | 4.8rem (77px) | Major sections, form controls |
+| 7 | `$spacing-3xl` | 6.4rem (102px) | Top-level separation, post images, blockquotes |
+| 8 | `$spacing-4xl` | 8rem (128px) | Hero sections, large content gaps |
+| 9 | `$spacing-5xl` | 12rem (192px) | Major layout breaks, section margins (desktop) |
+
+**Usage:** Use these variables for all spacing instead of hardcoded values. Example:
+```scss
+margin-bottom: $spacing-xl;
+padding: $spacing-lg $spacing-md;
+gap: $spacing-2xl;
+```
+
+**Computed values:** For intermediate sizes, use math expressions:
+```scss
+padding: $spacing-sm * 2;  // 2rem
+margin: $spacing-3xl - 1rem;  // 5.4rem
+```
+
 ### Container & breakpoints
 
 - Container max-width: `120rem`
@@ -207,42 +236,77 @@ category: leadership               # leadership | fitness | personal | tech
 
 | Element | Mobile | Desktop (≥62em) |
 |---------|--------|-----------------|
-| `section { margin-bottom }` | `8rem` | `12rem` |
-| `.contact-form { padding-bottom }` | `8rem` | `12rem` |
+| `section { margin-bottom }` | `$spacing-4xl` (8rem) | `$spacing-5xl` (12rem) |
+| `.contact-form { padding-bottom }` | `$spacing-4xl` (8rem) | `$spacing-5xl` (12rem) |
 
 ### Hero section spacing
 
 Hero padding is **intentionally asymmetrical** for visual hierarchy:
 
-| Breakpoint | Vertical | Horizontal | Purpose |
-|-----------|----------|-----------|---------|
-| Mobile | `12rem top, 8rem bottom` | `2rem` | Dramatic height, narrow sides preserve content |
-| Tablet+ (≥62em) | `12rem top, 8rem bottom` | `4rem` | More breathing room |
-| Desktop+ (≥80em) | `12rem top, 8rem bottom` | `6rem` | Maximum spaciousness |
+| Breakpoint | Vertical | Horizontal | Variable |
+|-----------|----------|-----------|----------|
+| Mobile | `$spacing-5xl` top, `$spacing-4xl` bottom | `$spacing-sm * 2` (2rem) | Narrow sides preserve content |
+| Tablet+ (≥62em) | `$spacing-5xl` top, `$spacing-4xl` bottom | 4rem | More breathing room |
+| Desktop+ (≥80em) | `$spacing-5xl` top, `$spacing-4xl` bottom | 6rem | Maximum spaciousness |
 
 ### Post content spacing
 
 Post content uses **intentionally tighter** spacing than page sections for readability (narrow max-width 68rem + large line-heights create natural breathing room):
 
-| Element | Mobile (< 80em) | Desktop (≥80em) |
-|---------|-----------------|-----------------|
-| Paragraphs | `2.4rem` margin-bottom | `3.2rem` |
-| First paragraph | `3.2rem` margin-bottom | `4rem` |
-| Headings | `5.6rem` top, `1.6rem` bottom | `7.2rem` top, `1.6rem` bottom |
-| Lists | `2.8rem` bottom | `2.8rem` bottom |
-| Blockquotes | `5rem` margin, `2.4rem` padding | `5rem` margin, `2.4rem` padding |
+| Element | Mobile (< 80em) | Desktop (≥80em) | Variable |
+|---------|-----------------|-----------------|----------|
+| Paragraphs | `$spacing-lg` (2.4rem) | `$spacing-xl` (3.2rem) | Tight → breathing room |
+| First paragraph | `$spacing-xl` (3.2rem) | `$spacing-2xl` (4.8rem) | More prominent |
+| Headings | `$spacing-3xl - 0.8rem` (5.6rem) top | `$spacing-3xl + 0.8rem` (7.2rem) top | Extra space before headings on large screens |
+| Lists | `$spacing-lg + 0.4rem` (2.8rem) bottom | Same | Consistent spacing |
+| Blockquotes | `$spacing-3xl - 1rem` (5rem) margin, `$spacing-lg` padding | Same | Consistent styling |
 
 ### Card & grid spacing
 
-| Component | Mobile | Desktop (≥62em) |
-|-----------|--------|-----------------|
-| Card list gap | `3rem` | `6rem` |
-| List-of-3 gap | `4rem` | `9rem` |
-| Card content padding | `2rem` | `2rem` |
+| Component | Mobile | Desktop (≥62em) | Variable |
+|-----------|--------|-----------------|----------|
+| Card list gap | `$spacing-xl` (3rem) | `$spacing-3xl` (6.4rem) | Scales with breakpoint |
+| List-of-3 gap | 4rem | 9rem | Legacy values (fit to nearest tiers) |
+| Card content padding | `$spacing-sm * 2` (2rem) | Same | Consistent |
 
 ### Typography in forms
 
 Links within body text (e.g. WhatsApp in contact form) inherit parent font size: `font-size: inherit` instead of the global link size. Ensures visual consistency.
+
+### Adding new components
+
+When creating new components, **always use the spacing scale**:
+
+✅ **Good:**
+```scss
+.component {
+  padding: $spacing-lg;
+  margin-bottom: $spacing-xl;
+  gap: $spacing-md;
+}
+```
+
+❌ **Avoid:**
+```scss
+.component {
+  padding: 2.4rem;       // Use $spacing-lg instead
+  margin-bottom: 3.2rem; // Use $spacing-xl instead
+  gap: 1.5rem;           // Use $spacing-md instead
+}
+```
+
+### Adjusting global spacing
+
+To adjust spacing site-wide, modify the variable values in `scss/abstracts/_variables.scss`. All components using the scale will automatically update.
+
+**Example:** Make spacing more generous:
+```scss
+$spacing-lg: 2.6rem;  // was 2.4rem
+$spacing-xl: 3.6rem;  // was 3.2rem
+$spacing-2xl: 5.2rem; // was 4.8rem
+```
+
+All components using these variables will recompile with the new values.
 
 ### Global styling
 
