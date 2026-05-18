@@ -36,7 +36,7 @@
 }
 
 .grid--card-list {
-  margin-bottom: 12rem;
+  margin-bottom: $spacing-5xl;
 }
 
 .card {
@@ -72,7 +72,7 @@
   }
 
   &__content {
-    padding: 2rem;
+    padding: $spacing-sm * 2;
     height: 100%;
     display: flex;
    flex-direction: column;
@@ -82,7 +82,7 @@
   &__date {
     font-size: $card-date;
     color: $color-amber;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-sm;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -93,7 +93,7 @@
     font-size: 2.2rem;
     font-weight: 700;
     color: $color-cream;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-sm;
     line-height: 1.3;
   }
 
@@ -102,7 +102,7 @@
     letter-spacing: -0.1px;
     line-height: 2.6rem;
     color: $color-cream-muted;
-    margin-bottom: 3rem;
+    margin-bottom: $spacing-xl;
   }
 
   &__read-time {
@@ -112,8 +112,8 @@
     text-transform: uppercase;
     color: $color-cream-muted;
     border-top: 1px solid rgba(200,133,58,0.15);
-    padding: 1.6rem 0;
-    width: calc(100% - 4rem);
+    padding: $spacing-md 0;
+    width: calc(100% - ($spacing-sm * 4));
     margin: 0 auto;
   }
 }

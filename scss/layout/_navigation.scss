@@ -17,25 +17,25 @@
 }
 
 .navigation {
-    margin-bottom: 2rem;
+    margin-bottom: $spacing-sm * 2;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-        margin-bottom: 3rem;
+        margin-bottom: $spacing-xl;
     }
 }
 
 .navigation__container {
     font-size: 1.8rem;
-    padding: 2rem;
+    padding: $spacing-sm * 2;
     max-width: calc(var(--container) + 40rem);
     -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: $spacing-sm;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
         justify-content: space-between;
-        padding: 4rem;
+        padding: $spacing-2xl;
         gap: 0;
     }
 }

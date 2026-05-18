@@ -6,9 +6,9 @@
 }
 
 section {
-  margin-bottom: 8rem;
+  margin-bottom: $spacing-4xl;
 
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-    margin-bottom: 12rem;
+    margin-bottom: $spacing-5xl;
   }
 }

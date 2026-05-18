@@ -1,10 +1,10 @@
 .contact-form {
-    padding-bottom: 8rem;
+    padding-bottom: $spacing-4xl;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
         display: flex;
         border-bottom: 1px solid $color-grey;
-        padding-bottom: 12rem;
+        padding-bottom: $spacing-5xl;
     }
 }
 
@@ -28,18 +28,18 @@
 
 .contact-form__content-wrapper {
     background-color: #1D1F21;
-    padding: 2rem;
+    padding: $spacing-sm * 2;
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
         width: 63.2%;
-        padding: 12rem;
+        padding: $spacing-5xl;
     }
 }
 
 .contact-form__content {
     position: relative;
-    padding-bottom: 2rem;
+    padding-bottom: $spacing-sm * 2;
     border-bottom: 1px solid $color-grey;
-    margin-bottom: 6rem;
+    margin-bottom: $spacing-3xl;
 
     .info-snippet__bg-text {
         z-index: 1;
@@ -89,25 +89,25 @@
 }
 
 .contact-form__name-field {
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-sm;
 }
 
 .contact-form__label {
     font-size: $form-input-label;
     display: block;
-    margin-bottom: 0.8rem;
+    margin-bottom: $spacing-xs;
 }
 
 .contact-form__error {
     color: #e74c3c;
     font-size: 1.4rem;
-    margin-top: 0.5rem;
+    margin-top: $spacing-xs / 2;
     display: block;
 }
 
 .contact-form__status {
     font-size: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: $spacing-sm * 2;
     min-height: 1.5rem;
 }
 
@@ -129,11 +129,11 @@
 
 .contact-form__textarea {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: $spacing-sm;
 }
 
 .contact-form__control {
-margin-bottom: 4rem;
+margin-bottom: $spacing-2xl;
 }
 
 .contact-form__form .contact-form__button {

@@ -27,11 +27,22 @@ $color-btn-background: rgba(200, 133, 58, 0.12);
 //GRID
 $grid-container-width: 120rem;
 
-//SPACING
-$padding-small: 2rem;
-$padding-medium-1: $padding-small + 1rem;
-$padding-medium-2: $padding-small * 2;
-$padding-large: $padding-small * 3;
+//SPACING - 8-tier standardized scale (+ xs for rare micro-spacing)
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2.4rem;
+$spacing-xl: 3.2rem;
+$spacing-2xl: 4.8rem;
+$spacing-3xl: 6.4rem;
+$spacing-4xl: 8rem;
+$spacing-5xl: 12rem;
+
+// Legacy aliases (kept for backward compat during migration)
+$padding-small: $spacing-sm * 2;
+$padding-medium-1: $spacing-xl;
+$padding-medium-2: $spacing-2xl;
+$padding-large: $spacing-3xl;
 
 //FONT SIZES
 $heading-1: 4.6rem;

@@ -15,19 +15,19 @@
     margin: 0;
 
     &:last-child {
-      margin-bottom: 6rem;
+      margin-bottom: $spacing-3xl;
 
       @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-        margin-bottom: 12rem;
+        margin-bottom: $spacing-5xl;
       }
     }
   }
 
   &--card-list {
-    grid-gap: 3rem;
+    grid-gap: $spacing-xl;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-      grid-gap: 6rem;
+      grid-gap: $spacing-3xl;
     }
   }
 }

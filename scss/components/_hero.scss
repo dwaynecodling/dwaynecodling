@@ -7,16 +7,16 @@
   position: relative;
   min-height: 100vh;
   min-height: 100dvh;
-  // Intentional asymmetry: tall vertical padding (12rem top + 8rem bottom) for visual impact,
-  // but narrow horizontal (2rem) to maximize content width on mobile
-  padding: 12rem 2rem 8rem;
+  // Intentional asymmetry: tall vertical padding ($spacing-5xl top + $spacing-4xl bottom) for visual impact,
+  // but narrow horizontal ($spacing-sm * 2 mobile, increases on larger screens) to maximize content width
+  padding: $spacing-5xl ($spacing-sm * 2) $spacing-4xl;
 
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-    padding: 12rem 4rem 8rem;
+    padding: $spacing-5xl 4rem $spacing-4xl;
   }
 
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
-    padding: 12rem 6rem 8rem;
+    padding: $spacing-5xl 6rem $spacing-4xl;
   }
 
   background-image:

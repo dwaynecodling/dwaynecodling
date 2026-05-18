@@ -15,7 +15,7 @@
 
 .my-posts__filter {
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: $spacing-xl;
 
     &:before {
         content: "";
@@ -59,7 +59,7 @@
         display: flex;
         justify-content: center;
         list-style-type: none;
-        margin-bottom: 12rem;
+        margin-bottom: $spacing-5xl;
         border-bottom: 1px solid $color-grey;
     }
 }
@@ -68,9 +68,9 @@
     position: relative;
 
     &:not(last-of-type) {
-        margin-right: 4rem;
+        margin-right: $spacing-2xl;
     }
-    padding-bottom: 2rem;
+    padding-bottom: $spacing-sm * 2;
     cursor: pointer;
 
     &:hover {
@@ -107,13 +107,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-top: $spacing-3xl;
+    margin-bottom: $spacing-sm * 2;
 
-    > * + * { margin-left: 2rem; }
+    > * + * { margin-left: $spacing-sm * 2; }
 
     @supports (gap: 1rem) {
-        gap: 2rem;
+        gap: $spacing-sm * 2;
         > * + * { margin-left: 0; }
     }
 }

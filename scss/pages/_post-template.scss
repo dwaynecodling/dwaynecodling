@@ -6,7 +6,7 @@
     width: 100%;
     height: 0;
     overflow: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: $spacing-3xl;
 }
 
 .post-template__iframe-wrapper{
@@ -16,7 +16,7 @@
     background-color: $color-forest-mid;
     width: 100%;
     height: 0;
-    margin-bottom: 6rem;
+    margin-bottom: $spacing-3xl;
 }
 
 .post-template__iframe{
@@ -38,7 +38,7 @@
     display: block;
 }
 
-// Post content uses tighter spacing (2.4-3.2rem) than page sections (8-12rem).
+// Post content uses tighter spacing ($spacing-lg to $spacing-xl) than page sections ($spacing-4xl to $spacing-5xl).
 // This is intentional for readability: narrow max-width (68rem) + larger line-heights
 // create natural breathing room without needing aggressive margins.
 .post-template__content {
@@ -51,10 +51,10 @@
         line-height: 3.6rem;
         color: $color-cream;
         font-weight: 400;
-        margin-bottom: 3.2rem;
+        margin-bottom: $spacing-xl;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
-            margin-bottom: 4rem;
+            margin-bottom: $spacing-2xl;
         }
     }
 
@@ -62,22 +62,22 @@
         font-size: 1.8rem;
         line-height: 3.2rem;
         color: rgba(244, 237, 224, 0.8);
-        margin-bottom: 2.4rem;
+        margin-bottom: $spacing-lg;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
-            margin-bottom: 3.2rem;
+            margin-bottom: $spacing-xl;
         }
     }
 
     h2, h3, h4 {
         font-family: 'Playfair Display', Georgia, serif;
         color: $color-cream;
-        margin-top: 5.6rem;
-        margin-bottom: 1.6rem;
+        margin-top: $spacing-3xl - 0.8rem;
+        margin-bottom: $spacing-md;
         line-height: 1.25;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
-            margin-top: 7.2rem;
+            margin-top: $spacing-3xl + 0.8rem;
         }
     }
 
@@ -99,19 +99,19 @@
     }
 
     ul, ol {
-        padding-left: 2.4rem;
-        margin-bottom: 2.8rem;
+        padding-left: $spacing-lg;
+        margin-bottom: $spacing-lg + 0.4rem;
         li {
             font-size: 1.8rem;
             line-height: 3rem;
             color: rgba(244, 237, 224, 0.8);
-            margin-bottom: 1rem;
+            margin-bottom: $spacing-sm;
         }
     }
 
     blockquote {
-        margin: 5rem 0;
-        padding: 2.4rem 3rem;
+        margin: $spacing-3xl - 1rem 0;
+        padding: $spacing-lg $spacing-xl;
         border-left: 3px solid $color-amber;
         background-color: $color-forest-card;
 
@@ -128,7 +128,7 @@
     hr {
         border: none;
         border-top: 1px solid rgba(200,133,58,0.18);
-        margin: 5.6rem 0;
+        margin: $spacing-3xl - 0.8rem 0;
     }
 
     strong { color: $color-cream; font-weight: 700; }
@@ -136,7 +136,7 @@
 
     img {
         width: 100%;
-        margin: 3rem 0;
+        margin: $spacing-xl 0;
     }
 }
 

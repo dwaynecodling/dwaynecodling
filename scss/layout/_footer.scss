@@ -19,11 +19,11 @@ footer {
 .footer__bottom {
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: $spacing-sm * 2;
     background-color: $color-forest-card;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
-        padding: 4rem;
+        padding: $spacing-2xl;
     }
 }
 

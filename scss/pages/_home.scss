@@ -49,7 +49,7 @@
 
 // Pillars (3-card section)
 .info-snippet {
-    padding: $padding-medium-1 0 $padding-large;
+    padding: $spacing-xl 0 $spacing-3xl;
     position: relative;
 
     &__bg-text {
@@ -76,7 +76,7 @@
         width: 3rem;
         height: 3px;
         background-color: $color-amber;
-        margin-bottom: 1.6rem;
+        margin-bottom: $spacing-md;
         position: relative;
         z-index: 1;
     }
@@ -86,7 +86,7 @@
         font-family: 'Playfair Display', Georgia, serif;
         font-weight: 700;
         color: $color-cream;
-        margin-bottom: 1rem;
+        margin-bottom: $spacing-sm;
         position: relative;
         z-index: 1;
     }
@@ -104,7 +104,7 @@
 // Strength / competition section
 .strength-section {
   overflow: hidden;
-  margin-bottom: 12rem;
+  margin-bottom: $spacing-5xl;
 
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
     display: grid;
@@ -132,13 +132,13 @@
 
   &__content {
     background-color: $color-forest-card;
-    padding: 4rem 3rem;
+    padding: $spacing-2xl $spacing-xl;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
-      padding: 6rem;
+      padding: $spacing-3xl;
     }
   }
 
