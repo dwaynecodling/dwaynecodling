@@ -4,7 +4,7 @@
     font-size: 1.4rem;
     text-decoration: none;
     padding: $padding-small;
-    border-radius: 3rem;
+    border-radius: $border-radius-button;
     transition: .2s background-color;
 
     @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
@@ -40,7 +40,7 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
         text-decoration: none;
         background-color: $color-primary-gold;
         padding: $padding-small;
-        border-radius: 3rem;
+        border-radius: $border-radius-button;
         transition: .2s background-color;
 
         @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {

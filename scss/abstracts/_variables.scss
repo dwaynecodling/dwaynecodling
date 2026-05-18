@@ -65,6 +65,19 @@ $faded-number-large: 20rem;
 $transition: all .2s;
 $base-spacing: 1rem;
 
+// SHADOW TOKENS
+$shadow-sm: 0 1rem 3rem rgba(200, 133, 58, .3);
+$shadow-md: 0 2rem 4rem rgba(0, 0, 0, .4);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+$shadow-gold: 0 8px 24px rgba(200, 133, 58, 0.35);
+$shadow-white: 0 4rem 8rem rgba(255, 255, 255, .3);
+
+// BORDER-RADIUS TOKENS
+$border-radius-button: 3rem;      // Pill buttons
+$border-radius-circle: 50%;       // Perfect circles
+$border-radius-input: 0.4rem;     // Form inputs
+$border-radius-select: 4px;       // Select dropdowns
+
 // Breakpoints
 $breakpoints: (
   breakpoint-0: 0,

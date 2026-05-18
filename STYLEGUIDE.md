@@ -313,3 +313,55 @@ All components using these variables will recompile with the new values.
 - Global transition: `$transition: all .2s`
 - Border accents: `rgba(200,133,58,0.15)` for subtle dividers, `rgba(200,133,58,0.35)` for hover states
 - Links: Global base is `1.4rem` (mobile) or `1.6rem` (tablet+), but context-specific overrides apply
+
+---
+
+## Shadow Tokens
+
+All shadows use semantic variables defined in `scss/abstracts/_variables.scss`.
+
+| Token | Value | Usage |
+|---|---|---|
+| `$shadow-sm` | `0 1rem 3rem rgba(200, 133, 58, .3)` | Navigation link hover (warm gold shadow) |
+| `$shadow-md` | `0 2rem 4rem rgba(0, 0, 0, .4)` | Card hover (darker shadow) |
+| `$shadow-lg` | `0 8px 24px rgba(0, 0, 0, 0.2)` | Hero button outline hover, active nav link hover |
+| `$shadow-gold` | `0 8px 24px rgba(200, 133, 58, 0.35)` | Hero button hover, contact form button hover (gold accent) |
+| `$shadow-white` | `0 4rem 8rem rgba(255, 255, 255, .3)` | Navigation logo hover (light white shadow) |
+
+**Usage:**
+```scss
+&:hover {
+  box-shadow: $shadow-gold;
+}
+```
+
+---
+
+## Border-Radius Tokens
+
+All border-radius values use semantic variables for consistency and maintainability.
+
+| Token | Value | Usage |
+|---|---|---|
+| `$border-radius-button` | `3rem` | Primary buttons (hero, contact, nav, main) — pill shape |
+| `$border-radius-circle` | `50%` | Circular elements (pagination buttons, badges, arrow prompts) |
+| `$border-radius-input` | `0.4rem` | Form inputs, textareas — subtle rounded corners |
+| `$border-radius-select` | `4px` | Select dropdowns — minimal rounding |
+
+**Intentional edge case:**
+- `.skip-link` uses `0 0 3px 3px` (asymmetrical) — unique styling, kept as-is
+
+**Usage:**
+```scss
+.button {
+  border-radius: $border-radius-button;
+}
+
+.pagination__btn {
+  border-radius: $border-radius-circle;
+}
+
+.form__input {
+  border-radius: $border-radius-input;
+}
+```
