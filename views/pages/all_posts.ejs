@@ -169,8 +169,8 @@
         var start = (currentPage - 1) * POSTS_PER_PAGE;
         var visible = filtered.slice(start, start + POSTS_PER_PAGE);
 
-        cards.forEach(function (c) { c.style.display = 'none'; });
-        visible.forEach(function (c) { c.style.display = ''; });
+        cards.forEach(function (c) { c.classList.add('hidden'); });
+        visible.forEach(function (c) { c.classList.remove('hidden'); });
 
         emptyState.style.display = filtered.length === 0 ? 'block' : 'none';
 
