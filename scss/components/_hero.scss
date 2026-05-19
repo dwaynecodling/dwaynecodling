@@ -21,11 +21,10 @@
 
   background-image:
     linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-    url('/assets/img/pages/about-me/hero-about-me@720w.jpg');
+    url('/assets/img/pages/about-me/hero-about-me@720w.webp');
   background-image:
     linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
     image-set(
-      url('/assets/img/pages/about-me/hero-about-me@720w.avif') type('image/avif'),
       url('/assets/img/pages/about-me/hero-about-me@720w.webp') type('image/webp'),
       url('/assets/img/pages/about-me/hero-about-me@720w.jpg') type('image/jpeg')
     );
@@ -36,11 +35,10 @@
   @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
     background-image:
       linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-      url('/assets/img/pages/about-me/hero-about-me.jpg');
+      url('/assets/img/pages/about-me/hero-about-me.webp');
     background-image:
       linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
       image-set(
-        url('/assets/img/pages/about-me/hero-about-me.avif') type('image/avif'),
         url('/assets/img/pages/about-me/hero-about-me.webp') type('image/webp'),
         url('/assets/img/pages/about-me/hero-about-me.jpg') type('image/jpeg')
       );
