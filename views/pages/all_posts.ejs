@@ -93,6 +93,7 @@
                     <article class="grid__card-item" data-category="<%= currentArticle.data.category || 'all' %>">
                         <a href="/post/<%= currentArticle.data.slug %>" class="card">
                             <picture class="card__img-container">
+                                <source type="image/avif" srcset="<%= (currentArticle.data.hero.card_webp || currentArticle.data.hero.lrg_webp).replace(/\.webp$/, '.avif') %>">
                                 <source type="image/webp" srcset="<%= currentArticle.data.hero.card_webp || currentArticle.data.hero.lrg_webp %>">
                                 <source type="image/jpeg" srcset="<%= currentArticle.data.hero.lrg_jpeg %>">
                                 <img class="card__img"

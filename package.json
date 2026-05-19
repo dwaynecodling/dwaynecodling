@@ -16,6 +16,7 @@
     "compress:css:critical": "sass assets/css/style.critical.prefix.css assets/css/style.critical.min.css --style=compressed --no-source-map",
     "compress:css:non-critical": "sass assets/css/style.non-critical.prefix.css assets/css/style.non-critical.min.css --style=compressed --no-source-map",
     "build:css": "npm-run-all compile:sass:critical compile:sass:non-critical concat:css:critical concat:css:non-critical prefix:css:critical prefix:css:non-critical compress:css:critical compress:css:non-critical",
+    "build:images": "node internal_scripts/batch-image-optimizer.js",
     "build": "npm i && npm-run-all compile:sass:critical compile:sass:non-critical concat:css:critical concat:css:non-critical prefix:css:critical prefix:css:non-critical compress:css:critical compress:css:non-critical && tsc -p tsconfig.json && npm run clean",
     "build:railway": "npm-run-all compile:sass:critical compile:sass:non-critical concat:css:critical concat:css:non-critical prefix:css:critical prefix:css:non-critical compress:css:critical compress:css:non-critical",
     "clean": "rm -rf node_modules"
