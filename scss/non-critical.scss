@@ -1,0 +1,19 @@
+// NON-CRITICAL CSS - Below-fold and deferred styles
+// These styles are loaded asynchronously after initial render
+// Includes animations, utilities, and page-specific styling
+
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/utilites";
+
+@import "layout/footer";
+
+@import "components/about-me";
+@import "components/my-posts__filter";
+@import "components/contact-form";
+
+@import "pages/home";
+@import "pages/post-template";

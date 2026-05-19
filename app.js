@@ -11,12 +11,21 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/assets', express.static(__dirname + "/assets", { maxAge: '1y' }));
+const fs = require("fs");
+const path = require("path");
 try {
-    const stat = require("fs").statSync(require("path").resolve(__dirname, "assets/css/style.min.css"));
-    app.locals.cssVersion = stat.mtimeMs.toString(36);
+    const criticalPath = path.resolve(__dirname, "assets/css/style.critical.min.css");
+    const criticalStat = fs.statSync(criticalPath);
+    app.locals.cssVersionCritical = criticalStat.mtimeMs.toString(36);
+    app.locals.criticalCss = fs.readFileSync(criticalPath, 'utf8');
+    const nonCriticalPath = path.resolve(__dirname, "assets/css/style.non-critical.min.css");
+    const nonCriticalStat = fs.statSync(nonCriticalPath);
+    app.locals.cssVersionNonCritical = nonCriticalStat.mtimeMs.toString(36);
 }
 catch {
-    app.locals.cssVersion = Date.now().toString(36);
+    app.locals.cssVersionCritical = Date.now().toString(36);
+    app.locals.cssVersionNonCritical = Date.now().toString(36);
+    app.locals.criticalCss = "/* CSS failed to load */";
 }
 app.use(Middlewares_1.Middleware.Compression);
 app.use(Middlewares_1.Middleware.FormUploadHandler);

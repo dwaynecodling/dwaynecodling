@@ -14,13 +14,26 @@ app.use(express.json());                                    // to support JSON-e
 app.use(express.urlencoded({ extended: true }));    // to support URL-encoded bodies
 app.use('/assets', express.static(__dirname + "/assets", { maxAge: '1y' }));    // makes assets folder directly accessible
 
-// Compute CSS version once at startup — stable URL browsers can cache,
-// only changes when the CSS file is actually rebuilt.
+// Compute CSS versions and load critical CSS for inlining
+// Critical CSS is inlined for faster initial render; non-critical loads async
+const fs = require("fs");
+const path = require("path");
+
 try {
-    const stat = require("fs").statSync(require("path").resolve(__dirname, "assets/css/style.min.css"));
-    app.locals.cssVersion = stat.mtimeMs.toString(36);
+    // Critical CSS version and content
+    const criticalPath = path.resolve(__dirname, "assets/css/style.critical.min.css");
+    const criticalStat = fs.statSync(criticalPath);
+    app.locals.cssVersionCritical = criticalStat.mtimeMs.toString(36);
+    app.locals.criticalCss = fs.readFileSync(criticalPath, 'utf8');
+
+    // Non-critical CSS version
+    const nonCriticalPath = path.resolve(__dirname, "assets/css/style.non-critical.min.css");
+    const nonCriticalStat = fs.statSync(nonCriticalPath);
+    app.locals.cssVersionNonCritical = nonCriticalStat.mtimeMs.toString(36);
 } catch {
-    app.locals.cssVersion = Date.now().toString(36);
+    app.locals.cssVersionCritical = Date.now().toString(36);
+    app.locals.cssVersionNonCritical = Date.now().toString(36);
+    app.locals.criticalCss = "/* CSS failed to load */";
 }
 
 app.use(Middleware.Compression);

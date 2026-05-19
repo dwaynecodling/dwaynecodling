@@ -1,0 +1,20 @@
+// CRITICAL PATH CSS - Above-fold styles for initial render
+// These styles are inlined in the <head> for immediate visibility
+// Everything else is deferred to non-critical.scss
+
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/fonts";
+@import "base/sectioning";
+@import "base/base";
+@import "base/typography";
+@import "base/button";
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "components/hero";
+@import "components/cards";

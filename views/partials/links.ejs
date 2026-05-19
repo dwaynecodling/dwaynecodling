@@ -10,4 +10,9 @@
 <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.min.css?v=<%= locals.cssVersion || '' %>">
+<!-- Critical CSS inlined for immediate render -->
+<style><%= locals.criticalCss %></style>
+<!-- Non-critical CSS loaded asynchronously -->
+<link rel="preload" href="/assets/css/style.non-critical.min.css?v=<%= locals.cssVersionNonCritical || '' %>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<!-- Fallback for no-JS -->
+<noscript><link rel="stylesheet" href="/assets/css/style.non-critical.min.css?v=<%= locals.cssVersionNonCritical || '' %>"></noscript>
