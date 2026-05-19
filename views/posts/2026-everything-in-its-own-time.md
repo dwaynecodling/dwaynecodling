@@ -61,4 +61,10 @@ Prompting well is a skill. Knowing what to check is a skill. Knowing when the ou
 
 **The site being live is the achievement.** Not because it is technically impressive, but because it is mine. My posts from 2017 sit next to posts from this year. You can see the journey. LinkedIn does not give you that. The algorithm buries everything. Here, nothing gets lost.
 
+Beyond getting it live, I spent time optimizing it properly. Performance matters. Every millisecond of load time is a decision someone makes about whether to stay or leave. Critical CSS, strategic font loading, image optimization—these are not premature optimizations. They are the foundation of respectful web development.
+
+![Lighthouse Metrics](/assets/img/posts/2026-everything-in-its-own-time/lighthouse-metrics.png "Performance Metrics: 1.5s FCP, 2.3s LCP, 0ms TBT, 0 CLS, 1.9s SI")
+
+![Lighthouse Scores](/assets/img/posts/2026-everything-in-its-own-time/lighthouse-scores.png "Lighthouse Report: 98 Performance, 96 Accessibility, 100 Best Practices, 100 SEO")
+
 Everything happened in its own time. I think that was the point.
