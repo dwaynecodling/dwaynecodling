@@ -11,7 +11,7 @@ interface ImageVariant {
 
 const POSTS_DIR = path.resolve(__dirname, '../assets/img/posts');
 const CARD_SUFFIX = '@card';
-const AVIF_QUALITY = 50;
+const AVIF_QUALITY = 55;
 const WEBP_QUALITY = 75;
 
 async function optimizeImage(imagePath: string): Promise<ImageVariant | null> {
