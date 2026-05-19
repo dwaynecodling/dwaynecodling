@@ -142,7 +142,7 @@ section {
 }
 
 html {
-  font-family: "Inter", Roboto, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }

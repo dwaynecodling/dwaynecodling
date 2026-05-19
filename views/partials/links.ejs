@@ -7,9 +7,16 @@
 <meta name="theme-color" content="#0d1a10">
 <meta property="og:site_name" content="Dwayne Codling" />
 <meta name="twitter:creator" content="@codling" />
+<!-- Critical fonts: preload only the most-used weights for above-fold content -->
 <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/playfair-display-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Non-critical fonts: prefetch additional weights (non-blocking) -->
+<link rel="prefetch" href="/assets/fonts/inter-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="prefetch" href="/assets/fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="prefetch" href="/assets/fonts/inter-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="prefetch" href="/assets/fonts/inter-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="prefetch" href="/assets/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="prefetch" href="/assets/fonts/playfair-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Critical CSS inlined for immediate render -->
 <style><%= locals.criticalCss %></style>
 <!-- Non-critical CSS loaded asynchronously -->
