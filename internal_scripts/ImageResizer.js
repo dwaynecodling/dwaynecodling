@@ -15,7 +15,7 @@ async function imageFromBuffer(buff) {
 }
 async function convertToWebP(originalPath, outputPath) {
     return new Promise((resolve, reject) => {
-        webp.cwebp(originalPath, outputPath, "-q 80", function (status, error) {
+        webp.cwebp(originalPath, outputPath, "-q 75", function (status, error) {
             if (status == '100') {
                 resolve();
             }

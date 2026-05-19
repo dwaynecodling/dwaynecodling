@@ -29,7 +29,7 @@ async function imageFromBuffer(buff:Buffer){
 
 async function convertToWebP(originalPath:string, outputPath:string){
     return new Promise((resolve, reject) => {
-        webp.cwebp(originalPath, outputPath,"-q 80", function(status,error){
+        webp.cwebp(originalPath, outputPath,"-q 75", function(status,error){
             if (status == '100'){
                 resolve()
             }
