@@ -18,7 +18,7 @@
 <link rel="prefetch" href="/assets/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="prefetch" href="/assets/fonts/playfair-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Critical CSS inlined for immediate render -->
-<style><%= locals.criticalCss %></style>
+<style><%- locals.criticalCss %></style>
 <!-- Non-critical CSS loaded asynchronously -->
 <link rel="preload" href="/assets/css/style.non-critical.min.css?v=<%= locals.cssVersionNonCritical || '' %>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- Fallback for no-JS -->
