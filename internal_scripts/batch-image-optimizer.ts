@@ -73,9 +73,10 @@ async function findAndOptimizeImages() {
     }
 
     console.log('🖼️  Scanning for images to optimize...');
-    const files = fs.readdirSync(POSTS_DIR, { recursive: true });
+    // @ts-ignore - recursive option is valid but type defs are outdated
+    const files = fs.readdirSync(POSTS_DIR, { recursive: true }) as string[];
     const imageFiles = files.filter((f: string) => {
-      const fullPath = typeof f === 'string' ? path.join(POSTS_DIR, f) : f;
+      const fullPath = path.join(POSTS_DIR, f);
       const stat = fs.statSync(fullPath);
       if (!stat.isFile()) return false;
 

@@ -8,7 +8,14 @@ const app = express();
 app.set('views', require("path").resolve(__dirname,"views") );
 app.set('view engine', 'ejs');
 
-app.use(helmet());
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      scriptSrc: ["'self'", "https://www.googletagmanager.com"],
+      connectSrc: ["'self'", "https://www.google-analytics.com", "https://www.googletagmanager.com"],
+    },
+  },
+}));
 
 app.use(express.json());                                    // to support JSON-encoded bodies
 app.use(express.urlencoded({ extended: true }));    // to support URL-encoded bodies
