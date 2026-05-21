@@ -11,8 +11,8 @@ app.set('view engine', 'ejs');
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com"],
-      connectSrc: ["'self'", "https://www.google-analytics.com", "https://www.googletagmanager.com"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com", "https://www.instagram.com"],
+      connectSrc: ["'self'", "https://www.google-analytics.com", "https://www.googletagmanager.com", "https://region1.google-analytics.com"],
     },
   },
 }));
