@@ -58,15 +58,26 @@
 }
 
 .contact-form__title {
-    font-size: $heading-3;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: var(--heading-1);
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    color: $color-cream;
+    line-height: 1.15;
+    max-width: 56rem;
+    margin-bottom: 2rem;
     position: relative;
     z-index: 2;
+
+    strong {
+        color: $color-amber;
+    }
 }
 
 .contact-form__text {
-    font-size: $body-text-main;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: rgba($color-cream, 0.85);
+    max-width: 52rem;
     position: relative;
     z-index: 2;
 
