@@ -174,27 +174,6 @@ margin-bottom: $spacing-2xl;
         cursor: not-allowed;
         transform: none;
     }
-
-    .contact-form__button-content {
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-    }
-
-    .contact-form__button-text {
-        font-weight: 500;
-    }
-
-    .contact-form__button-arrow {
-        width: 2rem;
-        height: 1.2rem;
-        transform: scale(1);
-        transition: transform 0.2s;
-    }
-
-    &:hover .contact-form__button-arrow {
-        transform: translateX(0.2rem);
-    }
 }
 
 .contact-form__textarea-input {
