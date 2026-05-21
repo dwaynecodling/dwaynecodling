@@ -16,12 +16,28 @@
 <link rel="preload" href="/assets/css/style.non-critical.min.css?v=<%= locals.cssVersionNonCritical || '' %>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- Fallback for no-JS -->
 <noscript><link rel="stylesheet" href="/assets/css/style.non-critical.min.css?v=<%= locals.cssVersionNonCritical || '' %>"></noscript>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R2ZNBLJ09D"></script>
+<!-- Initialize dataLayer queue before GTM loads (deferred) -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-R2ZNBLJ09D');
+</script>
+<!-- GTM loaded after LCP to avoid blocking -->
+<script>
+  function loadGTM() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-R2ZNBLJ09D';
+    document.head.appendChild(script);
+  }
+
+  // Load GTM after page is interactive (2 second delay allows LCP to complete on most connections)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(loadGTM, 2000);
+    });
+  } else {
+    setTimeout(loadGTM, 2000);
+  }
 </script>
