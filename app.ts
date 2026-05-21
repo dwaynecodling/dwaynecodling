@@ -11,9 +11,17 @@ app.set('view engine', 'ejs');
 app.use(helmet({
   contentSecurityPolicy: {
     directives: {
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com", "https://www.instagram.com"],
-      connectSrc: ["'self'", "https://www.google-analytics.com", "https://www.googletagmanager.com", "https://region1.google-analytics.com"],
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com", "https://www.instagram.com", "https://code.jquery.com", "https://www.google.com"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:", "https:"],
+      fontSrc: ["'self'", "data:"],
+      connectSrc: ["'self'", "https://www.google-analytics.com", "https://www.googletagmanager.com", "https://region1.google-analytics.com", "https://www.google.com"],
+      frameSrc: ["https://www.instagram.com", "https://www.youtube-nocookie.com"],
     },
+  },
+  permissionsPolicy: {
+    unload: [],
   },
 }));
 
