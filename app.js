@@ -16,7 +16,7 @@ app.use(helmet({
             imgSrc: ["'self'", "data:", "https:"],
             fontSrc: ["'self'", "data:"],
             connectSrc: ["'self'", "https://www.google-analytics.com", "https://www.googletagmanager.com", "https://region1.google-analytics.com", "https://www.google.com"],
-            frameSrc: ["https://www.instagram.com", "https://www.youtube-nocookie.com"],
+            frameSrc: ["https://www.instagram.com", "https://www.youtube-nocookie.com", "https://www.google.com"],
         },
     },
     permissionsPolicy: false,
