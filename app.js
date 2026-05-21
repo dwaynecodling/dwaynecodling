@@ -11,7 +11,7 @@ app.use(helmet({
     contentSecurityPolicy: {
         directives: {
             defaultSrc: ["'self'"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com", "https://www.instagram.com", "https://code.jquery.com", "https://www.google.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com", "https://www.instagram.com", "https://code.jquery.com", "https://www.google.com", "https://www.gstatic.com"],
             styleSrc: ["'self'", "'unsafe-inline'"],
             imgSrc: ["'self'", "data:", "https:"],
             fontSrc: ["'self'", "data:"],
