@@ -689,7 +689,7 @@ footer {
   background-color: #c8853a;
   color: #0d1a10;
   border: none;
-  padding: 1.6rem 3.2rem;
+  padding: 2rem 3rem;
   font-size: 1.8rem;
   font-weight: 700;
   min-height: 4.4rem;
@@ -698,7 +698,7 @@ footer {
 }
 @media screen and (min-width: 40em) {
   .contact-form__form .contact-form__button {
-    padding: 1.8rem 3.8rem;
+    padding: 2.2rem 3.6rem;
     min-height: 4.8rem;
   }
 }
