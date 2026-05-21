@@ -19,9 +19,6 @@ app.use(helmet({
             frameSrc: ["https://www.instagram.com", "https://www.youtube-nocookie.com"],
         },
     },
-    permissionsPolicy: {
-        unload: [],
-    },
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
