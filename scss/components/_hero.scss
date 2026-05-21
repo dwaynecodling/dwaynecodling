@@ -210,11 +210,12 @@
 }
 
 .hero__social-link {
-  display:block;
+  display: block;
   width: 24px;
 
   &:not(:last-of-type) {
     margin-right: 3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -245,16 +246,6 @@
     top: 289px;
   }
 
-}
-
-.hero__social-links {
-
-}
-
-.hero__social-link {
-  &:not(last-of-type) {
-    margin-bottom: 2rem;
-  }
 }
 
 .hero__social-link--text {
