@@ -660,6 +660,7 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
   justify-content: center;
   align-items: center;
   margin: -0.8rem;
+  contain: layout;
 }
 .hero__cta-group > * {
   margin: 0.8rem;
