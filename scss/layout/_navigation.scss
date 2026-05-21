@@ -19,7 +19,7 @@
 .navigation {
     margin-bottom: $spacing-sm * 2;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
         margin-bottom: $spacing-xl;
     }
 }
@@ -33,7 +33,7 @@
     align-items: center;
     gap: $spacing-sm;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         justify-content: space-between;
         padding: $spacing-2xl;
         gap: 0;
@@ -63,7 +63,7 @@
     justify-content: space-between;
     margin-bottom: 0;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         display: flex;
     }
 }
@@ -78,7 +78,7 @@
         position: relative;
         z-index: 1;
         font-size: 1.4rem;
-        @media screen and (min-width: map-get($breakpoints, 'breakpoint-1')) {
+        @media screen and (min-width: map.get($breakpoints, 'breakpoint-1')) {
             font-size: $nav-text-default;
         }
 
@@ -109,7 +109,7 @@
     }
 
     &:not(:first-child) {
-        @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+        @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
             padding-left: 3rem;
         }
 
@@ -180,7 +180,7 @@
     transition: color 0.2s;
     flex-shrink: 0;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         display: none !important;
     }
 
@@ -231,7 +231,7 @@
         max-height: 50vh;
     }
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         display: none !important;
     }
 }

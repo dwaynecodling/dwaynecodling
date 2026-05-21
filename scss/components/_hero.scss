@@ -11,11 +11,11 @@
   // but narrow horizontal ($spacing-sm * 2 mobile, increases on larger screens) to maximize content width
   padding: $spacing-5xl ($spacing-sm * 2) $spacing-4xl;
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
     padding: $spacing-5xl 4rem $spacing-4xl;
   }
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-7')) {
     padding: $spacing-5xl 6rem $spacing-4xl;
   }
 
@@ -32,7 +32,7 @@
   background-position: center 23%;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
     background-image:
       linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
       url('/assets/img/pages/about-me/hero-about-me.webp');
@@ -128,7 +128,7 @@
     letter-spacing: 0.02em;
     min-height: 4.4rem;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
       font-size: 1.8rem;
       padding: 2.2rem 3.6rem;
       min-height: 4.8rem;
@@ -182,7 +182,7 @@
     transform: scale(1);
     color: currentColor;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
       margin-left: 1.5rem;
       transform: scale(1.2);
     }
@@ -227,7 +227,7 @@
 
 .hero__contact-wrapper {
   display: none;
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-3')) {
     display: flex;
     padding: 0;
     justify-content: space-between;
@@ -238,7 +238,7 @@
 
 .hero__contact--position {
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-3')) {
     position: relative;
     top: 289px;
   }

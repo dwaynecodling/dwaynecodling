@@ -1,9 +1,12 @@
+@use "sass:color";
+@use "sass:map";
+
 //COLORS
 $color-forest-dark: #0d1a10;
 $color-forest-mid: #162419;
 $color-forest-card: #1c2b1e;
 $color-amber: #c8853a;
-$color-amber-dark: darken(#c8853a, 8%);
+$color-amber-dark: color.adjust(#c8853a, $lightness: -8%);
 $color-teal: #2d8070;
 $color-cream: #f4ede0;
 $color-cream-muted: #a89e90;
@@ -108,7 +111,7 @@ $breakpoints: (
   --heading-3: 2.2rem;
   --body-text-main: 1.6rem;
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
     --container-padding: #{$padding-large};
     --heading-1: 4.8rem;
     --heading-2: 3.8rem;
@@ -116,11 +119,11 @@ $breakpoints: (
     --body-text-main: 1.8rem;
   }
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-3')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-3')) {
     --noOfColumns: 2;
   }
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-7')) {
     --container-padding: 0;
     --noOfColumns: 3;
   }

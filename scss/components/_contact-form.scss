@@ -1,7 +1,7 @@
 .contact-form {
     padding-bottom: $spacing-4xl;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
         display: flex;
         border-bottom: 1px solid $color-grey;
         padding-bottom: $spacing-5xl;
@@ -13,7 +13,7 @@
     aspect-ratio: 1;
     overflow: hidden;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
         width: 36.8% ;
         min-height: 550px;
     }
@@ -29,7 +29,7 @@
 .contact-form__content-wrapper {
     background-color: #1D1F21;
     padding: $spacing-sm * 2;
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
         width: 63.2%;
         padding: $spacing-5xl;
     }
@@ -46,7 +46,7 @@
         color: $color-decorative-text;
         font-weight: 500;
 
-        @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+        @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
             font-size: 20rem;
             top: -10rem;
             left: -7rem;
@@ -101,7 +101,7 @@
 .contact-form__error {
     color: #e74c3c;
     font-size: 1.4rem;
-    margin-top: $spacing-xs / 2;
+    margin-top: calc($spacing-xs / 2);
     display: block;
 }
 
@@ -150,7 +150,7 @@ margin-bottom: $spacing-2xl;
     border-radius: $border-radius-button;
     transition: $transition;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         padding: 1.8rem 3.8rem;
         min-height: 4.8rem;
     }

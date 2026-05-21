@@ -22,7 +22,7 @@ footer {
     padding: $spacing-sm * 2;
     background-color: $color-forest-card;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         padding: $spacing-2xl;
     }
 }
@@ -34,7 +34,7 @@ footer {
     text-decoration: none;
     display: inline-block;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         margin-bottom: 0;
     }
 

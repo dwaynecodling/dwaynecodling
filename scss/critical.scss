@@ -2,6 +2,9 @@
 // These styles are inlined in the <head> for immediate visibility
 // Everything else is deferred to non-critical.scss
 
+@use "sass:color";
+@use "sass:map";
+
 @import "abstracts/function";
 @import "abstracts/mixins";
 @import "abstracts/variables";

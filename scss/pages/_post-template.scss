@@ -53,7 +53,7 @@
         font-weight: 400;
         margin-bottom: $spacing-xl;
 
-        @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+        @media screen and (min-width: map.get($breakpoints, 'breakpoint-7')) {
             margin-bottom: $spacing-2xl;
         }
     }
@@ -64,7 +64,7 @@
         color: rgba(244, 237, 224, 0.8);
         margin-bottom: $spacing-lg;
 
-        @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+        @media screen and (min-width: map.get($breakpoints, 'breakpoint-7')) {
             margin-bottom: $spacing-xl;
         }
     }
@@ -76,7 +76,7 @@
         margin-bottom: $spacing-md;
         line-height: 1.25;
 
-        @media screen and (min-width: map-get($breakpoints, 'breakpoint-7')) {
+        @media screen and (min-width: map.get($breakpoints, 'breakpoint-7')) {
             margin-top: $spacing-3xl + 0.8rem;
         }
     }

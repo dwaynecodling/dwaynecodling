@@ -6,7 +6,7 @@
     border-bottom: .1rem solid rgba(200,133,58,0.15);
     grid-gap: 4rem;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
       grid-gap: 9rem;
     }
   }
@@ -17,7 +17,7 @@
     &:last-child {
       margin-bottom: $spacing-3xl;
 
-      @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+      @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
         margin-bottom: $spacing-5xl;
       }
     }
@@ -26,7 +26,7 @@
   &--card-list {
     grid-gap: $spacing-xl;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
       grid-gap: $spacing-3xl;
     }
   }

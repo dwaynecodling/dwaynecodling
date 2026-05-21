@@ -64,7 +64,7 @@
         font-family: 'Playfair Display', Georgia, serif;
         user-select: none;
 
-        @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+        @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
             font-size: 14rem;
             top: -2rem;
             left: -3rem;
@@ -106,7 +106,7 @@
   overflow: hidden;
   margin-bottom: $spacing-5xl;
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 56rem;
@@ -117,7 +117,7 @@
     min-height: 32rem;
     overflow: hidden;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
       min-height: auto;
     }
 
@@ -137,7 +137,7 @@
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
       padding: $spacing-3xl;
     }
   }
@@ -159,7 +159,7 @@
     line-height: 1.2;
     margin-bottom: 2rem;
 
-    @media screen and (min-width: map-get($breakpoints, 'breakpoint-4')) {
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
       font-size: 3.8rem;
     }
   }
@@ -208,7 +208,7 @@
   align-items: center;
   margin-bottom: 3rem;
 
-  @media screen and (min-width: map-get($breakpoints, 'breakpoint-2')) {
+  @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
     margin-bottom: 4rem;
   }
 }

@@ -2,6 +2,9 @@
 // These styles are loaded asynchronously after initial render
 // Includes animations, utilities, and page-specific styling
 
+@use "sass:color";
+@use "sass:map";
+
 @import "abstracts/function";
 @import "abstracts/mixins";
 @import "abstracts/variables";
