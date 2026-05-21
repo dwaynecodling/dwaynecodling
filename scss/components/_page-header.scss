@@ -1,0 +1,29 @@
+.page-header__label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: $color-amber;
+    margin-bottom: 1.6rem;
+}
+
+.page-header__title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: var(--heading-1);
+    font-weight: 700;
+    color: $color-cream;
+    line-height: 1.15;
+    max-width: 56rem;
+    margin-bottom: 2rem;
+
+    strong {
+        color: $color-amber;
+    }
+}
+
+.page-header__description {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: rgba($color-cream, 0.85);
+    max-width: 52rem;
+}

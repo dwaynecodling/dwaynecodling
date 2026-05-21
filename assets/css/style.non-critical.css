@@ -711,6 +711,35 @@ footer {
   outline-offset: 2px;
 }
 
+.page-header__label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #c8853a;
+  margin-bottom: 1.6rem;
+}
+
+.page-header__title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: var(--heading-1);
+  font-weight: 700;
+  color: #f4ede0;
+  line-height: 1.15;
+  max-width: 56rem;
+  margin-bottom: 2rem;
+}
+.page-header__title strong {
+  color: #c8853a;
+}
+
+.page-header__description {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: rgba(244, 237, 224, 0.85);
+  max-width: 52rem;
+}
+
 .page {
   font-size: 1.2rem;
 }
