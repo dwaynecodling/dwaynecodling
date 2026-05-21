@@ -193,20 +193,21 @@ a {
 a:after {
   content: "";
   position: absolute;
-  width: 0;
+  width: 100%;
   height: 2px;
   background-color: #c8853a;
   bottom: -4px;
   left: 0;
-  transition: 0.3s ease all;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 a:hover {
   position: relative;
   color: #c8853a;
 }
 a:hover:after {
-  width: 100%;
-  transition: 0.3s ease all;
+  transform: scaleX(1);
 }
 
 .button {
