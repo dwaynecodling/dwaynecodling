@@ -607,15 +607,25 @@ footer {
 }
 
 .contact-form__title {
-  font-size: 3rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: var(--heading-1);
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  color: #f4ede0;
+  line-height: 1.15;
+  max-width: 56rem;
+  margin-bottom: 2rem;
   position: relative;
   z-index: 2;
+}
+.contact-form__title strong {
+  color: #c8853a;
 }
 
 .contact-form__text {
   font-size: 1.8rem;
+  line-height: 3rem;
+  color: rgba(244, 237, 224, 0.85);
+  max-width: 52rem;
   position: relative;
   z-index: 2;
 }
