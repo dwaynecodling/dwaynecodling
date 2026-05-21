@@ -48,7 +48,7 @@
 <main id="main-content" class="content" role="main">
 
     <!-- Page Header -->
-    <section style="margin-bottom:0;">
+    <section class="m-bottom-0">
         <div class="posts-hero">
             <div class="container">
                 <p class="page-header__label">Writing</p>
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Filter + Posts -->
-    <section class="card-wrapper" style="padding-top: 5rem;">
+    <section class="card-wrapper p-top-5">
         <div class="container">
 
             <!-- Mobile filter -->
@@ -117,19 +117,19 @@
             </article>
 
             <!-- Empty state -->
-            <p id="posts-empty" style="display:none; text-align:center; color:#a89e90; font-size:1.7rem; padding: 6rem 0;">No posts in this category yet.</p>
+            <p id="posts-empty" class="d-none" style="text-align:center; color:#a89e90; font-size:1.7rem; padding: 6rem 0;">No posts in this category yet.</p>
 
             <!-- Pagination -->
-            <nav id="posts-pagination" class="posts-pagination" aria-label="Posts pagination" style="display:none;">
+            <nav id="posts-pagination" class="posts-pagination d-none" aria-label="Posts pagination">
                 <button class="posts-pagination__btn" id="posts-prev" aria-label="Previous page">
-                    <svg style="transform:rotate(90deg);" width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+                    <svg class="rotate-90" width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                         <rect fill="#fff" x="5" y="0" width="2" height="14" rx="1"/>
                         <path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M0 10l6 6 6-6"/>
                     </svg>
                 </button>
                 <span class="posts-pagination__info" id="posts-page-info"></span>
                 <button class="posts-pagination__btn" id="posts-next" aria-label="Next page">
-                    <svg style="transform:rotate(-90deg);" width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+                    <svg class="rotate-neg-90" width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                         <rect fill="#fff" x="5" y="0" width="2" height="14" rx="1"/>
                         <path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M0 10l6 6 6-6"/>
                     </svg>
