@@ -234,13 +234,14 @@
   align-items: center;
   gap: 0.8rem;
   text-decoration: none;
-  color: $color-cream-muted;
+  color: $color-amber;
   font-weight: 500;
   font-size: 1.4rem;
-  transition: $transition;
+  opacity: 0.85;
+  transition: opacity 0.2s;
   white-space: nowrap;
 
-  &:hover { color: $color-amber; }
+  &:hover { opacity: 1; }
   &:after { display: none; }
 
   &__text { font-size: $nav-text-default; font-weight: 500; }

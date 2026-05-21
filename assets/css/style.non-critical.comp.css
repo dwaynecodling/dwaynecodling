@@ -1025,14 +1025,15 @@ footer {
   align-items: center;
   gap: 0.8rem;
   text-decoration: none;
-  color: #a89e90;
+  color: #c8853a;
   font-weight: 500;
   font-size: 1.4rem;
-  transition: all 0.2s;
+  opacity: 0.85;
+  transition: opacity 0.2s;
   white-space: nowrap;
 }
 .post-link:hover {
-  color: #c8853a;
+  opacity: 1;
 }
 .post-link:after {
   display: none;
