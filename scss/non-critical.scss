@@ -4,21 +4,20 @@
 
 @use "sass:color";
 @use "sass:map";
+@use "abstracts/function" as fn;
+@use "abstracts/mixins" as mx;
+@use "abstracts/variables" as vars;
 
-@import "abstracts/function";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "base/fonts";
+@use "base/animation";
+@use "base/utilites";
 
-@import "base/fonts";
-@import "base/animation";
-@import "base/utilites";
+@use "layout/footer";
 
-@import "layout/footer";
+@use "components/about-me";
+@use "components/my-posts__filter";
+@use "components/contact-form";
+@use "components/page-header";
 
-@import "components/about-me";
-@import "components/my-posts__filter";
-@import "components/contact-form";
-@import "components/page-header";
-
-@import "pages/home";
-@import "pages/post-template";
+@use "pages/home";
+@use "pages/post-template";

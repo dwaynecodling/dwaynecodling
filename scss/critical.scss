@@ -4,20 +4,19 @@
 
 @use "sass:color";
 @use "sass:map";
+@use "abstracts/function" as fn;
+@use "abstracts/mixins" as mx;
+@use "abstracts/variables" as vars;
 
-@import "abstracts/function";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@use "base/fonts-critical";
+@use "base/sectioning";
+@use "base/base";
+@use "base/typography";
+@use "base/button";
 
-@import "base/fonts-critical";
-@import "base/sectioning";
-@import "base/base";
-@import "base/typography";
-@import "base/button";
+@use "layout/grid";
+@use "layout/header";
+@use "layout/navigation";
 
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
-
-@import "components/hero";
-@import "components/cards";
+@use "components/hero";
+@use "components/cards";

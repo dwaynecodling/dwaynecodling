@@ -1,3 +1,5 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
 // MEDIA QUERY
 @mixin media($breakpoint) {
   @if $breakpoint == small {

@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "../abstracts/variables" as *;
 .contact-form {
     padding-bottom: $spacing-4xl;
 
