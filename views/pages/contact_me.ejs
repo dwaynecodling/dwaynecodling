@@ -188,14 +188,17 @@
 
                     if (data.isSuccessful === true){
                         form.reset();
-                        $btn.find('.hero__button-text').text('Message sent!');
+                        $btn.prop('disabled', false).text('Message sent!');
                         formStatus.textContent = 'Your message has been sent successfully!';
-                        formStatus.style.color = '#27ae60';
+                        formStatus.style.color = '#c8853a';
                         document.getElementById('name-field').setAttribute('aria-invalid', 'false');
                         document.getElementById('email-field').setAttribute('aria-invalid', 'false');
                         document.getElementById('textarea').setAttribute('aria-invalid', 'false');
+                        setTimeout(() => {
+                            $btn.text('Send message');
+                        }, 2000);
                     } else {
-                        $btn.prop('disabled', false).find('.hero__button-text').text('Send message');
+                        $btn.prop('disabled', false).text('Send message');
                         formStatus.textContent = 'Unable to send message. Please try again.';
                         formStatus.style.color = '#e74c3c';
                     }
