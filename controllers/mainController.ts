@@ -78,14 +78,20 @@ home.post("/form/contact", async function (req, res) {
         ));
         return;
     }
-    // verify captcha result with google
-    superAgent.post("https://www.google.com/recaptcha/api/siteverify").type("form").send({
-        secret: process.env.RECAPTCHA_SECRET,
-        response: token
+    // verify captcha result with google using Enterprise API
+    const projectId = "api-project-1054268185651";
+    const siteKey = "6LfODfcsAAAAAMbRVjQS77rzMFDdyMFZmddQ7D3c";
+
+    superAgent.post(`https://recaptchaenterprise.googleapis.com/v1/projects/${projectId}/assessments?key=${process.env.RECAPTCHA_API_KEY}`).send({
+        event: {
+            token: token,
+            expectedAction: action,
+            siteKey: siteKey
+        }
     }).end(async (err, resp) => {
         let response = resp.body;
         // Check reCaptcha response
-        if(response["success"] === true && response["action"] === action && response["score"] >= 0.5) {
+        if(response["riskAnalysis"] && response["riskAnalysis"]["score"] >= 0.5) {
             const he = require("he");
             try {
                 await Mailer.sendMail({

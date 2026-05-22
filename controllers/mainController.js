@@ -69,12 +69,17 @@ home.post("/form/contact", async function (req, res) {
         res.json(JSONResponse_1.JSONResponse(false, "Name and Message must not be empty", `Please make sure the "name" and "message" boxes are filled in`, { name, message }));
         return;
     }
-    superAgent.post("https://www.google.com/recaptcha/api/siteverify").type("form").send({
-        secret: process.env.RECAPTCHA_SECRET,
-        response: token
+    const projectId = "api-project-1054268185651";
+    const siteKey = "6LfODfcsAAAAAMbRVjQS77rzMFDdyMFZmddQ7D3c";
+    superAgent.post(`https://recaptchaenterprise.googleapis.com/v1/projects/${projectId}/assessments?key=${process.env.RECAPTCHA_API_KEY}`).send({
+        event: {
+            token: token,
+            expectedAction: action,
+            siteKey: siteKey
+        }
     }).end(async (err, resp) => {
         let response = resp.body;
-        if (response["success"] === true && response["action"] === action && response["score"] >= 0.5) {
+        if (response["riskAnalysis"] && response["riskAnalysis"]["score"] >= 0.5) {
             const he = require("he");
             try {
                 await Mailer_1.Mailer.sendMail({
