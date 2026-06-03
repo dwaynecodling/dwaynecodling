@@ -18,6 +18,14 @@ home.get("/posts", async function(req, res){
     let posts = await PostRepository.getAllPosts(true);
     res.render("pages/all_posts",{ posts });
 });
+home.get("/posts/:category", async function(req, res){
+    let posts = await PostRepository.getAllPosts(true);
+    res.render("pages/all_posts",{ posts });
+});
+home.get("/posts/:category/:page", async function(req, res){
+    let posts = await PostRepository.getAllPosts(true);
+    res.render("pages/all_posts",{ posts });
+});
 home.get("/robots.txt", function(req, res){
     res.header("Content-Type", "text/plain");
     res.send("User-agent: *\nAllow: /\nSitemap: https://dwaynecodling.com/sitemap.xml");

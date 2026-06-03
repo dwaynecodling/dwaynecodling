@@ -188,10 +188,9 @@
     var validCategories = ['all', 'leadership', 'fitness', 'personal', 'tech'];
 
     function updateURL() {
-        var params = new URLSearchParams();
-        if (currentCategory !== 'all') params.set('category', currentCategory);
-        if (currentPage > 1) params.set('page', currentPage);
-        var newURL = params.toString() ? location.pathname + '?' + params.toString() : location.pathname;
+        var newURL = '/posts';
+        if (currentCategory !== 'all') newURL += '/' + currentCategory;
+        if (currentPage > 1) newURL += '/' + currentPage;
         history.replaceState(null, '', newURL);
     }
 
@@ -234,11 +233,22 @@
         if (currentPage < totalPages) { currentPage++; updateURL(); render(); scrollToGrid(); }
     });
 
-    var params = new URLSearchParams(location.search);
-    var initialCat = params.get('category') || location.hash.slice(1) || 'all';
-    var initialPage = parseInt(params.get('page'), 10) || 1;
+    var pathParts = location.pathname.split('/').filter(Boolean);
+    var initialCat = 'all';
+    var initialPage = 1;
 
-    setCategory(validCategories.indexOf(initialCat) !== -1 ? initialCat : 'all', false);
+    if (pathParts.length >= 2) {
+      var part1 = pathParts[1];
+      if (validCategories.indexOf(part1) !== -1) {
+        initialCat = part1;
+        if (pathParts.length >= 3) {
+          var pageNum = parseInt(pathParts[2], 10);
+          if (!isNaN(pageNum) && pageNum > 0) initialPage = pageNum;
+        }
+      }
+    }
+
+    setCategory(initialCat, false);
     currentPage = initialPage;
     render();
 }());
