@@ -24,7 +24,7 @@ This chapter has been one of exploration and growth. I've had the privilege of b
 
 ## Gratitude
 
-I need to thank the people who held me in this season. Ash and the [Battle PT Team](https://www.battle-pt.com/about), Taryn Mitchell-Clegg, Angela Mahon Hoey, and Nigel Best were constant supporters and guides. Taryn and Angela, you were in my corner. Nigel, you showed me other potential paths I could explore and expanded how I think about my next moves. Drew Foxall, you reminded me why I belong in tech; good people who care are exactly what this space needs. Clinton Walker, you taught me about resilience and how to be present with great company.
+I need to thank the people who held me in this season. Ash and the [Battle PT Team](https://www.battle-pt.com/about), Taryn Mitchell-Clegg, Angela Mahon, and Nigel Best were constant supporters and guides. Taryn and Angela, you were in my corner. Nigel, you showed me other potential paths I could explore and expanded how I think about my next moves. Drew Foxall, you reminded me why I belong in tech; good people who care are exactly what this space needs. Clinton Walker, you taught me about resilience and how to be present with great company.
 
 ![Me and Clinton](/assets/img/posts/2026-next-chapter/dwayne-and-clinton.jpg)
 
