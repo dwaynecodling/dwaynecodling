@@ -32,7 +32,7 @@ That matters more than I can articulate.
 
 ## Why Open Source
 
-**I'm staying true to where I started: a developer who believes in the open source ethos.** The open source / Hyvä approach resonates deeply because of ownership, openness, and control.
+**I'm staying true to where I started: a developer who believes in the open source ethos.** The open source / [Hyvä](https://www.hyva.io/about) approach resonates deeply because of ownership, openness, and control.
 
 Developers naturally learn from open source and give back to the community. It's how we grow. But it's more than that; it's a fundamentally different model of ownership. With open source, you own your code, your product, your intellectual property. You control the direction, the vision, the future.
 
@@ -44,6 +44,6 @@ It's an ownership model; I think of it like Prince owning his masters instead of
 
 ## What's Next
 
-**Starting July 6th, I'm joining [Foundation Commerce](https://foundationcommerce.co.uk/about-us/) as Head of Development.** I'm stepping into this role grounded in everything I've learned; the importance of community, the power of ownership, and the value of building with intention. I'm grateful for Ryan Copeland and the team at Foundation Commerce for believing in this vision. Looking forward to building with you all and growing what we're creating together.
+**I'm joining Foundation Commerce as Head of Development.** I'm stepping into this role grounded in everything I've learned; the importance of community, the power of ownership, and the value of building with intention. I'm grateful for Ryan Copeland and the team at [Foundation Commerce](https://foundationcommerce.co.uk/about-us/) for believing in this vision. Looking forward to building with you all and growing what we're creating together.
 
 Here we go 🚀.
