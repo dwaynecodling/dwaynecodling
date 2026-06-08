@@ -64,10 +64,10 @@
         font-size: 1.8rem;
         line-height: 3.2rem;
         color: rgba(244, 237, 224, 0.8);
-        margin-bottom: $spacing-lg;
+        margin-bottom: $spacing-md;
 
         @media screen and (min-width: map.get($breakpoints, 'breakpoint-7')) {
-            margin-bottom: $spacing-xl;
+            margin-bottom: $spacing-lg;
         }
     }
 
@@ -112,7 +112,7 @@
     }
 
     blockquote {
-        margin: $spacing-3xl - 1rem 0;
+        margin: $spacing-2xl 0;
         padding: $spacing-lg $spacing-xl;
         border-left: 3px solid $color-amber;
         background-color: $color-forest-card;
@@ -138,7 +138,7 @@
 
     img {
         width: 100%;
-        margin: $spacing-xl 0;
+        margin: $spacing-lg 0;
     }
 }
 
