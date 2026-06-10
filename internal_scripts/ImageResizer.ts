@@ -2,7 +2,7 @@ import {createCanvas, Image} from "canvas";
 import {isNullOrUndefined} from "./convinienceHelper";
 
 const fs = require("fs");
-const webp = require('webp-converter');
+const sharp = require('sharp');
 const path = require("path");
 
 interface IResizerOptions{
@@ -28,35 +28,16 @@ async function imageFromBuffer(buff:Buffer){
 }
 
 async function convertToWebP(originalPath:string, outputPath:string){
-    return new Promise((resolve, reject) => {
-        webp.cwebp(originalPath, outputPath,"-q 75", function(status,error){
-            if (status == '100'){
-                resolve()
-            }
-            else{
-                reject(error);
-            }
-        });
-    });
+    return sharp(originalPath)
+        .webp({ quality: 75 })
+        .toFile(outputPath);
 }
 
 namespace BufferConvert{
     export async function jpegToWebP(buff:Buffer):Promise<Buffer>{
-        return new Promise((resolve, reject) => {
-            let rnd = [...Array(12)].map(() => Math.random().toString(36)[2]).join('');
-            let tempJpeg = path.resolve(path.join(__dirname, `../tmp/${rnd}.jpeg` ));
-            let out = path.resolve(path.join(__dirname, `../tmp/${rnd}.webp` ));
-            fs.writeFile(tempJpeg, buff, ()=>{
-                convertToWebP(tempJpeg, out).catch(ex => {
-                    reject(ex);
-                }).finally(()=>{
-                    let b = fs.readFileSync(out);
-                    resolve(b);
-                    fs.unlinkSync(out);
-                    fs.unlinkSync(tempJpeg);
-                });
-            });
-        });
+        return sharp(buff)
+            .webp({ quality: 75 })
+            .toBuffer();
     }
 }
 

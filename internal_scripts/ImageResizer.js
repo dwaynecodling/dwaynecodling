@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const canvas_1 = require("canvas");
 const convinienceHelper_1 = require("./convinienceHelper");
 const fs = require("fs");
-const webp = require('webp-converter');
+const sharp = require('sharp');
 const path = require("path");
 async function imageFromBuffer(buff) {
     return new Promise((resolve, reject) => {
@@ -14,35 +14,16 @@ async function imageFromBuffer(buff) {
     });
 }
 async function convertToWebP(originalPath, outputPath) {
-    return new Promise((resolve, reject) => {
-        webp.cwebp(originalPath, outputPath, "-q 75", function (status, error) {
-            if (status == '100') {
-                resolve();
-            }
-            else {
-                reject(error);
-            }
-        });
-    });
+    return sharp(originalPath)
+        .webp({ quality: 75 })
+        .toFile(outputPath);
 }
 var BufferConvert;
 (function (BufferConvert) {
     async function jpegToWebP(buff) {
-        return new Promise((resolve, reject) => {
-            let rnd = [...Array(12)].map(() => Math.random().toString(36)[2]).join('');
-            let tempJpeg = path.resolve(path.join(__dirname, `../tmp/${rnd}.jpeg`));
-            let out = path.resolve(path.join(__dirname, `../tmp/${rnd}.webp`));
-            fs.writeFile(tempJpeg, buff, () => {
-                convertToWebP(tempJpeg, out).catch(ex => {
-                    reject(ex);
-                }).finally(() => {
-                    let b = fs.readFileSync(out);
-                    resolve(b);
-                    fs.unlinkSync(out);
-                    fs.unlinkSync(tempJpeg);
-                });
-            });
-        });
+        return sharp(buff)
+            .webp({ quality: 75 })
+            .toBuffer();
     }
     BufferConvert.jpegToWebP = jpegToWebP;
 })(BufferConvert || (BufferConvert = {}));
