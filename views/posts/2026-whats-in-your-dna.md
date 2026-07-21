@@ -17,7 +17,7 @@ category: personal
 
 > *Memory is encoded in our DNA. What your ancestors survived, what they endured, the resilience they built; it's in you. Not as a burden. As a strength.*
 
-I saw something recently that stopped peak my interest. A story about a ten-year-old Japanese researcher studying butterflies.
+I saw something recently that made me stopped and peak my interest. A story about a ten-year-old Japanese researcher studying butterflies.
 
 He wanted to understand if caterpillars and butterflies remember things. So he trained caterpillars to avoid lavender using a specific stimulus. Then he watched those same creatures after they transformed into butterflies. They still avoided the lavender. The memory carried over through the metamorphosis.
 
