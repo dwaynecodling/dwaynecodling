@@ -300,16 +300,24 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
 }
 .grid__card-item {
   height: 100%;
-  background-color: #1c2b1e;
+  background-color: rgba(28, 43, 30, 0.6);
   overflow: hidden;
-  border: 1px solid rgba(200, 133, 58, 0.1);
+  border: 1px solid rgba(200, 133, 58, 0.2);
   cursor: pointer;
   transition: all 0.2s;
+  border-radius: 2px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .grid__card-item:hover {
   transform: translateY(-3px);
   border-color: rgba(200, 133, 58, 0.35);
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+  background-color: rgba(28, 43, 30, 0.8);
+}
+.grid__card-item:focus-within {
+  outline: 2px solid #c8853a;
+  outline-offset: -2px;
 }
 .grid__card-item.hidden {
   display: none !important;
@@ -334,6 +342,14 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
 
 .navigation {
   margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(13, 26, 16, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(200, 133, 58, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 62em) {
   .navigation {
@@ -877,7 +893,7 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
   font-size: 1.6rem;
   letter-spacing: -0.1px;
   line-height: 2.6rem;
-  color: #a89e90;
+  color: #b3a99b;
   margin-bottom: 3.2rem;
 }
 .card__read-time {
@@ -885,7 +901,7 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #a89e90;
+  color: #b3a99b;
   border-top: 1px solid rgba(200, 133, 58, 0.15);
   padding: 1.5rem 0;
   width: calc(100% - 4rem);
