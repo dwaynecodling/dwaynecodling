@@ -282,7 +282,7 @@ footer {
 }
 
 .about-me__info-content--wrapper {
-  border-bottom: 1px solid #a89e90;
+  border-bottom: 1px solid #b3a99b;
   margin-bottom: 3rem;
 }
 
@@ -542,7 +542,7 @@ footer {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #a89e90;
+  color: #b3a99b;
   min-width: 6rem;
   text-align: center;
 }
@@ -895,7 +895,7 @@ footer {
   font-size: var(--body-text-main);
   font-weight: 400;
   line-height: 1.7;
-  color: #a89e90;
+  color: #b3a99b;
   position: relative;
   z-index: 1;
 }
@@ -964,7 +964,7 @@ footer {
 .strength-section__text {
   font-size: 1.6rem;
   line-height: 2.8rem;
-  color: #a89e90;
+  color: #b3a99b;
   margin-bottom: 3rem;
 }
 .strength-section__stats {
@@ -987,7 +987,7 @@ footer {
 }
 .strength-section__stat-label {
   font-size: 1.1rem;
-  color: #a89e90;
+  color: #b3a99b;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 0.5rem;
@@ -1220,7 +1220,7 @@ blockquote .post-template__text:before {
   font-family: Rockwell, sans-serif;
   font-size: 27rem;
   font-weight: 700;
-  color: #a89e90;
+  color: #b3a99b;
   z-index: -1;
 }
 

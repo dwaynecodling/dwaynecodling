@@ -212,6 +212,35 @@
         .post-back:focus-visible { outline: 2px solid #c8853a; outline-offset: 2px; }
         .post-back:after { display: none; }
 
+        .post-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.3rem;
+            margin-bottom: 1.6rem;
+            padding-top: 1.6rem;
+            flex-wrap: wrap;
+        }
+
+        .post-breadcrumb__link {
+            color: #c8853a;
+            text-decoration: none;
+            transition: color .2s;
+        }
+
+        .post-breadcrumb__link:hover { color: #f4ede0; }
+        .post-breadcrumb__link:focus-visible { outline: 2px solid #c8853a; outline-offset: 2px; }
+        .post-breadcrumb__link:after { display: none; }
+
+        .post-breadcrumb__separator {
+            color: #a89e90;
+            user-select: none;
+        }
+
+        .post-breadcrumb__current {
+            color: #a89e90;
+        }
+
         .back-to-top {
             position: fixed;
             bottom: 7.2rem;
@@ -252,8 +281,9 @@
         }
 
         .back-to-top:focus-visible {
-            outline: 2px solid #f4ede0;
-            outline-offset: 2px;
+            outline: 3px solid #c8853a;
+            outline-offset: 3px;
+            border-color: #c8853a;
         }
 
         .back-to-top:active {
@@ -273,6 +303,13 @@
     <section class="m-bottom-0">
         <div class="post-hero">
             <div class="container">
+                <nav class="post-breadcrumb" aria-label="Breadcrumb">
+                    <a href="/" class="post-breadcrumb__link">Home</a>
+                    <span class="post-breadcrumb__separator">/</span>
+                    <a href="/posts" class="post-breadcrumb__link">Posts</a>
+                    <span class="post-breadcrumb__separator">/</span>
+                    <span class="post-breadcrumb__current"><%- currentArticle.data.titleText %></span>
+                </nav>
                 <a href="/posts" class="post-back">
                     <svg width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                         <rect fill="currentColor" x="6" y="5" width="14" height="2" rx="1"/>
