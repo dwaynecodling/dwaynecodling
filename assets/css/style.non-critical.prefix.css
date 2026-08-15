@@ -1209,8 +1209,8 @@ footer {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center top;
-     object-position: center top;
+  -o-object-position: center 40%;
+     object-position: center 40%;
   display: block;
 }
 
