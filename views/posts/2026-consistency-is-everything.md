@@ -9,7 +9,7 @@ hero:
     card_webp: /assets/img/posts/2026-consistency-is-everything/hero-v2@720w.webp
 alt: Portrait image for consistency post
 title: Consistency is <strong>Everything</strong>
-date: 19 July 2026
+date: 15 August 2026
 excerpt: "Motivation is a feeling. It comes and goes. But consistency is a choice; doing the thing when you absolutely don't feel like doing it. That's what sets people apart."
 published: true
 category: personal
