@@ -46,7 +46,7 @@
     "helmet": "^3.23.1",
     "markdown-it": "^15.0.0",
     "markdown-it-abbr": "^1.0.4",
-    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-emoji": "^3.1.0",
     "markdown-it-modify-token": "^1.0.2",
     "markdown-it-task-checkbox": "^1.0.6",
     "multer": "^2.1.1",

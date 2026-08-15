@@ -5,7 +5,7 @@ export class MarkdownTool {
     private mdLib = require("markdown-it");
     private md: MarkdownIt;
     private plugins = {
-        emoji : require('markdown-it-emoji'),
+        emoji : require('markdown-it-emoji').full,
         abbreviation : require('markdown-it-abbr'),
         modToken : require('markdown-it-modify-token'),
         checkbox : require('markdown-it-task-checkbox')
