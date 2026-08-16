@@ -41,15 +41,15 @@ He could have said no. I was already on the road; I didn't need the favour. But 
 
 I grew up in Jamaica. Portmore, outside Kingston. My commute to school was two hours each way. Not because it was far, but because of traffic and the roads.
 
-My mother took me to school once. One time. Then she said; "This is how you get there," and that was it. I was nine years old and commuting alone.
+My mother took me to school once. One time. Then she said; "This is how you get there," and that was it. I was ten, almost eleven, and commuting alone.
 
-My school had devotion at 7:30 every single morning. No exceptions. If you were late for devotion, you were late for school. Period. So I woke up at 5 o'clock. Every day. No alarm some mornings; just the knowing that I had to be there.
+My school had devotion at 7:30 every single morning. No exceptions. If you were late for devotion, you were late for school. Period. So I woke up at 5 o'clock. Every day. I didn't have an alarm; my body just knew. That's what consistency does to you.
 
-An orange or boiled egg for breakfast if we had it. Then out. I wasn't eating again until lunch because we didn't have much, but I was on that bus at 5:30.
+A cup of tea, an orange, bread, eggs or cornflakes—light meals that sit easy in your stomach on a long commute. My mum understood that much. I'd get lunch midday, but I was on that bus at 5:30.
 
 It wasn't about motivation. I didn't wake up excited to commute four hours a day. I did it because that's what you did. You showed up. You did what needed doing.
 
-That school taught me something too. It was an all-boys school. Strict. The message was simple: be good at being a man. Don't quit. You might fail at something, but you don't give up on yourself.
+That school taught me something too. It was an all-boys school. Strict. We had a motto we repeated every single day; "Fortis cadere, cedere non potest." Latin for: "the brave may fall, but cannot yield." That's what they drilled into us. Not perfection; resilience.
 
 **That's where consistency comes from for me. It's not inspiration. It's foundation.**
 
