@@ -17,7 +17,7 @@ category: personal
 
 > *The difference between somebody that stops and somebody that continues isn't motivation. It's what you do when you don't feel like doing it.*
 
-I was talking to Hasan recently, one of my former students from Nottingham College. We were reconnecting to work on some content together, and the conversation naturally drifted into something deeper. He started asking me how I approach things, why I show up the way I do, what drives consistency.
+I was talking to Hassan recently, one of my former students from Nottingham College. We were reconnecting to work on some content together, and the conversation naturally drifted into something deeper. He started asking me how I approach things, why I show up the way I do, what drives consistency.
 
 And I realised I was trying to explain something that took me decades to understand.
 
@@ -31,7 +31,7 @@ But consistency? **Consistency isn't a feeling. It's a decision.**
 
 Consistency is showing up when you don't feel like it. Especially when you don't feel like it. That's the moment that matters. That's when most people stop. That's what sets people apart.
 
-I explained this to Hasan with a story. I asked him once to shift a meeting from 8 o'clock to 7 o'clock; last minute, on a Sunday. He didn't hesitate. He said yes. And he showed up before 7 o'clock.
+I explained this to Hassan with a story. I asked him once to shift a meeting from 8 o'clock to 7 o'clock; last minute, on a Sunday. He didn't hesitate. He said yes. And he showed up before 7 o'clock.
 
 He could have said no. I was already on the road; I didn't need the favour. But he understood something that most people don't: if you commit to something, you do it. Not because it's convenient. Not because you're motivated. But because you said you would.
 
@@ -73,7 +73,7 @@ I tell people this; I fear nothing at work because I have already survived this 
 
 People think work stress comes from the job itself. But it comes from being unprepared for discomfort. When you've trained yourself to do hard things before the sun comes up, the work problems are manageable.
 
-I was talking to Hasan about this too. I told him about showing up to work already having survived. Already having pushed my limits. And how that changes everything.
+I was talking to Hassan about this too. I told him about showing up to work already having survived. Already having pushed my limits. And how that changes everything.
 
 A client escalates. The team is stressed. There's a website issue. And I'm the calmest person in the room. Not because I don't care. Because I've already been in real survival mode. I've already had to push when every part of me wanted to quit.
 
@@ -83,7 +83,7 @@ So when someone walks in angry, I listen. I hear them. I don't panic because pan
 
 ## The reliability that changes everything
 
-When I asked Hasan to shift that meeting, there was something I was really testing. Not his flexibility. His reliability.
+When I asked Hassan to shift that meeting, there was something I was really testing. Not his flexibility. His reliability.
 
 Because reliability is rare. It's someone you can count on. Someone you don't have to call and remind. Someone who shows up before you even need to ask.
 
