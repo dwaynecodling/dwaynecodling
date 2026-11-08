@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const Middlewares_1 = require("./internal_scripts/Middlewares");
+const PostRepository_1 = require("./repository/PostRepository");
 const home = require("./controllers/mainController");
 const express = require("express");
 const helmet = require("helmet");
@@ -42,6 +43,15 @@ catch {
 }
 app.use(Middlewares_1.Middleware.Compression);
 app.use(Middlewares_1.Middleware.FormUploadHandler);
+app.use(async function (req, res, next) {
+    try {
+        res.locals.footerLatest = (await PostRepository_1.PostRepository.getRecentPosts(1))[0] || null;
+    }
+    catch {
+        res.locals.footerLatest = null;
+    }
+    next();
+});
 app.use("/", home);
 app.use(Middlewares_1.Middleware.CheckForImageRequest({
     listenIn: ["/assets"],

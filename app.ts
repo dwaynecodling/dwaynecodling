@@ -1,4 +1,5 @@
 import {Middleware} from "./internal_scripts/Middlewares";
+import {PostRepository} from "./repository/PostRepository";
 const home = require("./controllers/mainController");
 
 const express = require("express");
@@ -51,6 +52,13 @@ try {
 
 app.use(Middleware.Compression);
 app.use(Middleware.FormUploadHandler);
+
+// Newest post for the footer on every page
+app.use(async function (req, res, next) {
+    try { res.locals.footerLatest = (await PostRepository.getRecentPosts(1))[0] || null; }
+    catch { res.locals.footerLatest = null; }
+    next();
+});
 
 app.use("/", home);
 
