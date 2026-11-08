@@ -57,7 +57,7 @@ Eight weeks before Nottingham Strong I was in physio with a rotator cuff injury,
 
 ## From my coach
 
-Ash summed it up better than I can in his Instagram post:
+Ash summed it up better than I can in his post on [Instagram](https://www.instagram.com/battle_ash_coaching/):
 
 > Dwayne's second novice competition was about one thing: proving he could be better than the lifter who stepped on the platform in March. Mission accomplished.
 >
@@ -77,7 +77,7 @@ Most of all, I did this for my kids. I wanted them to see that however things go
 
 ## Thank you
 
-- **Ash**, for coaching me back from the injury and handling everything on the day.
+- **[Ash](https://www.instagram.com/battle_ash_coaching/)**, for coaching me back from the injury and handling everything on the day.
 - **The battle_ash team**: Liz, Becky, Kate, Becky Goodwin, Matt, Dean and Danusha.
 - **Clinton**, for the photos and video.
 - **[Jager Shoots](https://www.jagershoots.com/)**, for the competition photos in this post.
