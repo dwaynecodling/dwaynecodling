@@ -88,12 +88,26 @@ home.get("/post/:slug", async function (req, res) {
     let index = allPosts.findIndex(p => p.data.slug === slug);
     let newerArticle = index > 0 ? allPosts[index - 1] : null;
     let olderArticle = index >= 0 && index < allPosts.length - 1 ? allPosts[index + 1] : null;
-    let otherArticles = allPosts.filter(p => p.data.slug !== slug).slice(0, 3);
+    // Related: newest posts in the same category first, topped up with the latest posts
+    const category = article.data.category;
+    const others = allPosts.filter(p => p.data.slug !== slug);
+    const sameCategory = category ? others.filter(p => p.data.category === category) : [];
+    let otherArticles = [...sameCategory, ...others.filter(p => !sameCategory.includes(p))].slice(0, 3);
+    const headings: { [key: string]: string } = {
+        leadership: "<strong>More</strong> on leadership",
+        fitness: "<strong>More</strong> on fitness",
+        tech: "<strong>More</strong> on tech",
+        personal: "<strong>More</strong> personal stories"
+    };
+    const relatedHeading = sameCategory.length >= 2 && headings[category] ? headings[category] : "<strong>More</strong> to read";
+    const relatedLink = sameCategory.length >= 2 ? `/posts/${category}` : "/posts";
     res.render("pages/single_post", {
         currentArticle: article,
         otherArticles: otherArticles,
         olderArticle: olderArticle,
-        newerArticle: newerArticle
+        newerArticle: newerArticle,
+        relatedHeading: relatedHeading,
+        relatedLink: relatedLink
     });
 });
 // handles incoming contact form submission

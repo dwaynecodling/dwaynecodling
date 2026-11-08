@@ -1,9 +1,9 @@
 <section>
     <div class="container">
         <div class="post-heading__wrapper">
-            <h2 class="post-heading"><strong>Latest</strong> postings</h2>
-            <a class="post-link" href="/posts">
-                <p class="post-link__text">View all posts</p>
+            <h2 class="post-heading"><%- locals.relatedHeading || "<strong>Latest</strong> postings" %></h2>
+            <a class="post-link" href="<%= locals.relatedLink || '/posts' %>">
+                <p class="post-link__text"><%= locals.relatedLink && locals.relatedLink !== '/posts' ? 'View all ' + locals.relatedLink.split('/').pop() + ' posts' : 'View all posts' %></p>
                 <svg class="post-link__arrow" width="20" height="12" viewBox="0 0 20 12" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
                     <rect fill="currentColor" x="0" y="5" width="14" height="2" rx="1"/>
                     <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 0l6 6-6 6"/>

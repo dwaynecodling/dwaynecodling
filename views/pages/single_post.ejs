@@ -298,7 +298,7 @@
                     <span class="post-breadcrumb__current"><%- currentArticle.data.titleText %></span>
                 </nav>
                 <div class="post-hero__meta">
-                    <a href="/posts#<%= currentArticle.data.category || 'all' %>" class="post-hero__tag"><%= currentArticle.data.category ? currentArticle.data.category.charAt(0).toUpperCase() + currentArticle.data.category.slice(1) : 'Writing' %></a>
+                    <a href="/posts<%= currentArticle.data.category ? '/' + currentArticle.data.category : '' %>" class="post-hero__tag"><%= currentArticle.data.category ? currentArticle.data.category.charAt(0).toUpperCase() + currentArticle.data.category.slice(1) : 'Writing' %></a>
                     <span class="post-hero__date"><%- currentArticle.data.date %></span>
                     <span class="post-hero__read-time">· <%- currentArticle.data.readTime %> read</span>
                 </div>
