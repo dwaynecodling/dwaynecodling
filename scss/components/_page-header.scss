@@ -10,6 +10,7 @@
 
 .page-header__title {
     font-family: 'Playfair Display', Georgia, serif;
+    font-variant-numeric: lining-nums;
     font-size: var(--heading-1);
     font-weight: 700;
     color: $color-cream;

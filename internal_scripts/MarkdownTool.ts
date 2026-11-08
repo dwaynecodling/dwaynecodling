@@ -75,11 +75,13 @@ export class MarkdownTool {
         this.md.renderer.rules.image = function(tokens: any, idx: any, options: any, env: any, self: any) {
             const token = tokens[idx];
             const src = token.attrGet('src') || '';
-            const alt = token.attrGet('alt') || '';
+            // markdown-it keeps the alt text in the token's children, not in an attribute
+            const alt = self.renderInlineAsText(token.children || [], options, env).replace(/"/g, '&quot;');
+            const title = token.attrGet('title') || '';
             const webpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '.webp');
             const mobileWebpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '@720w.webp');
             const mobileSrc = src.replace(/(\.(?:jpe?g|png|gif|webp))$/i, '@720w$1');
-            return `<picture><source type="image/webp" srcset="${mobileWebpSrc} 720w, ${webpSrc} 1440w" sizes="(max-width: 62em) 100vw, 800px"><img src="${src}" srcset="${mobileSrc} 720w, ${src} 1440w" sizes="(max-width: 62em) 100vw, 800px" alt="${alt}" loading="lazy"></picture>`;
+            return `<picture><source type="image/webp" srcset="${mobileWebpSrc} 720w, ${webpSrc} 1440w" sizes="(max-width: 62em) 100vw, 800px"><img src="${src}" srcset="${mobileSrc} 720w, ${src} 1440w" sizes="(max-width: 62em) 100vw, 800px" alt="${alt}" loading="lazy"></picture>${title ? `<span class="post-template__caption">${options.xhtmlOut ? title : title.replace(/</g, '&lt;')}</span>` : ''}`;
         };
     }
 

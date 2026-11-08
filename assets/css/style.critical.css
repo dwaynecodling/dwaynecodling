@@ -389,6 +389,10 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
   box-shadow: 0 4rem 8rem rgba(255, 255, 255, 0.3);
 }
 
+.navigation__logo-dot {
+  color: #c8853a;
+}
+
 .navigation__links {
   list-style: none;
   display: none;
@@ -883,6 +887,7 @@ button:not(.back-to-top):not(.posts-pagination__btn):not(.navigation__menu-toggl
 }
 .card__header {
   font-family: "Playfair Display", Georgia, serif;
+  font-variant-numeric: lining-nums;
   font-size: 2.2rem;
   font-weight: 700;
   color: #f4ede0;

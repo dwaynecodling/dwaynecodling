@@ -55,22 +55,15 @@
     position: relative;
 
     &__bg-text {
-        color: $color-decorative-text;
-        position: absolute;
-        font-size: 6rem;
-        font-weight: 700;
-        z-index: 0;
-        top: 0;
-        left: -1rem;
+        display: block;
+        color: $color-amber;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
         line-height: 1;
-        font-family: 'Playfair Display', Georgia, serif;
+        margin-bottom: $spacing-sm;
         user-select: none;
-
-        @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
-            font-size: 14rem;
-            top: -2rem;
-            left: -3rem;
-        }
     }
 
     &__accent {
@@ -188,6 +181,7 @@
 
   &__stat-value {
     font-family: 'Playfair Display', Georgia, serif;
+    font-variant-numeric: lining-nums;
     font-size: 3rem;
     font-weight: 700;
     color: $color-amber;

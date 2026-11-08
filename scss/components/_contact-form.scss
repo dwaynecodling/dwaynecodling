@@ -14,6 +14,11 @@
     display: block;
     aspect-ratio: 1;
     overflow: hidden;
+    border-radius: 1.6rem 1.6rem 0 0;
+
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
+        border-radius: 1.6rem 0 0 1.6rem;
+    }
 
     @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
         width: 36.8% ;
@@ -29,9 +34,11 @@
 }
 
 .contact-form__content-wrapper {
-    background-color: #1D1F21;
+    background-color: $color-forest-card;
     padding: $spacing-sm * 2;
+    border-radius: 0 0 1.6rem 1.6rem;
     @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
+        border-radius: 0 1.6rem 1.6rem 0;
         width: 63.2%;
         padding: $spacing-5xl;
     }
@@ -44,16 +51,8 @@
     margin-bottom: $spacing-3xl;
 
     .info-snippet__bg-text {
-        z-index: 1;
-        color: $color-decorative-text;
-        font-weight: 500;
-
-        @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
-            font-size: 20rem;
-            top: -10rem;
-            left: -7rem;
-            color: $color-faded-number-2;
-        }
+        text-transform: uppercase;
+        margin-bottom: $spacing-md;
     }
 }
 
@@ -130,8 +129,8 @@
     padding: 1.2rem 2rem;
     width: 100%;
     min-height: 4.4rem;
-    border: 1px solid rgba(200, 133, 58, 0.15);
-    background-color: transparent;
+    border: 1px solid rgba(200, 133, 58, 0.25);
+    background-color: rgba($color-forest-dark, 0.6);
     border-radius: $border-radius-input;
 
     &:focus-visible {
@@ -197,8 +196,8 @@ margin-bottom: $spacing-2xl;
     color: #c8853a;
     min-height: 160px;
     font-family: Roboto, sans-serif;
-    border: 1px solid rgba(200, 133, 58, 0.15);
-    background-color: transparent;
+    border: 1px solid rgba(200, 133, 58, 0.25);
+    background-color: rgba($color-forest-dark, 0.6);
     border-radius: $border-radius-input;
 
     &::placeholder {

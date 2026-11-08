@@ -1,8 +1,8 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.MarkdownTool = void 0;
-var MarkdownTool = /** @class */ (function () {
-    function MarkdownTool() {
+class MarkdownTool {
+    constructor() {
         this.mdLib = require("markdown-it");
         this.plugins = {
             emoji: require('markdown-it-emoji').full,
@@ -16,13 +16,9 @@ var MarkdownTool = /** @class */ (function () {
             breaks: true,
             langPrefix: 'lang-',
             linkify: true,
-            // Enable some language-neutral replacement + quotes beautification
             typographer: true,
             quotes: '“”‘’',
-            // Highlighter function. Should return escaped HTML,
-            // or '' if the source string is not changed and should be escaped externally.
-            // If result starts with <pre... internal wrapper is skipped.
-            highlight: function ( /*str, lang*/) { return ''; },
+            highlight: function () { return ''; },
             modifyToken: function (token, env) {
                 switch (token.type) {
                     case 'image':
@@ -31,19 +27,19 @@ var MarkdownTool = /** @class */ (function () {
                     case 'link_open':
                         token.attrObj.target = '_blank';
                         token.attrObj.rel = 'noopener';
-                        token.attrObj["class"] = 'l';
+                        token.attrObj.class = 'l';
                         token.attrObj.hreflang = 'en';
                         break;
                     case 'bullet_list_open':
-                        token.attrObj["class"] = 'para';
+                        token.attrObj.class = 'para';
                         break;
                     case 'heading_open':
                         if (token.tag === "h3")
-                            token.attrObj["class"] = "post-template__header";
+                            token.attrObj.class = "post-template__header";
                         break;
                     case 'paragraph_open':
                         if (token.tag === "p")
-                            token.attrObj["class"] = "post-template__text";
+                            token.attrObj.class = "post-template__text";
                         break;
                     case 'inline':
                         if (token.tag === "" && token.level === 2) {
@@ -53,7 +49,6 @@ var MarkdownTool = /** @class */ (function () {
                         }
                         break;
                     default:
-                        //console.log(token);
                         break;
                 }
             }
@@ -69,18 +64,19 @@ var MarkdownTool = /** @class */ (function () {
         });
         this.md.use(this.plugins.modToken);
         this.md.renderer.rules.image = function (tokens, idx, options, env, self) {
-            var token = tokens[idx];
-            var src = token.attrGet('src') || '';
-            var alt = token.attrGet('alt') || '';
-            var webpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '.webp');
-            var mobileWebpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '@720w.webp');
-            var mobileSrc = src.replace(/(\.(?:jpe?g|png|gif|webp))$/i, '@720w$1');
-            return "<picture><source type=\"image/webp\" srcset=\"" + mobileWebpSrc + " 720w, " + webpSrc + " 1440w\" sizes=\"(max-width: 62em) 100vw, 800px\"><img src=\"" + src + "\" srcset=\"" + mobileSrc + " 720w, " + src + " 1440w\" sizes=\"(max-width: 62em) 100vw, 800px\" alt=\"" + alt + "\" loading=\"lazy\"></picture>";
+            const token = tokens[idx];
+            const src = token.attrGet('src') || '';
+            const alt = self.renderInlineAsText(token.children || [], options, env).replace(/"/g, '&quot;');
+            const title = token.attrGet('title') || '';
+            const webpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '.webp');
+            const mobileWebpSrc = src.replace(/(\.(?:jpe?g|png))$/i, '@720w.webp');
+            const mobileSrc = src.replace(/(\.(?:jpe?g|png|gif|webp))$/i, '@720w$1');
+            return `<picture><source type="image/webp" srcset="${mobileWebpSrc} 720w, ${webpSrc} 1440w" sizes="(max-width: 62em) 100vw, 800px"><img src="${src}" srcset="${mobileSrc} 720w, ${src} 1440w" sizes="(max-width: 62em) 100vw, 800px" alt="${alt}" loading="lazy"></picture>${title ? `<span class="post-template__caption">${options.xhtmlOut ? title : title.replace(/</g, '&lt;')}</span>` : ''}`;
         };
     }
-    MarkdownTool.prototype.transform = function (input) {
+    transform(input) {
         return this.md.render(input);
-    };
-    return MarkdownTool;
-}());
+    }
+}
 exports.MarkdownTool = MarkdownTool;
+//# sourceMappingURL=MarkdownTool.js.map
