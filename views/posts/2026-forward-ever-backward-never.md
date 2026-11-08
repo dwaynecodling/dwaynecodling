@@ -32,7 +32,7 @@ That's not a small ask. Five agencies, each with its own identity, history, and 
 
 I'm proud of what we achieved.
 
-From unifying teams and establishing consistent people management, to implementing training structures that worked across multiple disciplines; the journey was challenging, rewarding, and deeply meaningful.
+From unifying teams and establishing consistent people management, to implementing training structures that worked across multiple disciplines, the journey was challenging, rewarding, and deeply meaningful.
 
 One highlight I'll carry with me: helping to establish a training programme that enabled Adobe Commerce developers to upskill into Shopify. It unlocked new opportunities for individuals and strengthened the wider capability of the organisation. When I see someone grow into a role they didn't think they were ready for, that's what leadership is for.
 
@@ -46,7 +46,7 @@ In the meantime, I'm choosing to invest in becoming the strongest version of mys
 
 ## The thing about legacy
 
-Every role is temporary. The org chart moves on. But the people you helped grow, the culture you shaped, the standards you raised; those things have a way of lasting.
+Every role is temporary. The org chart moves on. But the people you helped grow, the culture you shaped, the standards you raised: those things have a way of lasting.
 
 That's the legacy I'm most interested in. Not the title. Not the deliverables. The people.
 

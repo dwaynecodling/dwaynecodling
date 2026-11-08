@@ -49,7 +49,7 @@ Eight weeks before Nottingham Strong I was in physio with a rotator cuff injury,
 
 **Deadlift: best 227.5kg**
 
-- 207.5kg: no lift. I paused, the bar bumped my legs and tipped me forward.
+- 207.5kg: no lift. I paused; the bar bumped my legs and tipped me forward.
 - 217.5kg: good lift. Took the slack out and it flew.
 - 227.5kg: good lift. Fast off the floor, no hitching. A PB, with more in the tank.
 

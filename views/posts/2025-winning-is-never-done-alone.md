@@ -11,7 +11,7 @@ alt: A team celebrating a shared win together
 title: Winning is never done <strong>alone</strong>
 category: leadership
 date: 09 September 2025
-excerpt: "The wins I'm most proud of didn't happen in isolation. They happened because of the people around me; some I expected, some I didn't."
+excerpt: "The wins I'm most proud of didn't happen in isolation. They happened because of the people around me: some I expected, some I didn't."
 published: true
 ---
 
@@ -23,7 +23,7 @@ I used to think that the biggest factor in any win was personal effort. Turn up,
 
 Sometimes that support comes from where you'd expect it. But often it comes from places you wouldn't.
 
-My partner has been harder on me than any coach I've had. When I've slacked off, they've called it out. Not harshly; honestly. They've stood beside me, believed in what I was working towards, and held me to a standard I might have let slip on my own.
+My partner has been harder on me than any coach I've had. When I've slacked off, they've called it out. Not harshly, honestly. They've stood beside me, believed in what I was working towards, and held me to a standard I might have let slip on my own.
 
 That kind of support is underrated. It doesn't always look like encouragement. Sometimes it looks like accountability.
 
@@ -39,7 +39,7 @@ These are the people who push you to give one more rep, make one more pitch, run
 
 This one took me longer to appreciate.
 
-The people you're competing against; the ones pushing for the same things you are; they sharpen you too. They raise the standard. They show you what's possible. They push you past limits you might have been comfortable sitting at.
+The people you're competing against, the ones pushing for the same things you are, they sharpen you too. They raise the standard. They show you what's possible. They push you past limits you might have been comfortable sitting at.
 
 I've come to see competition differently because of this. It's not just a race to beat someone else. It's a context that brings out a version of you that wouldn't exist without the challenge.
 
@@ -47,7 +47,7 @@ I've come to see competition differently because of this. It's not just a race t
 
 All of this came into sharp focus for me during Ash's Summer Challenge.
 
-Ash set the challenge. And Ash was also my toughest competition. That combination; your partner being the one who pushes you hardest while also being the one standing beside you; is something I didn't fully appreciate until I was in it.
+Ash set the challenge. And Ash was also my toughest competition. That combination, your partner being the one who pushes you hardest while also being the one standing beside you, is something I didn't fully appreciate until I was in it.
 
 When I slacked off, Ash called it out. When I wanted to stop, Ash was already a rep ahead. That's not just support; that's someone raising your standard by simply showing up at theirs.
 
@@ -59,7 +59,7 @@ And that's the part that stayed with me. The win mattered. But the person who ma
 
 ## It takes a team
 
-Winning; real winning; doesn't happen in isolation.
+Winning, real winning, doesn't happen in isolation.
 
 It happens because of the partner who holds you accountable, the mentor who builds your resilience, and yes, even the competitors who raise your game.
 
@@ -67,4 +67,4 @@ It happens because of the partner who holds you accountable, the mentor who buil
 
 ![The team that makes winning possible](/assets/img/posts/2026-winning-is-never-done-alone/winning-team-3.jpg)
 
-The best thing you can do is know who those people are in your life; and make sure they know what they mean to you.
+The best thing you can do is know who those people are in your life, and make sure they know what they mean to you.

@@ -48,9 +48,9 @@ Honestly, that moment restored me. It made me smile, gave me a second wind, and 
 
 Some things are meant to be. And perhaps the fact that Foundation's brand colour is green is just another little piece of symbolism. 🇯🇲💚
 
-## Fighting above our weight
+## Punching above our weight
 
-Foundation may be a smaller agency, but it fights well above its weight class. The expertise is clear, the ambition is obvious, and the standard we hold ourselves to is high.
+Foundation may be a smaller agency, but it punches well above its weight. The expertise is clear, the ambition is obvious, and the standard we hold ourselves to is high.
 
 Ryan has already agreed that the next summer social is in Jamaica if we hit our higher bonus targets, so we're definitely holding him to that. 😂
 

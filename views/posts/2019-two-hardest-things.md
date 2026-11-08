@@ -26,7 +26,7 @@ I used to think that was funny. Then I had a day where both of them broke me.
 
 ## The problem
 
-I was trying to get a JS template to load via a Magento header and footer on to a WordPress site. On paper it was straightforward. In practice, nothing was showing up.
+I was trying to get a JS template to load via a Magento header and footer onto a WordPress site. On paper it was straightforward. In practice, nothing was showing up.
 
 Hours in, I finally worked out what was wrong. I wasn't running both environments locally; I'd been testing against staging the whole time. The fix itself wasn't the hard part. Finding it was. And by the time I did, I'd already spent far too long going in circles.
 

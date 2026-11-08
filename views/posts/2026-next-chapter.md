@@ -37,14 +37,14 @@ That matters more than I can articulate.
 
 Developers naturally learn from open source and give back to the community. It's how we grow. But it's more than that; it's a fundamentally different model of ownership. With open source, you own your code, your product, your intellectual property. You control the direction, the vision, the future.
 
-Compare that to platform-based SaaS ecosystems, where the platform itself owns the constraints. They can shift the rules, change the terms, pivot the strategy; sometimes day to day. You're building on their land, following their playbook.
+Compare that to platform-based SaaS ecosystems, where the platform itself owns the constraints. They can shift the rules, change the terms, pivot the strategy, sometimes day to day. You're building on their land, following their playbook.
 
 > **With open source, you own what you produce.** That's closer to how I believe development should work.
 
-It's an ownership model; I think of it like Prince owning his masters instead of handing them over to the industry. Too many people don't realize what that freedom actually means: control over your code, your data, your destiny.
+It's an ownership model; I think of it like Prince owning his masters instead of handing them over to the industry. Too many people don't realise what that freedom actually means: control over your code, your data, your destiny.
 
 ## What's Next
 
-**I'm joining Foundation Commerce as Head of Development.** I'm stepping into this role grounded in everything I've learned; the importance of community, the power of ownership, and the value of building with intention. I'm grateful for Ryan Copeland and the team at [Foundation Commerce](https://foundationcommerce.co.uk/about-us/) for believing in this vision. Looking forward to building with you all and growing what we're creating together.
+**I'm joining Foundation Commerce as Head of Development.** I'm stepping into this role grounded in everything I've learned: the importance of community, the power of ownership, and the value of building with intention. I'm grateful for Ryan Copeland and the team at [Foundation Commerce](https://foundationcommerce.co.uk/about-us/) for believing in this vision. Looking forward to building with you all and growing what we're creating together.
 
 Here we go 🚀.

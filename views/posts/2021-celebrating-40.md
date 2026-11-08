@@ -74,13 +74,13 @@ I love my Jamaican food, but I realised that opening my palate and stopping cons
 
 Having just celebrated my 40th birthday, feeling physically and mentally better than ever, I am now on a journey, looking forward to seeing where it takes me. I learned that discipline, commitment, and support are necessary to achieve any goal.
 
-So no matter what your goal is: get that in place and you will be sure to attain it.
+So no matter what your goal is, get that in place and you will be sure to attain it.
 
 ## My exercise regime
 
 - Focus T25
 - Lift4
-- P90x3
+- P90X3
 - Muscle Burns Fat
 
 ## With thanks to my support network

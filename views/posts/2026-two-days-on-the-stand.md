@@ -30,7 +30,7 @@ People asked for things to be simpler. What they actually want is to not get stu
 
 ## AI and ownership
 
-AI came up a lot. Everyone wants to be ready for it, but their customers aren't all the same. Some take to it; others need a lot more hand holding. The merchants handling it well look after the customers they already have while going after new ones. To do that, they need a frontend they can change quickly.
+AI came up a lot. Everyone wants to be ready for it, but their customers aren't all the same. Some take to it; others need a lot more hand-holding. The merchants handling it well look after the customers they already have while going after new ones. To do that, they need a frontend they can change quickly.
 
 **Ownership is behind a lot of the moves, more than cost.** People want to own their stack.
 

@@ -20,7 +20,7 @@ category: leadership
 
 To maximise your value, you have to commit fully to the work.
 
-That means putting in the time, showing up consistently, and accepting that value isn't always something you can measure in numbers. Sometimes it's defined by your progression; by how much you've improved, and whether the end result justifies the effort you invested.
+That means putting in the time, showing up consistently, and accepting that value isn't always something you can measure in numbers. Sometimes it's defined by your progression: by how much you've improved, and whether the end result justifies the effort you invested.
 
 ## The commitment
 
@@ -46,7 +46,7 @@ What matters more is the support. The messages. The encouragement. The people wh
 
 There is something powerful about being supported while doing something hard. It amplifies the experience. It makes the effort meaningful in a way that goes beyond personal achievement.
 
-So yes; maximising your value starts with you. But it doesn't end there.
+So yes, maximising your value starts with you. But it doesn't end there.
 
 It becomes something shared. You improve yourself, and in doing so, you give something to others. You show others what's possible.
 

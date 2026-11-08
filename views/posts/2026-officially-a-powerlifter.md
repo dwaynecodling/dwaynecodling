@@ -32,7 +32,7 @@ My coach Ash saw it the same way. As he put it [on Instagram](https://www.instag
 
 Competition day itself was a lesson in resilience.
 
-Squats didn't go to plan early on; missing 140kg and 147.5kg. Resetting mentally was key, and I was able to come back and secure 150kg with three white lights.
+Squats didn't go to plan early on: missing 140kg and 147.5kg. Resetting mentally was key, and I was able to come back and secure 150kg with three white lights.
 
 Bench press was more composed. 120kg moved well, 127.5kg highlighted a small technical issue, but I adjusted and finished strong with 130kg. There's more to come there.
 

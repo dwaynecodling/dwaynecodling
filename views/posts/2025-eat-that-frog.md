@@ -20,7 +20,7 @@ category: leadership
 
 ## It's not about productivity
 
-Eat that frog. Take on your hardest task first; the thing you're most likely to avoid. Once it's done, the rest of your day feels easier.
+Eat that frog. Take on your hardest task first: the thing you're most likely to avoid. Once it's done, the rest of your day feels easier.
 
 Most people nod when they hear it. Fewer actually do it.
 
@@ -28,7 +28,7 @@ Most people nod when they hear it. Fewer actually do it.
 
 ## Where I'm coming from
 
-I grew up in Jamaica where getting out there and doing it for yourself wasn't a motivational phrase; it was just life. You hustled, or you didn't move forward.
+I grew up in Jamaica, where getting out there and doing it for yourself wasn't a motivational phrase; it was just life. You hustled, or you didn't move forward.
 
 That shaped how I see challenges. Not as obstacles to success, but as the path to it.
 

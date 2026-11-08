@@ -19,7 +19,7 @@ category: personal
 
 I have been off work since January. That was not the plan, but that is how it went.
 
-I took the time to actually stop. Then I competed in my first weightlifting competition as an athlete.  We went to Jamaica as a family. Both of those things reminded me what it feels like to be fully present somewhere.
+I took the time to actually stop. Then I competed in my first powerlifting competition as an athlete. We went to Jamaica as a family. Both of those things reminded me what it feels like to be fully present somewhere.
 
 ![Jamaican Vacation](/assets/img/posts/2026-everything-in-its-own-time/vacation.jpg "Jamaican Vacation")
 
@@ -35,7 +35,7 @@ I chose not to panic.
 
 I looked broadly. The police force, public sector, fintech, renewables. All interesting spaces, all doing important work. But the more I looked around, the clearer something became.
 
-**I still have more to do in ecommerce.** There is something unfinished there for me. The complexity of it, the scale, the way technology and commerce intersect at pace; I am not done with that world yet.
+**I still have more to do in ecommerce.** There is something unfinished there for me. The complexity of it, the scale, the way technology and commerce intersect at pace: I am not done with that world yet.
 
 So rather than forcing a move into something new for the sake of it, I leaned into the time I had.
 
@@ -61,7 +61,7 @@ Prompting well is a skill. Knowing what to check is a skill. Knowing when the ou
 
 **The site being live is the achievement.** Not because it is technically impressive, but because it is mine. My posts from 2017 sit next to posts from this year. You can see the journey. LinkedIn does not give you that. The algorithm buries everything. Here, nothing gets lost.
 
-Beyond getting it live, I spent time optimizing it properly. Performance matters. Every millisecond of load time is a decision someone makes about whether to stay or leave. Critical CSS, strategic font loading, image optimization—these are not premature optimizations. They are the foundation of respectful web development.
+Beyond getting it live, I spent time optimising it properly. Performance matters. Every millisecond of load time is a decision someone makes about whether to stay or leave. Critical CSS, strategic font loading, image optimisation: these are not premature optimisations. They are the foundation of respectful web development.
 
 ![Lighthouse Metrics](/assets/img/posts/2026-everything-in-its-own-time/lighthouse-metrics.png "Performance Metrics: 1.5s FCP, 2.3s LCP, 0ms TBT, 0 CLS, 1.9s SI")
 

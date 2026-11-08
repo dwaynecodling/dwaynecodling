@@ -19,11 +19,11 @@ category: leadership
 
 I am personally looking to change the current levels of underrepresented Black professionals in the tech industry, particularly in leadership. You cannot be what you cannot see, and I want to be a role model, especially to my two little Black boys who look up to me.
 
-Some home truths; I have never celebrated Black History Month in the UK, even though it started way back in 1989, and I have been in the UK since 2002. I cannot remember a time when it was something I actively celebrated. It's not like Halloween, openly celebrated by all; Black History Month has always felt like an under the radar thing. I wanted this year to be different.
+Some home truths: I have never celebrated Black History Month in the UK, even though it started way back in 1987, and I have been in the UK since 2002. I cannot remember a time when it was something I actively celebrated. It's not like Halloween, openly celebrated by all; Black History Month has always felt like an under-the-radar thing. I wanted this year to be different.
 
 Recent events had highlighted the fight for racial equality and the resurgence of the Black Lives Matter movement. What better time to bring BHM into the mainstream?
 
-Being in lockdown, it was important I celebrated Black History Month not just with friends and family, but with the team at JH too. So for 31 days straight, I shared inspiring Black people with my work colleagues on the company's Slack channel; their history, stories, books, movies and videos.
+Being in lockdown, it was important I celebrated Black History Month not just with friends and family, but with the team at JH too. So for 31 days straight, I shared inspiring Black people with my work colleagues on the company's Slack channel: their history, stories, books, movies and videos.
 
 At first it was easy; I knew most of the Black American historical figures that get posted every year. But I felt I could go deeper, so I focused on finding people whose stories are not in the mainstream, looking across the UK, Africa, the Caribbean and the US, from different eras past and present.
 
@@ -45,11 +45,11 @@ Here is my list of inspiring Black people and stories, along with the ones contr
 
 #### [**1/31 Mary Jackson, Katherine Johnson, and Dorothy Vaughan**](https://www.theguardian.com/film/2016/dec/11/black-women-mathematicians-nasa-john-glenn-space-race)
 
-The Black Ladies of NASA, depicted in the book '[Hidden Figures](https://en.wikipedia.org/wiki/Hidden_Figures_(book))'. See also "[Mercury 13](https://www.netflix.com/title/80174436?s=a&trkid=13747225&t=cp)" about the female pilots who fought to be considered for the space program.
+The Black Ladies of NASA, depicted in the book '[Hidden Figures](https://en.wikipedia.org/wiki/Hidden_Figures_(book))'. See also "[Mercury 13](https://www.netflix.com/title/80174436?s=a&trkid=13747225&t=cp)" about the female pilots who fought to be considered for the space programme.
 
 #### [**2/31 Madam C. J. Walker**](https://en.m.wikipedia.org/wiki/Madam_C._J._Walker)
 
-Born Sarah Breedlove in 1867, Walker was one of the first African American female millionaires in the United States; a businesswoman and philanthropist who built her empire from nothing.
+Born Sarah Breedlove in 1867, Walker was one of the first African American female millionaires in the United States, a businesswoman and philanthropist who built her empire from nothing.
 
 #### [**3/31 James Baldwin**](https://en.m.wikipedia.org/wiki/James_Baldwin)
 
@@ -69,7 +69,7 @@ At nine she could neither read nor write. By thirteen, after meeting a missionar
 
 #### [**7/31 Korey Wise**](https://www.bbc.co.uk/news/newsbeat-48609693)
 
-One of the Central Park Five, wrongfully convicted in 1989 and exonerated in 2002 after spending 14 years in prison. Wise now travels the US as an advocate for criminal justice reform.
+One of the Central Park Five, wrongfully convicted in 1989 and exonerated in 2002 after spending about 13 years in prison. Wise now travels the US as an advocate for criminal justice reform.
 
 #### [**8/31 Alvin Ailey**](https://en.wikipedia.org/wiki/Alvin_Ailey)
 
@@ -105,7 +105,7 @@ After World War II, the British government encouraged mass immigration from the 
 
 #### [**16/31 Sheku Kanneh-Mason MBE**](https://en.m.wikipedia.org/wiki/Sheku_Kanneh-Mason)
 
-British cellist and winner of the 2016 BBC Young Musician award; the first Black musician to win the competition since its launch in 1978.
+British cellist and winner of the 2016 BBC Young Musician award, the first Black musician to win the competition since its launch in 1978.
 
 #### [**17/31 Minnie Riperton**](https://en.m.wikipedia.org/wiki/Minnie_Riperton)
 
@@ -121,7 +121,7 @@ Emperor of Ethiopia from 1930 to 1974, who steered his country into the mainstre
 
 #### [**20/31 Steve McQueen**](https://www.esquire.com/uk/culture/a34367773/watch-steve-mcqueen-esquire-townhouse-2020/)
 
-British filmmaker and the first Black director to win the Academy Award for Best Picture, for 12 Years a Slave in 2013. His Small Axe anthology series brought stories of the West Indian community in Britain to a global audience.
+British filmmaker and the first Black producer to win the Academy Award for Best Picture, for 12 Years a Slave in 2014. His Small Axe anthology series brought stories of the West Indian community in Britain to a global audience.
 
 #### [**21/31 Dido Elizabeth Belle**](https://en.m.wikipedia.org/wiki/Dido_Elizabeth_Belle)
 
@@ -179,11 +179,11 @@ American R&B musician and activist who, as a Black man, engaged directly with me
 
 #### [**Misty Copeland**](https://en.wikipedia.org/wiki/Misty_Copeland)
 
-The first African American woman to be promoted to principal ballerina, paving the way for greater diversity in classical ballet.
+The first African American woman to be promoted to principal dancer at American Ballet Theatre, paving the way for greater diversity in classical ballet.
 
 #### [**Sir David Adjaye**](https://www.theguardian.com/artanddesign/2020/sep/30/david-adjaye-riba-royal-gold-medal)
 
-Ghanaian-British architect best known for designing the National Museum of African American Arts and Culture in Washington DC. In 2020 he was awarded the RIBA Royal Gold Medal; the first Black recipient in the award's 173-year history.
+Ghanaian-British architect best known for designing the National Museum of African American History and Culture in Washington DC. In 2020 he was awarded the RIBA Royal Gold Medal, the first Black recipient in the award's 173-year history.
 
 #### [**Paul Stephenson**](https://en.m.wikipedia.org/wiki/Paul_Stephenson_(civil_rights_campaigner))
 
@@ -199,7 +199,7 @@ Six-time NBA champion and widely regarded as the greatest basketball player of a
 
 #### [**Betye Saar**](https://www.moma.org/artists/5102)
 
-African-American artist known for her work in assemblage. A visual storyteller and accomplished printmaker whose work explores the realities of Black oppression and the mysticism of symbols through everyday found objects.
+African American artist known for her work in assemblage. A visual storyteller and accomplished printmaker whose work explores the realities of Black oppression and the mysticism of symbols through everyday found objects.
 
 #### [**Viola Davis**](https://www.youtube.com/watch?v=98ZAEhQ40g8)
 

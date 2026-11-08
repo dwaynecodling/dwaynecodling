@@ -11,7 +11,7 @@ hero:
 alt: Competing at the Deka Fit challenge
 title: Why does it have to be <strong>this hard?</strong>
 date: 22 June 2025
-excerpt: "At the end of another brutal challenge, Kate asked the question we were both thinking. My answer surprised even me — but it was the truth."
+excerpt: "At the end of another brutal challenge, Kate asked the question we were both thinking. My answer surprised even me, but it was the truth."
 published: true
 category: fitness
 ---

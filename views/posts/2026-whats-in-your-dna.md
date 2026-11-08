@@ -16,13 +16,13 @@ published: true
 category: personal
 ---
 
-> *Memory is encoded in our DNA. What your ancestors survived, what they endured, the resilience they built; it's in you. Not as a burden. As a strength.*
+> *Memory is encoded in our DNA. What your ancestors survived, what they endured, the resilience they built: it's in you. Not as a burden. As a strength.*
 
-I saw something recently that made me stopped and peak my interest. A story about a ten-year-old Japanese researcher studying butterflies.
+I saw something recently that made me stop and piqued my interest. A story about a ten-year-old Japanese researcher studying butterflies.
 
 He wanted to understand if caterpillars and butterflies remember things. So he trained caterpillars to avoid lavender using a specific stimulus. Then he watched those same creatures after they transformed into butterflies. They still avoided the lavender. The memory carried over through the metamorphosis.
 
-But here's where it gets interesting: he tested their offsprings. Butterflies that were never trained, never exposed to the experiment. They still avoided the lavender.
+But here's where it gets interesting: he tested their offspring. Butterflies that were never trained, never exposed to the experiment. They still avoided the lavender.
 
 **The memory was passed down through generations without training.**
 
@@ -44,9 +44,9 @@ My mother was one of the most selfless people I've ever known. And I didn't unde
 
 People would knock on our gate every morning. A neighbour needed money to go overseas for work. Someone else needed help feeding their family. And my mother would help. Not because we had it to spare. We didn't have much. But because she understood something.
 
-She told me; "God has put me in a position to help. So I'm going to help."
+She told me: "God has put me in a position to help. So I'm going to help."
 
-I used to get angry about it. I'd think; "We don't have this. Why are you giving it away?" I thought she was making a mistake. I thought she was taking food from our table to give to people who might not even deserve it.
+I used to get angry about it. I'd think: "We don't have this. Why are you giving it away?" I thought she was making a mistake. I thought she was taking food from our table to give to people who might not even deserve it.
 
 I was wrong.
 
@@ -62,7 +62,7 @@ My mother endured hardship. She knew loss. But instead of becoming bitter, inste
 
 And that choice rippled forward. It shaped me. It shaped how I see the world. It shaped the way I'm learning to live.
 
-I didn't understand generational memory when I was younger. I thought each person started fresh. But we don't. We carry something forward. The question is; are we carrying forward the trauma or the resilience? Are we carrying forward the fear or the strength?
+I didn't understand generational memory when I was younger. I thought each person started fresh. But we don't. We carry something forward. The question is: are we carrying forward the trauma or the resilience? Are we carrying forward the fear or the strength?
 
 My ancestors survived things I can't even fathom. They were resilient in ways that modern life doesn't ask us to be. And that's in me. Not as a burden to overcome. But as a foundation I'm standing on.
 
@@ -78,7 +78,7 @@ But they also see me being present. They see me choosing them over the next prom
 
 **They're not inheriting trauma. They're inheriting resilience and choice.**
 
-And that matters. Because the DNA carries forward, but so does the choices we make. The values we live by. The way we treat people. The generosity we model.
+And that matters. Because the DNA carries forward, but so do the choices we make. The values we live by. The way we treat people. The generosity we model.
 
 I'm learning to be like my mother. Not because I'm naturally wired that way, but because I'm choosing to be. I'm choosing to give more than I think I should. I'm choosing to help when I could protect myself instead. I'm choosing to believe that what you give comes back.
 
@@ -86,7 +86,7 @@ And the weird part? It's true. It actually works that way.
 
 ## The bigger inheritance
 
-When I was struggling; when I didn't have a job coming in, when I wasn't sure what was next; I never worried about money. Not because I had savings. But because I'd learned something from my mother. I'd learned that generosity works like a law.
+When I was struggling, when I didn't have a job coming in, when I wasn't sure what was next, I never worried about money. Not because I had savings. But because I'd learned something from my mother. I'd learned that generosity works like a law.
 
 If you give more than you think you should give, you get back more than you could have asked for. It sounds crazy. It sounds too simple. But I've lived it.
 

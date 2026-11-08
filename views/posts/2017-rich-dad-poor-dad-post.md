@@ -37,7 +37,7 @@ His example that stuck with me: it's better to live in a small house for five ye
 
 One of the most honest lines in the book: being broke is temporary, being poor is eternal.
 
-Broke is a financial state. Poor is a mindset. You can be broke today and rich in five years if you are making the right decisions now. But if you stay in a poor mindset: spending everything, avoiding risk, waiting for someone to sort it out, the situation becomes permanent.
+Broke is a financial state. Poor is a mindset. You can be broke today and rich in five years if you are making the right decisions now. But if you stay in a poor mindset (spending everything, avoiding risk, waiting for someone to sort it out), the situation becomes permanent.
 
 ## Managing fear and greed
 
@@ -47,7 +47,7 @@ The discipline is managing both. Not letting fear keep you from building, and no
 
 ## How wealth actually grows
 
-The book points toward several ways to build income-generating assets: investing in start-ups and small businesses, real estate, investment partnerships, and backing ideas with potential. None of these are overnight wins. All of them require patience, research, and a willingness to take calculated risk.
+The book points towards several ways to build income-generating assets: investing in start-ups and small businesses, real estate, investment partnerships, and backing ideas with potential. None of these are overnight wins. All of them require patience, research, and a willingness to take calculated risk.
 
 Partnership is highlighted as one of the smarter moves: sharing risk, combining knowledge, and moving faster than you could alone.
 

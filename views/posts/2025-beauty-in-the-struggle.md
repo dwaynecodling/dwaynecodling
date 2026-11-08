@@ -8,10 +8,10 @@ hero:
     lrg_webp: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy.webp
     card_webp: /assets/img/posts/2025-beauty-in-the-struggle/mrs-dorothy-square.webp
     position: center center
-alt: Mrs Dorothy — the inspiration behind this post
+alt: Mrs Dorothy, the inspiration behind this post
 title: There is beauty in the <strong>struggle</strong>
 date: 08 May 2025
-excerpt: "Everyone loves an underdog story. But the beauty of the struggle isn't in how it ends — it's in the grinding-to-make-it phase."
+excerpt: "Everyone loves an underdog story. But the beauty of the struggle isn't in how it ends; it's in the grinding-to-make-it phase."
 published: true
 category: personal
 ---
@@ -22,7 +22,7 @@ There is beauty in the struggle.
 
 I grew up with my mother selling small goods (cigarettes, sweets, and biscuits) on the front veranda of our family house to provide for me and my siblings.
 
-Mr. Lex, a neighbour, would come every morning without fail to buy a pack of cigarettes. That used to be enough for my lunch and bus fare to school. I guess he was struggling to quit the habit. And for someone who never wanted me to smoke (he told me that repeatedly), there was a kind of beauty in his struggle. His bad habit helped keep us going.
+Mr Lex, a neighbour, would come every morning without fail to buy a pack of cigarettes. That used to be enough for my lunch and bus fare to school. I guess he was struggling to quit the habit. And for someone who never wanted me to smoke (he told me that repeatedly), there was a kind of beauty in his struggle. His bad habit helped keep us going.
 
 ## You weren't supposed to be here
 
@@ -46,6 +46,6 @@ The beauty of the underdog story is that they keep failing but keep trying. The 
 
 > "The hard times you remember most. The grinding-to-make-it phase is the best part."
 
-Mrs. Dorothy. You are a true inspiration, an underdog who made it through countless sacrifices for something you held dear to your heart. I might not know all of your struggles, but the beauty of it is that your legacy will live on.
+Mrs Dorothy. You are a true inspiration, an underdog who made it through countless sacrifices for something you held dear to your heart. I might not know all of your struggles, but the beauty of it is that your legacy will live on.
 
 I promise.

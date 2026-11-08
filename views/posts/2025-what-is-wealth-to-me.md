@@ -11,7 +11,7 @@ hero:
 alt: Dwayne celebrating with family
 title: What is <strong>wealth</strong> to me
 date: 06 August 2025
-excerpt: "For me, having the most money was never the goal. Having enough money to give you time; that's the real goal. Turning 44 made me reflect on what wealth actually means."
+excerpt: "For me, having the most money was never the goal. Having enough money to give you time: that's the real goal. Turning 44 made me reflect on what wealth actually means."
 published: true
 category: personal
 ---
@@ -28,7 +28,7 @@ This year I turned 44. Birthdays have a way of making you pause, and this one mo
 
 I'm not chasing rich in the traditional sense. I'm aiming to age gracefully and live a fulfilling life.
 
-For me, having the most money was never the goal. **Having enough money to give you time; that's the real goal.**
+For me, having the most money was never the goal. **Having enough money to give you time: that's the real goal.**
 
 Wealth isn't a number. It's a feeling.
 
@@ -38,7 +38,7 @@ Wealth isn't a number. It's a feeling.
 
 This year my birthday fell alongside Emancipation Day and Jamaican Independence Day. I celebrated with family and friends who were fully present in those moments with me.
 
-That's when it landed. That feeling of being surrounded by the people you love; that's where the real richness comes from.
+That's when it landed. That feeling of being surrounded by the people you love: that's where the real richness comes from.
 
 Wealth is having the time to watch my daughter take her first steps and being truly present in that moment. That milestone happened on Independence Day, which felt like a special and fitting coincidence.
 

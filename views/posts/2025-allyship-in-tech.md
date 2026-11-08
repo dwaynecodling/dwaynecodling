@@ -19,13 +19,13 @@ category: leadership
 
 I recently attended **The Importance of Allyship in Tech**, hosted by Georgie Lynskey and the G&T (girls and tech!) community in Leeds.
 
-It was a timely and necessary conversation; one that gave me a lot to reflect on during the journey home.
+It was a timely and necessary conversation, one that gave me a lot to reflect on during the journey home.
 
 ## Rebels vs clones
 
 While I was on the speaking circuit, I often talked about rebels versus clones in tech. Why progress stalls when we hire and promote people who all think and look the same. Why diversity and representation matter far more than we sometimes admit.
 
-One question that came up again; one I've asked many times before:
+One question that came up again, one I've asked many times before:
 
 **How can we build products and deliver services for a diverse world, yet still hesitate to collaborate with and invest in diverse talent that would clearly strengthen what we do?**
 

@@ -34,9 +34,9 @@ But people saw something in me. I saved up airfare, borrowed a month's college f
 
 ---
 
-Most parents want better for their children than they had themselves. My parents would say they achieved that. Now that I'm a parent, I understand how true that is, and how hard it is to deliver on. Faith, circumstances, luck, the cards you're dealt; they all have a say. Great family, good friends, a good education, money; none of it guarantees anything.
+Most parents want better for their children than they had themselves. My parents would say they achieved that. Now that I'm a parent, I understand how true that is, and how hard it is to deliver on. Faith, circumstances, luck, the cards you're dealt: they all have a say. Great family, good friends, a good education, money: none of it guarantees anything.
 
-Some say growing up with nothing is actually an advantage; it makes you hungrier, less likely to take things for granted.
+Some say growing up with nothing is actually an advantage: it makes you hungrier, less likely to take things for granted.
 
 *Hold that thought.*
 
@@ -50,10 +50,10 @@ Being a Black man, you face prejudices. Some are obvious enough to navigate arou
 
 The chips don't stack up in a Black man's favour. The higher up we go, the tougher and lonelier the road gets.
 
-My sons, Danté and André, will walk that road too. Despite being mixed-race, they won't be seen that way; they'll be thought of as Black boys, or mixed at best. People form assumptions from social media, from the news, from a lack of education, or simply from fear of where you come from and how you came into this world.
+My sons, Dante and Andre, will walk that road too. Despite being mixed-race, they won't be seen that way: they'll be thought of as Black boys, or mixed at best. People form assumptions from social media, from the news, from a lack of education, or simply from fear of where you come from and how you came into this world.
 
 I want to counter that with a head start: better education, a stronger support network, an environment where the people around them have a more progressive mindset. Why try to do it alone when everything in my life has shown me that people who help you remove barriers you could never clear by yourself? I believe in it and I live by it: *it takes a community to raise a child.*
 
-No one truly wants to leap into the unknown. We could all stay where we are and deal with circumstances as best we can. But it's against my nature. Leaving the family I grew up with, venturing into an unknown world at 20; that brought me here.
+No one truly wants to leap into the unknown. We could all stay where we are and deal with circumstances as best we can. But it's against my nature. Leaving the family I grew up with, venturing into an unknown world at 20: that brought me here.
 
 ---

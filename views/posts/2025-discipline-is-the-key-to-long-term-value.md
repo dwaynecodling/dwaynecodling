@@ -20,7 +20,7 @@ published: true
 
 ## The wake-up call
 
-Looking back, I didn't always take school seriously. I had the ability; just not the focus.
+Looking back, I didn't always take school seriously. I had the ability, just not the focus.
 
 I missed the grade I needed in Maths to get into sixth form and ended up going to my history teacher for help. She told me I was too capable to be in that position.
 
@@ -48,4 +48,4 @@ That's where the growth is.
 
 ---
 
-If you made it this far; what's one area in your life where discipline is starting to pay off?
+If you made it this far, what's one area in your life where discipline is starting to pay off?
