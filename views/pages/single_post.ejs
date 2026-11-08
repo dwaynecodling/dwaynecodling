@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="<%= currentArticle.data.excerpt %>">
     <meta name="keywords" content="<%= currentArticle.data.category %>, <%= currentArticle.data.category ? currentArticle.data.category + ', ' : '' %>technology, leadership, insights">
-    <title><%- currentArticle.data.titleText %> — Dwayne Codling</title>
+    <title><%- currentArticle.data.titleText %> | Dwayne Codling</title>
     <meta property="og:title" content="<%= currentArticle.data.titleText %>" />
     <meta property="og:description" content="<%= currentArticle.data.excerpt %>" />
     <meta property="og:image" content="https://dwaynecodling.com<%= currentArticle.data.hero.lrg_jpeg %>" />
@@ -397,7 +397,7 @@
     var btn = document.getElementById('back-to-top');
     var hero = document.querySelector('.post-hero');
 
-    // Back-to-top: IntersectionObserver — the browser tracks visibility natively,
+    // Back-to-top: IntersectionObserver: the browser tracks visibility natively,
     // no JS scroll reading needed, works on all iOS Safari versions.
     if ('IntersectionObserver' in window && hero) {
         new IntersectionObserver(function (entries) {
