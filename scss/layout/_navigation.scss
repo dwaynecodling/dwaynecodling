@@ -50,7 +50,7 @@ body:has(.hero--split, .about-hero, .post-hero, .posts-hero) .navigation {
 
     @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         justify-content: space-between;
-        padding: $spacing-lg $spacing-2xl;
+        padding: 1.9rem $spacing-2xl;
         gap: 0;
     }
 }
@@ -60,19 +60,41 @@ body:has(.hero--split, .about-hero, .post-hero, .posts-hero) .navigation {
     color: $color-white;
     font-weight: 900;
     font-size: 2rem;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 0;
     transition: $transition;
     line-height: 1;
 
-    &:hover {
-        transform: translateY(-.5%);
-        box-shadow: $shadow-white;
+    &:after { display: none; }
+
+    &:hover { color: $color-amber; }
+
+    &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 4px;
+        border-radius: 0.8rem;
     }
 }
 
 .navigation__logo-dot {
     color: $color-amber;
+}
+
+.navigation__mark {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 0.8rem;
+    border: 1px solid rgba(200, 133, 58, 0.45);
+    flex-shrink: 0;
+}
+
+// Centre the capital letters (not the text box, which includes descender space) on the tile
+.navigation__logo-text {
+    position: relative;
+    top: 1px;
 }
 
 .navigation__links {
