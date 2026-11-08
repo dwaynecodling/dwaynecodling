@@ -2,7 +2,12 @@
     <%- include("../partials/cta") %>
     <div class="footer__container">
         <div class="footer__bottom">
-            <a class="footer__link" href="/"><script>document.write(new Date().getFullYear());</script> Dwayne Codling</a>
+            <a class="footer__link" href="/">&copy; <%= new Date().getFullYear() %> Dwayne Codling</a>
+            <ul class="footer__nav" aria-label="Footer">
+                <li><a class="footer__nav-link" href="/about-me">About me</a></li>
+                <li><a class="footer__nav-link" href="/posts">My posts</a></li>
+                <li><a class="footer__nav-link" href="/contact-me">Contact</a></li>
+            </ul>
             <div class="footer__social-links">
                 <a href="https://www.linkedin.com/in/dwayne-codling/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Visit Dwayne Codling on LinkedIn">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff" aria-labelledby="linkedinTitle linkedinDesc" role="img">

@@ -20,9 +20,13 @@ footer {
 }
 .footer__bottom {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    gap: $spacing-md $spacing-xl;
     padding: $spacing-sm * 2;
     background-color: $color-forest-card;
+    border-radius: 1.6rem 1.6rem 0 0;
 
     @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         padding: $spacing-2xl;
@@ -31,6 +35,7 @@ footer {
 
 .footer__link {
     font-size: $nav-text-uppercase;
+    line-height: 1;
     font-weight: 400;
     color: $color-white;
     text-decoration: none;
@@ -55,5 +60,31 @@ footer {
 
     &:not(:last-of-type) {
         margin-right: 3rem;
+    }
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-md $spacing-xl;
+    list-style: none;
+    margin: 0;
+
+    li { margin: 0; line-height: 1; }
+}
+
+.footer__nav-link {
+    font-size: $nav-text-uppercase;
+    color: $color-cream-muted;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:after { display: none; }
+
+    &:hover { color: $color-amber; }
+
+    &:focus-visible {
+        outline: 2px solid $color-amber;
+        outline-offset: 2px;
     }
 }

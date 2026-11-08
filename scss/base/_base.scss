@@ -55,3 +55,20 @@ img {
   opacity: 1;
   transition: opacity 0.35s ease;
 }
+
+// Smooth cross-page transitions (Chrome, Edge, Safari 18.2+; other browsers navigate normally).
+// The nav keeps its own name so it stays put while the page underneath cross-fades.
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  .navigation {
+    view-transition-name: site-nav;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.25s;
+  }
+}

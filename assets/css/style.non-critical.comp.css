@@ -224,9 +224,13 @@ footer {
 
 .footer__bottom {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
+  gap: 1.5rem 3.2rem;
   padding: 2rem;
   background-color: #1c2b1e;
+  border-radius: 1.6rem 1.6rem 0 0;
 }
 @media screen and (min-width: 40em) {
   .footer__bottom {
@@ -236,6 +240,7 @@ footer {
 
 .footer__link {
   font-size: 1.4rem;
+  line-height: 1;
   font-weight: 400;
   color: #fff;
   text-decoration: none;
@@ -259,6 +264,35 @@ footer {
 }
 .footer__social-link:not(:last-of-type) {
   margin-right: 3rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3.2rem;
+  list-style: none;
+  margin: 0;
+}
+.footer__nav li {
+  margin: 0;
+  line-height: 1;
+}
+
+.footer__nav-link {
+  font-size: 1.4rem;
+  color: #b3a99b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer__nav-link:after {
+  display: none;
+}
+.footer__nav-link:hover {
+  color: #c8853a;
+}
+.footer__nav-link:focus-visible {
+  outline: 2px solid #c8853a;
+  outline-offset: 2px;
 }
 
 @media screen and (min-width: 62em) {

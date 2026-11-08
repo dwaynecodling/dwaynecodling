@@ -138,6 +138,18 @@ img {
   transition: opacity 0.35s ease;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+  .navigation {
+    view-transition-name: site-nav;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.25s;
+  }
+}
 h1, h2 {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
