@@ -34,6 +34,11 @@
     }
 }
 
+// Pages that open with a hero or header band start straight under the nav
+body:has(.hero--split, .about-hero, .post-hero, .posts-hero) .navigation {
+    margin-bottom: 0;
+}
+
 .navigation__container {
     font-size: 1.8rem;
     padding: $spacing-sm * 2;
@@ -45,7 +50,7 @@
 
     @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
         justify-content: space-between;
-        padding: $spacing-2xl;
+        padding: $spacing-lg $spacing-2xl;
         gap: 0;
     }
 }

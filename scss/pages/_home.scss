@@ -241,3 +241,13 @@
   &__text { font-size: $nav-text-default; font-weight: 500; }
   &__arrow { margin-left: 0.4rem; }
 }
+
+
+// Pillars: the default section and grid spacing stacked up to ~300px of empty space here
+#pillars {
+    margin-bottom: $spacing-3xl;
+
+    .grid__info { margin-bottom: $spacing-2xl; }
+
+    .info-snippet { padding-bottom: $spacing-lg; }
+}

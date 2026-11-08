@@ -34,22 +34,11 @@
     }
     </script>
     <%- include("../partials/links") %>
-    <link rel="preload" as="image" href="/assets/img/pages/about-me/hero-about-me@720w.webp" type="image/webp" media="(max-width: 61.99em)" fetchpriority="high">
-    <link rel="preload" as="image" href="/assets/img/pages/about-me/hero-about-me.webp" type="image/webp" media="(min-width: 62em)" fetchpriority="high">
     <style>
         .about-hero {
-            background-image: linear-gradient(to right, rgba(13,26,16,0.97) 0%, rgba(13,26,16,0.6) 100%), url('/assets/img/pages/about-me/hero-about-me@720w.jpg');
-            background-image: linear-gradient(to right, rgba(13,26,16,0.97) 0%, rgba(13,26,16,0.6) 100%), image-set(url('/assets/img/pages/about-me/hero-about-me@720w.webp') type('image/webp'), url('/assets/img/pages/about-me/hero-about-me@720w.jpg') type('image/jpeg'));
-            background-size: cover;
-            background-position: center 33%;
-            padding: 10rem 0 8rem;
-        }
-
-        @media screen and (min-width: 62em) {
-            .about-hero {
-                background-image: linear-gradient(to right, rgba(13,26,16,0.97) 0%, rgba(13,26,16,0.6) 100%), url('/assets/img/pages/about-me/hero-about-me.jpg');
-                background-image: linear-gradient(to right, rgba(13,26,16,0.97) 0%, rgba(13,26,16,0.6) 100%), image-set(url('/assets/img/pages/about-me/hero-about-me.webp') type('image/webp'), url('/assets/img/pages/about-me/hero-about-me.jpg') type('image/jpeg'));
-            }
+            background-color: #162419;
+            border-bottom: 1px solid rgba(200,133,58,0.15);
+            padding: 8rem 0 6rem;
         }
 
         .about-intro {
@@ -76,16 +65,6 @@
             object-fit: cover;
             object-position: center top;
             display: block;
-        }
-
-        .about-intro__img-accent {
-            position: absolute;
-            bottom: -1.2rem;
-            right: -1.2rem;
-            width: 40%;
-            height: 30%;
-            border: 2px solid #c8853a;
-            z-index: -1;
         }
 
         .about-intro__label {
@@ -205,85 +184,31 @@
             max-width: 52rem;
         }
 
-        .people-grid {
-            display: grid;
-            gap: 2rem;
-            grid-template-columns: 1fr;
-        }
+        .about-intro__img { border-radius: 2.4rem; height: auto; }
+        .about-story a { color: #c8853a; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(200,133,58,0.4); }
+        .about-story a:hover { color: #f4ede0; text-decoration-color: #c8853a; }
+        .about-story a:after { display: none; }
+        .people-feature { margin: 0; }
+        .people-feature img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 1.6rem; }
+        .people-feature__grid { display: grid; gap: 2rem; }
+        @media (min-width: 48em) { .people-feature__grid { grid-template-columns: 1fr 1fr; } }
 
-        @media (min-width: 48em) {
-            .people-grid {
-                grid-template-columns: 1.2fr 1fr;
-                grid-template-rows: auto auto;
-            }
-
-            .people-grid__item--tall {
-                grid-row: span 2;
-            }
-        }
-
-        .people-grid__item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .about-story__figure { margin: 4rem 0; }
+        .about-story__figure img {
             display: block;
-            min-height: 28rem;
+            width: 100%;
+            border-radius: 1.6rem;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
         }
-
+        .about-story__figure--wide img { aspect-ratio: 3 / 2; height: auto; }
+        .about-story__figure--portrait { max-width: 44rem; }
+        .about-story__figure--portrait img { aspect-ratio: 4 / 5; height: auto; }
+        .about-story__caption { margin-top: 1rem; font-size: 1.3rem; line-height: 1.6; color: #b3a99b; }
+        .about-story__figure--pair { display: grid; gap: 1.6rem; }
         @media (min-width: 48em) {
-            .people-grid__item--tall img {
-                min-height: 52rem;
-            }
-            .people-grid__item:not(.people-grid__item--tall) img {
-                min-height: 24rem;
-            }
-        }
-
-        /* Fitness reel section */
-        .fitness-section {
-            display: grid;
-            gap: 4rem;
-            align-items: start;
-            margin-top: 5rem;
-        }
-
-        @media (min-width: 62em) {
-            .fitness-section {
-                grid-template-columns: 1.4fr 1fr;
-                gap: 6rem;
-            }
-        }
-
-        .fitness-reel {
-            position: relative;
-            min-height: 48rem;
-            border-radius: 3px;
-            background: linear-gradient(90deg, #162419 25%, #1e3224 50%, #162419 75%);
-            background-size: 200% 100%;
-            animation: reel-shimmer 1.5s ease-in-out infinite;
-        }
-
-        @keyframes reel-shimmer {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
-        }
-
-        .fitness-reel__accent {
-            position: absolute;
-            bottom: -1.2rem;
-            left: -1.2rem;
-            width: 12rem;
-            height: 12rem;
-            border: 2px solid #c8853a;
-            z-index: -1;
-        }
-
-        .fitness-reel blockquote p {
-            display: none !important;
-        }
-
-        .fitness-reel .instagram-media p {
-            display: none !important;
+            .about-story__figure--pair { grid-template-columns: 1fr 1fr; }
+            .about-story__figure--pair img { aspect-ratio: 1; }
         }
     </style>
 </head>
@@ -313,11 +238,10 @@
             <div class="about-intro">
                 <div class="about-intro__image">
                     <picture>
-                        <source type="image/avif" srcset="/assets/img/pages/about-me/about-me-new.avif">
-                        <source type="image/webp" srcset="/assets/img/pages/about-me/about-me-new.webp">
-                        <img class="about-intro__img" src="/assets/img/pages/about-me/about-me-new.jpg" alt="Dwayne Codling" />
+                        <source type="image/avif" srcset="/assets/img/pages/about-me/dwayne-portrait-about.avif">
+                        <source type="image/webp" srcset="/assets/img/pages/about-me/dwayne-portrait-about.webp">
+                        <img class="about-intro__img" src="/assets/img/pages/about-me/dwayne-portrait-about.jpg" width="900" height="1200" alt="Dwayne Codling standing with his hands on his hips, smiling" fetchpriority="high" />
                     </picture>
-                    <div class="about-intro__img-accent"></div>
                 </div>
                 <div class="about-intro__body">
                     <p class="about-intro__label">Head of Development</p>
@@ -353,6 +277,11 @@
                 <h3 class="about-story__heading">The move into agency life</h3>
                 <p class="about-story__text">I made the move into full-time agency development at JH in Nottingham, growing from frontend developer to Pod Lead, managing a team delivering large-scale eCommerce builds. That leadership role opened a door I didn't know I was walking toward. I discovered I was just as energised by developing people as I was by developing software.</p>
 
+                <figure class="about-story__figure about-story__figure--pair">
+                    <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/teaching.webp"><img src="/assets/img/pages/about-me/story/teaching.jpg" alt="Dwayne taking a selfie with students in a classroom" loading="lazy" /></picture>
+                    <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/agency.webp"><img src="/assets/img/pages/about-me/story/agency.jpg" alt="Dwayne working alongside a colleague at a desk" loading="lazy" /></picture>
+                </figure>
+
                 <h3 class="about-story__heading">The IDHL chapter</h3>
                 <p class="about-story__text">At IDHL I served first as Head of Development at Pinpoint, then as Development Director across the group. The brief: take five separate agencies, each with its own culture, and build one unified team. We established performance review structures, cross-team training programmes, and sustainable ways of working.</p>
                 <p class="about-story__text">One highlight I'm proud of: a training initiative that helped Adobe Commerce developers upskill into Shopify, unlocking new career paths and expanding capability across the business.</p>
@@ -361,9 +290,18 @@
                 <p class="about-story__text">In June 2026, I joined Foundation Commerce as Head of Development. This was a deliberate move to a business where I could build something from the ground up with intention. The focus here is different: scaling a high-performing development team that doesn't just ship code, but builds sustainable, people-centric engineering culture.</p>
                 <p class="about-story__text">At Foundation Commerce, I'm responsible for team development, technical direction, and creating an environment where developers thrive. The mission is clear: hire exceptional talent, give them the tools and autonomy to do their best work, and build a team that genuinely enjoys what they do.</p>
 
+                <figure class="about-story__figure about-story__figure--wide">
+                    <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/foundation-stand.webp"><img src="/assets/img/pages/about-me/story/foundation-stand.jpg" width="1200" height="800" alt="Dwayne with two Foundation Commerce colleagues at the Foundation stand" loading="lazy" /></picture>
+                    <figcaption class="about-story__caption">At the Foundation Commerce stand, eCommerce Expo London 2026. Photo: Hyv&auml;</figcaption>
+                </figure>
+
                 <h3 id="inclusion" class="about-story__heading">Diversity &amp; Inclusion</h3>
                 <p class="about-story__text">This matters to me personally. I've spoken at Tech Nottingham, Drink Digital, HackSoc, and allyship events in Leeds. My view is simple: if we build products for a diverse world but refuse to invest in diverse talent, we're failing everyone.</p>
                 <p class="about-story__text">I've also advised ProjectFunction, a programme creating pathways into tech for underrepresented groups. If I can help one person find their way in who might not have otherwise, that's a legacy worth having.</p>
+
+                <figure class="about-story__figure">
+                    <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/allyship.webp"><img src="/assets/img/pages/about-me/story/allyship.jpg" alt="Dwayne with a group of people at an allyship event" loading="lazy" /></picture>
+                </figure>
 
                 <div class="about-story__quote">
                     "Forward ever, backward never."
@@ -371,30 +309,11 @@
 
                 <h3 class="about-story__heading">Beyond work</h3>
                 <p class="about-story__text">I'm a dad first. I do the school runs, read in class with the kids, show up at sports days. Family isn't something I fit around work; it's the reason I take my work seriously.</p>
+                <figure class="about-story__figure about-story__figure--portrait">
+                    <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/suit.webp"><img src="/assets/img/pages/about-me/story/suit.jpg" width="900" height="1125" alt="Dwayne smiling in a cream three-piece suit with a burgundy tie" loading="lazy" /></picture>
+                </figure>
                 <p class="about-story__text">I also compete in raw powerlifting. In March 2026 I entered my first WRPF competition and finished 2nd in my class with a 495kg total. In November, eight weeks after a rotator cuff injury, I totalled 522.5kg at Nottingham Strong. Training taught me something I already believed but needed to live: setbacks are part of the process. How you respond defines the outcome.</p>
-
-                <div class="fitness-section">
-                    <div>
-                        <p class="about-intro__label">Fitness</p>
-                        <h3 class="about-story__heading" style="margin-top: 0; padding-top: 0; border-top: none;">Training outside the office.</h3>
-                        <p class="about-story__text">Follow along on Instagram for updates from the platform, competition prep, and the ongoing journey.</p>
-                        <a href="https://www.instagram.com/dwaynecodling.fitness"
-                           class="hero__button hero__button--outline d-inline-flex"
-                           style="margin-top: 3rem;"
-                           target="_blank"
-                           rel="noopener noreferrer">
-                            Follow the fitness journey
-                        </a>
-                    </div>
-                    <div class="fitness-reel">
-                        <blockquote class="instagram-media"
-                            data-instgrm-permalink="https://www.instagram.com/p/DWjnWF6iKHL/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA=="
-                            data-instgrm-version="14"
-                            style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); max-width:100%; min-width:326px; width:100%; padding:0; margin:0;">
-                        </blockquote>
-                        <div class="fitness-reel__accent"></div>
-                    </div>
-                </div>
+                <p class="about-story__text">Read <a href="/post/nottingham-strong">how Nottingham Strong went</a>, or follow the training on <a href="https://www.instagram.com/dwaynecodling.fitness" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
 
             </div>
         </div>
@@ -406,16 +325,13 @@
             <div class="people-section">
                 <p class="people-section__label">People first</p>
                 <h2 class="people-section__heading">The best work happens when people feel valued.</h2>
-                <div class="people-grid">
-                    <div class="people-grid__item people-grid__item--tall">
-                        <picture><source type="image/webp" srcset="/assets/img/pages/about-me/dwayne-community-1.webp"><img src="/assets/img/pages/about-me/dwayne-community-1.jpg" alt="Dwayne with his team at a community event" loading="lazy" /></picture>
+                <figure class="people-feature">
+                    <div class="people-feature__grid">
+                        <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/foundation-expo.webp"><img src="/assets/img/pages/about-me/story/foundation-expo.jpg" width="1200" height="800" alt="Dwayne with three Foundation Commerce colleagues at the Foundation stand, all in Foundation T-shirts" loading="lazy" /></picture>
+                        <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/partner-community.webp"><img src="/assets/img/pages/about-me/story/partner-community.jpg" width="1200" height="800" alt="Dwayne kneeling at the front of a large group of Hyvä partners at the Hyvä and Hypernode stand" loading="lazy" /></picture>
                     </div>
-                    <div class="people-grid__item">
-                        <picture><source type="image/webp" srcset="/assets/img/pages/about-me/dwayne-community-2.webp"><img src="/assets/img/pages/about-me/dwayne-community-2.jpg" alt="Dwayne and colleagues at a team event" loading="lazy" /></picture>
-                    </div>
-                    <div class="people-grid__item">
-                        <picture><source type="image/webp" srcset="/assets/img/pages/about-me/dwayne-bw.webp"><img src="/assets/img/pages/about-me/dwayne-bw.jpg" alt="Dwayne Codling" loading="lazy" /></picture>
-                    </div>
+                    <figcaption class="about-story__caption">With the Foundation team and fellow Hyv&auml; partners at eCommerce Expo London 2026. Photos: Hyv&auml;</figcaption>
+                </figure>
                 </div>
             </div>
         </div>
@@ -424,6 +340,5 @@
 </main>
 
 <%- include("../partials/footer") %>
-<script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>

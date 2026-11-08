@@ -57,8 +57,7 @@
     }
     </script>
     <%- include("../partials/links") %>
-    <link rel="preload" as="image" href="/assets/img/pages/about-me/hero-about-me@720w.webp" type="image/webp" media="(max-width: 61.99em)" fetchpriority="high">
-    <link rel="preload" as="image" href="/assets/img/pages/about-me/hero-about-me.webp" type="image/webp" media="(min-width: 62em)" fetchpriority="high">
+    <link rel="preload" as="image" type="image/avif" imagesrcset="/assets/img/pages/home/dwayne-portrait@600w.avif 600w, /assets/img/pages/home/dwayne-portrait.avif 1000w" imagesizes="(max-width: 61.99em) 80vw, 480px" fetchpriority="high">
 </head>
 <body>
 <%- include("../partials/nav") %>
@@ -67,9 +66,9 @@
 
     <!-- Hero -->
     <section class="m-bottom-0 p-0">
-        <div class="hero">
+        <div class="hero hero--split">
             <div class="hero__content">
-                <p class="hero__subheading">Head of Development at Foundation Commerce &middot; People-first Leader</p>
+                <p class="hero__subheading"><span>Head of Development</span><span class="hero__sep" aria-hidden="true"> &middot; </span><span>Foundation Commerce</span></p>
                 <h1 class="hero__heading">Hi, I'm <strong>Dwayne</strong>.<br>I build teams that last.</h1>
                 <p class="hero__intro">Over a decade transforming how agencies grow; through great people, inclusive culture, and technology that delivers.</p>
                 <div class="hero__cta-group">
@@ -81,12 +80,12 @@
                     </a>
                 </div>
             </div>
-            <a class="hero__down-arrow" href="#pillars" aria-label="Scroll to learn more">
-                <svg width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
-                    <rect fill="#fff" x="5" y="0" width="2" height="14" rx="1"/>
-                    <path stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M0 10l6 6 6-6"/>
-                </svg>
-            </a>
+            <picture class="hero__portrait">
+                <source type="image/avif" srcset="/assets/img/pages/home/dwayne-portrait@600w.avif 600w, /assets/img/pages/home/dwayne-portrait.avif 1000w" sizes="(max-width: 61.99em) 80vw, 480px">
+                <source type="image/webp" srcset="/assets/img/pages/home/dwayne-portrait@600w.webp 600w, /assets/img/pages/home/dwayne-portrait.webp 1000w" sizes="(max-width: 61.99em) 80vw, 480px">
+                <img src="/assets/img/pages/home/dwayne-portrait.jpg" srcset="/assets/img/pages/home/dwayne-portrait@600w.jpg 600w, /assets/img/pages/home/dwayne-portrait.jpg 1000w" sizes="(max-width: 61.99em) 80vw, 480px"
+                     width="1000" height="1250" alt="Dwayne Codling smiling with his arms crossed" fetchpriority="high">
+            </picture>
         </div>
     </section>
 
@@ -98,7 +97,7 @@
                     <div class="info-snippet">
                         <span class="info-snippet__bg-text" aria-hidden="true">01</span>
                         <span class="info-snippet__accent"></span>
-                        <h2 class="info-snippet__heading">Technology Leader</h3>
+                        <h2 class="info-snippet__heading">Technology Leader</h2>
                         <p class="info-snippet__text">From frontend developer to Head of Development; over a decade guiding teams to do their best work, shipping great products, and building something that outlasts any single project.</p>
                     </div>
                 </article>
@@ -106,7 +105,7 @@
                     <div class="info-snippet">
                         <span class="info-snippet__bg-text" aria-hidden="true">02</span>
                         <span class="info-snippet__accent"></span>
-                        <h2 class="info-snippet__heading">Champion of Inclusion</h3>
+                        <h2 class="info-snippet__heading">Champion of Inclusion</h2>
                         <p class="info-snippet__text">Diverse teams build better products. I've spoken at Tech Nottingham, DXN, and allyship events across the UK; because representation in tech isn't optional, it's essential.</p>
                     </div>
                 </article>
@@ -114,7 +113,7 @@
                     <div class="info-snippet">
                         <span class="info-snippet__bg-text" aria-hidden="true">03</span>
                         <span class="info-snippet__accent"></span>
-                        <h2 class="info-snippet__heading">Powerlifter</h3>
+                        <h2 class="info-snippet__heading">Powerlifter</h2>
                         <p class="info-snippet__text">Setbacks are part of the process; how you respond defines the outcome. I compete in raw powerlifting and apply that same resilience to everything I do.</p>
                     </div>
                 </article>

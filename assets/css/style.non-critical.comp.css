@@ -1071,6 +1071,16 @@ footer {
   margin-left: 0.4rem;
 }
 
+#pillars {
+  margin-bottom: 6.4rem;
+}
+#pillars .grid__info {
+  margin-bottom: 4.8rem;
+}
+#pillars .info-snippet {
+  padding-bottom: 2.4rem;
+}
+
 .post-template__img-wrapper {
   display: block;
   position: relative;
