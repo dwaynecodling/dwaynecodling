@@ -1,13 +1,14 @@
 ---
 slug: diversity-vs-inclusion
 hero:
-    main: /assets/img/posts/2020-tech-notts/nottingham.jpg
-    sml_jpeg: /assets/img/posts/2020-tech-notts/nottingham-sml.jpg
-    sml_webp: /assets/img/posts/2020-tech-notts/nottingham-sml.webp
-    lrg_webp: /assets/img/posts/2020-tech-notts/nottingham-lrg.webp
-    card_webp: /assets/img/posts/2020-tech-notts/nottingham-lrg-square.webp
-    lrg_jpeg: /assets/img/posts/2020-tech-notts/nottingham-lrg.jpg
-alt: Nottingham
+    main: /assets/img/posts/2020-tech-notts/hacksoc-talk.jpg
+    sml_jpeg: /assets/img/posts/2020-tech-notts/hacksoc-talk@720w.jpg
+    lrg_jpeg: /assets/img/posts/2020-tech-notts/hacksoc-talk.jpg
+    sml_webp: /assets/img/posts/2020-tech-notts/hacksoc-talk@720w.webp
+    lrg_webp: /assets/img/posts/2020-tech-notts/hacksoc-talk.webp
+    card_webp: /assets/img/posts/2020-tech-notts/hacksoc-talk-card.webp
+    position: center center
+alt: HackSoc Nottingham poster for Dwayne Codling's talk, Diversity vs Inclusion in the Tech Industry
 title: Diversity <strong>vs</strong> Inclusion
 date: 04 June 2020
 excerpt: The talk will focus on the <strong>generational wealth gap</strong> and how this facilitates a difference in circumstances between different races.
@@ -15,7 +16,7 @@ category: leadership
 published: true
 ---
 
-> *I gave this talk at Tech Nottingham in 2020 as a Black man working in an industry that doesn't yet look like the society it serves. This is where the gap comes from, and what we can all do to close it.*
+> *I gave this talk at Tech Nottingham in 2020, and again for HackSoc in March 2021, as a Black man working in an industry that doesn't yet look like the society it serves. This is where the gap comes from, and what we can all do to close it.*
 
 ### Slides and podcast
 
