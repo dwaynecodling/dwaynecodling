@@ -7,6 +7,7 @@ hero:
     sml_webp: /assets/img/posts/2026-whats-in-your-dna/pentland-portraits@720w.webp
     lrg_webp: /assets/img/posts/2026-whats-in-your-dna/pentland-portraits.webp
     card_webp: /assets/img/posts/2026-whats-in-your-dna/pentland-portraits@720w.webp
+    position: center 5%
 alt: Pentland Portraits
 title: What's in Your <strong>DNA</strong>
 date: 21 July 2026

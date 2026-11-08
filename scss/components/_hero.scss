@@ -21,31 +21,6 @@
     padding: $spacing-5xl 6rem $spacing-4xl;
   }
 
-  background-image:
-    linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-    url('/assets/img/pages/about-me/hero-about-me@720w.webp');
-  background-image:
-    linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-    image-set(
-      url('/assets/img/pages/about-me/hero-about-me@720w.webp') type('image/webp'),
-      url('/assets/img/pages/about-me/hero-about-me@720w.jpg') type('image/jpeg')
-    );
-  background-size: cover;
-  background-position: center 23%;
-  background-repeat: no-repeat;
-
-  @media screen and (min-width: map.get($breakpoints, 'breakpoint-4')) {
-    background-image:
-      linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-      url('/assets/img/pages/about-me/hero-about-me.webp');
-    background-image:
-      linear-gradient(to bottom, rgba(13,26,16,0.82) 0%, rgba(13,26,16,0.65) 50%, rgba(13,26,16,0.88) 100%),
-      image-set(
-        url('/assets/img/pages/about-me/hero-about-me.webp') type('image/webp'),
-        url('/assets/img/pages/about-me/hero-about-me.jpg') type('image/jpeg')
-      );
-  }
-
   &__content {
     text-align: center;
     padding: 0;
@@ -105,18 +80,6 @@
     }
   }
 
-  &__link {
-    font-size: var(--heading-1);
-    font-weight: 900;
-    text-decoration: none;
-    color: $color-amber;
-    &:hover {
-      text-decoration: none;
-      color: $color-amber;
-    }
-    &:after { display: none; }
-  }
-
   &__button {
     display: inline-flex;
     align-items: center;
@@ -170,96 +133,13 @@
     }
   }
 
-  &__button-content {
-    display: flex;
-    align-items: center;
-  }
-
-  &__button-text {
-    font-weight: 500;
-  }
-
-  &__button-arrow {
-    display: block;
-    margin-left: 1.2rem;
-    transform: scale(1);
-    color: currentColor;
-
-    @media screen and (min-width: map.get($breakpoints, 'breakpoint-2')) {
-      margin-left: 1.5rem;
-      transform: scale(1.2);
-    }
-  }
-
-  &__down-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: .2rem solid rgba(244,237,224,0.4);
-    border-radius: $border-radius-circle;
-    margin-top: 6rem;
-    height: 6rem;
-    width: 6rem;
-    transition: $transition;
-    color: $color-cream;
-
-    &:hover {
-       border: .2rem solid $color-amber;
-    }
-    &:after { display: none; }
-  }
 }
 
-.hero__social-link {
-  display: block;
-  width: 24px;
 
-  &:not(:last-of-type) {
-    margin-right: 3rem;
-    margin-bottom: 2rem;
-  }
-}
-
-.hero__contact {
-
-}
-
-.hero__contact--container {
-  max-width: calc(var(--container) + 40rem);
-  margin: 0 auto;
-}
-
-.hero__contact-wrapper {
-  display: none;
-  @media screen and (min-width: map.get($breakpoints, 'breakpoint-3')) {
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-    width: calc(100% + 108px);
-    align-items: center;
-  }
-}
-
-.hero__contact--position {
-
-  @media screen and (min-width: map.get($breakpoints, 'breakpoint-3')) {
-    position: relative;
-    top: 289px;
-  }
-
-}
-
-.hero__social-link--text {
-  font-size: $nav-text-default;
-  text-decoration: none;
-  color: $color-white;
-  transform: rotate(-90deg);
-}
 // Homepage: text left, portrait right. Sized to its content rather than a full screen,
 // so the headline sits where the eye lands instead of floating below the fold.
 .hero--split {
   min-height: auto;
-  background: none;
   display: grid;
   gap: $spacing-2xl;
   justify-items: center;

@@ -19,36 +19,6 @@
 }
 
 // Open to work badge
-.open-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
-  background-color: rgba(200,133,58,0.12);
-  border: 1px solid rgba(200,133,58,0.35);
-  color: $color-amber;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  padding: 0.7rem 1.6rem;
-  border-radius: 99px;
-  margin-bottom: 2.4rem;
-  text-transform: uppercase;
-
-  &__dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background-color: $color-amber;
-    animation: pulse 2s ease-in-out infinite;
-    flex-shrink: 0;
-  }
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.45; transform: scale(0.75); }
-}
-
 // Pillars (3-card section)
 .info-snippet {
     padding: $spacing-xl 0 $spacing-3xl;

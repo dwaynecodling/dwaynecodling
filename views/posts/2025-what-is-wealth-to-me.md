@@ -7,7 +7,7 @@ hero:
     sml_webp: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday@720w.webp
     lrg_webp: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday.webp
     card_webp: /assets/img/posts/2025-what-is-wealth-to-me/dwayne-birthday@card.webp
-    position: center 20%
+    position: center 12%
 alt: Dwayne celebrating with family
 title: What is <strong>wealth</strong> to me
 date: 06 August 2025
