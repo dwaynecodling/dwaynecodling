@@ -272,3 +272,56 @@ blockquote {
 
     strong { color: inherit; font-weight: inherit; }
 }
+
+// Link cards inside posts (slides, podcast and similar), styled like the previous / next cards
+.post-links {
+    display: grid;
+    gap: $spacing-md;
+    margin: $spacing-lg 0 $spacing-xl;
+
+    @media screen and (min-width: map.get($breakpoints, 'breakpoint-3')) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.post-template__content .post-links__item,
+.post-links__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: $spacing-lg;
+    border: 1px solid rgba(200, 133, 58, 0.2);
+    border-radius: 1.6rem;
+    background-color: rgba(28, 43, 30, 0.6);
+    text-decoration: none;
+    transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+
+    &:after { display: none; }
+
+    &:hover {
+        transform: translateY(-3px);
+        border-color: rgba(200, 133, 58, 0.45);
+        background-color: rgba(28, 43, 30, 0.9);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+        &:hover { transform: none; }
+    }
+}
+
+.post-links__label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $color-amber;
+}
+
+.post-links__title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: $color-cream;
+}

@@ -9,13 +9,22 @@ hero:
     lrg_jpeg: /assets/img/posts/2020-tech-notts/nottingham-lrg.jpg
 alt: Nottingham
 title: Diversity <strong>vs</strong> Inclusion
-date: 30 July 2020
+date: 04 June 2020
 excerpt: The talk will focus on the <strong>generational wealth gap</strong> and how this facilitates a difference in circumstances between different races.
 category: leadership
 published: true
 ---
 
 > *I gave this talk at Tech Nottingham in 2020 as a Black man working in an industry that doesn't yet look like the society it serves. This is where the gap comes from, and what we can all do to close it.*
+
+### Slides and podcast
+
+The original recording of the talk is no longer online, but the slides and the podcast version are.
+
+<div class="post-links">
+<a class="post-links__item" href="https://www.slideshare.net/slideshow/diversity-vs-inclusion-in-the-tech-industry-dwayne-codling/237535258" target="_blank" rel="noopener noreferrer"><span class="post-links__label">Slides</span><span class="post-links__title">View the talk slides on SlideShare</span></a>
+<a class="post-links__item" href="https://podcasts.apple.com/gb/podcast/dwayne/id1516980828" target="_blank" rel="noopener noreferrer"><span class="post-links__label">Podcast</span><span class="post-links__title">Listen to the talk on Apple Podcasts</span></a>
+</div>
 
 ### Introduction
 
