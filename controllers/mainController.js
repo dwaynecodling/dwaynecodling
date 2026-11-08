@@ -60,10 +60,16 @@ home.get("/post/:slug", async function (req, res) {
     let article = await PostRepository_1.PostRepository.getBySlug(slug);
     if (!article)
         return res.status(404).render("pages/not_found", { title: `404: Post Not Found` });
-    let otherArticles = (await PostRepository_1.PostRepository.getAllFilteredPosts(p => p.data.slug !== slug, true)).slice(0, 3);
+    let allPosts = await PostRepository_1.PostRepository.getAllPosts(true);
+    let index = allPosts.findIndex(p => p.data.slug === slug);
+    let newerArticle = index > 0 ? allPosts[index - 1] : null;
+    let olderArticle = index >= 0 && index < allPosts.length - 1 ? allPosts[index + 1] : null;
+    let otherArticles = allPosts.filter(p => p.data.slug !== slug).slice(0, 3);
     res.render("pages/single_post", {
         currentArticle: article,
-        otherArticles: otherArticles
+        otherArticles: otherArticles,
+        olderArticle: olderArticle,
+        newerArticle: newerArticle
     });
 });
 home.post("/form/contact", async function (req, res) {

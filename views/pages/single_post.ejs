@@ -358,6 +358,25 @@
                     }
                 }
             </script>
+
+            <!-- Previous / next -->
+            <% if (olderArticle || newerArticle) { %>
+            <nav class="post-pager" aria-label="More posts">
+                <% if (olderArticle) { %>
+                <a class="post-pager__link post-pager__link--older" href="/post/<%= olderArticle.data.slug %>">
+                    <span class="post-pager__label">&larr; Previous post</span>
+                    <span class="post-pager__title"><%- olderArticle.data.title %></span>
+                </a>
+                <% } else { %><span></span><% } %>
+                <% if (newerArticle) { %>
+                <a class="post-pager__link post-pager__link--newer" href="/post/<%= newerArticle.data.slug %>">
+                    <span class="post-pager__label">Next post &rarr;</span>
+                    <span class="post-pager__title"><%- newerArticle.data.title %></span>
+                </a>
+                <% } %>
+            </nav>
+            <% } %>
+
         </div>
     </section>
 
