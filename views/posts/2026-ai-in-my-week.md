@@ -11,12 +11,12 @@ hero:
 alt: Dwayne Codling at the Foundation Commerce stand next to a Hyvä-first screen
 title: How AI fits into a Head of Development's <strong>week</strong>
 date: 08 November 2026
-excerpt: "AI hasn't replaced any part of my job. It's taken the admin off it, so more of my week goes on the parts that need me: judgement, people and the final yes."
+excerpt: "AI has replaced parts of my job: mostly the admin. That's freed up more of my week for the parts that need me: judgement, people and the final yes."
 published: true
 category: tech
 ---
 
-> *AI hasn't replaced any part of my job. It's taken the admin off it, so more of my week goes on the parts that need me.*
+> *AI has replaced parts of my job: mostly the admin. That's freed up more of my week for the parts that need me.*
 
 A Head of Development's week is fragmented. Calls, pull request reviews, client updates, planning, time logs, a dozen Slack threads, and somewhere in the middle of all that, the actual thinking. None of it looks like a single task you sit down and finish.
 
