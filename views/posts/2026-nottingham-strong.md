@@ -81,7 +81,7 @@ Most of all, I did this for my kids. I wanted them to see that however things go
 - **The battle_ash team**: Liz, Becky, Kate, Becky Goodwin, Matt, Dean and Danusha.
 - **Clinton**, for the photos and video.
 - **[Jager Shoots](https://www.jagershoots.com/)**, for the competition photos in this post.
-- **WRPF UK and Nottingham Strong**, for a brilliant event.
+- **[WRPF UK](https://www.instagram.com/wrpf_uk/)**, **[WRPF UK Nottingham](https://www.instagram.com/wrpf_notts/)** and **[Nottingham Strong](https://www.instagram.com/nottinghamstrong/)**, for a brilliant event.
 - **My family**: Danielle, Janiah, Andre, Dante and Amiyah, the loudest cheerleaders in the room, in the Jamaican colours. 🇯🇲
 
 Next target: a 170kg squat.
