@@ -446,6 +446,22 @@ footer {
     margin-bottom: 0.8rem;
   }
 }
+.footer__built {
+  color: rgba(179, 169, 155, 0.75);
+}
+
+@media screen and (max-width: 61.99em) {
+  .footer__built {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-wrap: balance;
+  }
+  .footer__built-sep {
+    display: none;
+  }
+}
 @media screen and (min-width: 48em) {
   .my-posts__filter--mobile {
     display: none;

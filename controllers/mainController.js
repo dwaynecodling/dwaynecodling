@@ -55,6 +55,33 @@ home.get("/sitemap.xml", async function (req, res) {
     res.header("Content-Type", "application/xml");
     res.send(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`);
 });
+home.get("/rss.xml", async function (req, res) {
+    const posts = await PostRepository_1.PostRepository.getAllPosts(true);
+    const base = "https://dwaynecodling.com";
+    const esc = (v) => String(v || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    const rfc822 = (dateStr) => { const d = new Date(dateStr); return isNaN(d.getTime()) ? new Date().toUTCString() : new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate(), 12)).toUTCString(); };
+    const items = posts.map(p => `    <item>
+      <title>${esc(p.data.titleText || p.data.title)}</title>
+      <link>${base}/post/${p.data.slug}</link>
+      <guid isPermaLink="true">${base}/post/${p.data.slug}</guid>
+      <pubDate>${rfc822(p.data.date)}</pubDate>
+      <description>${esc(p.data.excerpt)}</description>${p.data.category ? `\n      <category>${esc(p.data.category)}</category>` : ""}
+    </item>`).join("\n");
+    const updated = posts.length ? rfc822(posts[0].data.date) : new Date().toUTCString();
+    res.header("Content-Type", "application/rss+xml; charset=utf-8");
+    res.send(`<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dwayne Codling</title>
+    <link>${base}</link>
+    <description>Leadership, diversity, tech and powerlifting, from Dwayne Codling, Head of Development at Foundation Commerce.</description>
+    <language>en-gb</language>
+    <lastBuildDate>${updated}</lastBuildDate>
+    <atom:link href="${base}/rss.xml" rel="self" type="application/rss+xml" />
+${items}
+  </channel>
+</rss>`);
+});
 home.get("/post/:slug", async function (req, res) {
     let slug = req.params['slug'];
     let article = await PostRepository_1.PostRepository.getBySlug(slug);
