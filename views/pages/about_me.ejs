@@ -203,6 +203,40 @@
         }
         .about-story__figure--wide img { aspect-ratio: auto; height: auto; }
         .about-story__figure--portrait { max-width: 44rem; }
+        .about-split { display: grid; gap: 2.4rem; align-items: center; margin-bottom: 2rem; }
+        .about-split__text .about-story__text:last-child { margin-bottom: 0; }
+        .about-split__img { margin: 0; }
+        .about-split__img img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 1.6rem; }
+        @media (min-width: 48em) { .about-split { grid-template-columns: 1.15fr 0.85fr; gap: 3.2rem; } }
+        .talk-feature {
+            display: grid;
+            margin: 4rem 0;
+            border: 1px solid rgba(200,133,58,0.25);
+            border-radius: 1.6rem;
+            overflow: hidden;
+            background-color: rgba(28,43,30,0.6);
+            text-decoration: none;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        .talk-feature:after { display: none; }
+        .about-story a.talk-feature, .about-story a.talk-feature:hover { text-decoration: none; font-weight: inherit; }
+        .talk-feature:hover .talk-feature__cta { text-decoration: underline; text-underline-offset: 4px; }
+        .talk-feature:hover { border-color: rgba(200,133,58,0.5); background-color: rgba(28,43,30,0.9); }
+        .talk-feature:focus-visible { outline: 2px solid #c8853a; outline-offset: 3px; }
+        .talk-feature__img { display: block; overflow: hidden; }
+        .talk-feature__img img { display: block; width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; transition: transform 0.5s ease; }
+        .talk-feature:hover .talk-feature__img img { transform: scale(1.04); }
+        @media (prefers-reduced-motion: reduce) { .talk-feature__img img { transition: none; } }
+        .talk-feature__body { display: flex; flex-direction: column; justify-content: center; gap: 1.2rem; padding: 2.4rem; }
+        .talk-feature__label { font-size: 1.2rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #c8853a; }
+        .talk-feature__title { font-family: 'Playfair Display', Georgia, serif; font-size: 2.4rem; font-weight: 700; line-height: 1.25; color: #f4ede0; }
+        .talk-feature__text { font-size: 1.6rem; font-weight: 400; line-height: 1.6; color: #b3a99b; }
+        .talk-feature__cta { font-size: 1.5rem; font-weight: 600; color: #c8853a; }
+        .talk-feature:hover .talk-feature__cta { color: #f4ede0; }
+        @media (min-width: 48em) {
+            .talk-feature { grid-template-columns: 1fr 1fr; }
+            .talk-feature__body { padding: 3.2rem; }
+        }
         .about-story__figure--portrait img { aspect-ratio: 4 / 5; height: auto; }
         .about-story__caption { margin-top: 1rem; font-size: 1.3rem; line-height: 1.6; color: #b3a99b; }
         .about-story__figure--pair { display: grid; gap: 1.6rem; }
@@ -301,6 +335,16 @@
 
                 <h3 id="inclusion" class="about-story__heading">Diversity &amp; Inclusion</h3>
                 <p class="about-story__text">This matters to me personally. I've spoken at Tech Nottingham, Drink Digital, HackSoc, and allyship events in Leeds. My view is simple: if we build products for a diverse world but refuse to invest in diverse talent, we're failing everyone.</p>
+                <a class="talk-feature" href="/post/diversity-vs-inclusion">
+                    <picture class="talk-feature__img"><source type="image/avif" srcset="/assets/img/posts/2020-tech-notts/hacksoc-talk-card.avif"><source type="image/webp" srcset="/assets/img/posts/2020-tech-notts/hacksoc-talk-card.webp"><img src="/assets/img/posts/2020-tech-notts/hacksoc-talk-card.webp" width="720" height="720" alt="HackSoc Nottingham poster for Dwayne Codling's talk, Diversity vs Inclusion in the Tech Industry" loading="lazy" /></picture>
+                    <span class="talk-feature__body">
+                        <span class="talk-feature__label">The talk I'm proudest of</span>
+                        <span class="talk-feature__title">Diversity vs Inclusion in the Tech Industry</span>
+                        <span class="talk-feature__text">Given at Tech Nottingham and again for HackSoc. It's the strongest work I've done to date.</span>
+                        <span class="talk-feature__cta">Read the talk, slides and podcast &rarr;</span>
+                    </span>
+                </a>
+
                 <p class="about-story__text">I've also advised ProjectFunction, a programme creating pathways into tech for underrepresented groups. If I can help one person find their way in who might not have otherwise, that's a legacy worth having.</p>
 
                 <div class="about-story__quote">
@@ -308,12 +352,22 @@
                 </div>
 
                 <h3 class="about-story__heading">Beyond work</h3>
-                <p class="about-story__text">I'm a dad first. I do the school runs, read in class with the kids, show up at sports days. Family isn't something I fit around work; it's the reason I take my work seriously.</p>
-                <figure class="about-story__figure about-story__figure--portrait">
-                    <picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/suit.webp"><img src="/assets/img/pages/about-me/story/suit.jpg" width="900" height="1125" alt="Dwayne smiling in a cream three-piece suit with a burgundy tie" loading="lazy" /></picture>
-                </figure>
-                <p class="about-story__text">I also compete in raw powerlifting. In March 2026 I entered my first WRPF competition and finished 2nd in my class with a 495kg total. In November, eight weeks after a rotator cuff injury, I totalled 522.5kg at Nottingham Strong. Training taught me something I already believed but needed to live: setbacks are part of the process. How you respond defines the outcome.</p>
-                <p class="about-story__text">Read <a href="/post/nottingham-strong">how Nottingham Strong went</a>, or follow the training on <a href="https://www.instagram.com/dwaynecodling.fitness" target="_blank" rel="noopener noreferrer">Instagram</a>.</p>
+                <div class="about-split">
+                    <div class="about-split__text">
+                        <p class="about-story__text">I'm a dad first. I do the school runs, read in class with the kids, show up at sports days. Family isn't something I fit around work; it's the reason I take my work seriously.</p>
+                        <p class="about-story__text">I also compete in raw powerlifting. In March 2026 I entered my first WRPF competition and finished 2nd in my class with a 495kg total. In November, eight weeks after a rotator cuff injury, I totalled 522.5kg at Nottingham Strong. Training taught me something I already believed but needed to live: setbacks are part of the process. How you respond defines the outcome.</p>
+                    </div>
+                    <figure class="about-split__img"><picture><source type="image/webp" srcset="/assets/img/pages/about-me/story/suit.webp"><img src="/assets/img/pages/about-me/story/suit.jpg" width="900" height="1125" alt="Dwayne smiling in a cream three-piece suit with a burgundy tie" loading="lazy" /></picture></figure>
+                </div>
+                <a class="talk-feature talk-feature--strength" href="/post/nottingham-strong">
+                    <picture class="talk-feature__img"><source type="image/avif" srcset="/assets/img/pages/about-me/story/platform-squat.avif"><source type="image/webp" srcset="/assets/img/pages/about-me/story/platform-squat.webp"><img src="/assets/img/pages/about-me/story/platform-squat.webp" width="720" height="720" alt="Dwayne Codling walking out a squat at Nottingham Strong, spotters either side" loading="lazy" /></picture>
+                    <span class="talk-feature__body">
+                        <span class="talk-feature__label">On the platform</span>
+                        <span class="talk-feature__title">522.5kg at Nottingham Strong</span>
+                        <span class="talk-feature__text">Eight weeks after a rotator cuff injury: 7th of 49, and 2nd in my Masters group.</span>
+                        <span class="talk-feature__cta">Read how the day went &rarr;</span>
+                    </span>
+                </a>
 
             </div>
         </div>
