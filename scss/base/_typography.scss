@@ -57,3 +57,11 @@ a {
         transform: scaleX(1);
     }
 }
+
+// Links inside running text match the text around them; only menu and button links use the fixed link size
+p a,
+li a,
+blockquote a,
+figcaption a {
+    font-size: inherit;
+}

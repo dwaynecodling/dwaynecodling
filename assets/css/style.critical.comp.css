@@ -222,6 +222,13 @@ a:hover:after {
   transform: scaleX(1);
 }
 
+p a,
+li a,
+blockquote a,
+figcaption a {
+  font-size: inherit;
+}
+
 .button {
   display: inline-block;
   color: #fff;
