@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-next-chapter/boys-airplane-dashboard.jpg
     sml_webp: /assets/img/posts/2026-next-chapter/boys-airplane-dashboard@720w.webp
     lrg_webp: /assets/img/posts/2026-next-chapter/boys-airplane-dashboard.webp
-    card_webp: /assets/img/posts/2026-next-chapter/boys-airplane-dashboard@720w.webp
+    card_webp: /assets/img/posts/2026-next-chapter/boys-airplane-dashboard-square.webp
 alt: Boys looking at airplane dashboard
 title: Next <strong>Chapter</strong>
 date: 02 June 2026

@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-nottingham-strong/hero.jpg
     sml_webp: /assets/img/posts/2026-nottingham-strong/hero@720w.webp
     lrg_webp: /assets/img/posts/2026-nottingham-strong/hero.webp
-    card_webp: /assets/img/posts/2026-nottingham-strong/hero@card.webp
+    card_webp: /assets/img/posts/2026-nottingham-strong/hero-card.webp
     position: center 30%
 alt: Dwayne Codling locking out a 227.5kg deadlift at Nottingham Strong
 title: 522.5kg at <strong>Nottingham Strong</strong>
@@ -18,7 +18,7 @@ category: fitness
 
 > *Eight weeks before the meet I wasn't sure I'd bench properly again. Coming back stronger was the whole point.*
 
-Eight weeks before Nottingham Strong I was in physio with a rotator cuff injury, not sure I'd bench properly again. On the day I totalled 522.5kg, up 27.5kg from my first meet in March, and placed 7th of 49 overall. I finished second in my Masters 40 to 49 group.
+Eight weeks before Nottingham Strong I was in physio with a rotator cuff injury, not sure I'd bench properly again. On the day I totalled 522.5kg, up 27.5kg from [my first meet in March](/post/officially-a-powerlifter), and placed 7th of 49 overall. I finished second in my Masters 40 to 49 group.
 
 ## The numbers
 

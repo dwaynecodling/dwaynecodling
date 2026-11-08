@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-officially-a-powerlifter/powerlifter.jpg
     sml_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter@720w.webp
     lrg_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter.webp
-    card_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter@card.webp
+    card_webp: /assets/img/posts/2026-officially-a-powerlifter/powerlifter-square.webp
     position: center 45%
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Officially an <strong>amateur powerlifter</strong>
@@ -23,6 +23,10 @@ I recently competed in my first WRPF Great Britain powerlifting competition, fin
 What makes this result meaningful isn't just the numbers; it's the journey behind it.
 
 When I first walked into Ash's bootcamp class, I was pushed well beyond my comfort zone. It was one of those sessions where you genuinely question whether you'll come back. I did, and that decision has led to a complete transformation in both my body composition and strength.
+
+My coach Ash saw it the same way. As he put it [on Instagram](https://www.instagram.com/p/DWgJXOCFcM9/) the day after:
+
+> "He first walked in to my bootcamp and I remember pushing him so hard I didn't think he would come back."
 
 ## Competition day
 
@@ -53,3 +57,5 @@ More importantly, the mindset is locked in.
 > "Setbacks are part of the process. How you respond defines the outcome."
 
 Forward ever, backward never.
+
+**Update, November 2026:** eight months later, after a rotator cuff injury, I totalled 522.5kg. [Read how Nottingham Strong went](/post/nottingham-strong).

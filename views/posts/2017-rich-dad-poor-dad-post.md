@@ -6,6 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2017-rich-dad/rich-dad-720.jpg
     sml_webp: /assets/img/posts/2017-rich-dad/rich-dad-360.webp
     lrg_webp: /assets/img/posts/2017-rich-dad/rich-dad-720.webp
+    card_webp: /assets/img/posts/2017-rich-dad/rich-dad-720-square.webp
 alt: Rich Dad Poor Dad book by Robert Kiyosaki
 title: Rich Dad <strong>Poor Dad</strong>
 date: 09 March 2017

@@ -71,7 +71,8 @@ Post images live in `assets/img/posts/<post-folder>/`. Every post needs **four i
 | `hero.webp` | 1440×810px | Full-size WebP |
 | `hero@720w.jpg` | 720×405px | Mobile JPEG (used below 62em) |
 | `hero@720w.webp` | 720×405px | Mobile WebP (used below 62em) |
-| `hero@card.webp` | 720×320px | Card thumbnail — cropped to this exact ratio |
+| `hero@card.webp` | 720×720px | Card thumbnail, square: post cards display square, so crop to keep the subject in a square |
+| `hero@card.avif` | 720×720px | Same crop as AVIF; cards load it first |
 
 The `position` frontmatter field sets the `object-position` CSS property for the hero image. Use values like `center top`, `center 30%`, `left 40%` to control which part of the image shows as the focal point in cards and hero banners.
 
@@ -86,10 +87,10 @@ await sharp('source.jpg').rotate().resize(1440).webp({ quality: 82 }).toFile('he
 // Mobile WebP
 await sharp('source.jpg').rotate().resize(750).webp({ quality: 82 }).toFile('hero@720w.webp');
 
-// Card thumbnail (720×320 crop — adjust extract values for focal point)
+// Card thumbnail: square, because post cards display square (adjust top for the focal point)
 await sharp('source.jpg').rotate().resize(1440)
-  .extract({ left: 0, top: 200, width: 1440, height: 640 })
-  .resize(720, 320)
+  .extract({ left: 0, top: 200, width: 1440, height: 1440 })
+  .resize(720, 720)
   .webp({ quality: 82 })
   .toFile('hero@card.webp');
 ```

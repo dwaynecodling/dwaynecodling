@@ -6,7 +6,7 @@ hero:
     lrg_jpeg: /assets/img/posts/2026-consistency-is-everything/hero-v2.jpg
     sml_webp: /assets/img/posts/2026-consistency-is-everything/hero-v2@720w.webp
     lrg_webp: /assets/img/posts/2026-consistency-is-everything/hero-v2.webp
-    card_webp: /assets/img/posts/2026-consistency-is-everything/hero-v2@720w.webp
+    card_webp: /assets/img/posts/2026-consistency-is-everything/hero-v2-square.webp
 alt: Portrait image for consistency post
 title: Consistency is <strong>Everything</strong>
 date: 15 August 2026

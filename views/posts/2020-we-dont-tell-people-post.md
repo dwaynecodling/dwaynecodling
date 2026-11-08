@@ -5,7 +5,7 @@ hero:
     sml_jpeg: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-sml.jpg
     sml_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-sml.webp
     lrg_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg.webp
-    card_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg@card.webp
+    card_webp: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg-square.webp
     lrg_jpeg: /assets/img/posts/2020-we-dont-tell/dwayne-and-dante-lrg.jpg
     position: center top
 alt: Dwayne and Family
