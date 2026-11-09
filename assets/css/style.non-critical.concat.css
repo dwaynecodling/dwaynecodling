@@ -1029,7 +1029,7 @@ footer {
 .post-heading__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   gap: 1.6rem;
   margin-bottom: 3rem;
 }
@@ -1090,6 +1090,7 @@ footer {
 
 .post-heading {
   margin-bottom: 0;
+  line-height: 1;
 }
 
 .post-link__text {

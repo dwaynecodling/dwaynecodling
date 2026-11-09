@@ -171,8 +171,8 @@
 .post-heading__wrapper {
   display: flex;
   justify-content: space-between;
-  // baseline, not centre: the small link sits on the same line as the large heading's text
-  align-items: baseline;
+  // centre the link on the heading's letters (line-height 1 keeps the heading box tight to its glyphs)
+  align-items: center;
   gap: 1.6rem;
   margin-bottom: 3rem;
 
@@ -224,7 +224,7 @@
     .info-snippet { padding-bottom: $spacing-lg; }
 }
 
-.post-heading { margin-bottom: 0; }
+.post-heading { margin-bottom: 0; line-height: 1; }
 .post-link__text { margin: 0; }
 
 // Phones: the heading takes the full width and the link sits on its own line beneath it
