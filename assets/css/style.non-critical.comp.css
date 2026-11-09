@@ -1029,7 +1029,8 @@ footer {
 .post-heading__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  gap: 1.6rem;
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 40em) {
@@ -1087,6 +1088,21 @@ footer {
   padding-bottom: 2.4rem;
 }
 
+.post-heading {
+  margin-bottom: 0;
+}
+
+.post-link__text {
+  margin: 0;
+}
+
+@media screen and (max-width: 39.99em) {
+  .post-heading__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
 .post-template__img-wrapper {
   display: block;
   position: relative;
