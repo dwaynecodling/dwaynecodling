@@ -206,7 +206,6 @@
             font-size: 1.3rem;
             margin-bottom: 1.6rem;
             padding-top: 1.6rem;
-            flex-wrap: wrap;
         }
 
         .post-breadcrumb__link {
@@ -224,9 +223,17 @@
             user-select: none;
         }
 
+        /* one line at every width: a long title ends in "…" (the full title is the h1 below) */
         .post-breadcrumb__current {
             color: #a89e90;
+            min-width: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
+
+        .post-breadcrumb__link,
+        .post-breadcrumb__separator { flex-shrink: 0; }
 
         .back-to-top {
             position: fixed;
