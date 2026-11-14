@@ -1,9 +1,9 @@
-<!-- Cookie consent: Google Analytics (through GTM) only runs after Accept. Choice kept in localStorage 'dc_consent'. -->
+<!-- Cookie consent: Google Analytics and Microsoft Clarity (through GTM) only run after Accept. Choice kept in localStorage 'dc_consent'. -->
 <div class="consent" id="consent" role="dialog" aria-live="polite" aria-labelledby="consent-title" hidden>
     <p class="consent__eyebrow">Cookies</p>
     <p class="consent__title" id="consent-title" tabindex="-1">Mind if I count your visit?</p>
     <p class="consent__current" data-consent-current hidden></p>
-    <p class="consent__text">Google Analytics helps me see which posts get read. It's optional, and the site works the same either way. <a href="/privacy">How it works</a></p>
+    <p class="consent__text">Google Analytics and Microsoft Clarity help me see which posts get read and where the site could be easier to use. It's optional, and the site works the same either way. <a href="/privacy">How it works</a></p>
     <div class="consent__actions">
         <button type="button" class="consent__btn consent__btn--accept" data-consent="granted">Accept</button>
         <button type="button" class="consent__btn consent__btn--reject" data-consent="denied">Reject</button>
@@ -178,10 +178,10 @@
             try { return localStorage.getItem(KEY); } catch (e) { return null; }
         }
 
-        function clearGaCookies() {
+        function clearAnalyticsCookies() {
             document.cookie.split(';').forEach(function (c) {
                 var name = c.split('=')[0].trim();
-                if (name.indexOf('_ga') === 0) {
+                if (name.indexOf('_ga') === 0 || name === '_clck' || name === '_clsk') {
                     ['', '; domain=.dwaynecodling.com', '; domain=dwaynecodling.com'].forEach(function (d) {
                         document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + d;
                     });
@@ -205,7 +205,7 @@
             } else {
                 gtag('consent', 'update', { analytics_storage: 'denied' });
                 window.dataLayer.push({ event: 'consent_denied' });
-                clearGaCookies();
+                clearAnalyticsCookies();
             }
             banner.hidden = true;
             showStatus();
@@ -217,7 +217,7 @@
             var choice = stored();
             var current = banner.querySelector('[data-consent-current]');
             if (choice && LABELS[choice]) {
-                current.textContent = 'You have ' + LABELS[choice] + ' Google Analytics. You can change that here.';
+                current.textContent = 'You have ' + LABELS[choice] + ' analytics cookies. You can change that here.';
                 current.hidden = false;
             } else {
                 current.hidden = true;

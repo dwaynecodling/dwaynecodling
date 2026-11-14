@@ -12,11 +12,11 @@ app.use(helmet({
     contentSecurityPolicy: {
         directives: {
             defaultSrc: ["'self'"],
-            scriptSrc: ["'self'", "'unsafe-inline'", "https://static.cloudflareinsights.com", "https://www.googletagmanager.com", "https://tagmanager.google.com", "https://www.instagram.com", "https://code.jquery.com", "https://www.google.com", "https://www.gstatic.com"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "https://static.cloudflareinsights.com", "https://www.googletagmanager.com", "https://tagmanager.google.com", "https://www.clarity.ms", "https://scripts.clarity.ms", "https://www.instagram.com", "https://code.jquery.com", "https://www.google.com", "https://www.gstatic.com"],
             styleSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com", "https://tagmanager.google.com", "https://fonts.googleapis.com"],
             imgSrc: ["'self'", "data:", "https:"],
             fontSrc: ["'self'", "data:", "https://fonts.gstatic.com"],
-            connectSrc: ["'self'", "https://cloudflareinsights.com", "https://www.googletagmanager.com", "https://www.google-analytics.com", "https://*.google-analytics.com", "https://www.google.com"],
+            connectSrc: ["'self'", "https://cloudflareinsights.com", "https://www.googletagmanager.com", "https://www.google-analytics.com", "https://*.google-analytics.com", "https://*.clarity.ms", "https://c.bing.com", "https://www.google.com"],
             frameSrc: ["https://www.instagram.com", "https://www.youtube-nocookie.com", "https://www.google.com"],
         },
     },
