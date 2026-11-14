@@ -16,6 +16,29 @@
 <link rel="preload" href="/assets/css/style.non-critical.min.css?v=<%= locals.cssVersionNonCritical || '' %>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- Fallback for no-JS -->
 <noscript><link rel="stylesheet" href="/assets/css/style.non-critical.min.css?v=<%= locals.cssVersionNonCritical || '' %>"></noscript>
+<!-- Consent Mode: everything denied until the visitor accepts (see views/partials/consent.ejs) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
+  try {
+    if (localStorage.getItem('dc_consent') === 'granted') {
+      gtag('consent', 'update', { analytics_storage: 'granted' });
+    }
+  } catch (e) {}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQTXBGJJ');</script>
+<!-- End Google Tag Manager -->
 <!-- Cloudflare Web Analytics: cookieless, no consent needed (see /privacy) -->
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "865f30c8bf7345c08ee922c6cd32f52a"}'></script>
 <link rel="alternate" type="application/rss+xml" title="Dwayne Codling" href="https://dwaynecodling.com/rss.xml">

@@ -1,0 +1,186 @@
+<!-- Cookie consent: Google Analytics (through GTM) only runs after Accept. Choice kept in localStorage 'dc_consent'. -->
+<div class="consent" id="consent" role="dialog" aria-live="polite" aria-labelledby="consent-title" hidden>
+    <p class="consent__eyebrow">Cookies</p>
+    <p class="consent__title" id="consent-title">Mind if I count your visit?</p>
+    <p class="consent__text">Google Analytics helps me see which posts get read. It's optional, and the site works the same either way. <a href="/privacy">How it works</a></p>
+    <div class="consent__actions">
+        <button type="button" class="consent__btn consent__btn--accept" data-consent="granted">Accept</button>
+        <button type="button" class="consent__btn consent__btn--reject" data-consent="denied">Reject</button>
+    </div>
+</div>
+<style>
+    .consent {
+        position: fixed;
+        left: 1.6rem;
+        right: 1.6rem;
+        bottom: 1.6rem;
+        z-index: 1000;
+        padding: 2.4rem;
+        background: #1c2b1e;
+        border: 1px solid rgba(200, 133, 58, 0.25);
+        border-radius: 1.6rem;
+        box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.45);
+        animation: consent-in 0.35s ease-out;
+    }
+
+    @media screen and (min-width: 768px) {
+        .consent {
+            left: auto;
+            right: 2.4rem;
+            bottom: 2.4rem;
+            width: 38rem;
+        }
+    }
+
+    @keyframes consent-in {
+        from { opacity: 0; transform: translateY(1.6rem); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .consent { animation: none; }
+    }
+
+    .consent[hidden] {
+        display: none;
+    }
+
+    .consent__eyebrow {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: #c8853a;
+        margin-bottom: 0.8rem;
+    }
+
+    .consent__title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.25;
+        color: #f4ede0;
+        margin-bottom: 0.8rem;
+    }
+
+    .consent__text {
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+        color: #b3a99b;
+        margin-bottom: 2rem;
+    }
+
+    .consent__text a {
+        color: #c8853a;
+    }
+
+    .consent__actions {
+        display: flex;
+        gap: 1.2rem;
+    }
+
+    #consent button.consent__btn {
+        flex: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 4.4rem;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        border-radius: 3rem;
+        cursor: pointer;
+        transition: background-color .2s, color .2s, transform .2s;
+    }
+
+    #consent button.consent__btn--accept {
+        background: #c8853a;
+        color: #0d1a10;
+        border: 1px solid #c8853a;
+    }
+
+    #consent button.consent__btn--reject {
+        background: transparent;
+        color: #c8853a;
+        border: 1px solid #c8853a;
+    }
+
+    #consent button.consent__btn:hover {
+        transform: translateY(-1px);
+    }
+
+    #consent button.consent__btn--reject:hover {
+        background: rgba(200, 133, 58, 0.12);
+    }
+
+    #consent button.consent__btn:focus-visible {
+        outline: 2px solid #c8853a;
+        outline-offset: 2px;
+    }
+
+    footer button.footer__cookie-settings {
+        background: none !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        min-height: 2.4rem !important;
+        font-size: 1.5rem !important;
+        font-weight: 700 !important;
+        font-family: inherit !important;
+        color: #f4ede0 !important;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    footer button.footer__cookie-settings:hover {
+        color: #c8853a !important;
+    }
+</style>
+<script>
+    (function () {
+        var KEY = 'dc_consent';
+        var banner = document.getElementById('consent');
+        if (!banner) return;
+
+        function stored() {
+            try { return localStorage.getItem(KEY); } catch (e) { return null; }
+        }
+
+        function clearGaCookies() {
+            document.cookie.split(';').forEach(function (c) {
+                var name = c.split('=')[0].trim();
+                if (name.indexOf('_ga') === 0) {
+                    ['', '; domain=.dwaynecodling.com', '; domain=dwaynecodling.com'].forEach(function (d) {
+                        document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + d;
+                    });
+                }
+            });
+        }
+
+        function choose(value) {
+            try { localStorage.setItem(KEY, value); } catch (e) {}
+            window.dataLayer = window.dataLayer || [];
+            if (value === 'granted') {
+                gtag('consent', 'update', { analytics_storage: 'granted' });
+                window.dataLayer.push({ event: 'consent_granted' });
+            } else {
+                gtag('consent', 'update', { analytics_storage: 'denied' });
+                window.dataLayer.push({ event: 'consent_denied' });
+                clearGaCookies();
+            }
+            banner.hidden = true;
+        }
+
+        banner.querySelectorAll('[data-consent]').forEach(function (btn) {
+            btn.addEventListener('click', function () { choose(btn.getAttribute('data-consent')); });
+        });
+
+        document.querySelectorAll('[data-consent-open]').forEach(function (btn) {
+            btn.addEventListener('click', function () { banner.hidden = false; });
+        });
+
+        if (!stored()) banner.hidden = false;
+    })();
+</script>

@@ -13,11 +13,11 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://static.cloudflareinsights.com", "https://www.instagram.com", "https://code.jquery.com", "https://www.google.com", "https://www.gstatic.com"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "https://static.cloudflareinsights.com", "https://www.googletagmanager.com", "https://www.instagram.com", "https://code.jquery.com", "https://www.google.com", "https://www.gstatic.com"],
       styleSrc: ["'self'", "'unsafe-inline'"],
       imgSrc: ["'self'", "data:", "https:"],
       fontSrc: ["'self'", "data:"],
-      connectSrc: ["'self'", "https://cloudflareinsights.com", "https://www.google.com"],
+      connectSrc: ["'self'", "https://cloudflareinsights.com", "https://www.googletagmanager.com", "https://www.google-analytics.com", "https://*.google-analytics.com", "https://www.google.com"],
       frameSrc: ["https://www.instagram.com", "https://www.youtube-nocookie.com", "https://www.google.com"],
     },
   },

@@ -187,6 +187,8 @@
                 sendFormData(form.getAttribute("action"), form.getAttribute("method"), fData, data => {
 
                     if (data.isSuccessful === true){
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({ event: 'contact_form_submit', form_id: 'contact' });
                         form.reset();
                         $btn.prop('disabled', false).text('Message sent!');
                         formStatus.textContent = 'Your message has been sent successfully!';
