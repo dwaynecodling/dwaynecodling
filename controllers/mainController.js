@@ -16,6 +16,9 @@ home.get("/contact-me", async function (req, res) {
 home.get("/about-me", async function (req, res) {
     res.render("pages/about_me");
 });
+home.get("/privacy", function (req, res) {
+    res.render("pages/privacy");
+});
 home.get("/posts", async function (req, res) {
     let posts = await PostRepository_1.PostRepository.getAllPosts(true);
     res.render("pages/all_posts", { posts });
@@ -46,7 +49,8 @@ home.get("/sitemap.xml", async function (req, res) {
         { url: "/", priority: "1.0", lastmod: "2025-01-01" },
         { url: "/about-me", priority: "0.8", lastmod: "2025-01-01" },
         { url: "/posts", priority: "0.9", lastmod: today },
-        { url: "/contact-me", priority: "0.7", lastmod: "2025-01-01" }
+        { url: "/contact-me", priority: "0.7", lastmod: "2025-01-01" },
+        { url: "/privacy", priority: "0.3", lastmod: "2026-11-14" }
     ];
     const urls = [
         ...staticPages.map(p => `  <url><loc>${base}${p.url}</loc><lastmod>${p.lastmod}</lastmod><priority>${p.priority}</priority></url>`),
