@@ -190,8 +190,15 @@
         }
 
         function choose(value) {
+            var previous = stored();
             try { localStorage.setItem(KEY, value); } catch (e) {}
             window.dataLayer = window.dataLayer || [];
+            if (value === previous) {
+                // Same choice again: nothing changes, so don't tell GTM (avoids a second page_view)
+                banner.hidden = true;
+                showStatus();
+                return;
+            }
             if (value === 'granted') {
                 gtag('consent', 'update', { analytics_storage: 'granted' });
                 window.dataLayer.push({ event: 'consent_granted' });
