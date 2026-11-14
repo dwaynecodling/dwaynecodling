@@ -52,6 +52,13 @@
             margin-bottom: 1.6rem;
         }
 
+        .privacy-page__consent {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1.6rem;
+        }
+
         .privacy-page a {
             color: #c8853a;
         }
@@ -79,7 +86,7 @@
             <h2>Google Analytics (optional)</h2>
             <p>If you click Accept on the cookie banner, Google Analytics (loaded through Google Tag Manager) also runs. It sets cookies to recognise return visits and records the pages you view and actions such as sending the contact form. Google processes this data; their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a> applies.</p>
             <p>If you click Reject, or choose nothing, Google Analytics sets no cookies. You can change your choice at any time:</p>
-            <p><button type="button" class="hero__button hero__button--outline" data-consent-open>Cookie settings</button></p>
+            <p class="privacy-page__consent"><button type="button" class="hero__button hero__button--outline" data-consent-open>Cookie settings</button> <span data-consent-status></span></p>
 
             <h2>Messages</h2>
             <p>If you use the <a href="/contact-me">contact form</a>, your name, email address and message are emailed to me (sent through Resend) so I can reply. I don't add you to any list.</p>

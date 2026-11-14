@@ -1,7 +1,8 @@
 <!-- Cookie consent: Google Analytics (through GTM) only runs after Accept. Choice kept in localStorage 'dc_consent'. -->
 <div class="consent" id="consent" role="dialog" aria-live="polite" aria-labelledby="consent-title" hidden>
     <p class="consent__eyebrow">Cookies</p>
-    <p class="consent__title" id="consent-title">Mind if I count your visit?</p>
+    <p class="consent__title" id="consent-title" tabindex="-1">Mind if I count your visit?</p>
+    <p class="consent__current" data-consent-current hidden></p>
     <p class="consent__text">Google Analytics helps me see which posts get read. It's optional, and the site works the same either way. <a href="/privacy">How it works</a></p>
     <div class="consent__actions">
         <button type="button" class="consent__btn consent__btn--accept" data-consent="granted">Accept</button>
@@ -61,6 +62,35 @@
         line-height: 1.25;
         color: #f4ede0;
         margin-bottom: 0.8rem;
+    }
+
+    .consent__current {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        font-weight: 700;
+        color: #f4ede0;
+        margin-bottom: 0.8rem;
+    }
+
+    .consent__current[hidden] {
+        display: none;
+    }
+
+    .consent__title:focus {
+        outline: none;
+    }
+
+    .consent--pulse {
+        animation: consent-pulse 0.6s ease-out;
+    }
+
+    @keyframes consent-pulse {
+        0% { box-shadow: 0 0 0 0 rgba(200, 133, 58, 0.6), 0 1.6rem 4rem rgba(0, 0, 0, 0.45); }
+        100% { box-shadow: 0 0 0 1.2rem rgba(200, 133, 58, 0), 0 1.6rem 4rem rgba(0, 0, 0, 0.45); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .consent--pulse { animation: none; }
     }
 
     .consent__text {
@@ -171,6 +201,34 @@
                 clearGaCookies();
             }
             banner.hidden = true;
+            showStatus();
+        }
+
+        var LABELS = { granted: 'accepted', denied: 'rejected' };
+
+        function showStatus() {
+            var choice = stored();
+            var current = banner.querySelector('[data-consent-current]');
+            if (choice && LABELS[choice]) {
+                current.textContent = 'You have ' + LABELS[choice] + ' Google Analytics. You can change that here.';
+                current.hidden = false;
+            } else {
+                current.hidden = true;
+            }
+            document.querySelectorAll('[data-consent-status]').forEach(function (el) {
+                el.textContent = choice && LABELS[choice]
+                    ? 'Your current choice: ' + LABELS[choice] + '.'
+                    : 'You haven\'t chosen yet.';
+            });
+        }
+
+        function open() {
+            showStatus();
+            banner.hidden = false;
+            banner.classList.remove('consent--pulse');
+            void banner.offsetWidth;
+            banner.classList.add('consent--pulse');
+            banner.querySelector('#consent-title').focus({ preventScroll: true });
         }
 
         banner.querySelectorAll('[data-consent]').forEach(function (btn) {
@@ -178,9 +236,10 @@
         });
 
         document.querySelectorAll('[data-consent-open]').forEach(function (btn) {
-            btn.addEventListener('click', function () { banner.hidden = false; });
+            btn.addEventListener('click', open);
         });
 
+        showStatus();
         if (!stored()) banner.hidden = false;
     })();
 </script>
