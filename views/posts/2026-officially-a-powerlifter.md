@@ -11,14 +11,14 @@ hero:
 alt: Dwayne Codling competing at the WRPF Great Britain powerlifting competition
 title: Officially an <strong>amateur powerlifter</strong>
 date: 07 April 2026
-excerpt: "I recently competed in my first WRPF Great Britain powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class. What makes this result meaningful isn't just the numbers; it's the journey behind it."
+excerpt: "I recently competed in my first WRPF Great Britain powerlifting competition, finishing with a 495kg total and placing 3rd in my Masters group. What makes this result meaningful isn't just the numbers; it's the journey behind it."
 published: true
 category: fitness
 ---
 
 > *My first powerlifting competition started with two missed squats. What happened next taught me something I already believed but hadn't yet lived.*
 
-I recently competed in my first WRPF Great Britain powerlifting competition, finishing with a 495kg total and placing 2nd overall in my class.
+I recently competed in my first WRPF Great Britain powerlifting competition, finishing with a 495kg total and placing 3rd in my Masters group.
 
 What makes this result meaningful isn't just the numbers; it's the journey behind it.
 
@@ -58,4 +58,4 @@ More importantly, the mindset is locked in.
 
 Forward ever, backward never.
 
-**Update, November 2026:** eight months later, after a rotator cuff injury, I totalled 522.5kg. [Read how Nottingham Strong went](/post/nottingham-strong).
+**Update, November 2026:** seven months later, after a rotator cuff injury, I totalled 522.5kg. [Read how Nottingham Strong went](/post/nottingham-strong).

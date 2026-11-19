@@ -165,6 +165,36 @@
     letter-spacing: 0.1em;
     margin-top: 0.5rem;
   }
+  // March to October: a before-and-after, so the progress reads at a glance
+  &__stats--progress {
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__stat-date {
+    font-size: 1.1rem;
+    color: $color-cream-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.6rem;
+  }
+
+  &__arrow {
+    font-size: 2.4rem;
+    color: $color-amber;
+    line-height: 1;
+  }
+
+  // Phones: March above October, arrow pointing down
+  @media (max-width: 36em) {
+    &__stats--progress {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.2rem;
+    }
+
+    &__arrow { transform: rotate(90deg); }
+  }
 }
 
 // Posts section
